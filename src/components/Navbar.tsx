@@ -33,10 +33,11 @@ export default function Navbar() {
           <Link href="/sambutan" className="hover:text-blue-400 transition">Sambutan</Link>
           <Link href="/profil" className="hover:text-blue-400 transition">Profil</Link>
           <Link href="/berita" className="hover:text-blue-400 transition">Berita</Link>
-          <Link href="/galeri" className="hover:text-blue-400 transition">Galeri</Link>
           <Link href="/kurikulum" className="hover:text-blue-400 transition">Kurikulum</Link>
           <Link href="/ekskul" className="hover:text-blue-400 transition">Ekskul</Link>
-          <Link href="/kontak" className="hover:text-blue-400 transition">Kontak</Link>
+          <Link href="/alumni" className="hover:text-blue-400 transition">Alumni</Link>
+          <Link href="/galeri" className="hover:text-blue-400 transition">Galeri</Link>
+          <Link href="/SPMB" className="hover:text-blue-400 transition">SPMB</Link>
           <Link href="/Lokasi" className="hover:text-blue-400 transition">Lokasi</Link>
         </div>
       </div>
