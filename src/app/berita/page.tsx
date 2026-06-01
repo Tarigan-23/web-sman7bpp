@@ -1,12 +1,12 @@
 "use client"
 
 import React from "react"
-// 1. Mengimpor motion dan Variants dari framer-motion
+// Mengimpor motion dan Variants dari framer-motion
 import { motion, Variants } from "framer-motion"
 import berita from "../../data/berita"
 
 export default function BeritaPage() {
-  // 2. Mendefinisikan cetakan animasi kelompok (Stagger)
+  // Mendefinisikan cetakan animasi kelompok (Stagger)
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -54,46 +54,55 @@ export default function BeritaPage() {
           </p>
         </motion.div>
 
-        {/* Grid Pembungkus Kartu Berita (Ditambahkan Kontrol Animasi Utama) */}
+        {/* Pembungkus Kartu Berita */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch" 
         >
 
           {berita.map((item) => (
-            /* 3. Mengubah tag <a> menjadi <motion.a> agar kartu bisa bergerak */
             <motion.a
               key={item.id}
               href={item.sumberUrl}
               target="_blank"
               rel="noopener noreferrer"
-              variants={cardVariants} // Mengikuti ritme stagger pembungkusnya
-              className="block group"
+              variants={cardVariants}
+              className="block group h-full"
             >
-              {/* Efek Hover Skala Dipertahankan Menggunakan Tailwind (group-hover:scale-105) */}
-              <div className="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/10 group-hover:scale-105 transition duration-300 cursor-pointer h-full shadow-xl">
+              {/* Kartu Utama */}
+              <div className="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/10 group-hover:scale-105 transition duration-300 cursor-pointer h-full shadow-xl flex flex-col">
+                
+                {/* 1. UKURAN GAMBAR (Pasti Sama Rata & Flex-Shrink Dikunci) */}
+                <div className="w-full h-56 overflow-hidden relative border-b border-white/5 flex-shrink-0">
+                  <img
+                    src={item.gambar}
+                    alt={item.judul}
+                    className="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+                  />
+                </div>
 
-                <img
-                  src={item.gambar}
-                  alt={item.judul}
-                  className="w-full h-60 object-cover border-b border-white/5"
-                />
+                {/* 2. UKURAN KONTEN TEXT (Tinggi Dikunci Biar Slider Rapi) */}
+                <div className="p-6 flex flex-col justify-between h-72">
+                  <div>
+                    <p className="text-blue-300 text-sm font-medium">
+                      {item.tanggal}
+                    </p>
 
-                <div className="p-6">
-                  <p className="text-blue-300 text-sm font-medium">
-                    {item.tanggal}
-                  </p>
+                    {/* Judul Maksimal 2 Baris */}
+                    <h2 className="text-xl font-bold text-white mt-2 line-clamp-2 group-hover:text-blue-400 transition duration-200 min-h-[3.5rem]">
+                      {item.judul}
+                    </h2>
 
-                  <h2 className="text-2xl font-bold text-white mt-3 group-hover:text-blue-400 transition duration-200">
-                    {item.judul}
-                  </h2>
-
-                  <p className="text-gray-300 mt-4 line-clamp-3 leading-relaxed">
-                    {item.deskripsi}
-                  </p>
+                    {/* Deskripsi Bisa Panjang (Bisa Di-scroll di Dalam Kartu Jika Berlebih) */}
+                    <div className="h-32 overflow-y-auto mt-3 pr-1 scrollbar-thin scrollbar-thumb-white/20">
+                      <p className="text-gray-300 leading-relaxed font-light text-sm">
+                        {item.deskripsi}
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
               </div>
