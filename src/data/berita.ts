@@ -25,11 +25,11 @@ export const berita = [
   },
   {
     id: 1,
-    judul: "Hari Guru Nasional",
-    tanggal: "5 Mei 2026",
-    gambar: "/background.jpg",
-    deskripsi: "Perayaan Hari Guru Nasional di sekolah.",
-    sumberUrl: "/berita/hari-guru" // <--- Tambahkan ini
+    judul: "Upacara bendera",
+    tanggal: "27 januari 2026",
+    gambar: "/brt1.png",
+    deskripsi: "Upacara bendera pagi ini bukan sekadar rutinitas, melainkan wujud nyata komitmen SMAN 7 Balikpapan dalam melaksanakan Edaran Mendikdasmen No. 4 Tahun 2026.",
+    sumberUrl: "https://www.instagram.com/p/DT_wy6Rk1Qy/"
   }
 ]
 
