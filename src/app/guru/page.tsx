@@ -12,7 +12,7 @@ interface PersonelItem {
 export default function GuruPage() {
   // === DATA BARU: Kepala Sekolah ===
   const kepalaSekolah: PersonelItem = {
-    nama: "Drs. H. Sukarni, M.Pd.",
+    nama: "Puspani, M.Pd.",
     jabatan: "Kepala Sekolah",
     foto: "/kepsek.webp", // Sesuaikan nama file fotonya di folder public
   }
@@ -20,31 +20,31 @@ export default function GuruPage() {
   // === DATA BARU: Wakil Kepala Sekolah ===
   const wakasek: PersonelItem[] = [
     {
-      nama: "Supriyadi, S.Pd., M.Si.",
+      nama: "Lulik Ariyani, M.Pd.",
       jabatan: "Waka Kurikulum",
-      foto: "/waka1.webp",
+      foto: "/gr24.webp",
     },
     {
-      nama: "Ekawati, S.Pd.",
+      nama: "Sultan, S.Sos.",
       jabatan: "Waka Kesiswaan",
-      foto: "/waka2.webp",
+      foto: "/gr33.webp",
     },
     {
-      nama: "Irwan Syahputra, M.T.",
+      nama: "Suyanto, S.Pd.",
       jabatan: "Waka Sarana & Prasarana",
-      foto: "/waka3.webp",
+      foto: "/gr4.webp",
     },
     {
-      nama: "Siti Zubaidah, S.Pd.",
+      nama: "Ayi Solihin, M.Pd.",
       jabatan: "Waka Humas",
-      foto: "/waka4.webp",
+      foto: "/gr28.webp",
     },
   ]
 
   const guru: PersonelItem[] = [
-    { nama: "Drs. Ahmad Fauzi", jabatan: "Matematika", foto: "/gr1.webp" },
-    { nama: "Siti Rahmawati, S.Pd", jabatan: "Bahasa Indonesia", foto: "/gr2.webp" },
-    { nama: "Budi Santoso, S.Kom", jabatan: "Informatika", foto: "/gr3.webp" },
+    { nama: "Drs. Ahmad Fauzi", jabatan: "Matematika", foto: "/gr7.webp" },
+    { nama: "Siti Rahmawati, S.Pd", jabatan: "Bahasa Indonesia", foto: "/gr6.webp" },
+    { nama: "Budi Santoso, S.Kom", jabatan: "Informatika", foto: "/gr5.webp" },
     { nama: "Nur Aini, S.Pd", jabatan: "Bahasa Inggris", foto: "/gr4.webp" },
     { nama: "Andi Saputra, S.Pd", jabatan: "Fisika", foto: "/gr5.webp" },
     { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr7.webp" },
@@ -96,16 +96,25 @@ export default function GuruPage() {
   ]
 
   const staf: PersonelItem[] = [
-    { nama: "Hasan Basri, A.Md.", jabatan: "Kepala Tata Usaha", foto: "/st1.webp" },
-    { nama: "Rizky Amalia, S.E.", jabatan: "Bendahara Sekolah", foto: "/gr54.webp" },
-    { nama: "Supriyanto", jabatan: "Staf Administrasi & Dapodik", foto: "/gr1.webp" },
-    { nama: "Tri Utami, S.Sos.", jabatan: "Pustakawan", foto: "/gr2.webp" },
+    { nama: "Mudhofir", jabatan: "Staf Tata Usaha", foto: "/gr22.webp" },
+    { nama: "Sudawati", jabatan: "Staf Tata Usaha", foto: "/gr40.webp" },
+    { nama: "Mirnawati", jabatan: "Staf Tata Usaha", foto: "/gr36.webp" },
+    { nama: "Retno Ayu Lestari", jabatan: "Staf Tata Usaha", foto: "/gr41.webp" },
+    { nama: "Anang Ariyanto", jabatan: "Staf Tata Usaha", foto: "/gr.webp" },
+    
+    
   ]
 
   const keamanan: PersonelItem[] = [
-    { nama: "Slamet Rahardjo", jabatan: "Komandan Regu Keamanan", foto: "/sc1.webp" },
-    { nama: "Agus Setiawan", jabatan: "Staf Keamanan & Ketertiban", foto: "/sc2.webp" },
-    { nama: "Roni Wijaya", jabatan: "Petugas Jaga Malam", foto: "/sc3.webp" },
+    { nama: "Setyajid", jabatan: "Satpam", foto: "/st6.webp" },
+    { nama: "Siyono", jabatan: "Satpam", foto: "/st8.webp" },
+    { nama: "Eko Supriyono", jabatan: "Satpam", foto: "/st9.webp" },
+    { nama: "Surya Pranata Gama", jabatan: "Satpam", foto: "/st7.webp" },
+    { nama: "Suwisno", jabatan: "Kebersihan", foto: "/st5.webp" },
+    { nama: "Meria", jabatan: "Kebersihan", foto: "/st2.webp" },
+    { nama: "Muari", jabatan: "Kebersihan", foto: "/st3.webp" },
+    { nama: "Ika Jadiati", jabatan: "Kebersihan", foto: "/st1.webp" },
+    { nama: "Sonhaji", jabatan: "Kebersihan", foto: "/st4.webp" },
   ]
 
   return (
@@ -124,7 +133,7 @@ export default function GuruPage() {
         {/* Judul Halaman */}
         <div className="text-center mb-16 block relative">
           <h1 className="text-5xl md:text-6xl font-bold text-blue-400 tracking-tight leading-normal">
-            Profil Manajemen & Tenaga Pendidik
+            Profil Guru & Staf 
           </h1>
           <p className="text-gray-200 text-2xl mt-4 font-medium">
             SMA Negeri 7 Balikpapan
@@ -235,7 +244,7 @@ export default function GuruPage() {
         {/* ================= SECTION 2: DAFTAR STAF ================= */}
         <div className="mt-24 mb-12 border-b border-white/10 pt-6 pb-4 block relative">
           <h2 className="text-3xl font-bold text-white flex items-center gap-2">
-            <span className="text-blue-400">#</span> Staf Tata Usaha & Kependidikan
+            <span className="text-blue-400">#</span> Staf Tata Usaha
           </h2>
         </div>
 
@@ -270,7 +279,7 @@ export default function GuruPage() {
         {/* ================= SECTION 3: TIM KEAMANAN ================= */}
         <div className="mt-24 mb-12 border-b border-white/10 pt-6 pb-4 block relative">
           <h2 className="text-3xl font-bold text-white flex items-center gap-2">
-            <span className="text-amber-400">#</span> Tim Keamanan & Jaga Malam
+            <span className="text-amber-400">#</span> Staf Keamanan & Kebersihan
           </h2>
         </div>
 
