@@ -15,11 +15,14 @@ export default function Navbar() {
     { name: "Profil", href: "/profil" },
     { name: "Berita", href: "/berita" },
     { name: "Kurikulum", href: "/kurikulum" },
+    { name: "Kesiswaan", href: "/Kesiswaan" },
+    { name: "Sarpras", href: "/Sarpras" },
+    { name: "Humas", href: "/Humas" },
     { name: "Ekskul", href: "/ekskul" },
     { name: "Alumni", href: "/alumni" },
     { name: "Galeri", href: "/galeri" },
     { name: "SPMB", href: "/SPMB" },
-    { name: "Lokasi", href: "/Lokasi" },
+    
   ]
 
   return (

@@ -17,7 +17,7 @@ export default function Map() {
         <div className="w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
           <iframe
             // Gunakan URL embed resmi dari Google Maps untuk SMAN 7 Balikpapan
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8475510619717!2d116.96347909999999!3d-1.2573516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df149b16ea98471%3A0x6e7889c2cc0bf38f!2sSMA%20Negeri%207%20Balikpapan!5e0!3m2!1sid!2sid!4v1714800000000!5m2!1sid!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.77154596512!2d116.980645188485!3d-1.2002747763269273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df14f000d8900c3%3A0xe5c4521865ca4424!2sSMA%20NEGERI%207%20BALIKPAPAN!5e0!3m2!1sid!2sid!4v1779503806543!5m2!1sid!2sid"
             width="100%"
             height="100%"
             style={{ border: 0 }}
