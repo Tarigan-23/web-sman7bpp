@@ -1,5 +1,101 @@
 export const berita = [
   {
+    id: 63,
+    judul: "Selamat dan Sukses kepada Peserta Lomba OPSI!",
+    tanggal: "28 Februari 2026",
+    gambar: "/62.png",
+    deskripsi: "SMA Negeri 7 Balikpapan mengucapkan selamat kepada peserta didik yang telah terpilih untuk mengikuti Olimpiade Penelitian Siswa Indonesia (OPSI). Partisipasi dalam kegiatan ini menjadi langkah nyata dalam mengembangkan budaya riset di kalangan peserta didik, dengan menumbuhkan kemampuan berpikir ilmiah, kreatif, kritis, dan inovatif sebagai bekal berharga untuk menghadapi tantangan di masa depan. Melalui kegiatan ini, diharapkan dapat melahirkan calon peserta terbaik yang mampu mewakili sekolah hingga ke tingkat nasional, sekaligus mencetak peneliti-peneliti muda yang inovatif, kreatif, serta memiliki kepedulian terhadap lingkungan. Semoga para peserta dapat memberikan hasil terbaik, mengharumkan nama sekolah, serta terus menginspirasi generasi muda untuk berkarya melalui penelitian. ✨📚",
+    sumberUrl: "https://www.instagram.com/p/DVka60-E4TL/?img_index=1"
+  }, 
+  {
+    id: 62,
+    judul: "Semangat dan Selamat Berjuang Tim OSN SMAN 7 Balikpapan! 🏆📚",
+    tanggal: "7 Maret 2026",
+    gambar: "/61.png",
+    deskripsi: "Semangat dan Selamat Berjuang Tim OSN SMAN 7 Balikpapan! 🏆📚 Keluarga besar SMA Negeri 7 Balikpapan mengucapkan selamat dan semangat kepada Tim Olimpiade Sains Nasional (OSN) yang akan berjuang mewakili sekolah dalam ajang kompetisi sains. Kesempatan ini merupakan bukti dari kerja keras, dedikasi, serta semangat belajar yang tinggi dari para peserta didik. Semoga Tim OSN SMAN 7 Balikpapan dapat memberikan yang terbaik, menunjukkan kemampuan, serta menjunjung tinggi sportivitas dalam setiap proses yang dijalani. Teruslah berjuang dengan penuh percaya diri dan semangat untuk meraih prestasi terbaik serta mengharumkan nama sekolah. Berjuanglah dengan ilmu, raihlah prestasi, dan jadilah kebanggaan sekolah! ✨",
+    sumberUrl: "https://www.instagram.com/p/DVkZYJOk4SJ/"
+  }, 
+  {
+    id: 61,
+    judul: "Selamat dan Sukses kepada Peserta Olimpiade Sains Nasional (OSN)!",
+    tanggal: "7 Maret 2026",
+    gambar: "/60.png",
+    deskripsi: "SMA Negeri 7 Balikpapan mengucapkan selamat kepada peserta didik yang telah terpilih sebagai peserta Olimpiade Sains Nasional (OSN). Terpilihnya para peserta merupakan wujud dari upaya sekolah dalam menggali dan mengembangkan potensi peserta didik yang bertalenta serta berkarakter di bidang ilmu pengetahuan dan teknologi. Melalui ajang ini, diharapkan para peserta mampu menunjukkan kemampuan terbaiknya, meningkatkan semangat belajar, serta mengembangkan daya pikir kritis dan kompetitif. Semoga kegiatan ini dapat melahirkan generasi muda yang berprestasi dan mampu mewakili sekolah hingga ke tingkat nasional. Selamat berjuang, semoga mendapatkan hasil terbaik dan mengharumkan nama SMA Negeri 7 Balikpapan. 🌟",
+    sumberUrl: "https://www.instagram.com/p/DVkYQUSE7eh/?img_index=1"
+  }, 
+  {
+    id: 60,
+    judul: "SMA Negeri 7 Balikpapan mulai menerapkan sistem absensi menggunakan finger",
+    tanggal: "6 Maret 2026",
+    gambar: "/59.png",
+    deskripsi: "SMA Negeri 7 Balikpapan terus berinovasi dalam meningkatkan kedisiplinan dan ketertiban peserta didik. Pada Jumat, 6 Maret 2026, SMA Negeri 7 Balikpapan mulai menerapkan sistem absensi menggunakan finger (sidik jari) bagi peserta didik. Penerapan sistem ini bertujuan untuk meningkatkan kedisiplinan, ketepatan waktu, serta mempermudah proses pendataan kehadiran siswa secara lebih akurat dan transparan. Dengan adanya absensi finger, diharapkan seluruh peserta didik dapat semakin terbiasa membangun budaya disiplin sejak dini. Langkah ini merupakan bagian dari komitmen SMA Negeri 7 Balikpapan dalam memanfaatkan teknologi untuk mendukung tata kelola sekolah yang lebih modern, tertib, dan efektif. Semoga dengan inovasi ini, seluruh warga sekolah dapat bersama-sama menciptakan lingkungan belajar yang lebih disiplin, bertanggung jawab, dan berkarakter.",
+    sumberUrl: "https://www.instagram.com/p/DViKbTHgE1g/?img_index=1"
+  }, 
+  {
+    id: 59,
+    judul: "Indahnya Berbagi di Bulan yang Mulia",
+    tanggal: "3 Maret 2026",
+    gambar: "/58.png",
+    deskripsi: "​Sebuah rasa syukur bagi kita semua dapat menutup bulan Februari dengan aksi nyata dalam berbagi kepada sesama. Melalui kegiatan Berbagi Takjil (28/02/26), kita telah menyalurkan amanah dan kepedulian dari seluruh Keluarga Besar SMA Negeri 7 Balikpapan. 🏫 Terima kasih atas partisipasi seluruh siswa-siswi Kelas X, XI, dan XII, serta dukungan penuh dari OSIS, MPK, Duta, dan Ekstrakurikuler yang telah menyisihkan sebagian rezekinya untuk disalurkan. 📦 Semoga melalui kebaikan ini, Tuhan Yang Maha Esa memberikan keberkahan dan kemudahan bagi kita semua dalam menjalankan segala urusan, baik dalam menuntut ilmu maupun dalam keseharian. Serta seluruh elemen sekolah kita semakin kompak dalam menebar kebaikan. 🤲🏻🍃",
+    sumberUrl: "https://www.instagram.com/p/DVbDVVFk4Jz/"
+  }, 
+  {
+    id: 58,
+    judul: "kegiatan PRAKSI resmi ditutup dengan momen Berbuka Puasa Bersama. ",
+    tanggal: "2 Maret 2026",
+    gambar: "/57.png",
+    deskripsi: "Rangkaian kegiatan PRAKSI resmi ditutup dengan momen Berbuka Puasa Bersama. 🫱🏻‍🫲🏻 Semoga seluruh rangkaian kegiatan kita membuahkan pahala serta menjadi bekal ibadah yang bermanfaat. Serta, kebersamaan ini dapat mempererat silaturahmi dan menjadikan kita semua pribadi yang lebih baik. Taqabbalallahu' minna wa minkum 🌙",
+    sumberUrl: "https://www.instagram.com/p/DVYtW9KE4IT/"
+  }, 
+  {
+    id: 57,
+    judul: "Forum Duta Wisata Manuntung Kota Balikpapan (FDWB) menggelar sosialisasi di SMA Negeri 7 Balikpapan",
+    tanggal: "28 Februari 2026",
+    gambar: "/56.png",
+    deskripsi: "Balikpapan, 27 Februari 2026 – Forum Duta Wisata Manuntung Kota Balikpapan (FDWB) @fdwb_bpn menggelar sosialisasi penuh semangat di SMA Negeri 7 Balikpapan pada Jumat (27/2) pukul 09.00 WITA. Kegiatan ini membuka mata siswa terhadap potensi pariwisata lokal serta peluang karier di bidang pariwisata Kota Balikpapan. Siswa memperoleh pengetahuan praktis, memperluas jaringan dengan komunitas kepemudaan, dan peluang terlibat langsung dalam promosi wisata daerah. Acara ini memicu kreativitas serta dorongan untuk mengembangkan potensi diri guna mendukung masa depan pariwisata Balikpapan yang lebih maju dan berdaya saing.",
+    sumberUrl: "https://www.instagram.com/p/DVXs6pekw6Q/"
+  }, 
+  {
+    id: 56,
+    judul: "persiapan lomba “Rukun Sama Teman” yang bertempat di Laboratorium Bahasa.",
+    tanggal: "2 Maret 2026",
+    gambar: "/55.png",
+    deskripsi: "Pada tanggal 27 Maret 2026, pukul 11.00–14.00 WITA, tim Ekskul Smaven Choir @smavenchoirbppn melaksanakan latihan persiapan lomba “Rukun Sama Teman” yang bertempat di Laboratorium Bahasa. Kegiatan ini dipandu langsung oleh pelatih dengan penuh semangat dan dedikasi, guna memaksimalkan kesiapan tim dalam menghadapi perlombaan yang akan diikuti. Latihan ini bertujuan untuk mematangkan teknik vokal, kekompakan tim, serta penghayatan lagu agar dapat tampil percaya diri dan memberikan penampilan terbaik. Besar harapan kami, melalui persiapan yang sungguh-sungguh ini, Smaven Choir dapat meraih hasil yang maksimal dan memenangkan event yang diikuti. Semangat berlatih, solid dalam harmoni, dan siap mengukir prestasi! 🎼🏆",
+    sumberUrl: "https://www.instagram.com/p/DVXsn3cE7rS/"
+  }, 
+  {
+    id: 55,
+    judul: "Pesantren Ramadhan SMA Negeri 7 (SMANJU) Balikpapan sukses dilaksanakan",
+    tanggal: "2 Maret 2026",
+    gambar: "/54.png",
+    deskripsi: "Alhamdulillah, Pesantren Ramadhan SMA Negeri 7 (SMANJU) Balikpapan sukses dilaksanakan pada Senin-Kamis, 23-26 Februari 2025, pukul 08.00-12.00 WITA di Masjid Al-Khwarizmi dan ruang literasi. Kegiatan ini diikuti penuh semangat oleh seluruh siswa kelas X, XI, dan XII, menghadirkan pemateri berkualitas seperti Ustadz Septyan Yuda Pratama & Ustadz Irwan Budiana (hari 1), Ustadz Muhammad Idris & Ustadz Amri (hari 2), serta Ust. Rachmad Izham Aziz, S.Pd., C.AQ., C.Dipl.Sy (hari 3). Melalui pesantren ini, diharapkan pemahaman ilmu agama meningkat, kecintaan Al-Qur’an tumbuh, dan ukhuwah islamiyah semakin kuat serta untuk membentuk generasi religius, berkarakter, dan berprestasi sepanjang tahun.",
+    sumberUrl: "https://www.instagram.com/p/DVXsfLmk4J7/"
+  }, 
+  {
+    id: 54,
+    judul: "SMA Negeri 7 Balikpapan menggelar penyaluran zakat fitrah",
+    tanggal: "2 Maret 2026",
+    gambar: "/53.png",
+    deskripsi: "Balikpapan, 25 Februari 2026 – Keluarga besar SMA Negeri 7 Balikpapan menggelar penyaluran zakat fitrah kepada peserta didik berhak pada Kamis (25/2). Kegiatan ini mencerminkan komitmen sekolah menumbuhkan empati, solidaritas, dan semangat berbagi di tengah nuansa keberkahan Ramadhan. Penyaluran zakat diharapkan meringankan beban penerima serta membawa berkah bagi seluruh warga sekolah. Acara ini memperkuat kebersamaan, membentuk karakter peduli, berakhlak mulia, dan penuh syukur.",
+    sumberUrl: "https://www.instagram.com/p/DVXObjnkybi/"
+  }, 
+  {
+    id: 53,
+    judul: "MPK TAKSI – Wadah Aspirasi Siswa SMAN 7 Balikpapan",
+    tanggal: "28 Februari 2026",
+    gambar: "/52.png",
+    deskripsi: "Salah satu upaya Majelis Perwakilan Kelas (MPK) SMA Negeri 7 Balikpapan dalam menjalankan fungsi pengawasan dan penyaluran aspirasi diwujudkan melalui kegiatan MPK TAKSI yang dilaksanakan pada Kamis, 26 Februari 2026. Kegiatan ini menjadi ruang yang tertib dan bertanggung jawab bagi perwakilan kelas untuk menyampaikan aspirasi, saran, serta evaluasi demi kemajuan bersama. Setiap aspirasi yang dihimpun dalam forum MPK TAKSI disaring dan dirangkum secara sistematis, kemudian disampaikan secara resmi kepada Wakil Kepala Sekolah dan Kepala SMA Negeri 7 Balikpapan sebagai bentuk komunikasi yang konstruktif antara siswa dan pihak sekolah. Melalui langkah ini, MPK berkomitmen menjadi jembatan aspirasi yang objektif, solutif, dan profesional, serta turut berkontribusi dalam menciptakan lingkungan SMA Negeri 7 Balikpapan yang lebih terbuka, partisipatif, dan berorientasi pada perbaikan berkelanjutan. ✨ Bersama, kita wujudkan sekolah yang semakin maju dan berdaya!",
+    sumberUrl: "https://www.instagram.com/p/DVSbXqHk8-M/?img_index=1"
+  }, 
+  {
+    id: 52,
+    judul: "Selamat Menunaikan Ibadah Puasa 1447H",
+    tanggal: "28 Februari 2026",
+    gambar: "/puasa.png",
+    deskripsi: "Kami keluarga besar SMA NEGERI 7 BALIKPAPAN mengucapkan Selamat Menunaikan Ibadah Puasa 1447H",
+    sumberUrl: "https://www.instagram.com/p/DVSX_pmk1Oc/"
+  }, 
+  {
     id: 51,
     judul: "SMA Negeri 7 Balikpapan mengikuti Program Kemitraan Sekolah BRIDGE Australia-Indonesia",
     tanggal: "28 Februari 2026",

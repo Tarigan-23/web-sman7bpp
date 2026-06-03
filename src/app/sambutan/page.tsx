@@ -127,9 +127,7 @@ export default function SambutanPage() {
               <span className="text-blue-400">#</span> Visi
             </h2>
             <p className="text-gray-200 leading-8 text-lg text-justify flex-1">
-              Menjadi sekolah unggul yang berprestasi, berkarakter,
-              berwawasan lingkungan, dan mampu bersaing di era global
-              berbasis teknologi.
+              Terwujudnya Insan Sekolah Yang Religius, Cerdas, Berprestasi, Berwawasan global, Dan Berbudaya Lingkungan.
             </p>
           </motion.div>
 
@@ -142,11 +140,11 @@ export default function SambutanPage() {
               <span className="text-blue-400">#</span> Misi
             </h2>
             <ul className="text-gray-200 leading-8 text-lg list-disc pl-6 space-y-3 font-normal">
-              <li>Meningkatkan kualitas pembelajaran berbasis teknologi.</li>
-              <li>Membentuk karakter siswa yang disiplin dan berintegritas.</li>
-              <li>Mengembangkan potensi akademik dan non-akademik siswa.</li>
-              <li>Menumbuhkan kepedulian terhadap lingkungan sekolah.</li>
-              <li>Menjalin kerja sama dengan berbagai pihak untuk kemajuan sekolah.</li>
+              <li>Menumbuhkan Penghayatan Tehadap Ajaran Agama Yang Dianut Serta Meningkatkan Keimanan Dan Ketaqwaan Tehadap Allah SWT, Tuhan YME.</li>
+              <li>Membiasakan Semua Warga Sekolah Untuk Taat Beribadah Sesuai Agama Dan Kepercayaan Masing - Masing</li>
+              <li>Mewujudkan Budaya Sekolah Yang Baik Sebagai Ladang Tumbuh Suburnya Budi Pekerti Luhur dan Berakhlak Mulia Selaras Profil Pelajar Pancasila</li>
+              <li>Mewujudkan Pembelajaran Yang Bermakna Dan Bimbingan Secara Efektif, Sehingga Setiap Siswa Dapat Berkembang Secara Optimal Sesuai Bakat, Minat Dan Potensi Yang Dimiliki</li>
+              <li>Meningkatkan Kompetensi Numerasi Dan Literasi, Sesuai Prinsip Kejujuran, Kemandirian, Serta Bakat, Minat Dan Potensi Peserta Didik.</li>
             </ul>
           </motion.div>
         </motion.div>

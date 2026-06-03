@@ -69,7 +69,8 @@ export default function Hero() {
             textShadow: '1.5px 1.5px 0 #000, -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 0px 1.5px 0 #000, 1.5px 0px 0 #000, 0px -1.5px 0 #000, -1.5px 0px 0 #000'
           }}
         >
-          "Mewujudkan Generasi Unggul, Modern, dan Berprestasi"
+          "Terwujudnya Insan Sekolah Yang Religius, Cerdas, Berprestasi,
+              Berwawasan global, Dan Berbudaya Lingkungan."
         </p>
 
       </motion.div>

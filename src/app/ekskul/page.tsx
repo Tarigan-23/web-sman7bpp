@@ -11,8 +11,7 @@ const dataEkskul = [
     kategori: "Umum",
     logo: "/", 
     pembina: "Budi Santoso, S.Pd.",
-    ketua: "Andi Wijaya",
-    wa: "6281234567890", 
+    ketua: "Andi Wijaya", 
     jadwal: "Jumat, 14:00 WITA",
     deskripsi: "Membentuk karakter siswa yang disiplin, mandiri, berjiwa kepemimpinan, dan menjunjung tinggi nilai gotong royong."
   },
@@ -23,7 +22,6 @@ const dataEkskul = [
     logo: "/.webp",
     pembina: "Siti Rahma, S.Kep.",
     ketua: "Rina Amelia",
-    wa: "6289876543210",
     jadwal: "Rabu, 14:00 WITA",
     deskripsi: "Melatih kepedulian sosial, memberikan pertolongan pertama, serta mengedukasi siswa mengenai kesehatan dan donor darah."
   },
@@ -34,7 +32,6 @@ const dataEkskul = [
     logo: "/.webp",
     pembina: "Dedi Setiawan, M.Pd.",
     ketua: "Rizky Pratama",
-    wa: "625651973841",
     jadwal: "Sabtu, 08:00 WITA",
     deskripsi: "Mengasah ketahanan fisik, mental, dan kedisiplinan tinggi melalui baris-berbaris demi penugasan upacara besar sekolah."
   },
@@ -45,7 +42,6 @@ const dataEkskul = [
     logo: "/.webp",
     pembina: "Ustadz Ahmad Fauzi",
     ketua: "Muhammad Ihsan",
-    wa: "6281344556677",
     jadwal: "Kamis, 15:30 WITA",
     deskripsi: "Wadah pendalaman iman dan takwa, pembentukan akhlak mulia, serta kajian Islam yang inklusif di lingkungan sekolah."
   },
@@ -56,7 +52,6 @@ const dataEkskul = [
     logo: "/st5.",
     pembina: "Hendra Wijaya, S.Pd.",
     ketua: "Kevin Sanjaya",
-    wa: "6287766554433",
     jadwal: "Selasa & Kamis, 16:00 WITA",
     deskripsi: "Mengembangkan bakat olahraga bola basket, kerja sama tim, fisik yang prima, serta persiapan kompetisi antar sekolah."
   },
@@ -67,7 +62,6 @@ const dataEkskul = [
     logo: "/st5.",
     pembina: "Guntur, S.Pd",
     ketua: "Yegar Tarigan",
-    wa: "6287766554433",
     jadwal: "Selasa & Kamis, 16:00 WITA",
     deskripsi: "Mengembangkan Bakat berkuda, fisik yang prima, serta persiapan kompetisi antar sekolah."
   },
@@ -240,15 +234,6 @@ export default function EkskulPage() {
                     </div>
                   </div>
 
-                  {/* Tombol Hubungi Via WhatsApp Ketua */}
-                  <a
-                    href={`https://wa.me/${ekskul.wa}?text=Halo%20Kak%20${ekskul.ketua},%20saya%20ingin%20bertanya%20mengenai%20ekskul%20${ekskul.nama}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-4 rounded-xl shadow-md transition duration-300 flex items-center justify-center gap-2 text-sm"
-                  >
-                    💬 Hubungi Ketua (WA)
-                  </a>
                 </div>
               </motion.div>
             ))}
