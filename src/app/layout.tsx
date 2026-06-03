@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next"; // 1. Gabungkan import type di sini
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -7,11 +7,20 @@ import Hakcipta from "../components/Hakcipta";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// 2. Konfigurasi Viewport untuk Mobile
+export const viewport: Viewport = {
+  themeColor: '#ffffff',
+  width: 'device-width',
+  initialScale: 1,
+};
+
+// 3. Konfigurasi SEO Metadata
 export const metadata: Metadata = {
   title: "SMA Negeri 7 Balikpapan",
   description: "Website Resmi SMA Negeri 7 Balikpapan",
 };
 
+// 4. Root Layout Utama
 export default function RootLayout({
   children,
 }: {
@@ -22,7 +31,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
 
-        <main>{children}</main>
+        {/* Tips Opsional: Beri pembungkus min-height agar footer tetap di bawah saat konten sepi */}
+        <main className="min-h-screen">{children}</main>
 
         <Hakcipta />
       </body>

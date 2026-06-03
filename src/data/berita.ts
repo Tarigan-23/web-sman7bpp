@@ -2,7 +2,7 @@ export const berita = [
   {
     id: 63,
     judul: "Selamat dan Sukses kepada Peserta Lomba OPSI!",
-    tanggal: "28 Februari 2026",
+    tanggal: "7 Maret 2026",
     gambar: "/62.png",
     deskripsi: "SMA Negeri 7 Balikpapan mengucapkan selamat kepada peserta didik yang telah terpilih untuk mengikuti Olimpiade Penelitian Siswa Indonesia (OPSI). Partisipasi dalam kegiatan ini menjadi langkah nyata dalam mengembangkan budaya riset di kalangan peserta didik, dengan menumbuhkan kemampuan berpikir ilmiah, kreatif, kritis, dan inovatif sebagai bekal berharga untuk menghadapi tantangan di masa depan. Melalui kegiatan ini, diharapkan dapat melahirkan calon peserta terbaik yang mampu mewakili sekolah hingga ke tingkat nasional, sekaligus mencetak peneliti-peneliti muda yang inovatif, kreatif, serta memiliki kepedulian terhadap lingkungan. Semoga para peserta dapat memberikan hasil terbaik, mengharumkan nama sekolah, serta terus menginspirasi generasi muda untuk berkarya melalui penelitian. ✨📚",
     sumberUrl: "https://www.instagram.com/p/DVka60-E4TL/?img_index=1"

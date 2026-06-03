@@ -7,6 +7,7 @@ interface GaleriItem {
   judul: string
   gambar: string[]
   deskripsi?: string
+  tanggal: string
 }
 
 export default function GaleriPage() {
@@ -15,32 +16,38 @@ export default function GaleriPage() {
     {
       judul: "Kunjungan IKN",
       gambar: ["/bg1.jpeg", "/galeri3.jpg", "/galeri4.jpg"],
-      deskripsi: "Menikmati pemandangan indah di sekitar area Istana Garuda, Ibu Kota Nusantara bersama rekan-rekan."
+      deskripsi: "Menikmati pemandangan indah di sekitar area Istana Garuda, Ibu Kota Nusantara bersama rekan-rekan.",
+      tanggal: "12 MEI 2026"
     },
     {
       judul: "Acara Adat Budaya",
       gambar: ["/bg2.jpeg"],
-      deskripsi: "Mengenakan pakaian adat dalam rangka melestarikan budaya lokal dan memperingati hari besar."
+      deskripsi: "Mengenakan pakaian adat dalam rangka melestarikan budaya lokal dan memperingati hari besar.",
+      tanggal: "12 MEI 2026"
     },
     {
       judul: "Mulia 5K Fun Run",
       gambar: ["/galeri3.jpg", "/galeri5.jpg"],
-      deskripsi: "Semangat mencapai garis finish di event Mulia 5K Fun Run 2025! Terus bergerak maju."
+      deskripsi: "Semangat mencapai garis finish di event Mulia 5K Fun Run 2025! Terus bergerak maju.",
+      tanggal: "12 MEI 2026"
     },
     {
       judul: "Eksplorasi Alam",
       gambar: ["/galeri4.jpg"],
-      deskripsi: "Melihat lautan awan yang menyejukkan mata di pagi hari dari puncak bukit."
+      deskripsi: "Melihat lautan awan yang menyejukkan mata di pagi hari dari puncak bukit.",
+      tanggal: "12 MEI 2026"
     },
     {
       judul: "Sertifikasi BNSP",
       gambar: ["/galeri5.jpg"],
-      deskripsi: "Lembaga Sertifikasi Profesi Universitas Mulia Balikpapan untuk meningkatkan kompetensi mahasiswa."
+      deskripsi: "Lembaga Sertifikasi Profesi Universitas Mulia Balikpapan untuk meningkatkan kompetensi mahasiswa.",
+      tanggal: "12 MEI 2026"
     },
     {
       judul: "Ramah Tamah Aron Rudang Mayang",
       gambar: ["/galeri6.jpg"],
-      deskripsi: "Dokumentasi kegiatan hangat malam ramah tamah bersama seluruh tim panitia."
+      deskripsi: "Dokumentasi kegiatan hangat malam ramah tamah bersama seluruh tim panitia.",
+      tanggal: "12 MEI 2026"
     }
   ]
 
@@ -106,10 +113,10 @@ export default function GaleriPage() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold text-white tracking-wide uppercase">
+          <h1 className="text-4xl font-bold text-blue-600 tracking-wide uppercase">
             Galeri Kegiatan
           </h1>
-          <p className="text-gray-400 text-sm mt-2 font-light">
+          <p className="text-white text-sm mt-2 font-light">
             Momen dan Dokumentasi Pilihan - SMA Negeri 7 Balikpapan
           </p>
         </motion.div>
@@ -260,15 +267,22 @@ export default function GaleriPage() {
                 {/* Bagian Bawah: Tombol Aksi Estetik (Like, Comment, Share) */}
                 <div className="p-4 border-t border-neutral-800 space-y-2 bg-neutral-900/50">
                   <div className="flex space-x-4 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 cursor-pointer hover:text-neutral-400">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 cursor-pointer hover:text-neutral-400">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-1.923 2.413a4.474 4.474 0 0 0 3.536-1.003c.43-.244.97-.242 1.4.03a9.14 9.14 0 0 0 3.128.533Z" />
-                    </svg>
-                  </div>
-                  <p className="text-[11px] text-neutral-400 uppercase tracking-wider">7 DESEMBER 2025</p>
+                {/* SVG Icon Love */}
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 cursor-pointer hover:text-neutral-400">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+                {/* SVG Icon Comment */}
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 cursor-pointer hover:text-neutral-400">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-1.923 2.413a4.474 4.474 0 0 0 3.536-1.003c.43-.244.97-.242 1.4.03a9.14 9.14 0 0 0 3.128.533Z" />
+                </svg>
                 </div>
+  
+  {/* SEKARANG SUDAH OTOMATIS BERUBAH DI SINI */}
+  <p className="text-[11px] text-neutral-400 uppercase tracking-wider">
+    {selectedItem.tanggal}
+  </p>
+</div>
+                
 
               </div>
             </motion.div>
