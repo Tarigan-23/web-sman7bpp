@@ -83,8 +83,10 @@ export default function Hero() {
             textShadow: '1.5px 1.5px 0 #000, -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 0px 1.5px 0 #000, 1.5px 0px 0 #000, 0px -1.5px 0 #000, -1.5px 0px 0 #000'
           }}
         >
-          "Terwujudnya Insan Sekolah Yang Religius, Cerdas, Berprestasi,
-          Berwawasan Global, Dan Berbudaya Lingkungan."
+          SMANJU
+        "Religius - Cerdas - Berprestasi"
+          SMANJU
+        "Semakin Maju"
         </p>
 
       </motion.div>

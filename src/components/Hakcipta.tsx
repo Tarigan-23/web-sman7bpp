@@ -78,7 +78,7 @@ export default function Footer(): React.JSX.Element {
 
       {/* Baris Hak Cipta / Copyright di Bagian Paling Bawah */}
       <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/5 text-center text-xs md:text-sm text-gray-400">
-        <p>&copy; {currentYear} SMAN 7 Balikpapan. All rights reserved.</p>
+        <p>&copy; {currentYear}SMAN 7 Balikpapan-yegar tarigan. All rights reserved.</p>
       </div>
 
     </footer>

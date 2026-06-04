@@ -42,67 +42,69 @@ export default function GuruPage() {
   ]
 
   const guru: PersonelItem[] = [
-    { nama: "Drs. Ahmad Fauzi", jabatan: "Matematika", foto: "/gr7.webp" },
-    { nama: "Siti Rahmawati, S.Pd", jabatan: "Bahasa Indonesia", foto: "/gr6.webp" },
-    { nama: "Budi Santoso, S.Kom", jabatan: "Informatika", foto: "/gr5.webp" },
-    { nama: "Nur Aini, S.Pd", jabatan: "Bahasa Inggris", foto: "/gr4.webp" },
-    { nama: "Andi Saputra, S.Pd", jabatan: "Fisika", foto: "/gr5.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr7.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr8.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr9.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr10.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr11.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr12.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr13.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr14.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr15.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr16.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr17.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr18.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr19.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr20.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr21.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr22.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr23.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr24.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr25.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr26.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr27.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr28.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr29.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr30.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr31.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr32.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr33.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr34.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr35.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr36.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr37.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr38.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr39.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr40.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr41.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr42.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr43.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr44.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr45.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr46.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr47.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr48.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr49.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr50.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr51.webp" },
-    { nama: "Dewi Lestari, S.Pd", jabatan: "Kimia", foto: "/gr52.webp" },
-  ]
+    { nama: "Dra. Tri Astuti", jabatan: "Guru Matematika", foto: "/gr7.webp" },
+    { nama: "Hj. Nurlaila, S.Pd", jabatan: "Guru Ekonomi", foto: "/gr13.webp" },
+    { nama: "Dra. Wahidah, M.Pd.", jabatan: "Guru Fisika", foto: "/gr16.webp" },
+    { nama: "Eka Januardi, S.Pd", jabatan: "Guru PJOK", foto: "/gr53.webp" },
+    { nama: "Drs. Hasan, M. Pd. I", jabatan: "Guru PAI", foto: "/gr21.webp" },
+    { nama: "Muhammad Idris, S.Pd.", jabatan: "Guru Kimia", foto: "/gr45.webp" },
+    { nama: "Megaria Tamba, S.Pd.", jabatan: "Guru BHS Jerman", foto: "/gr6.webp" },
+    { nama: "Dra. Sri Rahayu R.", jabatan: "Guru BHS Indonesia", foto: "/gr8.webp" },
+    { nama: "Dra. Rohani", jabatan: "Guru Sejarah", foto: "/gr23.webp" },
+    { nama: "Drs. Amri, M.Pd.", jabatan: "Guru Fisika", foto: "/gr17.webp" },
+    { nama: "Ida Sularkoni, S.Pd", jabatan: "Guru matematika", foto: "/gr19.webp" },
+    { nama: "Amirudin Siwasiwan, S. Pd.", jabatan: "Guru Geografi", foto: "/gr20.webp" },
+    { nama: "Drs. Suleman Pasudi", jabatan: "Guru BHS Inggris", foto: "/gr5.webp" },
+    { nama: "Hj. Rita Ariyani, S.Pd", jabatan: "Guru PKN", foto: "/gr9.webp" },
+    { nama: "Petrus Pasiakan, S. Pd.", jabatan: "Guru matematika", foto: "/gr12.webp" },
+    { nama: "Lulik Ariyani, M.Pd", jabatan: "Guru Kimia", foto: "/gr24.webp" },
+    { nama: "Murti, S.Pd", jabatan: "Guru Ekonomi", foto: "/gr.webp" },
+    { nama: "Suyanto, S.Pd", jabatan: "Guru Geografi", foto: "/gr4.webp" },
+    { nama: "Ayi Solihin, M.Pd.", jabatan: "Guru PAI", foto: "/gr28.webp" },
+    { nama: "Tri Wahyuni, S.Pd", jabatan: "Guru Ekonomi", foto: "/gr25.webp" },
+    { nama: "Yudho Prasetyo, S.Pd", jabatan: "Guru PJOK", foto: "/gr32.webp" },
+    { nama: "Heni Fatmawati, S. Pd.", jabatan: "Guru BK", foto: "/gr49.webp" },
+    { nama: "Andi Fadly Amdan, 5. Pd.", jabatan: "Guru Seni Budaya", foto: "/gr54.webp" },
+    { nama: "Setian Adi Nugroho, S. Kom.", jabatan: "Guru TIK", foto: "/gr3.webp" },
+    { nama: "Sunarti, S.Pd.", jabatan: "Guru BHS Indonesia", foto: "/gr7.webp" },
+    { nama: "Sultan, S. Sos", jabatan: "Guru Sosiologi", foto: "/gr33.webp" },
+    { nama: "Dasril Hidayat, S. Kom.", jabatan: "Guru TIK", foto: "/gr44.webp" },
+    { nama: "Hj. Murdiana, S.Pd.", jabatan: "Guru Prakarya/Ekonomi", foto: "/gr.webp" },
+    { nama: "Sri Yunita, S.Pd.", jabatan: "Guru Prakarya/Biologi", foto: "/gr10.webp" },
+    { nama: "Tri Nur Janah Kusumaningrum,", jabatan: "Guru Antropologi", foto: "/gr42.webp" },
+    { nama: "Aji Utama, S. Pd.", jabatan: "", foto: "/gr18.webp" },
+    { nama: "Arfah, S.Pd", jabatan: "Guru Sosiologi", foto: "/gr43.webp" },
+    { nama: "Darni, S. Pd.", jabatan: "Guru BK", foto: "/gr38.webp" },
+    { nama: "Heriansyah, S. Pd.", jabatan: "Guru Sejarah", foto: "/gr14.webp" },
+    { nama: "Liliyanda Megawati, S.Pd", jabatan: "Guru BK", foto: "/gr31.webp" },
+    { nama: "Rizka Furqany, M.Pd", jabatan: "Guru matematika", foto: "/gr30.webp" },
+    { nama: "Ratna Hastati, S. Pd.", jabatan: "Guru Bhs ingris", foto: "/gr.webp" },
+    { nama: "Sukrillah, S. Pd. I", jabatan: "Guru PAI", foto: "/gr27.webp" },
+    { nama: "Dame Lasniroha Sitorus, S. Th.", jabatan: "Guru PAK", foto: "/gr35.webp" },
+    { nama: "Marpuah, S. Pd.", jabatan: "Guru BHS Indonesia", foto: "/gr47.webp" },
+    { nama: "Elok Setyowati, S. Pd.", jabatan: "Guru TIK", foto: "/gr46.webp" },
+    { nama: "Sella Lipiantanna, S. Pd.", jabatan: "Guru matematika", foto: "/gr50.webp" },
+    { nama: "Juni Alvionita Nainggolan, S.Psi", jabatan: "Guru BK", foto: "/gr34.webp" },
+    { nama: "Ikka Desy Fatmawaty, S. Pd", jabatan: "Guru Biologi", foto: "/gr37.webp" },
+    { nama: "Nirwana, S. Pd.", jabatan: "Guru Seni Budaya", foto: "/gr.webp" },
+    { nama: "Roslindah, S. Pd.", jabatan: "Guru Sosiologi", foto: "/gr51.webp" },
+    { nama: "Eka Normawati, S. Pd", jabatan: "Guru Kimia", foto: "/gr48.webp" },
+    { nama: "Sri Narti, S. Pd.", jabatan: "Guru matematika", foto: "/gr52.webp" },
+    { nama: "Novita Susanti, S.Pd", jabatan: "Guru Fisika", foto: "/gr1.webp" },
+    { nama: "Delis Miftahul Janah, S.Pd", jabatan: "Guru PKN", foto: "/gr29.webp" },
+    { nama: "Nova Agustina, S.Pd", jabatan: "Guru BHS Indonesia", foto: "/gr26.webp" },
+    { nama: "Rodatul Jannah, S. Pd", jabatan: "Guru BHS Inggris", foto: "/gr2.webp" },
+    { nama: "Anisa Ulfa, S. Pd", jabatan: "Guru PKN", foto: "/gr11.webp" },
+    { nama: "Dita Wardhany, S.Pd", jabatan: "Guru BHS Inggris", foto: "/gr39.webp" },
+      ]
 
   const staf: PersonelItem[] = [
-    { nama: "Mudhofir", jabatan: "Staf Tata Usaha", foto: "/gr22.webp" },
-    { nama: "Sudawati", jabatan: "Staf Tata Usaha", foto: "/gr40.webp" },
-    { nama: "Mirnawati", jabatan: "Staf Tata Usaha", foto: "/gr36.webp" },
     { nama: "Retno Ayu Lestari", jabatan: "Staf Tata Usaha", foto: "/gr41.webp" },
-    { nama: "Anang Ariyanto", jabatan: "Staf Tata Usaha", foto: "/gr.webp" },
-    
-    
+    { nama: "Umrail", jabatan: "Bendehara", foto: "/gr.webp" },
+    { nama: "Mirnawati", jabatan: "Staf Tata Usaha", foto: "/gr36.webp" },
+    { nama: "Mudhofir", jabatan: "Staf Tata Usaha", foto: "/gr22.webp" },
+    { nama: "Sudawati", jabatan: "Staf Tata Usaha", foto: "/gr40.webp" },   
+    { nama: "Anang Aryanto", jabatan: "Staf Tata Usaha", foto: "/gr.webp" },
   ]
 
   const keamanan: PersonelItem[] = [
@@ -111,9 +113,9 @@ export default function GuruPage() {
     { nama: "Eko Supriyono", jabatan: "Satpam", foto: "/st9.webp" },
     { nama: "Surya Pranata Gama", jabatan: "Satpam", foto: "/st7.webp" },
     { nama: "Suwisno", jabatan: "Kebersihan", foto: "/st5.webp" },
-    { nama: "Meria", jabatan: "Kebersihan", foto: "/st2.webp" },
+    { nama: "Meriya", jabatan: "Kebersihan", foto: "/st2.webp" },
     { nama: "Muari", jabatan: "Kebersihan", foto: "/st3.webp" },
-    { nama: "Ika Jadiati", jabatan: "Kebersihan", foto: "/st1.webp" },
+    { nama: "Ika Jadiyati", jabatan: "Kebersihan", foto: "/st1.webp" },
     { nama: "Sonhaji", jabatan: "Kebersihan", foto: "/st4.webp" },
   ]
 
@@ -146,11 +148,8 @@ export default function GuruPage() {
           <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.2 }}
-            className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-4 flex flex-col items-center border border-white/10 max-w-xs w-full"
-          >
-            <div className="text-center mb-3 bg-blue-500/20 text-blue-300 font-bold px-3 py-1 rounded-full text-xs tracking-wide uppercase border border-blue-400/20">
-              Pimpinan Tertinggi
-            </div>
+            className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-4 flex flex-col items-center border border-white/10 max-w-xs w-full">
+
             {/* MODIFIKASI: Tinggi foto dipotong jadi h-[260px] supaya proporsional */}
             <div className="relative w-full h-[260px] bg-black/20 rounded-xl overflow-hidden shadow-inner">
               <img
@@ -174,7 +173,7 @@ export default function GuruPage() {
         {/* ================= SECTION 0B: WAKIL KEPALA SEKOLAH ================= */}
         <div className="mb-12 border-b border-white/10 pb-4">
           <h2 className="text-3xl font-bold text-white flex items-center gap-2">
-            <span className="text-blue-400">#</span> Wakil Kepala Sekolah
+            <span className="text-blue-400"></span> Wakil Kepala Sekolah
           </h2>
         </div>
 
@@ -207,11 +206,12 @@ export default function GuruPage() {
 
 
         {/* ================= SECTION 1: DAFTAR GURU ================= */}
-        <div className="mb-12 border-b border-white/10 pb-4">
-          <h2 className="text-3xl font-bold text-white flex items-center gap-2">
-            <span className="text-blue-400">#</span> Daftar Guru
+        <div className="mt-24 mb-12 border-b border-white/10 pt-6 pb-4 block relative flex flex-col items-center justify-center text-center">
+          <h2 className="text-3xl font-bold text-blue-500 flex items-center justify-center gap-2">
+            <span className="text-amber-400"></span> Dewan Guru
           </h2>
         </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-2 relative mb-24">
           {guru.map((item, index) => (
@@ -242,11 +242,12 @@ export default function GuruPage() {
 
 
         {/* ================= SECTION 2: DAFTAR STAF ================= */}
-        <div className="mt-24 mb-12 border-b border-white/10 pt-6 pb-4 block relative">
-          <h2 className="text-3xl font-bold text-white flex items-center gap-2">
-            <span className="text-blue-400">#</span> Staf Tata Usaha
+        <div className="mt-24 mb-12 border-b border-white/10 pt-6 pb-4 block relative flex flex-col items-center justify-center text-center">
+          <h2 className="text-3xl font-bold text-blue-600 flex items-center justify-center gap-2">
+            <span className="text-amber-400"></span> Staf Tata Usaha
           </h2>
         </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-2 relative mb-24">
           {staf.map((item, index) => (
@@ -277,9 +278,9 @@ export default function GuruPage() {
 
 
         {/* ================= SECTION 3: TIM KEAMANAN ================= */}
-        <div className="mt-24 mb-12 border-b border-white/10 pt-6 pb-4 block relative">
-          <h2 className="text-3xl font-bold text-white flex items-center gap-2">
-            <span className="text-amber-400">#</span> Staf Keamanan & Kebersihan
+        <div className="mt-24 mb-12 border-b border-white/10 pt-6 pb-4 block relative flex flex-col items-center justify-center text-center">
+          <h2 className="text-3xl font-bold text-blue-600 flex items-center justify-center gap-2">
+            <span className="text-amber-400"></span> Staf Keamanan & Kebersihan
           </h2>
         </div>
 
