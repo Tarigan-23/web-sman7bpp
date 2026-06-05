@@ -28,8 +28,9 @@ export default function AlumniPage() {
 
   // 2. Data Distribusi Kampus PTN
   const distribusiPTN: UniversitasItem[] = [
-    { nama: "Universitas Gadjah Mada", lokasi: "Yogyakarta", jumlah: 11, persentase: 100 },
-    { nama: "Universitas Diponegoro", lokasi: "Semarang", jumlah: 3, persentase: 27 },
+    { nama: "Institut Teknologi Kalimantan", lokasi: "Balikpapan", jumlah: 11, persentase: 100 },
+    { nama: "Universitas Balikpapan", lokasi: "Balikpapan", jumlah: 3, persentase: 27 },
+    { nama: "Universitas Mulawarman", lokasi: "Samarinda", jumlah: 3, persentase: 27 },
     { nama: "Universitas Negeri Surabaya", lokasi: "Surabaya", jumlah: 3, persentase: 27 },
     { nama: "Institut Pertanian Bogor", lokasi: "Bogor", jumlah: 3, persentase: 27 },
     { nama: "Universitas Negeri Malang", lokasi: "Malang", jumlah: 1, persentase: 9 },

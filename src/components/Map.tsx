@@ -9,7 +9,7 @@ export default function Map() {
         <div className="text-center mb-8 md:mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Lokasi Sekolah</h2>
           <p className="text-slate-400 text-sm md:text-base max-w-2xl mx-auto">
-            Maju Bersama, Hebat Semua. Temukan arah menuju SMA Negeri 7 Balikpapan.
+            Temukan Lokasi SMA Negeri 7 Balikpapan
           </p>
         </div>
 

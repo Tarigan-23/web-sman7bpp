@@ -72,7 +72,7 @@ export default function GuruPage() {
     { nama: "Hj. Murdiana, S.Pd.", jabatan: "Guru Prakarya/Ekonomi", foto: "/gr.webp" },
     { nama: "Sri Yunita, S.Pd.", jabatan: "Guru Prakarya/Biologi", foto: "/gr10.webp" },
     { nama: "Tri Nur Janah Kusumaningrum,", jabatan: "Guru Antropologi", foto: "/gr42.webp" },
-    { nama: "Aji Utama, S. Pd.", jabatan: "", foto: "/gr18.webp" },
+    { nama: "Aji Utama, S. Pd.", jabatan: "Guru PJOK", foto: "/gr18.webp" },
     { nama: "Arfah, S.Pd", jabatan: "Guru Sosiologi", foto: "/gr43.webp" },
     { nama: "Darni, S. Pd.", jabatan: "Guru BK", foto: "/gr38.webp" },
     { nama: "Heriansyah, S. Pd.", jabatan: "Guru Sejarah", foto: "/gr14.webp" },
@@ -96,7 +96,7 @@ export default function GuruPage() {
     { nama: "Rodatul Jannah, S. Pd", jabatan: "Guru BHS Inggris", foto: "/gr2.webp" },
     { nama: "Anisa Ulfa, S. Pd", jabatan: "Guru PKN", foto: "/gr11.webp" },
     { nama: "Dita Wardhany, S.Pd", jabatan: "Guru BHS Inggris", foto: "/gr39.webp" },
-      ]
+  ]
 
   const staf: PersonelItem[] = [
     { nama: "Retno Ayu Lestari", jabatan: "Staf Tata Usaha", foto: "/gr41.webp" },
@@ -121,7 +121,7 @@ export default function GuruPage() {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-fixed py-10 px-6 relative w-full"
+      className="min-h-screen bg-cover bg-center bg-fixed py-6 md:py-10 px-3 md:px-6 relative w-full"
       style={{
         backgroundImage: "url('/background.jpg')",
       }}
@@ -130,39 +130,37 @@ export default function GuruPage() {
       <div className="absolute inset-0 bg-black/60 z-0"></div>
 
       {/* Konten Utama */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto block pt-10">
+      <div className="relative z-10 w-full max-w-7xl mx-auto block pt-6 md:pt-10">
         
-        {/* Judul Halaman */}
-        <div className="text-center mb-16 block relative">
-          <h1 className="text-5xl md:text-6xl font-bold text-blue-400 tracking-tight leading-normal">
+        {/* Judul Halaman - Responsif */}
+        <div className="text-center mb-12 md:mb-16 block relative">
+          <h1 className="text-3xl md:text-6xl font-bold text-blue-400 tracking-tight leading-snug md:leading-normal">
             Profil Guru & Staf 
           </h1>
-          <p className="text-gray-200 text-2xl mt-4 font-medium">
+          <p className="text-gray-200 text-lg md:text-2xl mt-2 md:mt-4 font-medium">
             SMA Negeri 7 Balikpapan
           </p>
         </div>
 
         {/* ================= SECTION 0A: KEPALA SEKOLAH ================= */}
-        {/* MODIFIKASI: Mengubah ukuran max-w-xs agar lebar kartu sejajar sempurna dengan Wakasek */}
-        <div className="flex justify-center mb-20 relative block">
+        <div className="flex justify-center mb-16 md:mb-20 relative block px-4">
           <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.2 }}
-            className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-4 flex flex-col items-center border border-white/10 max-w-xs w-full">
-
-            {/* MODIFIKASI: Tinggi foto dipotong jadi h-[260px] supaya proporsional */}
-            <div className="relative w-full h-[260px] bg-black/20 rounded-xl overflow-hidden shadow-inner">
+            className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-3 md:p-4 flex flex-col items-center border border-white/10 max-w-[220px] md:max-w-xs w-full"
+          >
+            <div className="relative w-full h-[180px] md:h-[260px] bg-black/20 rounded-xl overflow-hidden shadow-inner">
               <img
                 src={kepalaSekolah.foto}
                 alt={kepalaSekolah.nama}
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            <div className="mt-4 text-center">
-              <h2 className="text-xl font-bold text-white leading-snug">
+            <div className="mt-3 md:mt-4 text-center">
+              <h2 className="text-sm md:text-xl font-bold text-white leading-snug line-clamp-2">
                 {kepalaSekolah.nama}
               </h2>
-              <p className="text-blue-400 font-semibold text-sm mt-1 uppercase tracking-wider">
+              <p className="text-blue-400 font-semibold text-[10px] md:text-sm mt-1 uppercase tracking-wider">
                 {kepalaSekolah.jabatan}
               </p>
             </div>
@@ -171,32 +169,33 @@ export default function GuruPage() {
 
 
         {/* ================= SECTION 0B: WAKIL KEPALA SEKOLAH ================= */}
-        <div className="mb-12 border-b border-white/10 pb-4">
-          <h2 className="text-3xl font-bold text-white flex items-center gap-2">
-            <span className="text-blue-400"></span> Wakil Kepala Sekolah
+        <div className="mt-16 md:mt-24 mb-8 md:mb-12 border-b border-white/10 pt-4 pb-3 block relative flex flex-col items-center justify-center text-center">
+          <h2 className="text-xl md:text-3xl font-bold text-blue-400 flex items-center justify-center gap-2">
+            Wakil Kepala Sekolah
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full px-2 relative mb-24">
+        {/* Menggunakan grid-cols-3 di HP dan md:grid-cols-4 di Desktop */}
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-6 w-full relative mb-16 md:mb-24">
           {wakasek.map((item, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.2 }}
-              className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-4 flex flex-col justify-between h-full border border-white/10"
+              className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl shadow-xl p-2 md:p-4 flex flex-col justify-between h-full border border-white/10"
             >
-              <div className="relative w-full h-[240px] bg-black/20 rounded-xl overflow-hidden">
+              <div className="relative w-full h-[140px] md:h-[240px] bg-black/20 rounded-lg md:rounded-xl overflow-hidden">
                 <img
                   src={item.foto}
                   alt={item.nama}
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="mt-4 text-center">
-                <h3 className="text-lg font-bold text-white leading-snug line-clamp-2 min-h-[3.5rem] flex items-center justify-center">
+              <div className="mt-2 md:mt-4 text-center flex-grow flex flex-col justify-between">
+                <h3 className="text-[11px] md:text-lg font-bold text-white leading-snug line-clamp-2 min-h-[2.5rem] md:min-h-[3.5rem] flex items-center justify-center">
                   {item.nama}
                 </h3>
-                <p className="text-cyan-400 font-semibold text-xs mt-1 uppercase tracking-wider">
+                <p className="text-cyan-400 font-semibold text-[9px] md:text-xs mt-1 uppercase tracking-wider">
                   {item.jabatan}
                 </p>
               </div>
@@ -206,33 +205,34 @@ export default function GuruPage() {
 
 
         {/* ================= SECTION 1: DAFTAR GURU ================= */}
-        <div className="mt-24 mb-12 border-b border-white/10 pt-6 pb-4 block relative flex flex-col items-center justify-center text-center">
-          <h2 className="text-3xl font-bold text-blue-500 flex items-center justify-center gap-2">
-            <span className="text-amber-400"></span> Dewan Guru
+        <div className="mt-16 md:mt-24 mb-8 md:mb-12 border-b border-white/10 pt-4 pb-3 block relative flex flex-col items-center justify-center text-center">
+          <h2 className="text-xl md:text-3xl font-bold text-blue-400 flex items-center justify-center gap-2">
+            Dewan Guru
           </h2>
         </div>
 
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-2 relative mb-24">
+        {/* Menggunakan grid-cols-3 di HP dan md:grid-cols-4 di Desktop */}
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-6 w-full relative mb-16 md:mb-24">
           {guru.map((item, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.2 }}
-              className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-4 flex flex-col justify-between h-full border border-white/10"
+              className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl shadow-xl p-2 md:p-4 flex flex-col justify-between h-full border border-white/10"
             >
-              <div className="relative w-full h-[280px] bg-black/20 rounded-xl overflow-hidden">
+              <div className="relative w-full h-[140px] md:h-[280px] bg-black/20 rounded-lg md:rounded-xl overflow-hidden">
                 <img
                   src={item.foto}
                   alt={item.nama}
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="mt-4 text-center">
-                <h3 className="text-xl font-bold text-white leading-snug line-clamp-1">
+              <div className="mt-2 md:mt-4 text-center">
+                {/* Di HP teks diperkecil dan dikunci agar tidak merusak tinggi kotak */}
+                <h3 className="text-[11px] md:text-lg font-bold text-white leading-tight md:leading-snug line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] flex items-center justify-center">
                   {item.nama}
                 </h3>
-                <p className="text-blue-300 font-semibold text-sm mt-1">
+                <p className="text-blue-300 font-medium text-[9px] md:text-sm mt-1 line-clamp-1">
                   {item.jabatan}
                 </p>
               </div>
@@ -242,33 +242,33 @@ export default function GuruPage() {
 
 
         {/* ================= SECTION 2: DAFTAR STAF ================= */}
-        <div className="mt-24 mb-12 border-b border-white/10 pt-6 pb-4 block relative flex flex-col items-center justify-center text-center">
-          <h2 className="text-3xl font-bold text-blue-600 flex items-center justify-center gap-2">
-            <span className="text-amber-400"></span> Staf Tata Usaha
+        <div className="mt-16 md:mt-24 mb-8 md:mb-12 border-b border-white/10 pt-4 pb-3 block relative flex flex-col items-center justify-center text-center">
+          <h2 className="text-xl md:text-3xl font-bold text-blue-400 flex items-center justify-center gap-2">
+            Staf Tata Usaha
           </h2>
         </div>
 
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-2 relative mb-24">
+        {/* Menggunakan grid-cols-3 di HP dan md:grid-cols-4 di Desktop */}
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-6 w-full relative mb-16 md:mb-24">
           {staf.map((item, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.2 }}
-              className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-4 flex flex-col justify-between h-full border border-white/10"
+              className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl shadow-xl p-2 md:p-4 flex flex-col justify-between h-full border border-white/10"
             >
-              <div className="relative w-full h-[280px] bg-black/20 rounded-xl overflow-hidden">
+              <div className="relative w-full h-[140px] md:h-[280px] bg-black/20 rounded-lg md:rounded-xl overflow-hidden">
                 <img
                   src={item.foto}
                   alt={item.nama}
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="mt-4 text-center">
-                <h3 className="text-xl font-bold text-white leading-snug line-clamp-1">
+              <div className="mt-2 md:mt-4 text-center">
+                <h3 className="text-[11px] md:text-lg font-bold text-white leading-tight md:leading-snug line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] flex items-center justify-center">
                   {item.nama}
                 </h3>
-                <p className="text-emerald-400 font-semibold text-sm mt-1">
+                <p className="text-emerald-400 font-medium text-[9px] md:text-sm mt-1 line-clamp-1">
                   {item.jabatan}
                 </p>
               </div>
@@ -278,32 +278,33 @@ export default function GuruPage() {
 
 
         {/* ================= SECTION 3: TIM KEAMANAN ================= */}
-        <div className="mt-24 mb-12 border-b border-white/10 pt-6 pb-4 block relative flex flex-col items-center justify-center text-center">
-          <h2 className="text-3xl font-bold text-blue-600 flex items-center justify-center gap-2">
-            <span className="text-amber-400"></span> Staf Keamanan & Kebersihan
+        <div className="mt-16 md:mt-24 mb-8 md:mb-12 border-b border-white/10 pt-4 pb-3 block relative flex flex-col items-center justify-center text-center">
+          <h2 className="text-xl md:text-3xl font-bold text-blue-400 flex items-center justify-center gap-2">
+            Staf Keamanan & Kebersihan
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-2 relative">
+        {/* Menggunakan grid-cols-3 di HP dan md:grid-cols-4 di Desktop */}
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-6 w-full relative">
           {keamanan.map((item, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.2 }}
-              className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-4 flex flex-col justify-between h-full border border-white/10"
+              className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl shadow-xl p-2 md:p-4 flex flex-col justify-between h-full border border-white/10"
             >
-              <div className="relative w-full h-[280px] bg-black/20 rounded-xl overflow-hidden">
+              <div className="relative w-full h-[140px] md:h-[280px] bg-black/20 rounded-lg md:rounded-xl overflow-hidden">
                 <img
                   src={item.foto}
                   alt={item.nama}
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="mt-4 text-center">
-                <h3 className="text-xl font-bold text-white leading-snug line-clamp-1">
+              <div className="mt-2 md:mt-4 text-center">
+                <h3 className="text-[11px] md:text-lg font-bold text-white leading-tight md:leading-snug line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] flex items-center justify-center">
                   {item.nama}
                 </h3>
-                <p className="text-amber-400 font-semibold text-sm mt-1">
+                <p className="text-amber-400 font-medium text-[9px] md:text-sm mt-1 line-clamp-1">
                   {item.jabatan}
                 </p>
               </div>

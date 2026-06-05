@@ -18,8 +18,6 @@ export default function Navbar() {
     { name: "Kesiswaan", href: "/Kesiswaan" },
     { name: "Sarpras", href: "/Sarpras" },
     { name: "Humas", href: "/Humas" },
-    { name: "Ekskul", href: "/ekskul" },
-    { name: "Alumni", href: "/alumni" },
     { name: "Galeri", href: "/galeri" },
     { name: "SPMB", href: "/SPMB" },
     

@@ -1,5 +1,645 @@
 export const berita = [
   {
+    id: 140,
+    judul: "Selamat atas keberhasilan Bapak/Ibu telah menuntaskan rangkaian program AFS Global STEM Educators",
+    tanggal: "4 Juni 2026",
+    gambar: "/149.png",
+    deskripsi: "Selamat atas keberhasilan Bapak/Ibu telah menuntaskan rangkaian program AFS Global STEM Educators, yang berlangsung dari 17 April hingga 3 Juni 2026. Dedikasi dan komitmen yang telah Bapak/Ibu tunjukkan menjadi bagian penting dalam upaya bersama membangun pendidikan yang lebih inklusif, inovatif, dan berdampak.",
+    sumberUrl: "https://www.instagram.com/p/DZHzl-QBajn/"
+  }, 
+  {
+    id: 139,
+    judul: "upacara peringatan Hari Lahir Pancasila dengan penuh khidmat dan tertib.",
+    tanggal: "3 Juni 2026",
+    gambar: "/148.png",
+    deskripsi: "Pada hari Senin, 1 Juni 2020, keluarga besar SMA Negeri 7 Balikpapan yang terdiri atas Bapak/Ibu Guru, staf Tata Usaha, serta peserta didik mengikuti upacara peringatan Hari Lahir Pancasila dengan penuh khidmat dan tertib. Momentum ini menjadi pengingat bagi kita semua akan pentingnya mengamalkan nilai-nilai Pancasila dalam kehidupan sehari-hari. Pancasila bukan hanya dasar negara, tetapi juga pedoman dalam membangun karakter, memperkuat persatuan, serta menumbuhkan sikap toleransi, gotong royong, dan cinta tanah air. Semoga semangat Hari Lahir Pancasila senantiasa menginspirasi seluruh warga SMA Negeri 7 Balikpapan untuk menjadi generasi yang berakhlak mulia, berprestasi, dan berkontribusi bagi bangsa dan negara.",
+    sumberUrl: "https://www.instagram.com/p/DZE5PQdHx-g/?img_index=1"
+  }, 
+  {
+    id: 138,
+    judul: "✨ Pancasila Pemersatu Bangsa, Fondasi Perdamaian Dunia 🏛️",
+    tanggal: "3 Juni 2026",
+    gambar: "/147.png",
+    deskripsi: "Pancasila adalah keajaiban yang mengikat perbedaan kita menjadi Indonesia. Sebagai pedoman hidup, mari bumikan nilai toleransi, gotong royong, dan persatuan ini dalam tindakan nyata sehari-hari. Semoga kita selalu menjadi generasi yang menghidupkan keadilan sosial bagi seluruh rakyat, sekaligus berkontribusi bagi perdamaian dunia. 🌏 Selamat Hari Lahir Pancasila, 1 Juni 2026. 🇮🇩",
+    sumberUrl: "https://www.instagram.com/p/DZEnUA4hvcT/"
+  }, 
+  {
+    id: 137,
+    judul: "SELAMAT & SUKSES 🎉🤩",
+    tanggal: "3 Juni 2026",
+    gambar: "/146.png",
+    deskripsi: "Keluarga Besar SMA Negeri 7 Balikpapan mengucapkan selamat kepada peserta didik yang telah dinyatakan LOLOS Seleksi Penerimaan Mahasiswa Baru Bersama (SIMAMA) tahun 2026 Prestasi ini adalah menjadi bukti kerja keras, semangat belajar dan doa yang tak pernah putus. Semoga langkah dibangku kuliah membawa peserta didik semakin maju dan mengharumkan nama almamater SMA Negeri 7 Balikpapan. Teruslah berkarya, menggali ilmu dan menjadi inspirasi! 💙✨",
+    sumberUrl: "https://www.instagram.com/p/DZEjRwNnwLk/?img_index=1"
+  }, 
+  {
+    id: 136,
+    judul: "SELAMAT & SUKSES 🎉🤩",
+    tanggal: "3 Juni 2026",
+    gambar: "/145.png",
+    deskripsi: "Keluarga Besar SMA Negeri 7 Balikpapan mengucapkan selamat kepada peserta didik yang telah dinyatakan LOLOS Seleksi Nasional Berdasarkan Tes (SNBT) tahun 2026 Prestasi ini adalah menjadi bukti kerja keras, semangat belajar dan doa yang tak pernah putus. Semoga langkah dibangku kuliah membawa peserta didik semakin maju dan mengharumkan nama almamater SMA Negeri 7 Balikpapan. Teruslah berkarya, menggali ilmu dan menjadi inspirasi! 💙✨",
+    sumberUrl: "https://www.instagram.com/p/DZEidfLH_Gb/?img_index=1"
+  }, 
+  {
+    id: 135,
+    judul: "SELAMAT & SUKSES 🎉🤩",
+    tanggal: "3 Juni 2026",
+    gambar: "/144.png",
+    deskripsi: "Keluarga Besar SMA Negeri 7 Balikpapan mengucapkan selamat kepada peserta didik yang telah dinyatakan LOLOS Seleksi Nasional Berdasarkan Tes (SNBT) tahun 2026 Prestasi ini adalah menjadi bukti kerja keras, semangat belajar dan doa yang tak pernah putus. Semoga langkah dibangku kuliah membawa peserta didik semakin maju dan mengharumkan nama almamater SMA Negeri 7 Balikpapan. Teruslah berkarya, menggali ilmu dan menjadi inspirasi! 💙✨",
+    sumberUrl: "https://www.instagram.com/p/DZERphFHzbC/?img_index=1"
+  }, 
+  {
+    id: 134,
+    judul: "Dirgahayu Pancasila, 01 Juni 2026",
+    tanggal: "1 Juni 2026",
+    gambar: "/143.png",
+    deskripsi: "Keberagaman bukan penghalang, namun kekuatan. Di bawah naungan Garuda, anak bangsa dari berbagai adat bersatu dalam nilai Pancasila: saling menghargai, gotong royong dan menjaga persatuan. Mari jadikan Pancasila sebagai kompas dalam setiap langkah untuk Indonesia yang lebih kuat. Selamat Hari Lahir Pancasila! Jayalah Indonesiaku! Merdeka! 🤩💪🏻",
+    sumberUrl: "https://www.instagram.com/p/DZBX3KbzDEe/"
+  }, 
+  {
+    id: 133,
+    judul: "SMA Negeri 7 Balikpapan telah melaksanakan ibadah kurban",
+    tanggal: "31 Mei 2026",
+    gambar: "/142.png",
+    deskripsi: "Alhamdulillah, pada hari Kamis, 28 Mei 2020, keluarga besar SMA Negeri 7 Balikpapan telah melaksanakan ibadah kurban dengan penuh khidmat dan rasa syukur kepada Allah SWT. Sebanyak lima ekor sapi yang merupakan amanah dari Bapak/Ibu Guru serta siswa-siswi SMA Negeri 7 Balikpapan telah disembelih sebagai wujud ketakwaan, keikhlasan, dan kepedulian sosial. Momentum Iduladha ini menjadi pengingat akan keteladanan Nabi Ibrahim AS dan Nabi Ismail AS dalam ketaatan serta pengorbanan kepada Allah SWT. Semoga setiap hewan kurban yang dipersembahkan menjadi amal jariyah yang diterima oleh Allah SWT, mendatangkan keberkahan bagi para pekurban, serta menumbuhkan nilai-nilai keikhlasan, kebersamaan, dan kepedulian dalam keluarga besar SMA Negeri 7 Balikpapan.Sesungguhnya Allah tidak menerima daging dan darahnya, tetapi Dia menerima ketakwaan dari kamu. (QS. Al-Hajj: 37) Taqabbalallāhu minnā wa minkum. Semoga Allah menerima amal ibadah kita semua. Aamiin Yaa Rabbal 'Alamiin.",
+    sumberUrl: "https://www.instagram.com/p/DY9D3TLhvvI/"
+  }, 
+  {
+    id: 132,
+    judul: "Seminar Kekerasan Seksual & Kesetaraan Gender yang dilaksanakan pada Senin, 25 Mei 2026.",
+    tanggal: "26 Mei 2026",
+    gambar: "/141.png",
+    deskripsi: "SMA Negeri 7 Balikpapan kembali menunjukkan komitmennya dalam menciptakan lingkungan sekolah yang aman, nyaman dan setara melalui kegiatan Seminar Kekerasan Seksual & Kesetaraan Gender yang dilaksanakan pada Senin, 25 Mei 2026. Seminar ini menghadirkan Ibu Ellistriani, M.Psi seorang Psikolog dari Puspaga sebagai narasumber. Beliau berbagi wawasan dan edukasi penting terkait pencegahan kekerasan seksual, pemahaman tentang kesetaraan gender dan bagaimana setiap warga sekolah dapat berperan aktif dalam menciptakan budaya saling menghargai dan saling menguatkan. Melalui seminar ini, diharapkan seluruh warga SMA Negeri 7 Balikpapan semakin memahami pentingnya menjaga batasan, menghormati perbedaan dan tidak ragu melapor jika melihat atau mengalami tindakan kekerasan. Karena sekolah yang aman dan setara adalah hak setiap peserta didik. 💜🤩",
+    sumberUrl: "https://www.instagram.com/p/DYym4DdnxbJ/?img_index=4"
+  }, 
+  {
+    id: 131,
+    judul: "🌊🚀 WATER ROCKET COMPETITION SMA NEGERI 7 BALIKPAPAN 🚀🌊",
+    tanggal: "25 Mei 2026",
+    gambar: "/140.png",
+    deskripsi: "SMA Negeri 7 Balikpapan kembali menghadirkan kegiatan seru dan edukatif melalui Water Rocket Competition! Kompetisi ini dilaksanakan selama 5 hari, mulai dari hari Senin s/d Jumat (4 s/d 8Mei 2026) pukul 07.00–14.00 WITA di Lapangan SMA Negeri 7 Balikpapan. Kegiatan ini dibimbing langsung oleh Ibu Novita Susanti, S.Pd., Gr dan terbuka untuk seluruh peserta didik SMA Negeri 7 Balikpapan. Water Rocket Competition dirancang untuk mengembangkan kreativitas, kerja sama tim dan pemahaman dasar tentang sains serta teknologi melalui pembuatan dan peluncuran roket air. Diharapkan melalui kegiatan ini, peserta didik mampu meningkatkan minat terhadap sains, menumbuhkan sportivitas dan memperoleh pengalaman belajar yang menyenangkan yang tak terlupakan. Siapkan tim, rancang roket terbaikmu dan bersiaplah meluncur tinggi! 🤩🚀",
+    sumberUrl: "https://www.instagram.com/p/DYwyl4zhoa2/"
+  }, 
+  {
+    id: 130,
+    judul: "Prestasi gemilang kembali ditorehkan oleh peserta didik SMA Negeri 7 Balikpapan",
+    tanggal: "22 Mei 2026",
+    gambar: "/139.png",
+    deskripsi: "Prestasi gemilang kembali ditorehkan oleh peserta didik SMA Negeri 7 Balikpapan diajang O2SN Tingkat Kota. Semangat, kerja keras dan sportivitas yang ditunjukkan membuahkan hasil yang membanggakan! 🤩👏🏻🔥🏆 Prestasi ini menjadi bukti bahwa SMA Negeri 7 Balikpapan terus berkomitmen dalam mengembangkan bakat dan minat peserta didik, tidak hanya dibidang akademik namun juga dibidang non-akademik. Terima kasih kepada seluruh pembina, tenaga pendidik dan keluarga besar SMA Negeri 7 Balikpapan yang selalu dan terus mendukung! Semoga prestasi ini menjadi motivasi untuk terus berprestasi ditingkat selanjutnya! 💪🏻🔥",
+    sumberUrl: "https://www.instagram.com/p/DYoQYCYnxSw/?img_index=4"
+  }, 
+  {
+    id: 129,
+    judul: "Tim Nyscientia dalam ajang KRENOVA 2026 berhasil meraih Juara 2 Tingkat SMA/ SMK/ MA se-Kota Balikpapan",
+    tanggal: "21 Mei 2026",
+    gambar: "/138.png",
+    deskripsi: "SMA Negeri 7 Balikpapan dengan bangga mengapresiasi prestasi Tim Nyscientia dalam ajang KRENOVA 2026 yang berhasil meraih Juara 2 Tingkat SMA/ SMK/ MA se-Kota Balikpapan. Kegiatan KRENOVA ini bertujuan untuk mendorong terbentuknya ekosistem inovasi dibidang ilmu pengetahuan dan teknologi guna meningkatkan daya saing serta kesejahteraan masyarakat Kota Balikpapan. Melalui ajang ini, peserta didik diajak untuk berpikir kreatif, memecahkan masalah nyata dan menghasilkan karya yang bermanfaat bagi masyarakat. Harapan dari kegiatan ini adalah lahirnya temuan inovasi teknologi yang kreatif dan inovatif, sehingga dapat mewakili sekolah dan membawa pulang prestasi terbaik. Prestasi Juara 2 yang diraih Tim Nyscientia SMA Negeri 7 Balikpapan menjadi bukti bahwa semangat inovasi dan kerja keras pembina dan peserta didik mampu bersaing di tingkat kota. Teruslah berkarya, berinovasi dan jadilah agen perubahan untuk masa depan yang lebih baik! 💙🤩👏🏻🏆",
+    sumberUrl: "https://www.instagram.com/p/DYmHfcGBAv5/"
+  }, 
+  {
+    id: 128,
+    judul: "Ujian Akhir Semester",
+    tanggal: "20 Mei 2026",
+    gambar: "/137.png",
+    deskripsi: "Senin, 18 Mei 2026 menjadi awal perjuangan dan kesempatan bagi seluruh peserta didik SMA Negeri 7 Balikpapan untuk menunjukkan semangat, kerja keras dan hasil belajar yang telah dipersiapkan dengan sungguh-sungguh. Hadapi sumatif hari ini dengan percaya diri, jujur dan penuh optimisme. Karena setiap usaha tidak akan mengkhianati hasil. Terus melangkah dengan doa dan tekad terbaik, tunjukkan kemampuan, raih prestasi dan jadikan sumatif ini sebagai langkah menuju masa depan yang gemilang. Semangat berjuang, generasi hebat! 💪✨",
+    sumberUrl: "https://www.instagram.com/p/DYjRKOon46X/?img_index=4"
+  }, 
+  {
+    id: 127,
+    judul: "edukatif melalui Seminar Pencegahan dan Penanganan Kekerasan Seksual & Perundungan di Lingkungan Sekolah",
+    tanggal: "20 Mei 2026",
+    gambar: "/136.png",
+    deskripsi: "SMA Negeri 7 Balikpapan kembali menggelar kegiatan edukatif melalui Seminar Pencegahan dan Penanganan Kekerasan Seksual & Perundungan di Lingkungan Sekolah yang dilaksanakan pada 20 Mei 2026. Kegiatan ini bertujuan untuk meningkatkan pemahaman dan kesadaran seluruh warga sekolah tentang pentingnya menciptakan lingkungan belajar yang aman, nyaman dan bebas dari kekerasan serta perundungan. Melalui seminar ini, peserta didik dan tenaga pendidik diajak untuk mengenali bentuk-bentuk kekerasan, memahami dampaknya serta mengetahui langkah-langkah pencegahan dan penanganan yang tepat. SMA Negeri 7 Balikpapan berkomitmen untuk terus menjaga budaya sekolah yang ramah, saling menghargai dan mendukung tumbuh kembang siswa secara positif. Bersama kita wujudkan sekolah yang aman dan nyaman untuk semua! 💙🤩",
+    sumberUrl: "https://www.instagram.com/p/DYjLmRWACCR/?img_index=1"
+  }, 
+  {
+    id: 126,
+    judul: "PEMENANG INOVASI TINGKAT SMA / SMK",
+    tanggal: "20 Mei 2026",
+    gambar: "/135.png",
+    deskripsi: "JUARA 3 : SMA NASIONAL KPS (MYRTARA: INOVASI SHAMPO HERBAL BERBASIS BIOSURFAKTAN ALAMI DAN SINERGI FITOKIMIA RHODOMYRTUS TOMENTOSA, SALVIA ROSMARINUS, SERTA CURCUMA ZANTHORRHIZA SEBAGAI SOLUSI ANTI-ALOPECIA) JUARA 2 : SMA NEGERI 7 BALIKPAPAN (INOVASI STRIP PH BERBASIS EKSTRAK UBI JALAR UNGU (IPOMOEA BATATAS L.) SEBAGAI INDIKATOR KUALITAS AIR TAMBAK DI BALIKPAPAN TIMUR) JUARA 1 : SMA NASIONAL KPS (FIBERGUARD E-STATIC: INOVASI PENYARING MIKROPLASTIK BERBASIS SABUT KELAPA TERAKTIVASI DENGAN MEKANISME ELECTROSTATIC ADSORPTION SEBAGAI UPAYA PERLINDUNGAN EKOSISTEM PERAIRAN)",
+    sumberUrl: "https://www.instagram.com/p/DYi1ej5R-xa/"
+  }, 
+  {
+    id: 125,
+    judul: "Selamat Hari Kebangkitan Nasional",
+    tanggal: "20 Mei 2026",
+    gambar: "/134.png",
+    deskripsi: "Mari jadikan momentum ini sebagai semangat untuk terus bangkit, bergerak maju dan berkarya demi masa depan bangsa. Dari sekolah, kita tumbuhkan generasi yang cerdas, berkarakter dan penuh semangat dalam meraih cita-cita. Bersama kita kuat, bersama kita hebat, untuk Indonesia yang lebih maju.",
+    sumberUrl: "https://www.instagram.com/p/DYilxmSh3IY/"
+  }, 
+  {
+    id: 124,
+    judul: "Tim futsal SMA Negeri 7 Balikpapan berhasil meraih Juara 2 Futsal",
+    tanggal: "17 Mei 2026",
+    gambar: "/133.png",
+    deskripsi: "Kabar membanggakan! Tim futsal SMA Negeri 7 Balikpapan berhasil meraih Juara 2 Futsal dalam event Olimpiade Elektro Poltekba 🤩🏆 Kegiatan yang dilaksanakan dari tanggal 11 s/d 15 Mei 2026 yang berlokasi di Gedung Serbaguna Poltekba ini menjadi bukti bahwa semangat, kerja sama dan skill peserta didik SMA Negeri 7 Balikpapan tidak perlu diragukan lagi! Lomba ini terbuka untuk SMA/ SMK se-Kalimantan Timur dengan tujuan meningkatkan minat dan bakat peserta didik dibidang olahraga futsal. Selamat dan Sukses untuk Tim Futsal SMA Negeri 7 Balikpapan dengan Pembina Bapak Aji Utama, S.Pd., Gr dan warga SMA Negeri 7 Balikpapan! 👏🏻🔥🤩🏆",
+    sumberUrl: "https://www.instagram.com/p/DYcVgliB3im/"
+  }, 
+  {
+    id: 123,
+    judul: "Dies Natalis 2.0 - Rekayasa Keselamatan “Safety Mind Arena”",
+    tanggal: "17 Mei 2026",
+    gambar: "/132.png",
+    deskripsi: "Dalam rangka Dies Natalis 2.0 - Rekayasa Keselamatan “Safety Mind Arena”, kabar membanggakan datang dari Tim PMR SMA Negeri 7 Balikpapan yang berhasil meraih Juara 1 Lomba PPGD (Pertolongan Pertama Gawat Darurat) ITK 🔥🤩 Kegiatan yang dilaksanakan pada tanggal 16 Mei 2026 yang berlokasi di Laboratorium Terpadu Institut Teknologi Kalimantan (ITK) ini menjadi bukti bahwa peserta didik SMA Negeri 7 Balikpapan tidak hanya jago di kelas, namun juga sigap dan terampil dalam Pertolongan Pertama Gawat Darurat. Lomba ini bertujuan untuk meningkatkan pengetahuan, keterampilan dan kesiapsiagaan diri dalam bidang PPGD, keselamatan dan kerja sama tim dalam menghadapi situasi darurat. Dan harapannya setelah mengikuti kegiatan ini, tim PMR SMA Negeri 7 Balikpapan mampu menerapkan ilmu PPGD dalam kehidupan sehari-hari, semakin kompak, tanggap, disiplin dan peduli terhadap keselamatan diri sendiri maupun orang lain. Selamat dan Sukses untuk Tim PMR SMA Negeri 7 Balikpapan dengan Pembina Ibu Dellis Miftahul Janah, S.Pd., Gr dan warga SMA Negeri 7 Balikpapan! 🤩🙌🏻🔥🏆",
+    sumberUrl: "https://www.instagram.com/p/DYbfbHJACYr/?img_index=1"
+  }, 
+  {
+    id: 122,
+    judul: "SMA Negeri 7 Balikpapan berkesempatan hadir di event International Seminar yang diprakarsai oleh SMA Nasional KPS Balikpapan",
+    tanggal: "17 Mei 2026",
+    gambar: "/131.png",
+    deskripsi: "SMA Negeri 7 Balikpapan secara aktif ikut serta dalam berbagai kegiatan internasional sebagai implementasi visi sekolah berwawasan global; dari Timur Balikpapan SMA Negeri 7 Balikpapan berkesempatan hadir di event International Seminar yang diprakarsai oleh SMA Nasional KPS Balikpapan dengan Pembicara dari beberapa negara; SMA Negeri 7 Balikpapan mendapatkan pengalaman yang luar biasa yang dalam hal ini diwakili oleh Guru Bahasa Inggris dan murid-murid yang tergabung dalam English Club.",
+    sumberUrl: "https://www.instagram.com/p/DYbJl-wH1ne/?img_index=1"
+  }, 
+  {
+    id: 121,
+    judul: "SMA Negeri 7 Balikpapan menyelenggarakan Lomba Hari Pendidikan Nasional dengan mengusung semangat Ki Hajar Dewantara",
+    tanggal: "16 Mei 2026",
+    gambar: "/130.png",
+    deskripsi: "Dalam rangka memperingati Hari Pendidikan Nasional yang bertema “Menguatkan Partisipasi Semesta Mewujudkan Pendidikan Bermutu Untuk Semua”, SMA Negeri 7 Balikpapan menyelenggarakan Lomba Hari Pendidikan Nasional dengan mengusung semangat Ki Hajar Dewantara yakni: “Ing Ngarsa Sung Tuladha, Ing Madya Mangun Karsa, Tut Wuri Handayani.” Lomba ini menjadi ajang bagi bapak/ ibu guru dan seluruh peserta didik untuk berkarya, berkreasi dan menunjukkan dedikasi terhadap dunia pendidikan Adapun cabang lomba yang diselenggarakan antara lain: 1. Lomba bagi Siswa (Lomba Paduan Suara Lagu “Rukun Sama Teman” dan Lomba Kebersihan Kelas dan Kerapian) 2. ⁠Lomba bagi Guru Berprestasi (Lomba Portopolio dan Artikel/ Essay dengan Tema “Pembelajaran di Kelas dengan Pendekatan Mendalam”) Melalui berbagai lomba yang diselenggarakan adalah menjadi bukti bahwa pendidikan bukan hanya tentang belajar di kelas namun juga tentang berkarya, berkreasi dan berinovasi.",
+    sumberUrl: "https://www.instagram.com/p/DYZ6F7mhrQB/"
+  }, 
+  {
+    id: 120,
+    judul: "✨ S E N S A S I 🏆",
+    tanggal: "14 Mei 2026",
+    gambar: "/129.png",
+    deskripsi: "Penyerahan hadiah lomba kepada Siswa/i maupun Kelas-Kelas yang telah berpartisipasi dalam rangka peringatan Hari Kartini & Hari Pendidikan Nasional. Semoga semangat ini semakin mempererat rasa kekeluargaan dan sportivitas antar kelas. Menang atau kalah bukanlah masalah, yang utama adalah keberanian untuk mencoba dan dedikasi untuk terus belajar. Sampai Jumpa di Event Berikutnya! 🤩👋🏻",
+    sumberUrl: "https://www.instagram.com/p/DYT31h4uSoj/"
+  }, 
+  {
+    id: 119,
+    judul: "Upacara Bendera rutin untuk mengawali hari Senin, dengan Pembina Upacara dari jajaran Polda Kalimantan Timur.",
+    tanggal: "14 Mei 2026",
+    gambar: "/128.png",
+    deskripsi: "Senin, 11 Mei 2026 Telah dilaksanakan Upacara Bendera rutin untuk mengawali hari Senin, dengan Pembina Upacara dari jajaran Polda Kalimantan Timur. Dalam amanatnya, beliau menekankan pentingnya bagi kita sebagai pelajar untuk selalu patuh pada aturan lalu lintas, salah satunya dengan konsisten menggunakan helm saat berkendara. Selain itu, kita juga diingatkan untuk lebih bijak bersosial media mengingat maraknya hoaks yang dapat memicu perpecahan. Maka dari itu, jadilah pelajar yang cerdas dalam memilah informasi, bijak dalam bertindak, dan menjadi pelopor keselamatan baik di jalan raya maupun di dunia digital! 🤩🙌🏻",
+    sumberUrl: "https://www.instagram.com/p/DYS-grlTlx-/"
+  }, 
+  {
+    id: 118,
+    judul: "Lomba Fashion Show Siswa, para peserta tampil memukau dengan kreativitas, pesona, dan kepercayaan diri yang luar biasa",
+    tanggal: "10 Mei 2026",
+    gambar: "/127.png",
+    deskripsi: "Anggun dalam penampilan, percaya diri dalam melangkah, dan berani menunjukkan potensi diri menjadi semangat dalam peringatan Hari Kartini di SMA Negeri 7 Balikpapan. ✨👑cMelalui Lomba Fashion Show Siswa, para peserta tampil memukau dengan kreativitas, pesona, dan kepercayaan diri yang luar biasa. Setiap langkah di atas panggung bukan hanya menampilkan busana terbaik, tetapi juga menggambarkan semangat generasi muda yang berani berkarya, percaya pada kemampuan diri, dan terus melestarikan nilai budaya serta karakter positif. 🌸🌟 Terima kasih kepada seluruh peserta yang telah memberikan penampilan terbaik dan memeriahkan peringatan Hari Kartini dengan penuh semangat. Jadilah generasi muda yang cerdas, kreatif, dan terus menginspirasi, sebagaimana semangat perjuangan R.A. Kartini yang tak pernah padam. 💙",
+    sumberUrl: "https://www.instagram.com/p/DYKFkBMBxr2/"
+  }, 
+  {
+    id: 117,
+    judul: "memperingati Hari Pendidikan Nasional Tahun 2026, para guru hebat turut berpartisipasi dalam Lomba Artikel/Esai Guru",
+    tanggal: "10 Mei 2026",
+    gambar: "/126.png",
+    deskripsi: "Melalui tulisan, lahir gagasan. Melalui pemikiran, tercipta perubahan. ✨🖋️ Dalam rangka memperingati Hari Pendidikan Nasional Tahun 2026, para guru hebat turut berpartisipasi dalam Lomba Artikel/Esai Guru sebagai wadah menuangkan ide, pengalaman, serta inovasi untuk kemajuan dunia pendidikan. Setiap tulisan bukan sekadar rangkaian kata, tetapi juga cerminan dedikasi dan kepedulian terhadap masa depan generasi bangsa. Apresiasi setinggi-tingginya kepada seluruh peserta yang telah berkarya dengan penuh semangat dan inspirasi. Semoga setiap gagasan yang dituliskan mampu menjadi motivasi, membuka wawasan baru, dan terus menyalakan semangat untuk menciptakan pendidikan yang lebih baik.  Terus berkarya, terus menginspirasi, karena guru hebat selalu meninggalkan jejak melalui ilmu dan tulisan. ✍️✨",
+    sumberUrl: "https://www.instagram.com/p/DYKE-06H5pc/?img_index=1"
+  }, 
+  {
+    id: 116,
+    judul: "para peserta Lomba Guru Berprestasi turut menunjukkan karya, inovasi, dan pengabdian terbaiknya dalam rangka memperingati Hari Pendidikan Nasional 2026",
+    tanggal: "10 Mei 2026",
+    gambar: "/125.png",
+    deskripsi: "Dedikasi, inspirasi, dan semangat tanpa henti menjadi langkah para pendidik hebat dalam mencerdaskan generasi bangsa. ✨📚 Dengan penuh semangat dan rasa bangga, para peserta Lomba Guru Berprestasi turut menunjukkan karya, inovasi, dan pengabdian terbaiknya dalam rangka memperingati Hari Pendidikan Nasional 2026. Kegiatan ini menjadi bukti bahwa seorang guru bukan hanya pengajar, tetapi juga motivator, teladan, dan sumber inspirasi bagi peserta didik. 🌟 Terima kasih kepada seluruh peserta yang telah memberikan dedikasi terbaik untuk dunia pendidikan. Teruslah menjadi cahaya yang menuntun generasi muda menuju masa depan yang gemilang. Guru hebat melahirkan generasi kuat!",
+    sumberUrl: "https://www.instagram.com/p/DYKEe-gH_vP/?img_index=1"
+  }, 
+  {
+    id: 115,
+    judul: "Dalam rangka memperingati Hari Pendidikan Nasional 2026, sebanyak 18 kos turut berpartisipasi dalam Lomba Kebersihan Kos dengan penuh semangat dan kreativitas.",
+    tanggal: "10 Mei 2026",
+    gambar: "/124.png",
+    deskripsi: "Kebersihan bukan hanya tentang keindahan, tetapi juga cerminan kedisiplinan, kenyamanan, dan kebersamaan. ✨🧹 Dalam rangka memperingati Hari Pendidikan Nasional 2026, sebanyak 18 kos turut berpartisipasi dalam Lomba Kebersihan Kos dengan penuh semangat dan kreativitas. Setiap sudut ditata dengan rapi, bersih, dan nyaman sebagai bentuk kepedulian terhadap lingkungan tempat tinggal. 🌿🏡 Melalui kegiatan ini, diharapkan tumbuh kesadaran untuk selalu menjaga kebersihan, menciptakan lingkungan yang sehat, serta mempererat rasa tanggung jawab bersama. Terima kasih kepada seluruh peserta yang telah memberikan usaha terbaiknya. Karena lingkungan yang bersih akan melahirkan semangat belajar yang lebih baik. 💙",
+    sumberUrl: "https://www.instagram.com/p/DYKDpaqBPKl/"
+  }, 
+  {
+    id: 114,
+    judul: "Sebanyak 18 kelas turut berpartisipasi dalam Lomba Paduan Suara “Rukun Sama Teman”",
+    tanggal: "10 Mei 2026",
+    gambar: "/123.png",
+    deskripsi: "Suara boleh berbeda, tetapi kebersamaan selalu menjadi nada yang paling indah. 🎶 Sebanyak 18 kelas turut berpartisipasi dalam Lomba Paduan Suara “Rukun Sama Teman” dalam rangka memperingati Hari Pendidikan Nasional tahun 2026. Dengan penuh semangat, kekompakan, dan percaya diri, setiap kelas bersama dengan wali kelas menampilkan penampilan terbaiknya di atas panggung. Bukan hanya tentang meraih juara, tetapi tentang belajar bekerja sama, saling menghargai, dan membangun harmoni dalam kebersamaan. Terima kasih untuk seluruh peserta yang telah memberikan penampilan luar biasa dan menghidupkan suasana dengan energi positif. 💙🎤 Tetap semangat berkarya, terus jaga kekompakan, dan jadilah generasi yang penuh prestasi serta saling mendukung satu sama lain!",
+    sumberUrl: "https://www.instagram.com/p/DYKDPEkBOBR/"
+  }, 
+  {
+    id: 113,
+    judul: "“GEMILANG” Generasi Masa Kini, Langkahkan Karya Cemerlang dengan Semangat R. A. Kartini 🕯",
+    tanggal: "7 Mei 2026",
+    gambar: "/122.png",
+    deskripsi: "“GEMILANG” Generasi Masa Kini, Langkahkan Karya Cemerlang dengan Semangat R. A. Kartini 🕯 Dalam rangka mengisi peringatan Hari Kartini, ada Dua jenis lomba yang sudah diperlombakan. Yaitu, Cipta Baca Puisi & Fashion Show. Kegiatan ini bukan hanya sekedar perlombaan. Melainkan sebuah langkah untuk membangun semangat Generasi penerus Bangsa dalam menghargai dan menghormati jasa-jasa Pahlawan Pelopor Emansipasi Wanita 🌸✨",
+    sumberUrl: "https://www.instagram.com/p/DYAr3GrTp0b/"
+  }, 
+  {
+    id: 112,
+    judul: "dilaksanakan Upacara Bendera dalam rangka memperingati Hari Pendidikan Nasional",
+    tanggal: "5 Mei 2026",
+    gambar: "/121.png",
+    deskripsi: "Pada Senin, 4 Mei 2026 telah dilaksanakan Upacara Bendera dalam rangka memperingati Hari Pendidikan Nasional. 📚🇮🇩 Hal ini bukan hanya sekedar rutinitas tahunan. Melainkan, sejarah mencatat bahwa gagasan ini lahir dari tangan Bapak Pendidikan Nasional, Ki Hajar Dewantara. 👨‍🏫 Mari lanjutkan perjuangan beliau dengan semangat Menguatkan Partisipasi Semesta Mewujudkan Pendidikan Bermutu untuk Semua guna mewujudkan generasi emas 2045! 🏆✨",
+    sumberUrl: "https://www.instagram.com/p/DX9LapgzvI3/"
+  }, 
+  {
+    id: 111,
+    judul: "Kegiatan Berbagi Praktik Baik Komunitas Sekolah “SMANJU BELAJAR”",
+    tanggal: "5 Mei 2026",
+    gambar: "/120.png",
+    deskripsi: "Kegiatan Berbagi Praktik Baik Komunitas Sekolah “SMANJU BELAJAR” telah dilaksanakan pada 4 Mei 2026, bertempat di Lab Komputer 1 SMAN 7 Balikpapan, mulai pukul 13.00 hingga 15.30 WITA. Kegiatan ini menghadirkan narasumber Drs. Amri, M.Pd, dengan fokus pada pembuatan soal dan tes menggunakan ExamonLan. Seluruh guru mata pelajaran turut berpartisipasi aktif dalam kegiatan ini sebagai upaya meningkatkan kompetensi dalam menyusun soal kognitif yang berkualitas, bebas dari indikasi plagiarisme, serta meminimalisir potensi kecurangan siswa. Melalui kegiatan ini, diharapkan para guru dapat mengimplementasikan praktik baik yang telah dipelajari untuk menyusun soal formatif kognitif dan tes sumatif secara online secara lebih efektif, inovatif, dan akuntabel.",
+    sumberUrl: "https://www.instagram.com/p/DX8juanAPO6/?img_index=1"
+  }, 
+  {
+    id: 110,
+    judul: "Selamat Hari Kartini",
+    tanggal: "5 Mei 2026",
+    gambar: "/119.png",
+    deskripsi: "Hari ini kami mempersembahkan sosok-sosok luar biasa di balik kemajuan pendidikan para guru dan staf tata usaha yang dengan penuh dedikasi terus menginspirasi, membimbing, menguatkan dan melayani generasi penerus bangsa. Semangat Raden Ajeng Kartini hidup dalam setiap langkah pengabdian, dalam ketulusan mendidik, dan dalam komitmen untuk membuka jalan bagi masa depan yang lebih cerah. Terima kasih atas peran hebat yang tak pernah lelah memberi arti. Mari terus menyalakan cahaya perubahan, dari sekolah untuk Indonesia.",
+    sumberUrl: "https://www.instagram.com/p/DX8iUujBZZ3/"
+  }, 
+  {
+    id: 109,
+    judul: "lomba FLS3N yang dilaksanakan pada 25 April di SMAN 1 Balikpapan",
+    tanggal: "5 Mei 2026",
+    gambar: "/118.png",
+    deskripsi: "Semangat, karya, dan prestasi berpadu dalam satu panggung! Kegiatan lomba FLS3N yang dilaksanakan pada 25 April di SMAN 1 Balikpapan menjadi momen berharga bagi tim SMA Negeri 7 Balikpapan. Dengan penuh dedikasi dan semangat juang, kami berpartisipasi sebagai peserta dan berhasil meraih juara di beberapa cabang lomba. 🏆 Ini bukan hanya tentang kemenangan, tetapi tentang proses, keberanian untuk tampil, serta kerja keras yang akhirnya membuahkan hasil. Terima kasih untuk seluruh tim yang telah memberikan yang terbaik! Terus berkarya, terus berprestasi, dan jadilah inspirasi!",
+    sumberUrl: "https://www.instagram.com/p/DX8FBLQH3eP/?img_index=1"
+  }, 
+  {
+    id: 108,
+    judul: "Selamat Hari Pendidikan Nasional",
+    tanggal: "2 Mei 2026",
+    gambar: "/117.png",
+    deskripsi: "Pendidikan adalah senjata paling kuat, yang mampu menembus batas waktu dan mengubah dunia. Dari ruang-ruang kelas yang sederhana, lahir mimpi-mimpi besar yang akan menerangi masa depan. Hari Pendidikan Nasional 2026 menjadi pengingat bahwa setiap langkah belajar adalah jejak menuju harapan, setiap ilmu adalah cahaya, dan setiap perjuangan adalah jalan menuju keberhasilan. Mari terus bertumbuh tanpa batas, menjadi insan yang berilmu, berakhlak, dan bermakna. Selamat Hari Pendidikan Nasional 2026 Karena dari pendidikan, masa depan bangsa dituliskan.",
+    sumberUrl: "https://www.instagram.com/p/DXz-pjHkwd7/"
+  }, 
+  {
+    id: 107,
+    judul: "Selamat dan sukses kami ucapkan kepada Nadia Friska Pakpahan",
+    tanggal: " 2026 April 2026",
+    gambar: "/116.png",
+    deskripsi: "Selamat dan sukses kami ucapkan kepada Nadia Friska Pakpahan, Murid kelas XI B 1, atas prestasi gemilangnya yang telah dinobatkan sebagai Berbakat Putri Duta Pariwisata Manuntung Kota Balikpapan 2026. Pencapaian ini menjadi bukti nyata dari kerja keras, dedikasi, serta bakat luar biasa yang dimiliki. Semoga prestasi ini menjadi langkah awal untuk terus berkarya, menginspirasi, serta membawa nama baik sekolah dan daerah ke tingkat yang lebih tinggi. Kami menyampaikan terima kasih dan apresiasi setinggi-tingginya kepada Koordinator Duta Smaven Ambassadors, Ibu Sri Yunita, S.Pd.,Gr, serta Ibu Pembina Duta Pariwisata Ibu Dita Wardhani, S.Pd, atas bimbingan, dukungan, dan dedikasi yang telah diberikan. Semoga segala upaya yang telah dilakukan menjadi amal kebaikan dan terus melahirkan generasi berprestasi yang membanggakan. Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota. Kebanggaan yang luar biasa atas prestasi yang diraih oleh para pemenang di berbagai cabang lomba, ini adalah hasil dari kerja keras, dedikasi yang telah diberikan. Semoga segala upaya yang telah dilakukan menjadi amal kebaikan dan terus melahirkan generasi berprestasi yang membanggakan.",
+    sumberUrl: "https://www.instagram.com/p/DXlGN42k4z4/" 
+  }, 
+  {
+    id: 106,
+    judul: "Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota",
+    tanggal: "26 April 2026",
+    gambar: "/115.png",
+    deskripsi: "Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota. Kebanggaan yang luar biasa atas prestasi yang diraih oleh para pemenang di berbagai cabang lomba, ini adalah hasil dari kerja keras, dedikasi, dan semangat yang tak pernah padam. Bagi ananda yang belum meraih juara, tetaplah bangga pada diri sendiri. Keberanian untuk tampil, berproses, dan berkompetisi adalah kemenangan yang sesungguhnya. Teruslah berkarya, belajar, dan percaya bahwa setiap usaha akan menemukan waktunya untuk bersinar. Terima kasih atas perjuangan dan semangat yang telah mengharumkan nama sekolah. SMA Negeri 7 Balikpapan bangga pada kalian semua!",
+    sumberUrl: "https://www.instagram.com/p/DXk9SRFk8fi/?img_index=1"
+  }, 
+  {
+    id: 105,
+    judul: "Selamat dan sukses untuk seluruh Tim FLS3N SMA Negeri 7 Balikpapan",
+    tanggal: "25 April 2026",
+    gambar: "/114.png",
+    deskripsi: "Selamat dan sukses untuk seluruh Tim FLS3N SMA Negeri 7 Balikpapan yang hari ini, Sabtu, 25 April 2026, sedang berjuang dalam ajang FLS3N 2026! Teruslah melangkah dengan penuh percaya diri, tampilkan karya terbaik dengan hati yang tulus, dan buktikan bahwa kerja keras kalian mampu bersinar di panggung prestasi. Setiap usaha, latihan, dan doa yang telah kalian perjuangkan adalah langkah menuju hasil terbaik. Semoga diberikan kelancaran, kekuatan, dan hasil yang membanggakan. Apapun hasilnya nanti, kalian sudah menjadi kebanggaan sekolah. Tetap semangat, terus berkarya, dan raih prestasi setinggi-tingginya!",
+    sumberUrl: "https://www.instagram.com/p/DXjYW77E9xA/?img_index=1"
+  }, 
+  {
+    id: 104,
+    judul: "Selamat dan sukses untuk seluruh Tim FLS3N SMA Negeri 7 Balikpapan",
+    tanggal: "25 April 2026",
+    gambar: "/113.png",
+    deskripsi: "Selamat dan sukses untuk seluruh Tim FLS3N SMA Negeri 7 Balikpapan yang hari ini, Sabtu, 25 April 2026, sedang berjuang dalam ajang FLS3N 2026! Teruslah melangkah dengan penuh percaya diri, tampilkan karya terbaik dengan hati yang tulus, dan buktikan bahwa kerja keras kalian mampu bersinar di panggung prestasi. Setiap usaha, latihan, dan doa yang telah kalian perjuangkan adalah langkah menuju hasil terbaik. Semoga diberikan kelancaran, kekuatan, dan hasil yang membanggakan. Apapun hasilnya nanti, kalian sudah menjadi kebanggaan sekolah. Tetap semangat, terus berkarya, dan raih prestasi setinggi-tingginya!",
+    sumberUrl: "https://www.instagram.com/p/DXii7PuE-Jd/?img_index=1"
+  }, 
+  {
+    id: 103,
+    judul: "diresmikannya pojok literasi dan pojok numerasi yang di resmikan oleh Ibu Dr. Atik Sulistyowati, M.Pd (Kasub Penilaian dan Kurikulum PSMA Diknas Provinsi Kaltim,)",
+    tanggal: "25 April 2026",
+    gambar: "/112.png",
+    deskripsi: "Hari ini Jumat, 24 April 2026 menjadi langkah baru yang penuh makna bagi sekolah kami dengan diresmikannya pojok literasi dan pojok numerasi yang di resmikan oleh Ibu Dr. Atik Sulistyowati, M.Pd (Kasub Penilaian dan Kurikulum PSMA Diknas Provinsi Kaltim,), Ibu Hj. Nurhayati, M.Ed (Ketua TPK Provinsi) dan Ibu Ida Sulistiyani, M.Pd (Ketua MKKS Provinsi Kaltim), ruang tumbuh bagi semangat membaca, berpikir kritis, dan mengasah kemampuan berhitung siswa. Kehadiran dua pojok ini bukan sekadar fasilitas, tetapi wujud komitmen kami dalam menciptakan lingkungan belajar yang inspiratif, menyenangkan, dan bermakna. Semoga dari sudut kecil ini lahir generasi yang gemar membaca, cerdas bernalar, serta siap menghadapi tantangan masa depan dengan percaya diri. Mari bersama kita hidupkan budaya literasi dan numerasi demi masa depan yang lebih gemilang!",
+    sumberUrl: "https://www.instagram.com/p/DXiG-DLAYwT/"
+  }, 
+  {
+    id: 102,
+    judul: "Menganalisis secara bersama dengan menggunakan Perencanaan Berbasis Data (PBD)",
+    tanggal: "25 April 2026",
+    gambar: "/111.png",
+    deskripsi: "Raport Pendidikan merupakan hasil Asesmen Nasional dan Survei Lingkungan Belajar yang menunjukkan kondisi suatu Satuan Pendidikan; oleh sebab itu perlu dianalisis secara bersama dengan menggunakan Perencanaan Berbasis Data (PBD) yang meliputi tahapan Identifikasi, Refleksi dan Benahi. SMA Negeri 7 Balikpapan mendapat masukan dan petunjuk dari Narasumber di bidangnya, Ibu Dr. Atik Sulistyowati, M.Pd (Kasub Penilaian dan Kurikulum PSMA Diknas Provinsi Kaltim,), Ibu Hj. Nurhayati, M.Ed (Ketua TPK Provinsi) dan Ibu Ida Sulistiyani, M.Pd (Ketua MKKS Provinsi Kaltim), sehingga SMA Negeri 7 Balikpapan siap melakukan refleksi dan tindak lanjut; yang kesemuanya untuk dapat memberikan pelayanan terbaik untuk anak-anak didik.",
+    sumberUrl: "https://www.instagram.com/p/DXiGKSVk2EQ/?img_index=1"
+  }, 
+  {
+    id: 101,
+    judul: "SMA Negeri 7 Balikpapan, menghadirkan “GEMILANG” 𝘎𝘦𝘯𝘦𝘳𝘢𝘴𝘪 𝘔𝘢𝘴𝘢 𝘬𝘪𝘯𝘪, 𝘓𝘢𝘯𝘨𝘬𝘢𝘩𝘬𝘢𝘯 𝘒𝘢𝘳𝘺𝘢 𝘊𝘦𝘮𝘦𝘳𝘭𝘢𝘯𝘨 𝘥𝘦𝘯𝘨𝘢𝘯 𝘚𝘦𝘮𝘢𝘯𝘨𝘢𝘵 𝘙. 𝘈. 𝘒𝘢𝘳𝘵𝘪𝘯𝘪 🏮",
+    tanggal: "23 APril 2026",
+    gambar: "/110.png",
+    deskripsi: "Selasa, 21 April 2026 SMA Negeri 7 Balikpapan, menghadirkan “GEMILANG” 𝘎𝘦𝘯𝘦𝘳𝘢𝘴𝘪 𝘔𝘢𝘴𝘢 𝘬𝘪𝘯𝘪, 𝘓𝘢𝘯𝘨𝘬𝘢𝘩𝘬𝘢𝘯 𝘒𝘢𝘳𝘺𝘢 𝘊𝘦𝘮𝘦𝘳𝘭𝘢𝘯𝘨 𝘥𝘦𝘯𝘨𝘢𝘯 𝘚𝘦𝘮𝘢𝘯𝘨𝘢𝘵 𝘙. 𝘈. 𝘒𝘢𝘳𝘵𝘪𝘯𝘪 🏮 Dalam rangka memperingati dan menghormati jasa-jasa salah satu Pahlawan Pelopor Emansipasi Wanita, yaitu: Raden Ajeng Kartini. Kegiatan diawali dengan Upacara Bendera, lalu diisi dengan lomba-lomba yang menyenangkan. Lebih dari sekadar perayaan, inilah bukti semangat Kartini tak pernah padam. Mari rayakan emansipasi dengan prestasi dan jadikan inspirasi beliau sebagai napas inovasi. Saatnya generasi masa kini menjadi lentera bagi masa depan yang lebih gemilang! 🌻✨🇲🇨",
+    sumberUrl: "https://www.instagram.com/p/DXcwGj6E933/"
+  }, 
+  {
+    id: 100,
+    judul: "Selamat Hari Kartini",
+    tanggal: "22 April 2026",
+    gambar: "/109.png",
+    deskripsi: "Dalam rangka memperingati Hari Kartini, keluarga besar SMA Negeri 7 Balikpapan melaksanakan upacara bendera dengan petugas dari Ibu-Ibu Guru, sebagai wujud penghormatan terhadap semangat perjuangan Raden Ajeng Kartini. Setelah upacara, kegiatan dilanjutkan dengan pemberian penghargaan kepada peserta didik yang telah meraih berbagai prestasi. Momen ini menjadi bentuk apresiasi sekaligus motivasi agar seluruh siswa terus bersemangat dalam belajar dan berkarya. Semangat Kartini menginspirasi kita semua untuk terus maju, berprestasi, dan memberikan yang terbaik bagi bangsa. Keluarga Besar SMA Negeri 7 Balikpapan mengucapkan Selamat Hari Kartini.",
+    sumberUrl: "https://www.instagram.com/p/DXbY4a6AOuH/"
+  }, 
+  {
+    id: 99,
+    judul: "Smaven Choir SMA Negeri 7 Balikpapan mengikuti lomba “Kreasi Gerak & Lagu”",
+    tanggal: "17 April 2026",
+    gambar: "/rst.png",
+    deskripsi: "Halo, perkenalkan kami dari Smaven Choir SMA Negeri 7 Balikpapan. Dalam mengikuti lomba “Kreasi Gerak & Lagu” #rukunsamateman yang diselenggarakan oleh kemendikdasmen",
+    sumberUrl: "https://www.instagram.com/p/DXNlh0Ekzu7/"
+  }, 
+  {
+    id: 98,
+    judul: "SMA Negeri 7 Balikpapan Menerima penyaluran Makanan Bergizi Gratis (MBG) perdana",
+    tanggal: "17 April 2026",
+    gambar: "/108.png",
+    deskripsi: "Hari ini menjadi momen istimewa bagi keluarga besar SMA Negeri 7 Balikpapan dengan diterimanya penyaluran Makanan Bergizi Gratis (MBG) perdana. Dengan penuh rasa syukur, kami menyambut program ini sebagai bentuk nyata perhatian Pemerintah terhadap kesehatan dan kesejahteraan peserta didik. Semoga kehadiran MBG tidak hanya memenuhi kebutuhan gizi, tetapi juga menjadi penyemangat bagi siswa untuk belajar lebih optimal, tumbuh dengan sehat, dan meraih prestasi terbaik.",
+    sumberUrl: "https://www.instagram.com/p/DXNWBgxE_3O/"
+  }, 
+  {
+    id: 97,
+    judul: "Sosialisasi Penggunaan Hp bagi Orang Tua Murid SMA Negeri 7 Balikpapan",
+    tanggal: "16 April 2026",
+    gambar: "/107.png",
+    deskripsi: "Pada Hari Kamis, 16 April 2026 telah dilaksanakan Sosialisasi Penggunaan Hp bagi Orang Tua Murid SMA Negeri 7 Balikpapan. Sebagaimanab Surat Edaran dari Dinas Pendidikan Provinsi Kalimantan Timur SMA Negeri 7 Balikpapan siap akan melaksanakan Pembatasan Penggunaan Hp dengan teknis yang disepakati bersama dengan orang tua murid; kesemuanya dalam rangka meningkatkan prestasi belajar, kemampuan literasi, numerasi dan disiplin murid serta menghindari dampak negatif perkembangan teknologi.",
+    sumberUrl: "https://www.instagram.com/p/DXMUfDtk8Pt/?img_index=1"
+  }, 
+  {
+    id: 96,
+    judul: "Kegiatan Sosialisasi dan Analisis Rapor Pendidikan dan Kurikulum Satuan Pendidikan (KSP) SMA Negeri 7 Balikpapan",
+    tanggal: "16 April 2026",
+    gambar: "/106.png",
+    deskripsi: "Kegiatan Sosialisasi dan Analisis Rapor Pendidikan dan Kurikulum Satuan Pendidikan (KSP) SMA Negeri 7 Balikpapan Kamis, 16 April 2026 sebagai salah satu bentuk kolaborasi dan sinergis semua keluarga besar SMA Negeri 7 Balikpapan dalam menganalisis hasil capaian yang telah diperoleh dan hal-hal yang masih perlu diperbaiki dengan melaksanakan rekomendasi keseluruhan dan rekomendasi prioritas melalui Rencana Kerja Tahunan (RKT) dan Rencana Kegiatan dan Anggaran (RKAS) Sekolah; yang kesemuanya untuk memberikan pelayanan terbaik untuk semua peserta didik sesuai dengan visi dan misi SMA Negeri 7 Balikpapan dan terimplementasi dalam Kurikulum Satuan Pendidikan (KSP) sebagai Panduan bersama dalam melaksanakan kegiatan pembelajaran di SMA Negeri 7 Balikpapan.",
+    sumberUrl: "https://www.instagram.com/p/DXMS9CSk_cj/?img_index=1"
+  }, 
+  {
+    id: 95,
+    judul: "Perkemahan Pelantikan Pramuka Bantara Ambalan Soekarno-Fatmawati SMA Negeri 7 Balikpapan",
+    tanggal: "16 April 2026",
+    gambar: "/105.png",
+    deskripsi: "Perkemahan Pelantikan Pramuka Bantara Ambalan Soekarno-Fatmawati SMA Negeri 7 Balikpapan yang digelar pada Jumat hingga Minggu, 10–12 April 2026, berlangsung seru, penuh tantangan, dan tentunya berkesan! Kegiatan ini menjadi langkah awal bagi anggota Pramuka Penegak untuk naik tingkat menjadi Penegak Bantara, dengan berbagai pengalaman yang membentuk karakter, melatih mental, serta mengasah jiwa kepemimpinan dan kebersamaan. Tidak hanya itu, semangat kemandirian dan kepedulian terhadap lingkungan juga semakin tumbuh selama perkemahan. Semoga momen ini menjadi bekal berharga untuk terus berkembang menjadi generasi hebat, solid, dan siap menghadapi masa depan!",
+    sumberUrl: "https://www.instagram.com/p/DXLEomCAciz/"
+  }, 
+  {
+    id: 94,
+    judul: "Kolaborasi untuk kemajuan pendidikan!",
+    tanggal: "14 April 2026",
+    gambar: "/104.png",
+    deskripsi: "Kolaborasi untuk kemajuan pendidikan! Pada 14 April 2026, sekolah menyelenggarakan Rapat Koordinasi bersama Tim Penyusunan Program Kerja Kepala Sekolah Tahun 2026. Kegiatan ini menjadi momentum penting dalam menyusun program yang inovatif, terarah, dan berkelanjutan demi mewujudkan sekolah yang unggul dan berprestasi.",
+    sumberUrl: "https://www.instagram.com/p/DXGGI5kE4OR/?img_index=1"
+  }, 
+  {
+    id: 93,
+    judul: "Latihan Gabungan antara PMR dan Tim Tangguh Bencana",
+    tanggal: "11 April 2026",
+    gambar: "/103.png",
+    deskripsi: "Pada tanggal 10 April 2026, telah dilaksanakan kegiatan Latihan Gabungan antara PMR dan Tim Tangguh Bencana bertempat di Literasi Terbuka dengan fokus materi Bantuan Hidup Dasar (BHD) dan P3K yang dipandu langsung oleh dr. Maman Wijaya, AIFO-K. Melalui pembekalan ini, diharapkan seluruh anggota dapat meningkatkan keterampilan teknis serta memperkuat koordinasi tim agar senantiasa sigap, peduli, dan mampu memberikan pertolongan pertama secara tepat dalam berbagai situasi darurat. Semangat kemanusiaan dan kesiapsiagaan ini menjadi bukti nyata komitmen kami untuk terus berkontribusi bagi lingkungan sekolah dan masyarakat.",
+    sumberUrl: "https://www.instagram.com/p/DW-OZ-uAd-y/"
+  }, 
+  {
+    id: 92,
+    judul: "lolos seleksi proposal KRENOVA 2026 dan berhasil masuk ke dalam 10 besar tingkat pelajar se-Kota Balikpapan",
+    tanggal: "10 April 2026",
+    gambar: "/102.png",
+    deskripsi: "Selamat dan sukses kepada peserta didik yang telah lolos seleksi proposal KRENOVA 2026 dan berhasil masuk ke dalam 10 besar tingkat pelajar se-Kota Balikpapan. Prestasi ini menjadi bukti nyata semangat inovasi dan kerja keras dalam mengembangkan ide-ide kreatif di bidang ilmu pengetahuan dan teknologi. Melalui kegiatan ini, diharapkan mampu mendorong terbentuknya ekosistem inovasi yang berdampak pada peningkatan daya saing serta kesejahteraan masyarakat Kota Balikpapan. Tetap semangat melangkah ke tahap berikutnya, terus kembangkan ide terbaik, dan semoga dapat menghasilkan temuan inovasi yang unggul sehingga mampu mewakili sekolah dan meraih prestasi sebagai pemenang.",
+    sumberUrl: "https://www.instagram.com/p/DW8xIjuk4uS/"
+  }, 
+  {
+    id: 91,
+    judul: "penelitian dalam ajang Olimpiade Penelitian Siswa Indonesia(OPSI)",
+    tanggal: "10 April 2026",
+    gambar: "/101.png",
+    deskripsi: "Selamat dan sukses kepada peserta didik yang telah lolos seleksi administrasi dan melanjutkan ke tahap penelitian dalam ajang Olimpiade Penelitian Siswa Indonesia(OPSI). yang akan dilaksanakan pada tanggal 7 April hingga Agustus 2026. Capaian ini menjadi langkah awal yang membanggakan dalam mengembangkan budaya riset di lingkungan sekolah, sekaligus melatih kemampuan berpikir ilmiah, kreatif, kritis, dan inovatif sebagai bekal masa depan. Tetap semangat menjalani proses penelitian, terus eksplorasi ide, dan jangan ragu untuk berinovasi. Semoga melalui kegiatan ini lahir peneliti muda yang unggul, berwawasan lingkungan, serta mampu mengharumkan nama sekolah hingga ke tingkat nasional!",
+    sumberUrl: "https://www.instagram.com/p/DW8wfb-E9OK/?img_index=1"
+  }, 
+  {
+    id: 90,
+    judul: "Selamat dan sukses untuk Gusti Billy Destany",
+    tanggal: "8 April 2026",
+    gambar: "/100.png",
+    deskripsi: "Selamat dan sukses untuk Gusti Billy Destany (Kelas XI C1) yang berhasil melaju sebagai Finalis Nasional Olimpiade Orbit 2026 (Piala Hasri Ainun Habibie) Prestasi ini menjadi bukti kerja keras, dedikasi, dan semangat belajar yang luar biasa. Semoga dapat memberikan hasil terbaik di babak final serta terus menginspirasi teman-teman lainnya untuk berprestasi.",
+    sumberUrl: "https://www.instagram.com/p/DW3dwhNE4od/"
+  }, 
+  {
+    id: 89,
+    judul: "SMAN 7 Balikpapan mengucapkan selamat dan sukses kepada ananda Aurelia Nur Oktavia",
+    tanggal: "6 April 2026",
+    gambar: "/90.png",
+    deskripsi: "Segenap keluarga besar SMAN 7 Balikpapan mengucapkan selamat dan sukses kepada ananda Aurelia Nur Oktavia (Kelas XI-C1) yang telah berhasil meraih prestasi Best Green Lifestyle dalam ajang Pemilihan Forum Duta Lingkungan Hidup Kota Balikpapan. Pencapaian ini menjadi bukti nyata bahwa siswa-siswi SMAN 7 tidak hanya unggul dalam akademik, tetapi juga memiliki kepedulian yang tinggi terhadap keberlanjutan lingkungan hidup di Kota Beriman. Semoga prestasi ini menjadi motivasi bagi kita semua untuk terus menerapkan gaya hidup ramah lingkungan demi masa depan bumi yang lebih baik. Teruslah menginspirasi, Aurelia!",
+    sumberUrl: "https://www.instagram.com/p/DWx5w15gPCK/"
+  }, 
+  {
+    id: 88,
+    judul: "SMA Negeri 7 Balikpapan mengucapkan selamat memasuki masa purna tugas kepada Ibu Dra. Tri Astuti.",
+    tanggal: "6 April 2026",
+    gambar: "/89.png",
+    deskripsi: "Purna Bakti, Namun Dedikasi Tak Pernah Henti... Keluarga Besar SMA Negeri 7 Balikpapan mengucapkan selamat memasuki masa purna tugas kepada Ibu Dra. Tri Astuti. Terima kasih atas segala dedikasi, bimbingan, dan kasih sayang yang telah Ibu curahkan selama ini. Begitu banyak ilmu yang telah menjadi bekal bagi kami, dan begitu banyak teladan yang akan terus kami kenang dalam perjalanan pendidikan di sekolah tercinta ini. Semoga Allah SWT senantiasa memberikan kesehatan yang paripurna, keberkahan usia, dan kebahagiaan yang berlimpah di masa purna bakti ini. Semoga setiap langkah Ibu selalu dalam lindungan-Nya dan menjadi amal jariyah yang tak terputus. Selamat menikmati waktu berkualitas bersama keluarga tercinta. Ibu akan selalu menjadi bagian dari keluarga besar SMAN7 Balikpapan. 💙",
+    sumberUrl: "https://www.instagram.com/p/DWx4hrtALl_/"
+  }, 
+  {
+    id: 87,
+    judul: "49 siswa SMAN 7 Balikpapan yang telah dinyatakan lulus melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) 2026",
+    tanggal: "5 April 2026",
+    gambar: "/85.png",
+    deskripsi: "Selamat dan sukses untuk 49 siswa SMAN 7 Balikpapan yang telah dinyatakan lulus melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) 2026 perjuangan, kerja keras, dan doa yang kalian lakukan selama ini akhirnya membuahkan hasil yang membanggakan. Kami sebagai keluarga besar sekolah turut bangga atas pencapaian luar biasa ini. Keberhasilan ini tentu bukan akhir, melainkan awal dari perjalanan baru menuju masa depan yang lebih luas. Teruslah belajar, berproses, dan mengembangkan diri dengan penuh semangat di jenjang pendidikan berikutnya. Jangan takut menghadapi tantangan, karena setiap langkah yang kalian ambil akan membawa pengalaman dan pelajaran berharga. Semoga apa yang telah diraih hari ini menjadi motivasi untuk terus melangkah lebih jauh, meraih mimpi, dan memberikan manfaat bagi diri sendiri, keluarga, serta masyarakat. Tetap rendah hati, jaga semangat, dan teruslah berprestasi. Kami selalu mendoakan yang terbaik untuk kalian",
+    sumberUrl: "https://www.instagram.com/p/DWvB2ZwE0VF/?img_index=1"
+  }, 
+  {
+    id: 86,
+    judul: "49 siswa SMAN 7 Balikpapan yang telah dinyatakan lulus melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) 2026",
+    tanggal: "5 April 2026",
+    gambar: "/85.png",
+    deskripsi: "Selamat dan sukses untuk 49 siswa SMAN 7 Balikpapan yang telah dinyatakan lulus melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) 2026 perjuangan, kerja keras, dan doa yang kalian lakukan selama ini akhirnya membuahkan hasil yang membanggakan. Kami sebagai keluarga besar sekolah turut bangga atas pencapaian luar biasa ini. Keberhasilan ini tentu bukan akhir, melainkan awal dari perjalanan baru menuju masa depan yang lebih luas. Teruslah belajar, berproses, dan mengembangkan diri dengan penuh semangat di jenjang pendidikan berikutnya. Jangan takut menghadapi tantangan, karena setiap langkah yang kalian ambil akan membawa pengalaman dan pelajaran berharga. Semoga apa yang telah diraih hari ini menjadi motivasi untuk terus melangkah lebih jauh, meraih mimpi, dan memberikan manfaat bagi diri sendiri, keluarga, serta masyarakat. Tetap rendah hati, jaga semangat, dan teruslah berprestasi. Kami selalu mendoakan yang terbaik untuk kalian",
+    sumberUrl: "https://www.instagram.com/p/DWvAxb8k0EQ/?img_index=1"
+  }, 
+  {
+    id: 85,
+    judul: "49 siswa SMAN 7 Balikpapan yang telah dinyatakan lulus melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) 2026",
+    tanggal: "5 April 2026",
+    gambar: "/85.png",
+    deskripsi: "Selamat dan sukses untuk 49 siswa SMAN 7 Balikpapan yang telah dinyatakan lulus melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) 2026 perjuangan, kerja keras, dan doa yang kalian lakukan selama ini akhirnya membuahkan hasil yang membanggakan. Kami sebagai keluarga besar sekolah turut bangga atas pencapaian luar biasa ini. Keberhasilan ini tentu bukan akhir, melainkan awal dari perjalanan baru menuju masa depan yang lebih luas. Teruslah belajar, berproses, dan mengembangkan diri dengan penuh semangat di jenjang pendidikan berikutnya. Jangan takut menghadapi tantangan, karena setiap langkah yang kalian ambil akan membawa pengalaman dan pelajaran berharga. Semoga apa yang telah diraih hari ini menjadi motivasi untuk terus melangkah lebih jauh, meraih mimpi, dan memberikan manfaat bagi diri sendiri, keluarga, serta masyarakat. Tetap rendah hati, jaga semangat, dan teruslah berprestasi. Kami selalu mendoakan yang terbaik untuk kalian",
+    sumberUrl: "https://www.instagram.com/p/DWvAXzRk-Tt/?img_index=1"
+  }, 
+  {
+    id: 84,
+    judul: "49 siswa SMAN 7 Balikpapan yang telah dinyatakan lulus melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) 2026",
+    tanggal: "5 April 2026",
+    gambar: "/85.png",
+    deskripsi: "Selamat dan sukses untuk 49 siswa SMAN 7 Balikpapan yang telah dinyatakan lulus melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) 2026 perjuangan, kerja keras, dan doa yang kalian lakukan selama ini akhirnya membuahkan hasil yang membanggakan. Kami sebagai keluarga besar sekolah turut bangga atas pencapaian luar biasa ini. Keberhasilan ini tentu bukan akhir, melainkan awal dari perjalanan baru menuju masa depan yang lebih luas. Teruslah belajar, berproses, dan mengembangkan diri dengan penuh semangat di jenjang pendidikan berikutnya. Jangan takut menghadapi tantangan, karena setiap langkah yang kalian ambil akan membawa pengalaman dan pelajaran berharga. Semoga apa yang telah diraih hari ini menjadi motivasi untuk terus melangkah lebih jauh, meraih mimpi, dan memberikan manfaat bagi diri sendiri, keluarga, serta masyarakat. Tetap rendah hati, jaga semangat, dan teruslah berprestasi. Kami selalu mendoakan yang terbaik untuk kalian",
+    sumberUrl: "https://www.instagram.com/p/DWvAN8REwZB/?img_index=1"
+  }, 
+  {
+    id: 83,
+    judul: "48 siswa SMAN 7 Balikpapan telah dinyatakan lulus melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP)",
+    tanggal: "1 April 2026",
+    gambar: "/84.png",
+    deskripsi: "Selamat dan sukses untuk 48 siswa SMAN 7 Balikpapan yang telah dinyatakan lulus melalui jalur Seleksi Nasional Berdasarkan Prestasi (SNBP) 2026 perjuangan, kerja keras, dan doa yang kalian lakukan selama ini akhirnya membuahkan hasil yang membanggakan. Kami sebagai keluarga besar sekolah turut bangga atas pencapaian luar biasa ini. Keberhasilan ini tentu bukan akhir, melainkan awal dari perjalanan baru menuju masa depan yang lebih luas. Teruslah belajar, berproses, dan mengembangkan diri dengan penuh semangat di jenjang pendidikan berikutnya. Jangan takut menghadapi tantangan, karena setiap langkah yang kalian ambil akan membawa pengalaman dan pelajaran berharga. Semoga apa yang telah diraih hari ini menjadi motivasi untuk terus melangkah lebih jauh, meraih mimpi, dan memberikan manfaat bagi diri sendiri, keluarga, serta masyarakat. Tetap rendah hati, jaga semangat, dan teruslah berprestasi. Kami selalu mendoakan yang terbaik untuk kalian",
+    sumberUrl: "https://www.instagram.com/p/DWkW21BE7tB/?img_index=1"
+  }, 
+  {
+    id: 82,
+    judul: "✨ Bangunkan Sinergi, Eratkan Silaturahmi 🫱🏻‍🫲🏻",
+    tanggal: "30 Maret 2026",
+    gambar: "/83.png",
+    deskripsi: "Senin, 30 Maret 2026, menjadi awal yang baru bagi kita semua untuk kembali ke sekolah 📚setelah libur Ramadan yang penuh berkah. 🌟 Langkah awal kita dibuka dengan siraman rohani yang telah disampaikan oleh Ustadz Irwan Budiana, M.Pd. Beliau mengingatkan kita tentang pentingnya menjaga semangat baru dalam menuntut ilmu dan selalu beribadah hanya kepada Allah SWT. Diakhiri dengan Halal Bihalal untuk saling memaafkan dan mempererat silaturahmi. Semoga kebersamaan ini menjadi energi positif bagi kita untuk terus bersinergi dalam harmoni. 🤩✨🙌🏻",
+    sumberUrl: "https://www.instagram.com/p/DWguCjjk_pY/"
+  }, 
+  {
+    id: 81,
+    judul: "Berbagi Praktik Baik Pembelajaran",
+    tanggal: "30 Maret 2026",
+    gambar: "/82.png",
+    deskripsi: "Kegiatan berbagi praktik baik pembelajaran telah dilaksanakan pada hari Senin, 30 Maret 2026, pukul 10.30 hingga 12.00 WITA. Kegiatan ini bertujuan untuk meningkatkan kompetensi guru dalam merancang pembelajaran yang lebih bermakna serta adaptif terhadap perkembangan teknologi. Bertempat di Labkom 1 , kegiatan ini diikuti oleh para guru yang antusias dalam mengembangkan kualitas pembelajaran di sekolah. Pada sesi pertama, materi disampaikan oleh Bapak Yudho Prasetyo yang membahas tentang konsep dan perencanaan pembelajaran mendalam. Dalam pemaparannya, beliau menjelaskan pentingnya merancang pembelajaran yang tidak hanya berfokus pada penyampaian materi, tetapi juga mendorong pemahaman konsep secara utuh, keterlibatan aktif peserta didik, serta pengembangan keterampilan berpikir kritis. Selanjutnya, pada sesi kedua, Ibu Rizka Furqany menyampaikan materi mengenai penyusunan Rencana Pembelajaran Mendalam (RPM) dengan memanfaatkan teknologi kecerdasan buatan, yaitu NotebookLM. Pada sesi ini, peserta diperkenalkan dengan cara menggunakan AI sebagai alat bantu dalam merancang pembelajaran yang lebih efektif, efisien, dan inovatif. Peserta juga mendapatkan gambaran praktis tentang bagaimana teknologi dapat mendukung pekerjaan guru dalam menyusun perangkat pembelajaran. Melalui kegiatan ini, diharapkan para guru dapat mengimplementasikan konsep pembelajaran mendalam dalam proses belajar mengajar serta mampu memanfaatkan teknologi sebagai pendukung dalam perencanaan pembelajaran. Kegiatan ini menjadi langkah nyata dalam mendorong transformasi pembelajaran yang lebih relevan dengan kebutuhan zaman dan karakteristik peserta didik.",
+    sumberUrl: "https://www.instagram.com/p/DWgjnzMk4DG/?img_index=1"
+  }, 
+  {
+    id: 80,
+    judul: "Alumni Berbakti",
+    tanggal: "30 Maret 2026",
+    gambar: "/81.png",
+    deskripsi: "Semangat berbagi dan inspirasi kembali hadir di SMA Negeri 7 Balikpapan! Pada hari Senin, 30 Maret 2022, kegiatan Alumni Berbakti sukses dilaksanakan dengan penuh antusiasme. Mengangkat tema berbagi, memotivasi, dan menginspirasi, para alumni hadir untuk berbagi pengalaman dan perjalanan mereka setelah lulus, sekaligus memberikan semangat baru bagi adik-adik kelas! Kegiatan ini menghadirkan narasumber luar biasa, di antaranya: Salsabila Amelia Usman — seorang dokter gigi inspiratif yang berbagi perjalanan kariernya yang dilaksanakan secara daringn namun ini tidak mengurasi antusias peserta didik dari SMA Negeri 7 Balikpapan untuk mengikuti, keren! Chef Andi Susilo sebagai narasumber ke dua juga berbagi pengalaman bekerja di Riyadh, Arab Saudi di salah satu rumah makan ternama, sharing ini dilakukan secara daring dan sekali lagi, hal ini tidak menjadi penghalang semangat peserta didik SMAN 7 Balikpapan untuk mencari motivasi dan ilmu yang bermanfaat! Narasumber yang ke tiga adalah Risendi Agastia kini berkarier di Bank Mandiri sebagai Customer Service Supervisor di Balikpapan berkesempatan untuk berbagi semangat kepada adik adik di SMAN 7 Balikpapan secara langsung, keren banget! Melalui kisah nyata dan pengalaman mereka, para siswa diajak untuk berani bermimpi, terus berusaha, dan tidak takut menghadapi tantangan di masa depan! Semoga kegiatan ini menjadi langkah awal untuk menumbuhkan semangat juang dan inspirasi bagi seluruh siswa dalam meraih cita-cita.",
+    sumberUrl: "https://www.instagram.com/p/DWgeZ3Akxq9/?img_index=1"
+  }, 
+  {
+    id: 79,
+    judul: "Hilal Masuk Sekolah",
+    tanggal: "27 Maret 2026",
+    gambar: "/80.png",
+    deskripsi: "Hai Warga SMAJU... 😃 Hilal masuk sekolah udah keliatan nih bestie 🌙✨ Saatnya siap-siap balik ke rutinitas, ketemu temen, dan ngejar mimpi lagi! 📚🔥 Catet ya, kita mulai sekolah lagi hari Senin, 30 Maret 2026. Jangan lupa atur jam tidur dari sekarang biar nggak kaget pas bangun pagi 😆 Yuk balik dengan semangat baru, vibes positif, dan versi terbaik dari diri kita! See you di sekolah",
+    sumberUrl: "https://www.instagram.com/p/DWYdDMqE-M8/"
+  }, 
+  {
+    id: 78,
+    judul: "Selamat Hari Raya Idhul Fitri 1447 H",
+    tanggal: "19 Maret 2026",
+    gambar: "/79.png",
+    deskripsi: "Kami keluarga besar SMA NEGERI 7 BALIKPAPAN mengucapkan Selamat Hari Raya Idhul Fitri 1447 H Mohon Maaf Lahir dan Batin",
+    sumberUrl: "https://www.instagram.com/p/DWD8F8aE4k4/"
+  }, 
+  {
+    id: 77,
+    judul: "✨ Selamat Hari Raya Idul Fitri 1447 H ✨🌙",
+    tanggal: "19 Maret 2026",
+    gambar: "/78.png",
+    deskripsi: "Taqabbalallahu minna wa minkum, shiyamana wa shiyamakum. Minal ‘aidin wal faizin, mohon maaf lahir dan batin. Mari kita kembali ke fitrah membersihkan hati, mempererat silaturahmi, dan menebar kebaikan kepada sesama. Semoga setiap langkah kita ke depan dipenuhi keberkahan, kedamaian, dan kebahagiaan. Selamat merayakan Idul Fitri bersama keluarga tercinta.",
+    sumberUrl: "https://www.instagram.com/p/DWD7wioE0BH/"
+  }, 
+  {
+    id: 76,
+    judul: "Rahajeng Rahina Nyepi, Tahun Baru Saka 1948.",
+    tanggal: "19 Maret 2026",
+    gambar: "/77.png",
+    deskripsi: "Segenap keluarga besar SMAN 7 Balikpapan mengucapkan Selamat Hari Raya Nyepi bagi umat Hindu yang merayakannya. Di hari yang suci ini, mari kita sejenak menghentikan aktivitas, merenung dalam keheningan, dan mendekatkan diri pada Tuhan serta alam semesta. Melalui Catur Brata Penyepian, semoga kita menemukan kedamaian hati dan pencerahan jiwa untuk menyongsong masa depan yang lebih baik. Semoga kehidupan kita selalu dilimpahi kedamaian, keberagaman kita semakin kuat, dan persatuan kita semakin erat. Selamat Hari Raya Nyepi.",
+    sumberUrl: "https://www.instagram.com/p/DWC9AVXkx-4/"
+  }, 
+  {
+    id: 75,
+    judul: "OSIS MPK SMA Negeri 7 Balikpapan Menghadirkan Acara Buka Bersama ",
+    tanggal: "17 Maret 2026",
+    gambar: "/76.png",
+    deskripsi: "𝐀𝐬𝐬𝐚𝐥𝐚𝐦𝐮’𝐚𝐥𝐚𝐢𝐤𝐮𝐦 𝐖𝐚𝐫𝐚𝐡𝐦𝐚𝐭𝐮𝐥𝐥𝐚𝐡𝐢 𝐖𝐚𝐛𝐚𝐫𝐚𝐤𝐚𝐭𝐮𝐡 𝐒𝐡𝐚𝐥𝐨𝐦, 𝐎𝐦 𝐒𝐰𝐚𝐬𝐭𝐢𝐚𝐬𝐭𝐮, 𝐍𝐚𝐦𝐨 𝐁𝐮𝐝𝐝𝐡𝐚𝐲𝐚, 𝐒𝐚𝐥𝐚𝐦 𝐊𝐞𝐛𝐚𝐣𝐢𝐤𝐚𝐧. Halo sobat SMAVEN🤩 Alhamdulillahirabillalamin, pada 𝐇𝐚𝐫𝐢 𝐉𝐮𝐦'𝐚𝐭/𝟏𝟑/𝐌𝐚𝐫𝐞𝐭/𝟐𝟎𝟐𝟔 kemarin kami OSIS MPK SMA Negeri 7 Balikpapan. Menghadirkan Acara Buka Bersama OSIS SMA Negeri Se Balikpapan dengan tema... 𝑯𝑨𝑹𝑴𝑶𝑵𝑰 𝑯𝒂𝒅𝒊𝒓𝒌𝒂𝒏 𝑹𝒂𝒎𝒂𝒅𝒉𝒂𝒏 𝒖𝒏𝒕𝒖𝒌 𝑴𝒆𝒎𝒑𝒆𝒓𝒆𝒓𝒂𝒕 𝑶𝒓𝒈𝒂𝒏𝒊𝒔𝒂𝒔𝒊 𝒚𝒂𝒏𝒈 𝑵𝒚𝒂𝒎𝒂𝒏 𝒅𝒂𝒏 𝑰𝒏𝒔𝒑𝒊𝒓𝒂𝒕𝒊𝒇 Melalui kegiatan ini, kita semua bisa meningkatkan rasa solidaritas, mempererat tali persaudaran antar sesama OSIS dari SMAN yang ada di balikpapan🥳🙌🏻 Tak lupa juga kami ucapkan terimakasih sebesar-besarnya, kepada seluruh pihak yang ikut berpartisipasi dalam acara Buka Bersama SMA Negeri se-Balikpapan. Dan, sampai jumpa lagi dipertemuan yang akan mendatang😉🌟 𝐒𝐌𝐀𝐍𝐉𝐔? 𝑹𝒆𝒍𝒊𝒈𝒊𝒖𝒔🌟, 𝑪𝒆𝒓𝒅𝒂𝒔🎓, 𝑩𝒆𝒓𝒑𝒓𝒆𝒔𝒕𝒂𝒔𝒊🏆",
+    sumberUrl: "https://www.instagram.com/p/DV-2wAzEV2L/"
+  }, 
+  {
+    id: 74,
+    judul: "Menjaga Bumi, Memperkuat Iman 🌍✨",
+    tanggal: "14 Maret 2026",
+    gambar: "/75.png",
+    deskripsi: "SMA Negeri 7 Balikpapan memperkuat kepedulian lingkungan dengan memindahkan anakan tanaman di sekitar sekolah ke dalam greenhouse pada hari Jum’at, 13 Maret 2026 🌱🏫. Kegiatan ini dilaksanakan sebagai wujud syukur dan tanggung jawab selama Ramadhan 🌙🤲, sekaligus menanamkan nilai kebersamaan, gotong-royong, dan kebiasaan berkelanjutan 🤝🌿.",
+    sumberUrl: "https://www.instagram.com/p/DV25g8HAbfH/"
+  }, 
+  {
+    id: 73,
+    judul: "Asesmen Satuan Pendidikan (ASP)",
+    tanggal: "14 Maret 2026",
+    gambar: "/asp.png",
+    deskripsi: "Pada tanggal 14 Maret 2026 SMAN 7 BALIKPAPAN melaksanakan (ASP) penilaian hasil belajar siswa yang diselenggarakan oleh pihak sekolah atau satuan pendidikan. Bertujuan untuk menilai pencapaian standar kompetensi lulusan bagi seluruh mata pelajaran, penilaian ini berfungsi sebagai salah satu syarat penentuan kelulusan siswa.",
+    sumberUrl: "https://www.instagram.com/p/DV24vMLAADy/"
+  }, 
+  {
+    id: 72,
+    judul: "Uji Kemahiran Berbahasa Indonesia (UKBI) - SMA Negeri 7 Balikpapan",
+    tanggal: "14 Maret 2026",
+    gambar: "/73.png",
+    deskripsi: "Kamis, 12 Maret 2025, SMA Negeri 7 Balikpapan melaksanakan kegiatan Uji Kemahiran Berbahasa Indonesia (UKBI) yang diikuti oleh seluruh siswa-siswi kelas XII. Kegiatan ini diselenggarakan dalam dua sesi, yaitu Sesi 1 pukul 09.00–11.00 WITA dan Sesi 2 pukul 11.00–13.00 WITA, serta dikomandoi oleh Guru Bahasa Indonesia SMA Negeri 7 Balikpapan. UKBI dilaksanakan sebagai upaya untuk mengukur dan mengevaluasi kemahiran berbahasa Indonesia siswa secara objektif. Melalui kegiatan ini, kemampuan siswa dalam mendengarkan, merespons kaidah, membaca, menulis, dan berbicara secara efektif dapat terpetakan dengan lebih jelas. Diharapkan kegiatan ini dapat memacu semangat siswa untuk terus mengasah keterampilan berbahasa, karena hasil tes memberikan gambaran nyata mengenai kompetensi diri mereka. Selain itu, kegiatan ini juga diharapkan mampu menumbuhkan kesadaran akan pentingnya literasi kebahasaan serta memperkuat peran pelajar sebagai agen pelestari martabat bahasa Mari terus bangga menggunakan Bahasa Indonesia dengan baik dan benar! 🇮🇩",
+    sumberUrl: "https://www.instagram.com/p/DV2yu4mgT6r/"
+  }, 
+  {
+    id: 71,
+    judul: "Rapat Evaluasi Triwulan I SMA Negeri 7 Balikpapan",
+    tanggal: "13 Maret 2026",
+    gambar: "/72.png",
+    deskripsi: "Jumat, 13 Maret 2026, SMA Negeri 7 Balikpapan melaksanakan Rapat Laporan dan Evaluasi Kegiatan Triwulan I yang dihadiri oleh seluruh bapak dan ibu guru di Ruang Guru mulai pukul 07.30 WITA. Kegiatan ini menjadi momentum penting untuk merefleksikan berbagai program dan kegiatan yang telah dilaksanakan selama triwulan pertama, sekaligus melakukan evaluasi bersama guna meningkatkan kualitas pelayanan pendidikan di SMA Negeri 7 Balikpapan. Melalui rapat ini diharapkan tercipta sinergi dan komitmen bersama dalam meningkatkan kedisiplinan, kinerja, serta mutu pendidikan di lingkungan sekolah. Pada akhir kegiatan juga diberikan apresiasi kepada guru-guru yang menunjukkan kedisiplinan tinggi, sebagai bentuk penghargaan atas dedikasi dan keteladanan dalam menjalankan tugas sebagai pendidik. Semoga melalui evaluasi dan apresiasi ini, semangat untuk terus memberikan yang terbaik bagi peserta didik dan sekolah semakin tumbuh dan menginspirasi.",
+    sumberUrl: "https://www.instagram.com/p/DVzhOywk9ls/?img_index=1"
+  }, 
+  {
+    id: 70,
+    judul: "Politeknik Alkon Kalimantan melaksanakan kegiatan sosialisasi penerimaan mahasiswa baru di SMA Negeri 7 Balikpapan yang diikuti oleh peserta didik kelas XII.",
+    tanggal: "12 Maret 2026",
+    gambar: "/71.png",
+    deskripsi: "Pada Hari Rabu, 11 Maret 2026, Politeknik Alkon Kalimantan melaksanakan kegiatan sosialisasi penerimaan mahasiswa baru di SMA Negeri 7 Balikpapan yang diikuti oleh peserta didik kelas XII. Kegiatan ini bertujuan untuk memberikan informasi kepada Peserta Didik mengenai peluang melanjutkan pendidikan ke jenjang perguruan tinggi, termasuk informasi terkait program studi, proses penerimaan mahasiswa baru, serta kesempatan memperoleh beasiswa. Dalam kesempatan tersebut, Politeknik Alkon Kalimantan juga memberikan reward kepada beberapa siswa SMA Negeri 7 Balikpapan sebagai bentuk apresiasi dan motivasi agar terus semangat dalam meraih prestasi dan melanjutkan pendidikan ke jenjang yang lebih tinggi. Semoga melalui kegiatan ini, para siswa semakin termotivasi untuk mempersiapkan masa depan dan menentukan langkah terbaik setelah menyelesaikan pendidikan di bangku SMA.",
+    sumberUrl: "https://www.instagram.com/p/DVxLPEdkxGz/?img_index=1"
+  }, 
+  {
+    id: 69,
+    judul: "Selamat & Sukses!",
+    tanggal: "12 Maret 2026",
+    gambar: "/70.png",
+    deskripsi: "Keluarga besar SMA Negeri 7 Balikpapan mengucapkan selamat dan apresiasi setinggi-tingginya kepada peserta didik yang telah menorehkan prestasi membanggakan dan mengharumkan nama sekolah dalam ajang tingkat Kota Balikpapan Tahun 2026: Nadia Friska Pakpahan (XI B1) Finalis 24 Besar Forum Duta Wisata Manuntung Kota Balikpapan (FDBW) 2026 Aurelia Nur Oktavia (XI C1) Finalis 24 Besar Duta Lingkungan Hidup Kota Balikpapan 2026 Dzaky Dzulfikar (X-E) Favorite Putra Duta Anti Narkoba Kota Balikpapan 2026 Prestasi ini menjadi bukti bahwa generasi muda SMAN 7 Balikpapan mampu berperan aktif dalam berbagai bidang, mulai dari pariwisata, kepedulian lingkungan, hingga kampanye hidup sehat tanpa narkoba.Semoga capaian ini menjadi inspirasi bagi seluruh siswa untuk terus berkarya, berprestasi, dan membawa nama baik sekolah di berbagai kesempatan.👏 Teruslah melangkah, berprestasi, dan menjadi kebanggaan SMAN 7 Balikpapan!",
+    sumberUrl: "https://www.instagram.com/p/DVxH669k5eQ/?img_index=1"
+  }, 
+  {
+    id: 68,
+    judul: "Ananda Qonita Munadiyatul Husna Kelas X-A meraih Juara 3 Musabaqah Hifdzil Qur’an (MHQ) se-Balikpapan Timur kategori 10 Juz.",
+    tanggal: "9 Maret 2026",
+    gambar: "/69.png",
+    deskripsi: "Selamat dan Sukses! Keluarga besar SMA Negeri 7 Balikpapan mengucapkan selamat kepada Ananda Qonita Munadiyatul Husna Kelas X-A atas prestasinya meraih Juara 3 Musabaqah Hifdzil Qur’an (MHQ) se-Balikpapan Timur kategori 10 Juz. Prestasi ini menjadi bukti bahwa semangat belajar, ketekunan, dan kecintaan terhadap Al-Qur’an mampu mengantarkan pada pencapaian yang membanggakan. Semoga prestasi ini menjadi inspirasi bagi seluruh siswa untuk terus berusaha, berprestasi, dan mengharumkan nama sekolah. Terus berkarya dan menginspirasi!",
+    sumberUrl: "https://www.instagram.com/p/DVqkz1-ASKb/"
+  }, 
+  {
+    id: 68,
+    judul: "Selamat dan Sukses kepada Peserta Lomba OPSI! 🎉",
+    tanggal: "9 Maret 2026",
+    gambar: "/68.png",
+    deskripsi: "SMA Negeri 7 Balikpapan mengucapkan selamat kepada peserta didik yang telah terpilih untuk mengikuti Olimpiade Penelitian Siswa Indonesia (OPSI). Partisipasi dalam kegiatan ini menjadi langkah nyata dalam mengembangkan budaya riset di kalangan peserta didik, dengan menumbuhkan kemampuan berpikir ilmiah, kreatif, kritis, dan inovatif sebagai bekal berharga untuk menghadapi tantangan di masa depan. Melalui kegiatan ini, diharapkan dapat melahirkan calon peserta terbaik yang mampu mewakili sekolah hingga ke tingkat nasional, sekaligus mencetak peneliti-peneliti muda yang inovatif, kreatif, serta memiliki kepedulian terhadap lingkungan. Semoga para peserta dapat memberikan hasil terbaik, mengharumkan nama sekolah, serta terus menginspirasi generasi muda untuk berkarya melalui penelitian.",
+    sumberUrl: "https://www.instagram.com/p/DVqiwo9ASiE/"
+  }, 
+  {
+    id: 67,
+    judul: "Kegiatan KRENOVA 2026",
+    tanggal: "9 Maret 2026",
+    gambar: "/67.png",
+    deskripsi: "Kegiatan KRENOVA 2026 menjadi salah satu upaya untuk mendorong terbentuknya ekosistem inovasi di bidang ilmu pengetahuan dan teknologi, guna meningkatkan daya saing serta kesejahteraan masyarakat Kota Balikpapan. Melalui kegiatan ini, diharapkan lahir berbagai temuan teknologi yang kreatif dan inovatif dari peserta didik SMA Negeri 7 Balikpapan, sehingga mampu mewakili sekolah dengan penuh percaya diri serta meraih prestasi terbaik sebagai pemenang dalam ajang KRENOVA 2026. ✨",
+    sumberUrl: "https://www.instagram.com/p/DVqiUN8gYHl/"
+  }, 
+  {
+    id: 67,
+    judul: "Persiapan Menuju Prestasi!",
+    tanggal: "9 Maret 2026",
+    gambar: "/66.png",
+    deskripsi: "Hari ini, Senin, 9 Maret 2026, para guru pembina cabang lomba FLS3N SMA Negeri 7 Balikpapan melaksanakan rapat koordinasi sebagai langkah awal dalam mempersiapkan peserta didik untuk menghadapi Festival dan Lomba Seni Siswa Nasional (FLS3N) tingkat Kota Balikpapan. Melalui rapat koordinasi ini, para pembina menyusun strategi, mematangkan persiapan, serta memperkuat kolaborasi demi menghadirkan penampilan terbaik dari para siswa. Semangat kebersamaan dan optimisme menjadi energi utama dalam mengantarkan talenta-talenta SMAN 7 Balikpapan menuju panggung prestasi. Dengan persiapan yang matang dan kerja sama yang solid, kami optimis SMAN 7 Balikpapan siap melangkah, berkarya, dan meraih prestasi di FLS3N tingkat kota!",
+    sumberUrl: "https://www.instagram.com/p/DVqFO7dAI5q/?img_index=1"
+  }, 
+  {
+    id: 67,
+    judul: "tim ekstrakurikuler Smaven Choir SMA Negeri 7 Balikpapan melaksanakan kegiatan latihan persiapan lomba Rukun Sama Teman",
+    tanggal: "9 Maret 2026",
+    gambar: "/55.png",
+    deskripsi: "Jumat, 6 Maret 2026, tim ekstrakurikuler Smaven Choir SMA Negeri 7 Balikpapan melaksanakan kegiatan latihan persiapan lomba Rukun Sama Teman yang bertempat di Laboratorium Bahasa mulai pukul 11.00 hingga 14.00 WITA. Kegiatan ini diikuti oleh seluruh anggota tim Smaven Choir dengan bimbingan dari pelatih. Latihan ini bertujuan untuk meningkatkan kemampuan vokal, kekompakan tim, serta mematangkan persiapan dalam menghadapi perlombaan yang akan diikuti. Melalui kegiatan ini diharapkan tim Smaven Choir SMA Negeri 7 Balikpapan dapat memberikan penampilan terbaik, meraih hasil yang maksimal, serta membawa prestasi dan kebanggaan bagi sekolah.",
+    sumberUrl: "https://www.instagram.com/p/DVqDwMjgaCr/"
+  }, 
+  {
+    id: 66,
+    judul: "Guru mata pelajaran Sains dan Matematika SMAN 7 Balikpapan mengikuti Program AFS STEM Educators",
+    tanggal: "9 Maret 2026",
+    gambar: "/65.png",
+    deskripsi: "From Balikpapan to the World! 🌏 SMA Negeri 7 Balikpapan terus berkomitmen meningkatkan kualitas pendidikan dan kompetensi global bagi para pendidiknya. Guru mata pelajaran Sains dan Matematika SMAN 7 Balikpapan berkesempatan mengikuti Program AFS STEM Educators, sebuah program yang dirancang khusus untuk membantu para pendidik mengintegrasikan konsep keberlanjutan (sustainability) dan kompetensi global ke dalam pembelajaran Science, Technology, Engineering, and Mathematics (STEM) di kelas. Melalui program ini, para guru diharapkan dapat mengembangkan metode pembelajaran yang lebih inovatif, relevan dengan tantangan global, serta mampu mempersiapkan peserta didik menjadi generasi yang siap bersaing di tingkat dunia. Mari nantikan berbagai inovasi pembelajaran menarik yang akan hadir di SMAN 7 Balikpapan sebagai hasil dari program ini!",
+    sumberUrl: "https://www.instagram.com/p/DVqCuIdAA2L/?img_index=1"
+  }, 
+  {
+    id: 65,
+    judul: "latihan persiapan lomba rukun sama teman",
+    tanggal: "9 Maret 2026",
+    gambar: "/skip.png",
+    deskripsi: "Tanggal kegiatan:6 maret 2026 Waktu kegiatan:11.00-14.00 wita Tempat kegiatan:lab bahasa Pengisi kegiatan: pelatih Peserta kegiatan:team ekskul smaven choir Tujuan kegiatan:mengikuti perlombaan rukun sama teman Harapan dari kegiatan:harapan kami bisa memenangkan event yang kami ikuti dan mendapat hasil yang maximal",
+    sumberUrl: "https://www.instagram.com/p/DVpoqMsk0Jh/"
+  }, 
+  {
+    id: 64,
+    judul: "Olimpiade Orbit – Piala Hasri Ainun Habibie Tahun 2026",
+    tanggal: "7 Maret 2026",
+    gambar: "/orbit.png",
+    deskripsi: "Siswa-siswi SMAN 7 Balikpapan pada hari Kamis, 5 Maret 2026 mengikuti ajang bergengsi Olimpiade Orbit – Piala Hasri Ainun Habibie Tahun 2026. Kegiatan dilaksanakan secara daring terpusat di sekolah, tepatnya di ruang Lab Bahasa, yang telah disiapkan sebagai ruang ujian menggunakan Chromebook dan IFP. Dalam olimpiade ini, perwakilan SMAN 7 Balikpapan berpartisipasi pada tiga kategori lomba, yaitu IPA, IPS, dan Matematika. Harapannya keikutsertaan dalam Olimpiade Orbit tidak hanya menghasilkan prestasi, tetapi juga meningkatkan motivasi belajar serta daya saing akademik para siswa di tingkat nasional.",
+    sumberUrl: "https://www.instagram.com/p/DVkcFctE_qr/"
+  }, 
+  {
     id: 63,
     judul: "Selamat dan Sukses kepada Peserta Lomba OPSI!",
     tanggal: "7 Maret 2026",
