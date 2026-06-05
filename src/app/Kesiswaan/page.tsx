@@ -5,11 +5,13 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 
 export default function KesiswaanPage() {
-  // Menu Program Kesiswaan yang mengarah ke halaman masing-masing
+  // Menu Program Kesiswaan lengkap dengan tambahan Daftar Siswa & Daftar Kelas
   const menuKesiswaan = [
     { id: "ekskul", nama: "🎪 Ekstrakurikuler", href: "/ekskul" },
     { id: "osis", nama: "👥 Organisasi (OSIS)", href: "/osis" },
     { id: "prestasi", nama: "🏆 Prestasi Siswa", href: "/prestasi" },
+    { id: "siswa", nama: "👨‍🎓 Daftar Siswa", href: "/siswa" }, // Link aktif ke halaman siswa Anda
+    { id: "kelas", nama: "🏫 Daftar Kelas", href: "/kelas" }, // Link aktif ke halaman kelas Anda
   ]
 
   return (
@@ -86,7 +88,7 @@ export default function KesiswaanPage() {
         <div className="w-full flex flex-col items-center border-t border-white/10 pt-12">
           <p className="text-xs text-gray-400 uppercase tracking-widest mb-5">Jelajahi Program Kesiswaan</p>
           
-          {/* Scrollable di HP */}
+          {/* Slider otomatis aktif di HP jika menu melebihi lebar layar */}
           <div className="w-full overflow-x-auto no-scrollbar flex justify-start md:justify-center px-2">
             <div className="flex bg-slate-900/50 p-2 rounded-xl md:rounded-2xl border border-white/5 gap-2 min-w-max">
               {menuKesiswaan.map((item) => (

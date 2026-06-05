@@ -27,7 +27,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md text-white border-b border-white/10"
+      className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-md text-white border-b border-white/10"
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         
@@ -75,7 +75,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-0 left-0 w-full min-h-screen bg-black/95 flex flex-col justify-center items-center gap-6 text-xl font-medium lg:hidden pt-20"
+            className="absolute top-0 left-0 w-full min-h-screen bg-black/50 flex flex-col justify-center items-center gap-6 text-xl font-medium lg:hidden pt-20"
           >
             {menuItems.map((item) => (
               <Link

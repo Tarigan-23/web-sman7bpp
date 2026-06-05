@@ -1,21 +1,22 @@
 "use client"
 
-import React from "react"
-import { motion, Variants } from "framer-motion"
+import React, { useState } from "react"
+import { motion, Variants, AnimatePresence } from "framer-motion"
 
 export default function SambutanPage() {
+  // State untuk mengontrol pop-up zoom gambar struktur di mobile
+  const [isZoomed, setIsZoomed] = useState(false)
+
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.15 },
     },
   }
 
   const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 30 },
     visible: { 
       opacity: 1, 
       y: 0, 
@@ -26,165 +27,226 @@ export default function SambutanPage() {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
-      style={{
-        backgroundImage: "url('/background.jpg')",
-      }}
+      style={{ backgroundImage: "url('/background.jpg')" }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-0"></div>
+      {/* Overlay Backdrop - Kontras ditingkatkan agar teks putih mudah dibaca di HP */}
+      <div className="absolute inset-0 bg-black/75 z-0" />
 
-      {/* Content */}
-      <div className="relative z-10 pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-6 max-w-7xl mx-auto block">
+      {/* Konten Utama */}
+      <div className="relative z-10 pt-24 md:pt-36 pb-20 px-4 md:px-6 max-w-7xl mx-auto space-y-10 md:space-y-16">
         
-        {/* Judul Utama Halaman */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-10 md:mb-20"
-        >
-          <h1 className="text-3xl md:text-6xl font-bold text-blue-400 drop-shadow-lg leading-tight">
-            Sambutan Kepala Sekolah
-          </h1>
-          <p className="text-gray-200 text-base md:text-xl mt-2 md:mt-4 font-medium">
-            SMA Negeri 7 Balikpapan
-          </p>
-        </motion.div>
+        {/* ======================================================== */}
+        {/* HERO TITLE                                               */}
+        {/* ======================================================== */}
+        <section className="text-center w-full">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="space-y-2"
+          >
+            <span className="bg-blue-500/10 text-[10px] md:text-xs font-semibold px-4 py-1.5 rounded-full text-blue-300 border border-blue-400/20 uppercase tracking-widest">
+              Welcome Greeting
+            </span>
+            <h1 className="text-3xl md:text-6xl font-black text-white tracking-tight mt-3 mb-1 leading-tight">
+              Sambutan <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Kepala Sekolah</span>
+            </h1>
+            <p className="text-gray-300 text-sm md:text-xl font-light tracking-wide">
+              SMA Negeri 7 Balikpapan
+            </p>
+          </motion.div>
+        </section>
 
-        {/* Section 1: Sambutan Kepala Sekolah */}
+        {/* ======================================================== */}
+        {/* SECTION 1: SAMBUTAN KEPSEK (MOBILE RE-ORDERED)           */}
+        {/* ======================================================== */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          // Di mobile padding menggunakan px-4 agar kartu memanfaatkan ruang layar semaksimal mungkin
-          className="bg-white/15 backdrop-blur-md rounded-2xl md:rounded-3xl shadow-2xl px-4 py-6 md:p-10 border border-white/10 mb-10 md:mb-16"
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6 }}
+          className="bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-md rounded-2xl md:rounded-3xl shadow-2xl p-5 md:p-10 border border-white/10"
         >
-          {/* Menggunakan Flexbox arah kolom di mobile (flex-col) dan Grid di desktop (lg:grid-cols-3) */}
-          <div className="flex flex-col lg:grid lg:grid-cols-3 gap-6 md:gap-10 items-stretch lg:items-center">
+          {/* Grid responsive layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-10 items-start">
             
-            {/* 1. JUDUL: Dipaksa berada di paling atas saat di HP */}
-            <div className="w-full lg:col-span-2 lg:order-1">
-              <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6 flex items-center gap-2">
-                <span className="text-blue-400">#</span> Kepala Sekolah
+            {/* 1. FOTO KEPSEK & IDENTITAS - Menggunakan order khusus agar sejajar */}
+            <div className="w-full lg:col-span-1 flex flex-col items-center text-center lg:order-1 space-y-4">
+              <div className="relative w-full max-w-[280px] lg:max-w-full aspect-[3/4] overflow-hidden rounded-xl md:rounded-2xl border border-white/10 shadow-xl bg-slate-900/50 group">
+                <img
+                  src="/kepsek.webp"
+                  alt="Kepala SMAN 7 Balikpapan"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onError={(e) => {(e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=400"}}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                
+                {/* Badge Nama Mengambang Khusus Mobile di dalam Foto */}
+                <div className="absolute bottom-4 left-4 right-4 text-left block lg:hidden">
+                  <h3 className="text-base font-bold text-white leading-tight">
+                    Puspani Bandrang, M. Pd.
+                  </h3>
+                  <p className="text-[11px] text-blue-300 font-medium mt-0.5">
+                    Kepala Sekolah
+                  </p>
+                </div>
+              </div>
+
+              {/* Identitas Khusus Desktop View (Hidden di HP) */}
+              <div className="hidden lg:block text-left w-full pt-2 border-t border-white/5">
+                <h3 className="text-xl font-bold text-white tracking-wide">
+                  Puspani Bandrang, M. Pd.
+                </h3>
+                <p className="text-sm text-blue-400 font-medium mt-0.5">
+                  Kepala SMAN 7 Balikpapan
+                </p>
+              </div>
+            </div>
+
+            {/* 2. TEKS SAMBUTAN */}
+            <div className="w-full lg:col-span-2 lg:order-2 flex flex-col justify-between h-full space-y-4 md:space-y-6">
+              <h2 className="text-xl md:text-3xl font-extrabold text-white flex items-center gap-2 border-b border-white/5 pb-3">
+                <span className="p-1.5 bg-blue-500/10 rounded-lg text-blue-400 text-sm md:text-xl border border-blue-500/20">✨</span>
+                Pesan & Harapan
               </h2>
-            </div>
-
-            {/* 2. FOTO KEPSEK: Diatur Full Kiri-Kanan kontainer di HP */}
-            <div className="w-full lg:col-span-1 flex justify-center lg:order-3">
-              <motion.img
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-                src="/kepsek.webp"
-                alt="Kepala Sekolah"
-                // w-full h-auto memaksa gambar mengisi 100% lebar kontainer kartu secara rapi di HP
-                className="w-full lg:w-[300px] lg:h-[400px] object-cover rounded-xl md:rounded-3xl shadow-xl border border-white/10"
-              />
-            </div>
-
-            {/* 3. NAMA & JABATAN: Tepat di bawah foto untuk versi Mobile */}
-            <div className="w-full block lg:hidden my-2">
-              <h3 className="text-xl font-bold text-white leading-tight">
-                Puspani Bandrang, M. Pd.
-              </h3>
-              <p className="text-sm text-blue-300 font-medium mt-1">
-                Kepala SMA Negeri 7 Balikpapan
-              </p>
-            </div>
-
-            {/* 4. KATA SAMBUTAN: Berada di paling bawah setelah Nama & Jabatan */}
-            <div className="w-full lg:col-span-2 lg:order-2 text-gray-200 leading-relaxed md:leading-8 text-sm md:text-lg text-justify font-normal space-y-4">
-              <p>Assalamu’alaikum Warahmatullahi Wabarakatuh.</p>
-              <p>
-                Selamat datang di website resmi SMA Negeri 7 Balikpapan.
-                Website ini hadir sebagai sarana informasi dan komunikasi
-                bagi seluruh warga sekolah serta masyarakat luas.
-              </p>
-              <p>
-                Kami berkomitmen untuk menciptakan lingkungan pendidikan
-                yang unggul, berkarakter, berprestasi, dan berbasis teknologi.
-                Semoga website ini dapat memberikan manfaat dan menjadi
-                media informasi yang inspiratif bagi semua pihak.
-              </p>
-              <p>Wassalamu’alaikum Warahmatullahi Wabarakatuh.</p>
-            </div>
-
-            {/* Nama & Jabatan khusus tampilan Desktop (Disembunyikan di HP) */}
-            <div className="hidden lg:block lg:col-span-2 lg:order-4 mt-4">
-              <h3 className="text-2xl font-bold text-white">
-                Puspani Bandrang, M. Pd.
-              </h3>
-              <p className="text-blue-300 font-medium">
-                Kepala SMA Negeri 7 Balikpapan
-              </p>
+              
+              <div className="text-gray-300 leading-relaxed md:leading-8 text-xs md:text-base text-justify font-light space-y-4">
+                <p className="italic text-gray-200 font-normal">Assalamu’alaikum Warahmatullahi Wabarakatuh.</p>
+                <p>
+                  Selamat datang di platform portal digital resmi <strong className="text-white font-medium">SMA Negeri 7 Balikpapan</strong>. Website ini dirancang dan dikembangkan secara adaptif sebagai jembatan informasi, transparansi akademik, serta media komunikasi interaktif yang menghubungkan seluruh ekosistem warga sekolah, wali murid, dan masyarakat luas secara realtime.
+                </p>
+                <p>
+                  Selaras dengan dinamika perkembangan zaman, kami berkomitmen penuh untuk mengintegrasikan teknologi modern ke dalam instrumen pembelajaran demi melahirkan generasi pembelajar yang religius, cerdas secara kognitif, berwawasan global, namun tetap memegang teguh identitas luhur Profil Pelajar Pancasila.
+                </p>
+                <p>
+                  Kami berharap media digital ini mampu menjadi wadah inspirasi sekaligus etalase kreativitas tanpa batas bagi putra-putri terbaik SMAN 7 Balikpapan untuk terus mendulang prestasi gemilang.
+                </p>
+                <p className="italic text-gray-200 font-normal">Wassalamu’alaikum Warahmatullahi Wabarakatuh.</p>
+              </div>
             </div>
 
           </div>
         </motion.div>
 
-        {/* Section 2: Visi & Misi */}
+        {/* ======================================================== */}
+        {/* SECTION 2: VISI & MISI (BENTO STYLE GRID)               */}
+        {/* ======================================================== */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 mb-10 md:mb-16"
+          viewport={{ once: true, margin: "-50px" }}
+          className="grid grid-cols-1 lg:grid-cols-5 gap-6 items-stretch"
         >
-          {/* Visi */}
+          {/* VISI CARD (Makan 2 Kolom di Desktop) */}
           <motion.div 
             variants={itemVariants}
-            className="bg-white/15 backdrop-blur-md rounded-2xl md:rounded-3xl shadow-2xl p-6 md:p-10 border border-white/10 flex flex-col"
+            className="lg:col-span-2 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-md rounded-2xl md:rounded-3xl p-5 md:p-8 border border-white/10 flex flex-col group hover:border-blue-500/20 transition-all duration-300"
           >
-            <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6 flex items-center gap-2">
-              <span className="text-blue-400">#</span> Visi
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-4 flex items-center gap-2.5">
+              <span className="p-2 bg-blue-500/10 rounded-xl text-blue-400 text-xs md:text-sm border border-blue-500/20">🎯</span> 
+              Visi Utama
             </h2>
-            <p className="text-gray-200 leading-relaxed md:leading-8 text-sm md:text-lg text-justify flex-1">
-              Terwujudnya Insan Sekolah Yang Religius, Cerdas, Berprestasi, Berwawasan global, Dan Berbudaya Lingkungan.
-            </p>
+            <div className="bg-slate-950/30 border border-white/5 p-4 rounded-xl flex items-center justify-center flex-1">
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-blue-200 leading-relaxed md:leading-8 text-sm md:text-lg text-center md:text-justify font-medium">
+                "Terwujudnya Insan Sekolah Yang Religius, Cerdas, Berprestasi, Berwawasan Global, Dan Berbudaya Lingkungan."
+              </p>
+            </div>
           </motion.div>
 
-          {/* Misi */}
+          {/* MISI CARD (Makan 3 Kolom di Desktop) */}
           <motion.div 
             variants={itemVariants}
-            className="bg-white/15 backdrop-blur-md rounded-2xl md:rounded-3xl shadow-2xl p-6 md:p-10 border border-white/10"
+            className="lg:col-span-3 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-md rounded-2xl md:rounded-3xl p-5 md:p-8 border border-white/10 group hover:border-cyan-500/20 transition-all duration-300"
           >
-            <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6 flex items-center gap-2">
-              <span className="text-blue-400">#</span> Misi
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-4 flex items-center gap-2.5">
+              <span className="p-2 bg-cyan-500/10 rounded-xl text-cyan-400 text-xs md:text-sm border border-cyan-500/20">📋</span> 
+              Misi Strategis
             </h2>
-            <ul className="text-gray-200 leading-relaxed md:leading-8 text-sm md:text-lg list-disc pl-5 space-y-2 md:space-y-3 font-normal text-justify">
-              <li>Menumbuhkan Penghayatan Tehadap Ajaran Agama Yang Dianut Serta Meningkatkan Keimanan Dan Ketaqwaan Tehadap Allah SWT, Tuhan YME.</li>
-              <li>Membiasakan Semua Warga Sekolah Untuk Taat Beribadah Sesuai Agama Dan Kepercayaan Masing - Masing</li>
-              <li>Mewujudkan Budaya Sekolah Yang Baik Sebagai Ladang Tumbuh Suburnya Budi Pekerti Luhur dan Berakhlak Mulia Selaras Profil Pelajar Pancasila</li>
-              <li>Mewujudkan Pembelajaran Yang Bermakna Dan Bimbingan Secara Efektif, Sehingga Setiap Siswa Dapat Berkembang Secara Optimal Sesuai Bakat, Minat Dan Potensi Yang Dimiliki</li>
-              <li>Meningkatkan Kompetensi Numerasi Dan Literasi, Sesuai Prinsip Kejujuran, Kemandirian, Serta Bakat, Minat Dan Potensi Peserta Didik.</li>
+            <ul className="text-gray-300 leading-relaxed md:leading-7 text-xs md:text-sm space-y-3 font-light text-justify">
+              {[
+                "Menumbuhkan penghayatan terhadap ajaran agama yang dianut serta meningkatkan keimanan dan ketaqwaan terhadap Allah SWT, Tuhan Yang Maha Esa.",
+                "Membiasakan seluruh warga sekolah untuk taat beribadah secara konsisten sesuai dengan koridor agama dan kepercayaan masing-masing.",
+                "Mewujudkan budaya sekolah yang inklusif sebagai ladang tumbuh suburnya budi pekerti luhur dan akhlak mulia selaras dengan Profil Pelajar Pancasila.",
+                "Menyelenggarakan pembelajaran bermakna dan bimbingan efektif agar setiap siswa berkembang optimal sesuai keunikan bakat, minat, dan potensi internalnya.",
+                "Mengakselerasi kompetensi numerasi dan literasi digital berlandaskan prinsip kejujuran, kemandirian, serta daya saing sains yang kompetitif."
+              ].map((misi, index) => (
+                <li key={index} className="flex items-start gap-2.5 group/li">
+                  <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-cyan-500/20 text-[10px] font-bold text-cyan-400 border border-cyan-500/30 group-hover/li:bg-cyan-500 group-hover/li:text-slate-950 transition-colors">
+                    {index + 1}
+                  </span>
+                  <span className="group-hover/li:text-white transition-colors">{misi}</span>
+                </li>
+              ))}
             </ul>
           </motion.div>
         </motion.div>
 
-        {/* Section 3: Struktur Organisasi */}
+        {/* ======================================================== */}
+        {/* SECTION 3: STRUKTUR ORGANISASI (WITH MOBILE ZOOM FEATURE) */}
+        {/* ======================================================== */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6 }}
-          className="bg-white/15 backdrop-blur-md rounded-2xl md:rounded-3xl shadow-2xl p-5 md:p-10 border border-white/10 w-full block"
+          className="bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-md rounded-2xl md:rounded-3xl p-5 md:p-8 border border-white/10 w-full block"
         >
-          <h2 className="text-2xl md:text-4xl font-bold text-white mb-6 md:mb-10 text-center flex items-center justify-center gap-2">
-            <span className="text-blue-400">#</span> Struktur Organisasi
-          </h2>
+          <div className="text-center space-y-2 mb-6 md:mb-8">
+            <h2 className="text-xl md:text-3xl font-bold text-white flex items-center justify-center gap-2.5">
+              <span className="p-2 bg-blue-500/10 rounded-xl text-blue-400 text-xs md:text-sm border border-blue-500/20">🌿</span> 
+              Struktur Organisasi
+            </h2>
+            <p className="text-gray-400 text-[10px] md:text-xs block lg:hidden font-light animate-pulse">
+              💡 Ketuk gambar untuk memperbesar bagan struktur
+            </p>
+          </div>
 
-          <div className="flex justify-center w-full overflow-x-auto">
-            <motion.img
-              whileHover={{ scale: 1.01 }}
-              transition={{ duration: 0.3 }}
+          {/* Wrapper Kontainer Gambar Bagan */}
+          <div 
+            onClick={() => setIsZoomed(true)} 
+            className="flex justify-center w-full overflow-x-auto no-scrollbar cursor-zoom-in group relative"
+          >
+            <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl duration-500 pointer-events-none" />
+            <img
               src="/struktur.png"
-              alt="Struktur Organisasi"
-              className="rounded-xl md:rounded-3xl shadow-2xl min-w-[500px] md:min-w-0 max-w-full h-auto border border-white/5"
+              alt="Struktur Organisasi SMAN 7 Balikpapan"
+              className="rounded-xl md:rounded-2xl shadow-2xl min-w-[400px] sm:min-w-[550px] md:min-w-0 max-w-full h-auto border border-white/5 transition-transform duration-500 group-hover:scale-[1.005]"
+              onError={(e) => {(e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800"}}
             />
           </div>
         </motion.div>
 
       </div>
+
+      {/* ======================================================== */}
+      {/* INTERACTIVE FULLSCREEN OVERLAY MODAL (LIGHTBOX ZOOM)     */}
+      {/* ======================================================== */}
+      <AnimatePresence>
+        {isZoomed && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setIsZoomed(false)}
+            className="fixed inset-0 bg-slate-950/95 backdrop-blur-lg z-50 flex items-center justify-center p-4 cursor-zoom-out"
+          >
+            {/* Tombol Close */}
+            <button className="absolute top-6 right-6 text-white bg-white/10 p-2.5 rounded-full hover:bg-white/20 border border-white/10 text-xs font-mono font-bold transition-all">
+              ✕ CLOSE
+            </button>
+            <motion.img
+              initial={{ scale: 0.9, y: 10 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.9, y: 10 }}
+              src="/struktur.png"
+              alt="Struktur Organisasi Terbuka"
+              className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl border border-white/10"
+              onError={(e) => {(e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800"}}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

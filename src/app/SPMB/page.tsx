@@ -113,12 +113,12 @@ export default function SPMBPage() {
                 Lihat Alur Pendaftaran
               </a>
               <a
-                href="https://spmb.siap-ppdb.com" 
+                href="https://spmb-balikpapan.kaltimprov.go.id/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold py-3 px-6 rounded-2xl backdrop-blur transition duration-300 flex items-center gap-2"
               >
-                ✨ Download Aplikasi SPMB
+                ✨ Portal SPMB
               </a>
             </motion.div>
           </div>
@@ -131,10 +131,10 @@ export default function SPMBPage() {
             className="lg:col-span-5 bg-white/15 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-white/10"
           >
             <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
-              🔥 Hitung Mundur Pendaftaran
+              🔥 Hitung Mundur Pra Pendaftaran
             </h3>
             <p className="text-gray-300 text-sm mb-6">
-              Jalur Domisili, Afirmasi, dan Mutasi akan berakhir pada <span className="text-blue-400 font-semibold">2 Juni 2026</span>.
+              Jalur Domisili, Afirmasi, dan Mutasi akan berakhir pada <span className="text-blue-400 font-semibold">8 Juni 2026</span>.
             </p>
 
             {/* Grid Angka Countdown */}
@@ -166,10 +166,10 @@ export default function SPMBPage() {
           className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20"
         >
           {[
-            { tag: "👥 DAYA TAMPUNG", num: "396", desc: "Siswa baru TP 2026/2027" },
-            { tag: "🗺️ JALUR MASUK", num: "8", desc: "Pilihan jalur pendaftaran" },
+            { tag: "👥 DAYA TAMPUNG", num: "440", desc: "Siswa baru TP 2026/2027" },
+            { tag: "🗺️ JALUR MASUK", num: "5", desc: "Pilihan jalur pendaftaran" },
             { tag: "🏅 AKREDITASI", num: "A", desc: "Kategori Sekolah Unggulan" },
-            { tag: "🎓 LULUSAN", num: "98%", desc: "Diterima di PTN/PTS Favorit" },
+            { tag: "📍 NPSN:", num: "30401504", desc: "BALIKPAPAN TIMUR - LAMARU JL. MULAWARMAN" },
           ].map((stat, idx) => (
             <motion.div
               key={idx}

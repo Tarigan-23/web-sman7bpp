@@ -36,8 +36,8 @@ export default function Footer(): React.JSX.Element {
                 </Link>
               </li>
               <li>
-                <Link href="/berita" className="hover:text-blue-400 transition-colors block py-0.5">
-                  Berita
+                <Link href="/Sambutan" className="hover:text-blue-400 transition-colors block py-0.5">
+                  Sambutan
                 </Link>
               </li>
               <li>
@@ -46,8 +46,28 @@ export default function Footer(): React.JSX.Element {
                 </Link>
               </li>
               <li>
+                <Link href="/berita" className="hover:text-blue-400 transition-colors block py-0.5">
+                  Berita
+                </Link>
+              </li>              
+              <li>
                 <Link href="/kurikulum" className="hover:text-blue-400 transition-colors block py-0.5">
                   Kurikulum
+                </Link>
+              </li>
+              <li>
+                <Link href="/Kesiswaan" className="hover:text-blue-400 transition-colors block py-0.5">
+                  Kesiswaan
+                </Link>
+              </li>
+              <li>
+                <Link href="/Sarpras" className="hover:text-blue-400 transition-colors block py-0.5">
+                  Sarpras
+                </Link>
+              </li>
+              <li>
+                <Link href="/Humas" className="hover:text-blue-400 transition-colors block py-0.5">
+                  Humas
                 </Link>
               </li>
               <li>
@@ -78,7 +98,7 @@ export default function Footer(): React.JSX.Element {
 
       {/* Baris Hak Cipta / Copyright di Bagian Paling Bawah */}
       <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/5 text-center text-xs md:text-sm text-gray-400">
-        <p>&copy; {currentYear}SMAN 7 Balikpapan-yegar tarigan. All rights reserved.</p>
+        <p>&copy; {currentYear}SMAN 7 Balikpapan. All rights reserved.</p>
       </div>
 
     </footer>
