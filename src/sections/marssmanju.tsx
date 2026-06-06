@@ -37,7 +37,7 @@ export default function MarsPage() {
         {/* Header Judul Halaman */}
         <div className="text-center space-y-3">
           <span className="bg-blue-500/10 text-[10px] md:text-xs font-semibold px-4 py-1.5 rounded-full text-blue-300 border border-blue-400/20 uppercase tracking-widest">
-            Official Media Portal
+            Official Media SMA NEGERI 7 BALIKPAPAN
           </span>
           <h1 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight pt-2">
             Mars <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">SMAN 7 Balikpapan</span>
@@ -107,16 +107,6 @@ export default function MarsPage() {
 
           </div>
         </motion.div>
-
-        {/* Lirik Singkat / Footer Tambahan Tradisional (Opsional) */}
-        <motion.p 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.5 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          className="text-center text-[11px] md:text-xs text-slate-400 font-light max-w-md tracking-wide leading-relaxed italic"
-        >
-          "Membentuk insan religius, cerdas, dan berprestasi nyata untuk Indonesia Tercinta."
-        </motion.p>
 
       </div>
     </div>

@@ -91,13 +91,13 @@ export default function Hero() {
           className="space-y-1.5 md:space-y-2 bg-black/10 backdrop-blur-md px-8 py-5 rounded-2xl border border-white/10 max-w-xl mx-auto shadow-2xl"
         >
           {/* Baris 1: SMANJU */}
-          <p className="text-blue-400 font-mono tracking-[0.2em] text-xs md:text-sm font-black uppercase">
-            SMANJU : "RELIGIUS - CERDAS - BERKARAKTER"
+          <p className="text-blue-400 text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
+            SMANJU :"RELIGIUS-CERDAS-BERKARAKTER"
           </p>
           
           {/* Baris 2: Slogan Utama */}
           <p className="text-blue-400 text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
-            SMANJU : "SEMAKIN MAJU"
+            SMANJU :"SEMAKIN MAJU"
           </p>
 
         </motion.div>
