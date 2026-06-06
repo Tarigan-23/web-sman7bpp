@@ -14,7 +14,7 @@ export default function Stats() {
   const stats: StatItem[] = [
     {
       title: "Siswa",
-      value: "700+",
+      value: "1000+",
       link: "/siswa",
     },
     {
@@ -29,7 +29,7 @@ export default function Stats() {
     },
     {
       title: "Kelas",
-      value: "20+",
+      value: "18+",
       link: "/kelas",
     },
   ]

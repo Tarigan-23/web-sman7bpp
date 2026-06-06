@@ -7,7 +7,7 @@ interface PrestasiItem {
   id: string
   judul: string
   peraih: string
-  kategori: "Akademik" | "Olahraga" | "Seni" | "Teknologi"
+  kategori: "Akademik" | "Olahraga" | "Seni" | "Teknologi" | "Keagamaan" | "Kepeminpinan"
   tingkat: "Nasional" | "Provinsi" | "Kota"
   tahun: string
   gambar: string
@@ -20,67 +20,187 @@ export default function PrestasiPage() {
 
   const daftarPrestasi: PrestasiItem[] = [
     {
-      id: "p1",
-      judul: "Juara 1 Olimpiade Sains Nasional (OSN) Informatika",
-      peraih: "Yegar Sahaduta (XII IPA 1)",
+      id: "p18",
+      judul: "Juara 2 KRENOVA 2026 ",
+      peraih: "Tim Nyscientia",
       kategori: "Akademik",
-      tingkat: "Nasional",
+      tingkat: "Kota",
       tahun: "2026",
-      gambar: "/prestasi/osn.jpg",
-      deskripsi: "Berhasil menyabet medali emas setelah unggul dalam kompetisi pemrograman kompetitif tingkat nasional yang diselenggarakan oleh Puspresnas.",
+      gambar: "/138.png",
+      deskripsi: "Kegiatan KRENOVA ini bertujuan untuk mendorong terbentuknya ekosistem inovasi dibidang ilmu pengetahuan dan teknologi guna meningkatkan daya saing serta kesejahteraan masyarakat Kota Balikpapan.",
       isHighlight: true
     },
     {
-      id: "p2",
-      judul: "Medali Emas Kejuaraan Taekwondo antar Pelajar",
-      peraih: "Ahmad Rizky (XI IPS 1)",
-      kategori: "Olahraga",
-      tingkat: "Provinsi",
-      tahun: "2026",
-      gambar: "/prestasi/taekwondo.jpg",
-      deskripsi: "Meraih podium pertama pada kelas Kyorugi Putra setelah mengalahkan perwakilan dari berbagai kota se-Kalimantan Timur.",
-      isHighlight: true
-    },
-    {
-      id: "p3",
-      judul: "Juara 2 Festival Musik Digital Pop Nasional",
-      peraih: "Dinda Ayu & Band (XII E3)",
-      kategori: "Seni",
-      tingkat: "Nasional",
-      tahun: "2025",
-      gambar: "/prestasi/musik.jpg",
-      deskripsi: "Menampilkan aransemen lagu daerah kolaboratif modern yang memukau dewan juri di ajang FLS2N tingkat nasional.",
-      isHighlight: true
-    },
-    {
-      id: "p4",
-      judul: "Juara 1 Lomba Karya Tulis Ilmiah (LKTI) Teknologi Hijau",
-      peraih: "Kevin & Salsa (XI IPA 2)",
-      kategori: "Teknologi",
-      tingkat: "Provinsi",
-      tahun: "2026",
-      gambar: "/prestasi/lkti.jpg",
-      deskripsi: "Inovasi purwarupa filter air mandiri berbasis IoT untuk wilayah pemukiman pesisir Balikpapan."
-    },
-    {
-      id: "p5",
-      judul: "Juara 3 Kompetisi Web Design & Cyber Security",
-      peraih: "Budi Santoso (XII A1)",
+      id: "p17",
+      judul: "JUARA 2 INOVASI TINGKAT SMA / SMK",
+      peraih: "SMA NEGERI 7 BALIKPAPAN",
       kategori: "Teknologi",
       tingkat: "Kota",
       tahun: "2026",
-      gambar: "/prestasi/web-design.jpg",
-      deskripsi: "Ajang unjuk bakat konfigurasi jaringan aman dan pembuatan antarmuka web interaktif se-Balikpapan."
+      gambar: "/j2inov.png",
+      deskripsi: "SMA NEGERI 7 BALIKPAPAN (INOVASI STRIP PH BERBASIS EKSTRAK UBI JALAR UNGU (IPOMOEA BATATAS L.) SEBAGAI INDIKATOR KUALITAS AIR TAMBAK DI BALIKPAPAN TIMUR",
+      isHighlight: true
+    },
+    {
+      id: "p16",
+      judul: "Juara 2 Futsal dalam event Olimpiade Elektro Poltekba",
+      peraih: "Tim futsal SMA Negeri 7 Balikpapan",
+      kategori: "Olahraga",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/113.png",
+      deskripsi: "Kabar membanggakan! Tim futsal SMA Negeri 7 Balikpapan berhasil meraih Juara 2 Futsal dalam event Olimpiade Elektro Poltekba 🤩🏆",
+      isHighlight: true
+    },
+    {
+      id: "p15",
+      judul: "Putri Duta Pariwisata Manuntung Kota Balikpapan 2026",
+      peraih: "Nadia Friska Pakpahan (XI-B1)",
+      kategori: "Kepeminpinan",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/116.png",
+      deskripsi: "Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota."
+    },
+    {
+      id: "p14",
+      judul: "Juara harapan 3 lomba film pendek",
+      peraih: "Rizki Aulia, Nazril Al, Kalifa Nur",
+      kategori: "Seni",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/pr6.png",
+      deskripsi: "Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota."
+    },
+    {
+      id: "p13",
+      judul: "Juara Harapan 3 cabang lomba vocal solo putri",
+      peraih: "Aurel (XI-C1)",
+      kategori: "Seni",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/pr5.png",
+      deskripsi: "Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota."
+    },
+    {
+      id: "p12",
+      judul: "Juara 3 cabang lomba musik tradisional",
+      peraih: "Tim FLS3N 7 Balikpapan",
+      kategori: "Seni",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/pr4.png",
+      deskripsi: "Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota."
+    },
+    {
+      id: "p11",
+      judul: "Juara 3 cabang jurnalistik",
+      peraih: "Kurnia Akifah Nailah (XI-A1)",
+      kategori: "Akademik",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/pr3.png",
+      deskripsi: "Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota."
+    },
+    {
+      id: "p10",
+      judul: "Juara 3 cabang lomba kriya",
+      peraih: "Wijdan Nurinayah.D (XI-A1)",
+      kategori: "Seni",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/pr2.png",
+      deskripsi: "Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota."
+    },
+    {
+      id: "p9",
+      judul: "Juara 2 cabang lomba komik digital",
+      peraih: "Azki Khabibah (XI-C1)",
+      kategori: "Teknologi",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/pr1.png",
+      deskripsi: "Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota."
+    },
+    {
+      id: "p8",
+      judul: "Juara 1 Cabang Lomba Cerpen",
+      peraih: "Nuraini Azzura S (XI-C1)",
+      kategori: "Akademik",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/115.png",
+      deskripsi: "Selamat dan sukses kami ucapkan kepada seluruh peserta didik SMA Negeri 7 Balikpapan yang telah berjuang dalam ajang FLS3N tingkat kota."
+    },
+    {
+      id: "p7",
+      judul: "Sebagai Finalis Nasional Olimpiade Orbit 2026 (Piala Hasri Ainun Habibie)",
+      peraih: "Gusti Billy Destany (Kelas XI-C1)",
+      kategori: "Akademik",
+      tingkat: "Nasional",
+      tahun: "2026",
+      gambar: "/90.png",
+      deskripsi: "Prestasi ini menjadi bukti kerja keras, dedikasi, dan semangat belajar yang luar biasa. Semoga dapat memberikan hasil terbaik di babak final serta terus menginspirasi teman-teman lainnya untuk berprestasi."
     },
     {
       id: "p6",
-      judul: "Juara 1 Debat Bahasa Inggris (LDBI)",
-      peraih: "Nadia Putri (XI IPA 1)",
-      kategori: "Akademik",
+      judul: "prestasi Best Green Lifestyle dalam Forum Duta Lingkungan Hidup Kota Balikpapan",
+      peraih: "ananda Aurelia Nur Oktavia (XI-C1)",
+      kategori: "Kepeminpinan",
       tingkat: "Kota",
-      tahun: "2025",
-      gambar: "/prestasi/debat.jpg",
-      deskripsi: "Menunjukkan argumentasi kritis dan artikulasi bahasa inggris yang solid mengenai isu ekonomi global."
+      tahun: "2026",
+      gambar: "/90.png",
+      deskripsi: "Prestasi ini menjadi bukti bahwa generasi muda SMAN 7 Balikpapan mampu berperan aktif dalam berbagai bidang"
+    },
+    {
+      id: "p5",
+      judul: "Finalis 24 Besar Forum Duta Wisata Manuntung Kota Balikpapan (FDBW) 2026",
+      peraih: "Nadia Friska Pakpahan (XI-B1)",
+      kategori: "Kepeminpinan",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/dt2.png",
+      deskripsi: "Prestasi ini menjadi bukti bahwa generasi muda SMAN 7 Balikpapan mampu berperan aktif dalam berbagai bidang"
+    },
+    {
+      id: "p4",
+      judul: "Finalis 24 Besar Duta Lingkungan Hidup Kota Balikpapan 2026",
+      peraih: "Aurelia Nur Oktavia (XI-C1)",
+      kategori: "Kepeminpinan",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/dt1.png",
+      deskripsi: "Prestasi ini menjadi bukti bahwa generasi muda SMAN 7 Balikpapan mampu berperan aktif dalam berbagai bidang"
+    },
+    {
+      id: "p3",
+      judul: "Favorite Putra Duta Anti Narkoba Kota Balikpapan 2026",
+      peraih: "Dzaki Dzulfikar Ma’arif (kelas X-E)",
+      kategori: "Kepeminpinan",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/18.png",
+      deskripsi: "Prestasi ini menjadi bukti bahwa generasi muda SMAN 7 Balikpapan mampu berperan aktif dalam berbagai bidang"
+    },
+    {
+      id: "p2",
+      judul: "uara 3 Musabaqah Hifdzil Qur’an (MHQ) se-Balikpapan Timur kategori 10 Juz",
+      peraih: "Ananda Qonita Munadiyatul Husna Kelas X-A",
+      kategori: "Keagamaan",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/69.jpg",
+      deskripsi: "SMA Negeri 7 Balikpapan mengucapkan selamat kepada Ananda Qonita Munadiyatul Husna Kelas X-A atas prestasinya meraih Juara 3 Musabaqah Hifdzil Qur’an (MHQ) se-Balikpapan Timur kategori 10 Juz."
+    },
+    {
+      id: "p1",
+      judul: "Juara Kategori Favorit dalam kegiatan Forum Pemilihan Duta Anti Narkoba Kota Balikpapan Tahun 2026",
+      peraih: "Dzaki Dzulfikar Ma’arif (kelas X-E)",
+      kategori: "Kepeminpinan",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/18.png",
+      deskripsi: "Dzaki Dzulfikar Ma’arif berhasil meraih Juara Kategori Favorit dalam Forum Pemilihan Duta Anti Narkoba Kota Balikpapan Tahun 2026"
     }
   ]
 
