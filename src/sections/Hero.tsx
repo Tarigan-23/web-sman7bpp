@@ -6,8 +6,8 @@ import Image from "next/image"
 
 const images = [
   "/bg1.jpeg",
-  "/background.jpg",
-  "/bg2.jpeg",
+  "/masjid.jpeg",
+  "/bg3.jpeg",
 ]
 
 export default function Hero() {
@@ -88,27 +88,18 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="space-y-1.5 md:space-y-2 bg-black/40 backdrop-blur-md px-8 py-5 rounded-2xl border border-white/10 max-w-xl mx-auto shadow-2xl"
+          className="space-y-1.5 md:space-y-2 bg-black/10 backdrop-blur-md px-8 py-5 rounded-2xl border border-white/10 max-w-xl mx-auto shadow-2xl"
         >
           {/* Baris 1: SMANJU */}
           <p className="text-blue-400 font-mono tracking-[0.2em] text-xs md:text-sm font-black uppercase">
-            "SMANJU"
+            SMANJU : "RELIGIUS - CERDAS - BERKARAKTER"
           </p>
           
           {/* Baris 2: Slogan Utama */}
-          <p className="text-gray-200 text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
-            Religius - Cerdas - Berprestasi
+          <p className="text-blue-400 text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
+            SMANJU : "SEMAKIN MAJU"
           </p>
-          
-          {/* Baris 3: SMANJU (Pengulangan) */}
-          <p className="text-cyan-400 font-mono tracking-[0.2em] text-xs md:text-sm font-black uppercase pt-1">
-            SMANJU
-          </p>
-          
-          {/* Baris 4: Slogan Tambahan */}
-          <p className="text-gray-300 text-xs sm:text-sm md:text-lg font-light italic tracking-wider">
-            "Semakin Maju"
-          </p>
+
         </motion.div>
 
         {/* TOMBOL SCROLL DOWN */}

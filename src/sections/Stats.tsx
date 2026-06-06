@@ -14,12 +14,12 @@ export default function Stats() {
   const stats: StatItem[] = [
     {
       title: "Siswa",
-      value: "1000+",
+      value: "1039",
       link: "/siswa",
     },
     {
       title: "Guru",
-      value: "100+",
+      value: "60",
       link: "/guru",
     },
     {
@@ -29,7 +29,7 @@ export default function Stats() {
     },
     {
       title: "Kelas",
-      value: "18+",
+      value: "18",
       link: "/kelas",
     },
   ]

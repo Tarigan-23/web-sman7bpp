@@ -81,8 +81,8 @@ export default function SambutanPage() {
             {/* 1. TEKS SAMBUTAN (KIRI) - lg:order-1 membuat teks duluan di desktop */}
             <div className="w-full lg:col-span-2 order-2 lg:order-1 flex flex-col justify-between h-full space-y-4 md:space-y-6">
               <h2 className="text-xl md:text-3xl font-extrabold text-white flex items-center gap-2 border-b border-white/5 pb-3">
-                <span className="p-1.5 bg-blue-500/10 rounded-lg text-blue-400 text-sm md:text-xl border border-blue-500/20">✨</span>
-                Pesan & Harapan
+                <span className="p-1.5 bg-blue-500/10 rounded-lg text-blue-400 text-sm md:text-xl border border-blue-500/20"></span>
+                
               </h2>
               
               <div className="text-slate-300 leading-relaxed md:leading-8 text-xs md:text-base text-justify font-light space-y-4">

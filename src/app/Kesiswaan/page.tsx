@@ -43,45 +43,6 @@ export default function KesiswaanPage() {
             </p>
           </motion.div>
 
-          {/* Card Visi Misi Glassmorphism */}
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 bg-white/10 backdrop-blur-md rounded-2xl md:rounded-3xl p-5 md:p-10 border border-white/10 shadow-2xl"
-          >
-            {/* Visi */}
-            <div className="lg:col-span-1 border-b lg:border-b-0 lg:border-r border-white/10 pb-5 lg:pb-0 lg:pr-6">
-              <h2 className="text-xl md:text-2xl font-bold text-blue-400 uppercase tracking-wide mb-3 flex items-center gap-2">
-                <span>🎯</span> Visi Kesiswaan
-              </h2>
-              <p className="text-gray-200 leading-relaxed font-light text-xs md:text-sm text-justify">
-                Terwujudnya generasi muda SMAN 7 Balikpapan yang berakhlak mulia, berkarakter kuat, mandiri, unggul dalam prestasi non-akademik, serta adaptif terhadap perkembangan teknologi global.
-              </p>
-            </div>
-
-            {/* Misi */}
-            <div className="lg:col-span-2 lg:pl-2">
-              <h2 className="text-xl md:text-2xl font-bold text-white uppercase tracking-wide mb-3 flex items-center gap-2">
-                <span>🚀</span> Misi Kesiswaan
-              </h2>
-              <ul className="space-y-2.5 text-gray-200 text-xs md:text-sm">
-                {[
-                  "Menyelenggarakan kegiatan keagamaan guna memperkokoh keimanan siswa.",
-                  "Mengoptimalkan peran Ekstrakurikuler sebagai wadah penyaluran minat dan bakat.",
-                  "Membentuk kepemimpinan siswa yang berintegritas melalui pembinaan OSIS & MPK.",
-                  "Mendorong partisipasi aktif siswa dalam berbagai kompetisi non-akademik."
-                ].map((misi, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5">
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-[10px] font-bold text-blue-300 border border-blue-400/20">
-                      {idx + 1}
-                    </span>
-                    <span className="font-light leading-relaxed">{misi}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </motion.div>
         </section>
 
         {/* TOMBOL NAVIGASI MENU (Pindah Halaman) */}

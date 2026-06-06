@@ -42,7 +42,6 @@ export default function GuruPage() {
   ]
 
   const guru: PersonelItem[] = [
-    { nama: "Dra. Tri Astuti", jabatan: "Guru Matematika", foto: "/gr7.webp" },
     { nama: "Hj. Nurlaila, S.Pd", jabatan: "Guru Ekonomi", foto: "/gr13.webp" },
     { nama: "Dra. Wahidah, M.Pd.", jabatan: "Guru Fisika", foto: "/gr16.webp" },
     { nama: "Eka Januardi, S.Pd", jabatan: "Guru PJOK", foto: "/gr53.webp" },
