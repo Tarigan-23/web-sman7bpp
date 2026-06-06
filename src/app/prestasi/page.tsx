@@ -48,7 +48,7 @@ export default function PrestasiPage() {
       kategori: "Olahraga",
       tingkat: "Kota",
       tahun: "2026",
-      gambar: "/113.png",
+      gambar: "/133.png",
       deskripsi: "Kabar membanggakan! Tim futsal SMA Negeri 7 Balikpapan berhasil meraih Juara 2 Futsal dalam event Olimpiade Elektro Poltekba 🤩🏆",
       isHighlight: true
     },
@@ -280,7 +280,7 @@ export default function PrestasiPage() {
                     src={item.gambar} 
                     alt={item.judul}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    onError={(e) => {(e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=600"}}
+                    onError={(e) => {(e.target as HTMLImageElement).src = "/ggi.png"}}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-80" />
                   <span className={`absolute top-3 left-3 border px-2.5 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wider shadow-lg backdrop-blur-sm ${getBadgeStyle(item.tingkat)}`}>
@@ -319,7 +319,7 @@ export default function PrestasiPage() {
                 🏛 Imun & <span className="text-amber-400">Daftar Juara</span>
               </h2>
               <p className="text-gray-400 text-xs font-light">
-                Kumpulan riwayat kemenangan kompetisi regional lainnya.
+                Kumpulan riwayat kemenangan SMA NEGERI 7 BALIKPAPAN.
               </p>
             </div>
 
