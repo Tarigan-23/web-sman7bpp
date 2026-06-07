@@ -7,9 +7,9 @@ export default function Footer(): React.JSX.Element {
     { href: "https://www.kemendikdasmen.go.id/", src: "/kemdikbudristek.png", alt: "Kemendikbud", label: "Kemendikbud", style: "text-[11px] md:text-xl font-semibold text-gray-700" },
     { href: "https://disdikbud.kaltimprov.go.id/", src: "/disdikbudprov.png", alt: "Disdik Provinsi", label: "Disdik Provinsi", style: "text-[11px] md:text-xl font-semibold text-gray-700" },
     { href: "https://disdikbud.balikpapan.go.id/", src: "/disdikbud.png", alt: "Disdik Balikpapan", label: "Disdik Balikpapan", style: "text-[11px] md:text-xl font-semibold text-gray-700" },
-    { href: "https://www.instagram.com/sman7balikpapan/", src: "/ig1.png", alt: "Instagram", label: "@sman7balikpapan", style: "text-[10px] md:text-2xl font-semibold text-gray-700" },
-    { href: "https://youtube.com/@SMAN7BPP", src: "/yutub.png", alt: "Youtube", label: "@SMAN7BPP", style: "text-[10px] md:text-2xl font-bold text-red-600" },
-    { href: "https://www.tiktok.com/@sman.7.balikpapan", src: "/tt.png", alt: "TikTok", label: "@sman.7.balikpapan", style: "text-[10px] md:text-2xl font-semibold text-gray-700" },
+    { href: "https://www.instagram.com/sman7balikpapan/", src: "/ig1.png", alt: "Instagram", label: "sman7balikpapan", style: "text-[10px] md:text-2xl font-semibold text-gray-700" },
+    { href: "https://youtube.com/@SMAN7BPP", src: "/yutub.png", alt: "Youtube", label: "SMAN7BPP", style: "text-[10px] md:text-2xl font-bold text-red-600" },
+    { href: "https://www.tiktok.com/@sman.7.balikpapan", src: "/tt.png", alt: "TikTok", label: "sman.7.balikpapan", style: "text-[10px] md:text-2xl font-semibold text-gray-700" },
   ]
 
   return (

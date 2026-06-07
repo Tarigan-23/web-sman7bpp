@@ -8,7 +8,7 @@ export default function KesiswaanPage() {
   // Menu Program Kesiswaan lengkap dengan tambahan Daftar Siswa & Daftar Kelas
   const menuKesiswaan = [
     { id: "ekskul", nama: "🎪 Ekstrakurikuler", href: "/ekskul" },
-    { id: "osis", nama: "👥 Organisasi (OSIS)", href: "/osis" },
+    { id: "Osis", nama: "👥 Organisasi (OSIS)", href: "/Osis" },
     { id: "prestasi", nama: "🏆 Prestasi Siswa", href: "/prestasi" },
     { id: "siswa", nama: "👨‍🎓 Daftar Siswa", href: "/siswa" }, // Link aktif ke halaman siswa Anda
     { id: "kelas", nama: "🏫 Daftar Kelas", href: "/kelas" }, // Link aktif ke halaman kelas Anda
@@ -17,7 +17,7 @@ export default function KesiswaanPage() {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
-      style={{ backgroundImage: "url('/background.jpg')" }}
+      style={{ backgroundImage: "url('/bg3.jpeg')" }}
     >
       {/* Overlay Backdrop */}
       <div className="absolute inset-0 bg-black/70 z-0"></div>
@@ -39,7 +39,7 @@ export default function KesiswaanPage() {
               Bidang <span className="text-blue-400">Kesiswaan</span>
             </h1>
             <p className="text-gray-300 text-xs md:text-base max-w-2xl mx-auto leading-relaxed px-2">
-              Membentuk kepribadian tangguh, mengasah potensi kepemimpinan, dan mewadahi kreativitas siswa SMAN 7 Balikpapan.
+              Membentuk kepribadian tangguh, mengasah potensi kepemimpinan, dan mewadahi kreativitas siswa SMA Negeri 7 Balikpapan.
             </p>
           </motion.div>
 

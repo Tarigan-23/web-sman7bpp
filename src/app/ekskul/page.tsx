@@ -9,8 +9,9 @@ const dataEkskul = [
     id: 1,
     nama: "Pramuka",
     kategori: "Umum",
-    logo: "/", 
+    logo: "/logo-pramuka.png", 
     pembina: "Budi Santoso, S.Pd.",
+    pelatih: "Kak Ridwan Saputra",
     ketua: "Andi Wijaya", 
     jadwal: "Jumat, 14:00 WITA",
     deskripsi: "Membentuk karakter siswa yang disiplin, mandiri, berjiwa kepemimpinan, dan menjunjung tinggi nilai gotong royong."
@@ -19,8 +20,9 @@ const dataEkskul = [
     id: 2,
     nama: "Palang Merah Remaja (PMR)",
     kategori: "Umum",
-    logo: "/.webp",
+    logo: "/logo-pmr.webp",
     pembina: "Siti Rahma, S.Kep.",
+    pelatih: "dr. Erna Koesnadi",
     ketua: "Rina Amelia",
     jadwal: "Rabu, 14:00 WITA",
     deskripsi: "Melatih kepedulian sosial, memberikan pertolongan pertama, serta mengedukasi siswa mengenai kesehatan dan donor darah."
@@ -29,8 +31,9 @@ const dataEkskul = [
     id: 3,
     nama: "Paskibra",
     kategori: "Akademik",
-    logo: "/.webp",
+    logo: "/logo-paskibra.webp",
     pembina: "Dedi Setiawan, M.Pd.",
+    pelatih: "Sertu Bambang Pamungkas",
     ketua: "Rizky Pratama",
     jadwal: "Sabtu, 08:00 WITA",
     deskripsi: "Mengasah ketahanan fisik, mental, dan kedisiplinan tinggi melalui baris-berbaris demi penugasan upacara besar sekolah."
@@ -39,8 +42,9 @@ const dataEkskul = [
     id: 4,
     nama: "Rohani Islam (Rohis)",
     kategori: "Keagamaan",
-    logo: "/.webp",
+    logo: "/logo-rohis.webp",
     pembina: "Ustadz Ahmad Fauzi",
+    pelatih: "Ustadz Syarifuddin, Lc.",
     ketua: "Muhammad Ihsan",
     jadwal: "Kamis, 15:30 WITA",
     deskripsi: "Wadah pendalaman iman dan takwa, pembentukan akhlak mulia, serta kajian Islam yang inklusif di lingkungan sekolah."
@@ -49,8 +53,9 @@ const dataEkskul = [
     id: 5,
     nama: "Basket",
     kategori: "Olahraga",
-    logo: "/st5.",
+    logo: "/logo-basket.webp",
     pembina: "Hendra Wijaya, S.Pd.",
+    pelatih: "Coach Doni Setiawan",
     ketua: "Kevin Sanjaya",
     jadwal: "Selasa & Kamis, 16:00 WITA",
     deskripsi: "Mengembangkan bakat olahraga bola basket, kerja sama tim, fisik yang prima, serta persiapan kompetisi antar sekolah."
@@ -59,11 +64,12 @@ const dataEkskul = [
     id: 6,
     nama: "Pacu Kuda",
     kategori: "Olahraga",
-    logo: "/st5.",
+    logo: "/logo-berkuda.webp",
     pembina: "Guntur, S.Pd",
+    pelatih: "Coach Yudi Antoro",
     ketua: "Yegar Tarigan",
     jadwal: "Selasa & Kamis, 16:00 WITA",
-    deskripsi: "Mengembangkan Bakat berkuda, fisik yang prima, serta persiapan kompetisi antar sekolah."
+    deskripsi: "Mengembangkan bakat berkuda, fisik yang prima, serta persiapan kompetisi berkuda antar sekolah."
   },
 ]
 
@@ -71,41 +77,29 @@ export default function EkskulPage() {
   const [kategoriEkskul, setKategoriEkskul] = useState("Semua")
 
   const totalEkskul = dataEkskul.length
-  const totalUmum = dataEkskul.filter(item => item.kategori === "Umum").length
-  const totalOlahraga = dataEkskul.filter(item => item.kategori === "Olahraga").length
-  const totalAkademik = dataEkskul.filter(item => item.kategori === "Akademik").length
-  const totalKeagamaan = dataEkskul.filter(item => item.kategori === "Keagamaan").length
 
   const ekskulTersaring = kategoriEkskul === "Semua" 
     ? dataEkskul 
     : dataEkskul.filter(item => item.kategori === kategoriEkskul)
-
-  const statistikCounter = [
-    { nilai: totalEkskul, label: "Total Ekskul", utama: true },
-    { nilai: totalUmum, label: "Umum", utama: false },
-    { nilai: totalOlahraga, label: "Olahraga", utama: false },
-    { nilai: totalAkademik, label: "Akademik", utama: false },
-    { nilai: totalKeagamaan, label: "Keagamaan", utama: false },
-  ]
 
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
       style={{ backgroundImage: "url('/background.jpg')" }}
     >
-      <div className="absolute inset-0 bg-black/70 z-0"></div>
+      <div className="absolute inset-0 bg-black/75 z-0"></div>
 
       <div className="relative z-10 pt-24 md:pt-32 pb-20 px-4 md:px-6 max-w-7xl mx-auto">
         
         {/* TOMBOL BACK KE KESISWAAN */}
         <div className="mb-6">
-          <Link href="/kesiswaan" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-300 hover:bg-white/10 hover:text-white transition duration-200">
+          <Link href="/Kesiswaan" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-300 hover:bg-white/10 hover:text-white transition duration-200">
             ⬅️ Kembali ke Kesiswaan
           </Link>
         </div>
 
         {/* HEADER HERO */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-8">
           <h1 className="text-4xl md:text-6xl font-black text-white tracking-wide mb-2">
             Daftar <span className="text-blue-400">Ekstrakurikuler</span>
           </h1>
@@ -114,24 +108,13 @@ export default function EkskulPage() {
           </p>
         </div>
 
-        {/* STATISTIK BOX (Scrollable on Mobile) */}
-        <div className="max-w-4xl mx-auto bg-slate-900/30 backdrop-blur-sm border border-white/5 p-4 rounded-xl shadow-xl mb-10 overflow-x-auto no-scrollbar">
-          <div className="flex justify-between items-center gap-3 min-w-max px-2">
-            {statistikCounter.map((stat, index) => (
-              <React.Fragment key={index}>
-                <div className="text-center flex-1 px-3">
-                  <div className={`text-2xl md:text-3xl font-black ${stat.utama ? 'text-blue-400' : 'text-white'}`}>
-                    {stat.nilai}
-                  </div>
-                  <div className={`text-[10px] uppercase tracking-wider ${stat.utama ? 'font-bold text-gray-200' : 'text-gray-400'}`}>
-                    {stat.label}
-                  </div>
-                </div>
-                {index < statistikCounter.length - 1 && (
-                  <div className="h-6 w-[1px] bg-white/10 hidden sm:block"></div>
-                )}
-              </React.Fragment>
-            ))}
+        {/* STATISTIK BOX TERSIMPLIFIKASI (HANYA TOTAL EKSUAL UTAMA) */}
+        <div className="max-w-xs mx-auto bg-slate-900/40 backdrop-blur-md border border-white/10 p-5 rounded-2xl shadow-2xl mb-10 text-center">
+          <div className="text-4xl md:text-5xl font-black text-blue-400 drop-shadow-[0_0_15px_rgba(59,130,246,0.4)]">
+            {totalEkskul}
+          </div>
+          <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-300 mt-1 font-bold">
+            Total Ekskul
           </div>
         </div>
 
@@ -187,11 +170,15 @@ export default function EkskulPage() {
                     </p>
                   </div>
 
-                  {/* Metadata Section */}
+                  {/* Metadata Section (Pembina, Pelatih, Ketua) */}
                   <div className="space-y-1.5 border-t border-white/5 pt-3 text-[11px] text-gray-300">
                     <div className="flex justify-between">
                       <span className="text-gray-400">Pembina:</span>
                       <span className="text-white font-light">{ekskul.pembina}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-400">Pelatih:</span>
+                      <span className="text-white font-light">{ekskul.pelatih}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-400">Ketua:</span>

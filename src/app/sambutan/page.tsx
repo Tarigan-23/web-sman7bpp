@@ -88,13 +88,13 @@ export default function SambutanPage() {
               <div className="text-slate-300 leading-relaxed md:leading-8 text-xs md:text-base text-justify font-light space-y-4">
                 <p className="italic text-slate-200 font-normal">Assalamu’alaikum Warahmatullahi Wabarakatuh.</p>
                 <p>
-                  Selamat datang di platform portal digital resmi <strong className="text-white font-medium">SMA Negeri 7 Balikpapan</strong>. Website ini dirancang dan dikembangkan secara adaptif sebagai jembatan informasi, transparansi akademik, serta media komunikasi interaktif yang menghubungkan seluruh ekosistem warga sekolah, wali murid, dan masyarakat luas secara realtime.
+                  Selamat datang di website resmi <strong className="text-white font-medium">SMA Negeri 7 Balikpapan</strong>. Kami menyampaikan ucapan terimakasih atas kunjungan Bapak dan Ibu di laman ini. Website ini dirancang dan dikembangkan secara adaptif sebagai jembatan informasi, transparansi akademik, serta media komunikasi interaktif yang menghubungkan seluruh ekosistem warga sekolah, orang tua/wali murid dan masyarakat luas secara realtime yang kami hadirkan sebagai bentuk transparansi dan dedikasi dalam memberikan layanan pendidikan terbaik. 
                 </p>
                 <p>
-                  Selaras dengan dinamika perkembangan zaman, kami berkomitmen penuh untuk mengintegrasikan teknologi modern ke dalam instrumen pembelajaran demi melahirkan generasi pembelajar yang religius, cerdas secara kognitif, berwawasan global, namun tetap memegang teguh identitas luhur Profil Pelajar Pancasila.
+                  Selaras dengan dinamika perkembangan zaman, kami berkomitmen penuh untuk mengintegrasikan teknologi modern ke dalam instrumen pembelajaran demi melahirkan generasi pembelajar yang religius, cerdas secara kognitif, berwawasan global, dan terus berprestasi dengan tetap memegang teguh identitas luhur nilai-nilai Pancasila.
                 </p>
                 <p>
-                  Kami berharap media digital ini mampu menjadi wadah inspirasi sekaligus etalase kreativitas tanpa batas bagi putra-putri terbaik SMAN 7 Balikpapan untuk terus mendulang prestasi gemilang.
+                  Kami berharap media digital ini mampu menjadi wadah inspirasi sekaligus etalase kreativitas tanpa batas bagi semua peserta didik dan guru-guru serta tenaga kependidikan SMA Negeri 7 Balikpapan untuk terus mendulang prestasi gemilang dalam mewujudkan visi SMA Negeri 7 Balikpapan.
                 </p>
                 <p className="italic text-slate-200 font-normal">Wassalamu’alaikum Warahmatullahi Wabarakatuh.</p>
               </div>
@@ -105,7 +105,7 @@ export default function SambutanPage() {
               <div className="relative w-full max-w-[280px] lg:max-w-full aspect-[3/4] overflow-hidden rounded-xl md:rounded-2xl border border-white/10 shadow-xl bg-slate-900/50 group">
                 <Image
                   src="/kepsek.webp"
-                  alt="Kepala SMAN 7 Balikpapan"
+                  alt="Kepala SMA Negeri 7 Balikpapan"
                   fill
                   sizes="(max-w-md) 100vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -130,7 +130,7 @@ export default function SambutanPage() {
                   Puspani, M. Pd.
                 </h3>
                 <p className="text-sm text-blue-400 font-medium mt-0.5">
-                  Kepala SMAN 7 Balikpapan
+                  Kepala SMA Negeri 7 Balikpapan
                 </p>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function SambutanPage() {
           >
             <h2 className="text-xl md:text-2xl font-bold text-white mb-4 flex items-center gap-2.5">
               <span className="p-2 bg-blue-500/10 rounded-xl text-blue-400 text-xs md:text-sm border border-blue-500/20">🎯</span> 
-              Visi Utama
+              VISI SEKOLAH
             </h2>
             <div className="bg-slate-950/30 border border-white/5 p-4 rounded-xl flex items-center justify-center flex-1">
               <p className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-blue-200 leading-relaxed md:leading-8 text-sm md:text-lg text-center md:text-justify font-medium">
@@ -171,7 +171,7 @@ export default function SambutanPage() {
           >
             <h2 className="text-xl md:text-2xl font-bold text-white mb-4 flex items-center gap-2.5">
               <span className="p-2 bg-cyan-500/10 rounded-xl text-cyan-400 text-xs md:text-sm border border-cyan-500/20">📋</span> 
-              Misi Strategis
+              MISI SEKOLAH
             </h2>
             <ul className="text-slate-300 leading-relaxed md:leading-7 text-xs md:text-sm space-y-3 font-light text-justify">
               {[

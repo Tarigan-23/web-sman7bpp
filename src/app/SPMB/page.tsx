@@ -29,7 +29,7 @@ export default function SPMBPage() {
   const [timeLeft, setTimeLeft] = useState({ hari: 0, jam: 0, menit: 0, detik: 0 })
 
   useEffect(() => {
-    const targetDate = new Date("2026-06-02T23:59:59")
+    const targetDate = new Date("2026-06-08T23:59:59")
     const targetUnix = Math.floor(targetDate.getTime() / 1000)
 
     const calculateTime = () => {
@@ -58,7 +58,7 @@ export default function SPMBPage() {
     <div
       className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
       style={{
-        backgroundImage: "url('/background.jpg')",
+        backgroundImage: "url('/bg3.jpg')",
       }}
     >
       {/* Overlay Gelap */}

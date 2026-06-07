@@ -42,7 +42,7 @@ export default function HumasPage() {
       kategori: "Komunitas"
     },
     {
-      judul: "Mulia 5K Fun Run 2025",
+      judul: "KEGIATAN 2025",
       gambar: ["/galeri3.jpg", "/galeri5.jpg"],
       deskripsi: "Aksi kolaborasi Humas dan Universitas Mulia dalam mengampanyekan gaya hidup sehat ke masyarakat Balikpapan.",
       tanggal: "15 DESEMBER 2025",
@@ -133,43 +133,7 @@ export default function HumasPage() {
               Membangun jembatan komunikasi yang kokoh antara SMAN 7 Balikpapan, alumni, institusi pendidikan, hingga dunia industri.
             </p>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 bg-white/10 backdrop-blur-md rounded-2xl md:rounded-3xl p-5 md:p-10 border border-white/10 shadow-2xl"
-          >
-            <div className="lg:col-span-1 border-b lg:border-b-0 lg:border-r border-white/10 pb-5 lg:pb-0 lg:pr-6">
-              <h2 className="text-xl md:text-2xl font-bold text-blue-400 uppercase tracking-wide mb-3 flex items-center gap-2">
-                <span>🎯</span> Visi Humas
-              </h2>
-              <p className="text-gray-200 leading-relaxed font-light text-xs md:text-sm text-justify">
-                Terwujudnya hubungan sinergis, harmonis, dan kolaboratif yang berbasis digital dengan seluruh stakeholder eksternal demi kemajuan mutu lulusan.
-              </p>
-            </div>
-
-            <div className="lg:col-span-2 lg:pl-2">
-              <h2 className="text-xl md:text-2xl font-bold text-white uppercase tracking-wide mb-3 flex items-center gap-2">
-                <span>🚀</span> Misi Humas
-              </h2>
-              <ul className="space-y-2.5 text-gray-200 text-xs md:text-sm">
-                {[
-                  "Mengoptimalkan sistem penelusuran (Tracer Study) dan ikatan alumni secara berkala.",
-                  "Menjalin kerja sama strategis dengan Perguruan Tinggi Nasional maupun Internasional.",
-                  "Membangun kemitraan produktif dengan dunia usaha dan industri (DUDI).",
-                  "Menyebarluaskan berita, prestasi, dan laporan transparansi sekolah ke masyarakat luas."
-                ].map((misi, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5">
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-[10px] font-bold text-blue-300 border border-blue-400/20">
-                      {idx + 1}
-                    </span>
-                    <span className="font-light leading-relaxed">{misi}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </motion.div>
+          
         </section>
 
         {/* ======================================================== */}

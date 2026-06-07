@@ -64,7 +64,7 @@ export default function SarprasPage() {
       id: "pojok-literasi",
       nama: "Pojok Literasi",
       kategori: "Belajar",
-      gambar: "/sarpras/pojok-literasi.jpg",
+      gambar: "/literasi.jpeg",
       deskripsi: "Spot baca santai yang tersebar di beberapa koridor sekolah guna membangun ekosistem membaca yang asyik bagi siswa di waktu istirahat."
     },
     {

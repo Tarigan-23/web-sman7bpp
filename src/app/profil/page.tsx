@@ -28,7 +28,7 @@ export default function ProfilPage() {
     <div
       className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
       style={{
-        backgroundImage: "url('/background.jpg')",
+        backgroundImage: "url('/bg3.jpg')",
       }}
     >
       {/* Overlay Backdrop - Sedikit lebih gelap untuk meningkatkan kontras teks */}
@@ -122,8 +122,8 @@ export default function ProfilPage() {
 
                 {/* Kurikulum */}
                 <div className="bg-slate-950/40 border border-white/5 rounded-xl p-3 flex flex-col justify-center col-span-1">
-                  <span className="text-[10px] uppercase font-bold tracking-wider text-amber-400">Kurikulum</span>
-                  <span className="text-[11px] md:text-xs font-extrabold text-white tracking-tight mt-0.5 leading-tight">Merdeka Belajar</span>
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-amber-400">Kurikulum Merdeka</span>
+                  <span className="text-[11px] md:text-xs font-extrabold text-white tracking-tight mt-0.5 leading-tight">Pembelajaran Mendalam</span>
                 </div>
 
               </div>

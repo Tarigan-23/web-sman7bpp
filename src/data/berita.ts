@@ -1,4 +1,28 @@
-export const berita = [
+export const berita = [  
+  {
+    id: 143,
+    judul: "INFORMASI SPMB 2026",
+    tanggal: "7 Juni 2026",
+    gambar: "/152.png",
+    deskripsi: "SMA Negeri 7 Balikpapan hadir sebagai ruang tumbuh bagi generasi muda untuk belajar, berkarya, berprestasi, dan mengembangkan karakter terbaiknya. Dengan semangat Religius, Cerdas, dan Berprestasi, kami berkomitmen menciptakan lingkungan belajar yang nyaman, inovatif, serta mendukung setiap peserta didik untuk mencapai potensi terbaiknya. Menjadi bagian dari SMAN 7 Balikpapan bukan hanya tentang menempuh pendidikan di bangku sekolah, tetapi juga tentang membangun mimpi, menumbuhkan nilai-nilai kehidupan, memperluas wawasan, dan mempersiapkan diri menjadi generasi yang siap menghadapi tantangan masa depan. Kami mengundang seluruh calon peserta didik dan orang tua untuk mengikuti proses Sistem Penerimaan Murid Baru (SPMB) Tahun Pelajaran 2026/2027. Mari bergabung bersama keluarga besar SMA Negeri 7 Balikpapan dan wujudkan langkah awal menuju masa depan yang lebih cerah, berkarakter, dan penuh prestasi. Bersama SMAN 7 Balikpapan, mari belajar, bertumbuh, dan menginspirasi.",
+    sumberUrl: "https://www.instagram.com/p/DZRtkfFH15B/?img_index=1"
+  }, 
+  {
+    id: 142,
+    judul: "SMA Negeri 7 Balikpapan melaksanakan kegiatan In House Training (IHT) dengan tema “Optimalisasi Pembelajaran Interaktif dalam Mewujudkan Kelas yang Aktif dan Bermakna.”",
+    tanggal: "7 Juni 2026",
+    gambar: "/151.png",
+    deskripsi: "Meningkatkan Kualitas Pembelajaran, Mewujudkan Kelas yang Aktif dan Bermakna Dalam upaya meningkatkan kompetensi pendidik dan kualitas pembelajaran, SMA Negeri 7 Balikpapan melaksanakan kegiatan In House Training (IHT) dengan tema Optimalisasi Pembelajaran Interaktif dalam Mewujudkan Kelas yang Aktif dan Bermakna. Kegiatan ini menghadirkan narasumber yang inspiratif, Dr. Li. Trisnendri Syah Rizal, S.Pd., M.Hum, yang berbagi wawasan, strategi, dan praktik pembelajaran interaktif yang relevan dengan kebutuhan pendidikan masa kini. IHT ini juga mendapat kehormatan dengan kehadiran Pengawas SMA/MA Kota Balikpapan, Ibu Nira Surya, S.Pd., M.Si., yang memberikan dukungan dan motivasi kepada seluruh peserta. Melalui kegiatan ini, Bapak/Ibu Guru SMA Negeri 7 Balikpapan semakin memperkuat komitmen untuk menghadirkan pembelajaran yang tidak hanya berpusat pada materi, tetapi juga mampu mengaktifkan potensi peserta didik, menumbuhkan kreativitas, serta menciptakan pengalaman belajar yang bermakna. Karena guru yang terus belajar adalah kunci lahirnya generasi yang unggul, berkarakter, dan siap menghadapi tantangan masa depan.",
+    sumberUrl: "https://www.instagram.com/p/DZRrLSjn2fk/?img_index=1"
+  }, 
+  {
+    id: 141,
+    judul: "Kegiatan Peresmian dan Penyerahan Revitalisasi Satuan Pendidikan",
+    tanggal: "7 Juni 2026",
+    gambar: "/150.png",
+    deskripsi: "Kepala Sekolah dan 18 Guru beserta Tendik SMA Negeri 7 Balikpapan ikut hadir dalam Kegiatan Peresmian dan Penyerahan Revitalisasi Satuan Pendidikan oleh Memdikdasmen bersama Gubernur, Walikota, Kepala Diknas Provinsi, Kepala BPMP, BGTK, Balai Bahasa Kaltim dan Kacabdin Wilayah 1 bertempat di Dome Balikpapan; dilanjut dengan kegiatan Penanaman Mangrove di SMA Negeri 8 Balikpapan sebagai Sekolah ASRI bersama dengan Peluncuran 1000 Cahaya Ai'syiyah pada Jum'at, 5 Juni 2026",
+    sumberUrl: "https://www.instagram.com/p/DZRopNSH5Du/?img_index=1"
+  }, 
   {
     id: 140,
     judul: "Selamat atas keberhasilan Bapak/Ibu telah menuntaskan rangkaian program AFS Global STEM Educators",

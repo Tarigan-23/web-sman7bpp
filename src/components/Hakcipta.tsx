@@ -36,7 +36,7 @@ export default function Footer(): React.JSX.Element {
                 </Link>
               </li>
               <li>
-                <Link href="/Sambutan" className="hover:text-blue-400 transition-colors block py-0.5">
+                <Link href="/sambutan" className="hover:text-blue-400 transition-colors block py-0.5">
                   Sambutan
                 </Link>
               </li>
