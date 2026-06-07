@@ -29,7 +29,7 @@ export default function SPMBPage() {
   const [timeLeft, setTimeLeft] = useState({ hari: 0, jam: 0, menit: 0, detik: 0 })
 
   useEffect(() => {
-    const targetDate = new Date("2026-06-08T23:59:59")
+    const targetDate = new Date("2026-06-22T23:59:59")
     const targetUnix = Math.floor(targetDate.getTime() / 1000)
 
     const calculateTime = () => {
@@ -62,7 +62,7 @@ export default function SPMBPage() {
       }}
     >
       {/* Overlay Gelap */}
-      <div className="absolute inset-0 bg-black/60 z-0"></div>
+      <div className="absolute inset-0 bg-black/30 z-0"></div>
 
       {/* Content Container */}
       <div className="relative z-10 pt-32 pb-20 px-6 max-w-7xl mx-auto block">
@@ -131,7 +131,7 @@ export default function SPMBPage() {
             className="lg:col-span-5 bg-white/15 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-white/10"
           >
             <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
-              🔥 Hitung Mundur Pra Pendaftaran
+              🔥 Hitung Mundur Pendaftaran Tahap I
             </h3>
             <p className="text-gray-300 text-sm mb-6">
               Jalur Domisili, Afirmasi, dan Mutasi akan berakhir pada <span className="text-blue-400 font-semibold">8 Juni 2026</span>.

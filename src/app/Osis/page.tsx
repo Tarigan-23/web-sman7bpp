@@ -113,8 +113,8 @@ export default function OsisPage() {
       <div className="relative z-10 pt-24 md:pt-32 px-4 max-w-7xl mx-auto space-y-24">
         
         {/* TOMBOL BACK KE KESISWAAN */}
-        <div className="max-w-5xl mx-auto -mb-12">
-          <Link href="/kesiswaan" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-300 hover:bg-white/10 hover:text-white transition duration-200">
+        <div className="mb-6">
+          <Link href="/Kesiswaan" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-300 hover:bg-white/10 hover:text-white transition duration-200">
             ⬅️ Kembali ke Kesiswaan
           </Link>
         </div>
