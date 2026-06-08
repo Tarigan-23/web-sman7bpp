@@ -134,7 +134,7 @@ export default function SPMBPage() {
               🔥 Hitung Mundur Pendaftaran Tahap I
             </h3>
             <p className="text-gray-300 text-sm mb-6">
-              Jalur Domisili, Afirmasi, dan Mutasi akan berakhir pada <span className="text-blue-400 font-semibold">8 Juni 2026</span>.
+              Pendaftaran Tahap I akan dibuka pada <span className="text-blue-400 font-semibold">22 - 24 Juni 2026</span>.
             </p>
 
             {/* Grid Angka Countdown */}

@@ -17,7 +17,7 @@ export default function SiswaPage() {
         "Ahmad Rizky", "Budi Santoso", "Cahya Putra", "Dinda Ayu", "Eko Saputra",
         "Farhan", "Galih", "Hendra", "Intan", "Joko", "Joko", "Joko", "Joko",
         "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko",
-        "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Yegar Sahaduta"
+        "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko"
       ],
     },
     {
