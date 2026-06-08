@@ -28,7 +28,7 @@ export default function ProfilPage() {
     <div
       className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
       style={{
-        backgroundImage: "url('/bg3.jpg')",
+        backgroundImage: "url('/bg3.jpeg')",
       }}
     >
       {/* Overlay Backdrop - Sedikit lebih gelap untuk meningkatkan kontras teks */}
@@ -117,7 +117,7 @@ export default function ProfilPage() {
                 {/* NPSN */}
                 <div className="bg-slate-950/40 border border-white/5 rounded-xl p-3 flex flex-col justify-center col-span-1">
                   <span className="text-[10px] uppercase font-bold tracking-wider text-purple-400">NPSN</span>
-                  <span className="text-xs md:text-sm font-bold text-white font-mono tracking-wider mt-0.5">30401490</span>
+                  <span className="text-xs md:text-sm font-bold text-white font-mono tracking-wider mt-0.5">30401504</span>
                 </div>
 
                 {/* Kurikulum */}

@@ -1,11 +1,12 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image" 
 
 // Interface TypeScript untuk Guru & Staf
 interface PersonelItem {
   nama: string
-  jabatan: string // Menggunakan 'jabatan' agar fleksibel untuk Mapel Guru maupun Posisi Staf
+  jabatan: string 
   foto: string
 }
 
@@ -14,7 +15,7 @@ export default function GuruPage() {
   const kepalaSekolah: PersonelItem = {
     nama: "Puspani, M.Pd.",
     jabatan: "Kepala Sekolah",
-    foto: "/kepsek.webp", // Sesuaikan nama file fotonya di folder public
+    foto: "/kepsek.webp", 
   }
 
   // === DATA BARU: Wakil Kepala Sekolah ===
@@ -149,10 +150,13 @@ export default function GuruPage() {
             className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-3 md:p-4 flex flex-col items-center border border-white/10 max-w-[220px] md:max-w-xs w-full"
           >
             <div className="relative w-full h-[180px] md:h-[260px] bg-black/20 rounded-xl overflow-hidden shadow-inner">
-              <img
+              <Image
                 src={kepalaSekolah.foto}
                 alt={kepalaSekolah.nama}
-                className="w-full h-full object-cover object-top"
+                fill
+                sizes="(max-width: 768px) 220px, 320px"
+                priority // Foto teratas diberikan prioritas pemuatan instan
+                className="object-cover object-top"
               />
             </div>
             <div className="mt-3 md:mt-4 text-center">
@@ -184,10 +188,12 @@ export default function GuruPage() {
               className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl shadow-xl p-2 md:p-4 flex flex-col justify-between h-full border border-white/10"
             >
               <div className="relative w-full h-[140px] md:h-[240px] bg-black/20 rounded-lg md:rounded-xl overflow-hidden">
-                <img
+                <Image
                   src={item.foto}
                   alt={item.nama}
-                  className="w-full h-full object-cover object-top"
+                  fill
+                  sizes="(max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-top"
                 />
               </div>
               <div className="mt-2 md:mt-4 text-center flex-grow flex flex-col justify-between">
@@ -220,10 +226,12 @@ export default function GuruPage() {
               className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl shadow-xl p-2 md:p-4 flex flex-col justify-between h-full border border-white/10"
             >
               <div className="relative w-full h-[140px] md:h-[280px] bg-black/20 rounded-lg md:rounded-xl overflow-hidden">
-                <img
+                <Image
                   src={item.foto}
                   alt={item.nama}
-                  className="w-full h-full object-cover object-top"
+                  fill
+                  sizes="(max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-top"
                 />
               </div>
               <div className="mt-2 md:mt-4 text-center">
@@ -257,10 +265,12 @@ export default function GuruPage() {
               className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl shadow-xl p-2 md:p-4 flex flex-col justify-between h-full border border-white/10"
             >
               <div className="relative w-full h-[140px] md:h-[280px] bg-black/20 rounded-lg md:rounded-xl overflow-hidden">
-                <img
+                <Image
                   src={item.foto}
                   alt={item.nama}
-                  className="w-full h-full object-cover object-top"
+                  fill
+                  sizes="(max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-top"
                 />
               </div>
               <div className="mt-2 md:mt-4 text-center">
@@ -274,7 +284,6 @@ export default function GuruPage() {
             </motion.div>
           ))}
         </div>
-
 
         {/* ================= SECTION 3: TIM KEAMANAN ================= */}
         <div className="mt-16 md:mt-24 mb-8 md:mb-12 border-b border-white/10 pt-4 pb-3 block relative flex flex-col items-center justify-center text-center">
@@ -293,10 +302,12 @@ export default function GuruPage() {
               className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl shadow-xl p-2 md:p-4 flex flex-col justify-between h-full border border-white/10"
             >
               <div className="relative w-full h-[140px] md:h-[280px] bg-black/20 rounded-lg md:rounded-xl overflow-hidden">
-                <img
+                <Image
                   src={item.foto}
                   alt={item.nama}
-                  className="w-full h-full object-cover object-top"
+                  fill
+                  sizes="(max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-top"
                 />
               </div>
               <div className="mt-2 md:mt-4 text-center">

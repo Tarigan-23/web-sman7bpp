@@ -88,7 +88,7 @@ export default function Footer(): React.JSX.Element {
             <h3 className="font-bold mb-4 text-base md:text-xl text-white">
               Kontak
             </h3>
-            <p className="text-gray-300 mb-1.5 break-all">Email: info@sman7.sch.id</p>
+            <p className="text-gray-300 mb-1.5 break-all">Email: contact@sman7-bpp.sch.id</p>
             <p className="text-gray-300">Balikpapan, Kalimantan Timur</p>
           </div>
 
@@ -98,7 +98,7 @@ export default function Footer(): React.JSX.Element {
 
       {/* Baris Hak Cipta / Copyright di Bagian Paling Bawah */}
       <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/5 text-center text-xs md:text-sm text-gray-400">
-        <p>&copy; {currentYear}SMAN 7 Balikpapan. All rights reserved.</p>
+        <p>&copy; {currentYear}SMA Negeri 7 Balikpapan. All rights reserved.</p>
       </div>
 
     </footer>
