@@ -5,8 +5,8 @@ import { useState } from "react"
 import Image from "next/image"
 
 export default function MarsPage() {
-
-  const YOUTUBE_VIDEO_ID = "Z73G0uPi4gTZk8nV"
+  // Sudah diperbaiki menggunakan ID video asli dari link yang kamu berikan
+  const YOUTUBE_VIDEO_ID = "2V90sKEVgvM"
 
   const [isMuted, setIsMuted] = useState(true)
 
@@ -52,8 +52,9 @@ export default function MarsPage() {
         >
           <div className="relative w-full h-full bg-slate-950 rounded-[10px] md:rounded-[20px] overflow-hidden">
             
+            {/* Perbaikan pada src iframe: Tanda $ diganti dengan format variabel template literal ${YOUTUBE_VIDEO_ID} */}
             <iframe
-              src={`https://www.youtube.com/embed/$Z73G0uPi4gTZk8nV?autoplay=1&mute=${isMuted ? 1 : 0}&loop=1&playlist=$Z73G0uPi4gTZk8nV&controls=0&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&playsinline=1`}
+              src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=${isMuted ? 1 : 0}&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&playsinline=1`}
               title="Mars SMAN 7 Balikpapan"
               allow="autoplay; encrypted-media"
               allowFullScreen
@@ -86,7 +87,6 @@ export default function MarsPage() {
               </button>
             </div>
 
-            {/* Keterangan Resolusi di Kanan Bawah */}
             <div className="absolute bottom-5 right-5 hidden sm:block bg-slate-950/50 backdrop-blur-sm border border-white/5 px-3 py-1 rounded-md text-[10px] font-mono text-slate-400 tracking-widest">
               STREAMING • YOUTUBE
             </div>
