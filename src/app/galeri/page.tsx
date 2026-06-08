@@ -16,46 +16,19 @@ export default function GaleriPage() {
   // DATA GALERI KEGIATAN SMAN 7 BALIKPAPAN
   const galeri: GaleriItem[] = [
     {
-      judul: "Kunjungan Studi Ekskursi IKN",
-      gambar: ["/bg1.jpeg", "/galeri3.jpg", "/galeri4.jpg"],
-      deskripsi: "Siswa-siswi SMAN 7 Balikpapan melakukan kunjungan edukasi dan melihat langsung progres pembangunan Istana Garuda di Ibu Kota Nusantara (IKN).",
-      tanggal: "12 MEI 2026",
-      kategori: "Edukasi"
+      judul: "Info lengkap SPMB 2026",
+      gambar: ["/SPANDUK SPMB 2026.png", "/SPMB_25.cdr.png"],
+      deskripsi: "",
+      tanggal: "08 Juni 2026",
+      kategori: "Informasi"
     },
+    
     {
-      judul: "Pentas Seni & Adat Budaya Kaltim",
-      gambar: ["/bg2.jpeg"],
-      deskripsi: "Melestarikan kearifan lokal melalui pagelaran busana adat dan tarian tradisional dalam rangka memperingati Bulan Bahasa.",
-      tanggal: "02 MEI 2026",
-      kategori: "Budaya"
-    },
-    {
-      judul: "Mulia 5K Fun Run 2026",
-      gambar: ["/galeri3.jpg", "/galeri5.jpg"],
-      deskripsi: "Partisipasi aktif delegasi pelari SMANJU dalam ajang Mulia 5K Fun Run. Sehat, bugar, dan penuh semangat berprestasi!",
-      tanggal: "26 APRIL 2026",
-      kategori: "Olahraga"
-    },
-    {
-      judul: "LDKS & Eksplorasi Alam Raya",
-      gambar: ["/galeri4.jpg"],
-      deskripsi: "Tadabur alam dan latihan dasar kepemimpinan siswa (LDKS) pengurus OSIS SMAN 7 di kawasan perbukitan hijau.",
-      tanggal: "18 MARET 2026",
-      kategori: "Kesiswaan"
-    },
-    {
-      judul: "Pelaksanaan Sertifikasi BNSP",
-      gambar: ["/galeri5.jpg"],
-      deskripsi: "Uji kompetensi dan sertifikasi keahlian siswa bekerja sama dengan Lembaga Sertifikasi Profesi (LSP) Universitas Mulia Balikpapan.",
-      tanggal: "10 FEBRUARI 2026",
-      kategori: "Akademik"
-    },
-    {
-      judul: "Malam Ramah Tamah & Panitia Aron Rudang",
-      gambar: ["/galeri6.jpg"],
-      deskripsi: "Apresiasi kerja keras seluruh panitia dan guru dalam menyukseskan agenda besar tahunan sekolah.",
-      tanggal: "22 JANUARI 2026",
-      kategori: "Sosial"
+      judul: "Pramuka Penegak Laksana",
+      gambar: ["/41.png"],
+      deskripsi: "Pramuk apenegak laksana SMA Negeri 7 Balikpapan.",
+      tanggal: "14 - 15 Februari 2026",
+      kategori: "Ekskul"
     }
   ]
 

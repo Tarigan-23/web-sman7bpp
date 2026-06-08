@@ -17,6 +17,14 @@ export default function SarprasPage() {
 
   const daftarFasilitas: FasilitasItem[] = [
     {
+      id: "Masjid",
+      nama: "Masjid Al-Khawarizmi",
+      kategori: "Fasilitas Umum",
+      gambar: "/masjid.jpeg",
+      deskripsi: "Pusat ibadah dan kegiatan keagamaan seluruh warga sekolah yang bersih, sejuk, serta nyaman.",
+      jumlah: "1 Unit"
+    },
+    {
       id: "kelas",
       nama: "Ruang Kelas Teori",
       kategori: "Belajar",

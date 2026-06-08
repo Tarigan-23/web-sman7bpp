@@ -1,5 +1,13 @@
 export const berita = [  
   {
+    id: 145,
+    judul: "INFORMASI SPMB 2026",
+    tanggal: "8 Juni 2026",
+    gambar: "/SPANDUK SPMB 2026.png",
+    deskripsi: "Informasi detail mengenai SPMB 2026",
+    sumberUrl: ""
+  }, 
+  {
     id: 144,
     judul: "Aksi Kokurikuler Projek Lintas Mata Pelajaran - Kelas X dan XI",
     tanggal: "7 Juni 2026",
