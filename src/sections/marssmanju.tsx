@@ -43,7 +43,7 @@ export default function MarsPage() {
             Mars <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">SMAN 7 Balikpapan</span>
           </h1>
           <p className="text-slate-400 text-xs md:text-base font-light font-mono tracking-wider">
-            Lagu Kebanggaan Ekosistem SMANJU
+            Lagu Kebanggaan SMANJU
           </p>
           <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto rounded-full pt-0.5" />
         </div>

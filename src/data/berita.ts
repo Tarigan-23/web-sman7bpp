@@ -1,5 +1,13 @@
 export const berita = [  
   {
+    id: 144,
+    judul: "Aksi Kokurikuler Projek Lintas Mata Pelajaran - Kelas X dan XI",
+    tanggal: "7 Juni 2026",
+    gambar: "/153.png",
+    deskripsi: "Aksi Kokurikuler Projek Lintas Mata Pelajaran - Kelas X dan XI Kamis, 4 Juni 2026 di Lapangan SMA Negeri 7 Balikpapan menjadi panggung kreativitas peserta didik. Kegiatan yang dimulai dari pukul 07.30 WITA tersebut, perwakilan dari kelas X dan XI unjuk karya dalam Aksi Kokurikuler Projek Lintas Mata Pelajaran. Peserta didik kelas X menghidupkan kembali Permainan Tradisional dengan sentuhan baru. Mereka ditantang untuk memodifikasi aturan dan alat permainan, sekaligus belajar mandiri dan bekerja sama dalam tim lintas mata pelajaran. Di sisi lain, kelas XI menghadirkan Senam Irama berbalut Lagu Tradisional. Melalui koreografi yang selaras dengan musik daerah, peserta didik tidak hanya menumbuhkan rasa bangga pada budaya sendiri, namun juga mengasah kepemimpinan, manajemen tim dan kemampuan komunikasi. Dari latihan hingga pementasan, mereka belajar memecahkan masalah teknis secara mandiri dan kreatif. Dengan memadukan nilai sosial, spiritual dan estetika dalam gerak dan permainan, projek tersebut mengajak peserta didik belajar lewat pengalaman secara langsung, berkolaborasi dan berinovasi! Terus Semangat 🤩👏🏻",
+    sumberUrl: "https://www.instagram.com/p/DZSGIOghU7g/"
+  }, 
+  {
     id: 143,
     judul: "INFORMASI SPMB 2026",
     tanggal: "7 Juni 2026",
