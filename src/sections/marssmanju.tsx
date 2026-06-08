@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export default function MarsPage() {
 
-  const YOUTUBE_VIDEO_ID = "ftiTnFd3W5yQAjUx"
+  const YOUTUBE_VIDEO_ID = "Z73G0uPi4gTZk8nV"
 
   const [isMuted, setIsMuted] = useState(true)
 
@@ -53,7 +53,7 @@ export default function MarsPage() {
           <div className="relative w-full h-full bg-slate-950 rounded-[10px] md:rounded-[20px] overflow-hidden">
             
             <iframe
-              src={`https://www.youtube.com/embed/$Zc48h6DFsrrGAdYA?autoplay=1&mute=${isMuted ? 1 : 0}&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&playsinline=1`}
+              src={`https://www.youtube.com/embed/$Z73G0uPi4gTZk8nV?autoplay=1&mute=${isMuted ? 1 : 0}&loop=1&playlist=$Z73G0uPi4gTZk8nV&controls=0&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&playsinline=1`}
               title="Mars SMAN 7 Balikpapan"
               allow="autoplay; encrypted-media"
               allowFullScreen

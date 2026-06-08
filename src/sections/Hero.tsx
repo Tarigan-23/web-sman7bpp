@@ -81,9 +81,6 @@ export default function Hero() {
           </span>
         </motion.h1>
 
-        {/* ======================================================== */}
-        {/* REVISI TEKS VISI / SLOGAN SESUAI PERMINTAAN              */}
-        {/* ======================================================== */}
         <motion.div 
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
@@ -91,20 +88,20 @@ export default function Hero() {
           className="space-y-1.5 md:space-y-2 bg-black/10 backdrop-blur-md px-8 py-5 rounded-2xl border border-white/10 max-w-xl mx-auto shadow-2xl"
         >
           {/* Baris 1: SMANJU */}
-          <p className="text-cian-400 text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
+          <p className="text-white text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
             SMANJU
           </p>
           
           {/* Baris 2: Slogan Utama */}
-          <p className="text-cian-400 text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
+          <p className="text-blue-500 text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
             "RELIGIUS-CERDAS-BERKARAKTER"
           </p>
           {/* Baris 3: Slogan Utama */}
-          <p className="text-cian-400 text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
+          <p className="text-white text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
             SMANJU
           </p>
           {/* Baris 4: Slogan Utama */}
-          <p className="text-cian-400 text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
+          <p className="text-blue-500 text-sm sm:text-base md:text-xl font-medium tracking-wide drop-shadow-sm">
             "SEMAKIN MAJU"
           </p>
 
