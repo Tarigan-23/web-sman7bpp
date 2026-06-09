@@ -7,7 +7,7 @@ import Image from "next/image"
 
 // KUMPULAN GAMBAR POSTER / BROSUR SPMB (Bisa kamu tambah sesukamu)
 const daftarPoster = [
-  { id: 1, src: "/spanduk-spmb-2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
+  { id: 1, src: "/spandukspmb2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
   { id: 2, src: "/SPMB_25.cdr.png", alt: "Informasi Persyaratan & Jalur Masuk" }, // Ganti dengan aset brosurmu jika ada
 ]
 
@@ -75,29 +75,25 @@ export default function SPMBPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white pb-24 relative overflow-hidden select-none">
       
-      {/* ================= OPTIMIZED BACKGROUND SINEMATIK ================= */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/bg3.jpg"
-          alt="Latar Belakang SMANJU"
-          fill
-          priority
-          className="object-cover object-center opacity-25 fixed"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/40 to-slate-950" />
-        <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-[20%] right-[-10%] w-[45vw] h-[45vw] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none" />
-      </div>
+    
+<div className="absolute inset-0 z-0 w-full h-full">
+  <Image
+    src="/bg3.jpeg"
+    alt="Latar Belakang SMAN 7 Balikpapan"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover object-center opacity-45 pointer-events-none" />
+  <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/75 to-slate-950" />
+  
+  {/* Efek Lampu Sorot Gradasi Glow Sinematik */}
+  <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none" />
+  <div className="absolute bottom-[20%] right-[-10%] w-[45vw] h-[45vw] bg-indigo-500/10 rounded-full blur-[140px] pointer-events-none" />
+</div>
 
       {/* Content Container */}
       <div className="relative z-10 pt-24 md:pt-32 px-4 max-w-7xl mx-auto space-y-24">
         
-        {/* TOMBOL BACK KE KESISWAAN */}
-        <div className="-mb-12">
-          <Link href="/Kesiswaan" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-300 hover:bg-white/10 hover:text-white transition duration-200">
-            ⬅️ Kembali ke Kesiswaan
-          </Link>
-        </div>
 
         {/* ================= HERO SECTION ================= */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">

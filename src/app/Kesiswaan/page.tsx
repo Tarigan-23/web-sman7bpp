@@ -22,7 +22,7 @@ export default function KesiswaanPage() {
       {/* ================= BACKGROUND ORNAMEN SERAGAM KONSISTEN ================= */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/bg3.jpg" 
+          src="/bg3.jpeg" 
           alt="Latar Belakang SMANJU"
           fill
           priority

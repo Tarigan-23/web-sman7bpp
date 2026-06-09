@@ -105,7 +105,7 @@ export default function HumasPage() {
       {/* ================= BACKGROUND ORNAMEN SERAGAM KONSISTEN ================= */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/bg3.jpg" // Menggunakan file background terpusat (.jpg)
+          src="/bg3.jpeg" // Menggunakan file background terpusat (.jpg)
           alt="Latar Belakang SMANJU"
           fill
           priority
