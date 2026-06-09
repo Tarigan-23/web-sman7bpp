@@ -43,9 +43,6 @@ export default function SambutanPage() {
       {/* Konten Utama */}
       <div className="relative z-10 pt-24 md:pt-36 pb-20 px-4 md:px-6 max-w-7xl mx-auto space-y-10 md:space-y-16">
         
-        {/* ======================================================== */}
-        {/* HERO TITLE                                               */}
-        {/* ======================================================== */}
         <section className="text-center w-full">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -65,9 +62,6 @@ export default function SambutanPage() {
           </motion.div>
         </section>
 
-        {/* ======================================================== */}
-        {/* SECTION 1: SAMBUTAN KEPSEK (FOTO DI SEBELAH KANAN)      */}
-        {/* ======================================================== */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -138,9 +132,6 @@ export default function SambutanPage() {
           </div>
         </motion.div>
 
-        {/* ======================================================== */}
-        {/* SECTION 2: VISI & MISI (BENTO STYLE GRID)               */}
-        {/* ======================================================== */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
@@ -192,9 +183,6 @@ export default function SambutanPage() {
           </motion.div>
         </motion.div>
 
-        {/* ======================================================== */}
-        {/* SECTION 3: STRUKTUR ORGANISASI (WITH MOBILE ZOOM FEATURE) */}
-        {/* ======================================================== */}
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -220,8 +208,8 @@ export default function SambutanPage() {
             <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl duration-500 pointer-events-none" />
             <div className="relative min-w-[400px] sm:min-w-[550px] md:min-w-0 max-w-full w-full aspect-[16/9] md:aspect-[21/9]">
               <Image
-                src="/struktur.png"
-                alt="Struktur Organisasi SMAN 7 Balikpapan"
+                src="/struktur organisasi.jpeg"
+                alt="Struktur Organisasi SMA Negeri 7 Balikpapan"
                 fill
                 className="rounded-xl md:rounded-2xl shadow-2xl object-contain border border-white/5 transition-transform duration-500 group-hover:scale-[1.005]"
               />
@@ -231,9 +219,6 @@ export default function SambutanPage() {
 
       </div>
 
-      {/* ======================================================== */}
-      {/* INTERACTIVE FULLSCREEN OVERLAY MODAL (LIGHTBOX ZOOM)     */}
-      {/* ======================================================== */}
       <AnimatePresence>
         {isZoomed && (
           <motion.div
