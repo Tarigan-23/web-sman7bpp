@@ -30,16 +30,16 @@ export default function SambutanPage() {
       
       {/* Background Utama Teroptimasi Next.js */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/background.jpg"
-          alt="Latar Belakang SMANJU"
-          fill
-          priority
-          className="object-cover object-center opacity-25 fixed"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-black/80 to-slate-950" />
-      </div>
-
+              <Image
+                     src="/bg3.jpeg"
+                     alt="Latar Belakang SMANJU"
+                     fill
+                     priority
+                     className="object-cover object-center opacity-25 fixed" />
+                <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/40 to-slate-950" />
+                <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none" />
+                <div className="absolute bottom-[20%] right-[-10%] w-[45vw] h-[45vw] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none" />
+          </div>
       {/* Konten Utama */}
       <div className="relative z-10 pt-24 md:pt-36 pb-20 px-4 md:px-6 max-w-7xl mx-auto space-y-10 md:space-y-16">
         

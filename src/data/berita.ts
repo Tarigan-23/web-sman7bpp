@@ -1,6 +1,14 @@
 export const berita = [ 
   {
-    id: 146,
+    id: 148,
+    judul: "Hari Kedua Pra-Pendaftaran SPMB SMA Negeri 7 Balikpapan 📢",
+    tanggal: "9 Juni 2026",
+    gambar: "/156.png",
+    deskripsi: "Hari ini (Selasa, 9 Juni 2026) SMA Negeri 7 Balikpapan melaksanakan hari kedua kegiatan Pra-Pendaftaran Seleksi Penerimaan Murid Baru (SPMB) Tahun 2026. Dengan penuh semangat, panitia terus memberikan pelayanan dan pendampingan terhadap calon peserta didik serta orang tua yang hadir. Kegiatan tersebut menjadi langkah awal dalam menyambut generasi penerus yang akan tumbuh, belajar dan berprestasi bersama keluarga besar SMA Negeri 7 Balikpapan. Terima kasih kepada seluruh panitia yang telah bekerja dengan dedikasi dan terhadap para calon peserta didik yang telah mempercayakan langkah pendidikannya di SMA Negeri 7 Balikpapan. Mari persiapkan masa depan dengan pendidikan yang berkualitas, lingkungan belajar yang nyaman dan semangat untuk terus berprestasi 🤩✨",
+    sumberUrl: "https://www.instagram.com/p/DZXlta0n3nB/?img_index=1"
+  }, 
+  {
+    id: 147,
     judul: "✨Optimalisasi Pembelajaran Interaktif Dalam Mewujudkan Kelas yang Aktif dan Bermakna",
     tanggal: "9 Juni 2026",
     gambar: "/154.png",
@@ -21,7 +29,7 @@ export const berita = [
     tanggal: "8 Juni 2026",
     gambar: "/SPANDUKSPMB2026.png",
     deskripsi: "Informasi detail mengenai SPMB 2026",
-    sumberUrl: "/"
+    sumberUrl: ""
   }, 
   {
     id: 144,
