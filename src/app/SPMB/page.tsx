@@ -7,7 +7,7 @@ import Image from "next/image"
 
 // KUMPULAN GAMBAR POSTER / BROSUR SPMB (Bisa kamu tambah sesukamu)
 const daftarPoster = [
-  { id: 1, src: "/spandukspmb2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
+  { id: 1, src: "/SPANDUKSPMB2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
   { id: 2, src: "/SPMB_25.cdr.png", alt: "Informasi Persyaratan & Jalur Masuk" }, // Ganti dengan aset brosurmu jika ada
 ]
 
