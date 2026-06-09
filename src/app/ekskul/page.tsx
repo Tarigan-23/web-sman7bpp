@@ -6,17 +6,6 @@ import Link from "next/link"
 
 const dataEkskul = [  
   {
-    id: 1,
-    nama: "MPK",
-    kategori: "Umum",
-    logo: "/.png", 
-    pembina: "",
-    pelatih: "",
-    ketua: "", 
-    jadwal: "",
-    deskripsi: ""
-  },
-  {
     id: 2,
     nama: "SMAVE AMBASSADOR",
     kategori: "Umum",

@@ -31,6 +31,11 @@ export default function Footer(): React.JSX.Element {
             </h3>
             <ul className="space-y-3 md:space-y-2.5 text-gray-300 text-sm md:text-base">
               <li>
+                <Link href="/SPMB" className="hover:text-blue-400 transition-colors block py-0.5">
+                  SPMB
+                </Link>
+              </li>
+              <li>
                 <Link href="/" className="hover:text-blue-400 transition-colors block py-0.5">
                   Beranda
                 </Link>
@@ -98,7 +103,7 @@ export default function Footer(): React.JSX.Element {
 
       {/* Baris Hak Cipta / Copyright di Bagian Paling Bawah */}
       <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/5 text-center text-xs md:text-sm text-gray-400">
-        <p>&copy; {currentYear}SMA Negeri 7 Balikpapan. All rights reserved.</p>
+        <p>&copy; {currentYear} GMCS. All rights reserved.</p>
       </div>
 
     </footer>

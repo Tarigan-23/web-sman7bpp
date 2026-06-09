@@ -1,4 +1,20 @@
-export const berita = [  
+export const berita = [ 
+  {
+    id: 146,
+    judul: "✨Optimalisasi Pembelajaran Interaktif Dalam Mewujudkan Kelas yang Aktif dan Bermakna",
+    tanggal: "9 Juni 2026",
+    gambar: "/154.png",
+    deskripsi: "Berbagi Praktik Baik, Menginspirasi Pembelajaran Bermakna Selasa, 9 Juni 2026 tenaga pendidik berkesempatan berbagi praktik baik pembelajaran interaktif sebagai tindak lanjut dari kegiatan In-House Training yang telah dilaksanakan beberapa waktu lalu bersama Dr. Li Trisnendri Syahrizal, S.Pd., M.Hum. Melalui kegiatan tersebut, tenaga pendidik tidak hanya mempelajari teori tetapi juga mengimplementasikan berbagai strategi pembelajaran yang mendorong terciptanya kelas yang aktif, partisipatif dan bermakna bagi peserta didik. Setiap praktik yang dibagikan menjadi ruang belajar bersama untuk saling menginspirasi, berkolaborasi dan terus meningkatkan kualitas pembelajaran. Semoga semangat untuk terus belajar dan berbagi tersebut menjadi langkah nyata dalam menghadirkan pendidikan yang lebih kreatif, menyenangkan dan berdampak bagi masa depan peserta didik.",
+    sumberUrl: "https://www.instagram.com/p/DZXkfc8n-tZ/?img_index=1"
+  }, 
+  {
+    id: 146,
+    judul: "✨ Workshop Edukasi “TENTANG KITA” ✨",
+    tanggal: "9 Juni 2026",
+    gambar: "/155.png",
+    deskripsi: "Pada Hari Jumat, 5 Juni 2026 pukul 14.00 s/d 17.00 WITA yang berlokasi di perpustakaan SMA Negeri 7 Balikpapan menjadi tempat kolaborasi seru antara SMA Negeri 7 Balikpapan, SMK Negeri 5 Balikpapan dan Ekstrakurikuler PIK-R SMP se-Balikpapan Timur. Kegiatan yang dipandu oleh Duta GenRe dan Pengurus PIK-R Pulau Rayuan Kelapa tersebut, peserta diajak belajar Meaningful Youth Participation dan Modul GenRe melalui games interaktif BERANI dan BERAKSI. Adapun harapan dari kegiatan tersebut yakni untuk menciptakan remaja yang religius, cerdas, berprestasi dan siap menjadi agen perubahan 💪🏻🇮🇩 Terima kasih sekolah sahabat telah berkolaborasi! Sampai ketemu dikegiatan seru lainnya 🖐🏻🤩 Salam GenRe: Sehat, Cerdas, Ceria! 👌🏻",
+    sumberUrl: "https://www.instagram.com/p/DZWV-wDT_cp/"
+  }, 
   {
     id: 145,
     judul: "INFORMASI SPMB 2026",
@@ -13,7 +29,7 @@ export const berita = [
     tanggal: "7 Juni 2026",
     gambar: "/153.png",
     deskripsi: "Aksi Kokurikuler Projek Lintas Mata Pelajaran - Kelas X dan XI Kamis, 4 Juni 2026 di Lapangan SMA Negeri 7 Balikpapan menjadi panggung kreativitas peserta didik. Kegiatan yang dimulai dari pukul 07.30 WITA tersebut, perwakilan dari kelas X dan XI unjuk karya dalam Aksi Kokurikuler Projek Lintas Mata Pelajaran. Peserta didik kelas X menghidupkan kembali Permainan Tradisional dengan sentuhan baru. Mereka ditantang untuk memodifikasi aturan dan alat permainan, sekaligus belajar mandiri dan bekerja sama dalam tim lintas mata pelajaran. Di sisi lain, kelas XI menghadirkan Senam Irama berbalut Lagu Tradisional. Melalui koreografi yang selaras dengan musik daerah, peserta didik tidak hanya menumbuhkan rasa bangga pada budaya sendiri, namun juga mengasah kepemimpinan, manajemen tim dan kemampuan komunikasi. Dari latihan hingga pementasan, mereka belajar memecahkan masalah teknis secara mandiri dan kreatif. Dengan memadukan nilai sosial, spiritual dan estetika dalam gerak dan permainan, projek tersebut mengajak peserta didik belajar lewat pengalaman secara langsung, berkolaborasi dan berinovasi! Terus Semangat 🤩👏🏻",
-    sumberUrl: "https://www.instagram.com/p/DZSGIOghU7g/"
+    sumberUrl: "https://www.instagram.com/p/DZWM2MLhWEe/"
   }, 
   {
     id: 143,

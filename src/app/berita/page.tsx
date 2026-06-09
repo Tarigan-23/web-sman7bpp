@@ -12,7 +12,7 @@ export default function BeritaPage() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15, // Memberikan jeda 0.15 detik antar kartu berita
+        staggerChildren: 0.15, 
       },
     },
   }
@@ -39,20 +39,23 @@ export default function BeritaPage() {
       {/* Content */}
       <div className="relative z-10 pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-6 max-w-7xl mx-auto block">
 
-        {/* Judul Halaman - Responsif (text-3xl di HP, text-6xl di Desktop) */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-10 md:mb-20"
-        >
-          <h1 className="text-3xl md:text-6xl font-bold text-blue-400 drop-shadow-lg tracking-tight">
-            Berita Terkait
-          </h1>
-          <p className="text-gray-200 text-sm md:text-xl mt-2 md:mt-4 font-light tracking-wide">
-            SMA Negeri 7 Balikpapan
-          </p>
-        </motion.div>
+        <section className="text-center w-full">
+            <motion.div
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="space-y-2">
+                  <span className="bg-blue-500/10 text-[10px] md:text-xs font-semibold px-4 py-1.5 rounded-full text-blue-300 border border-blue-400/20 uppercase tracking-widest">
+                      Welcome Greeting
+                  </span>
+                    <h1 className="text-3xl md:text-6xl font-black text-white tracking-tight mt-3 mb-1 leading-tight">
+                      Berita <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Terkait</span>
+                    </h1>
+                  <p className="text-slate-400 text-sm md:text-xl font-light tracking-wide">
+                      SMA Negeri 7 Balikpapan
+                  </p>
+              </motion.div>
+          </section>
 
         {/* Pembungkus Kartu Berita */}
         <motion.div 

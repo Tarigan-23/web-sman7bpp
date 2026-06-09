@@ -10,6 +10,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const menuItems = [
+    { name: "SPMB", href: "/SPMB" },
     { name: "Beranda", href: "/" },
     { name: "Sambutan", href: "/sambutan" },
     { name: "Profil", href: "/profil" },
@@ -19,7 +20,7 @@ export default function Navbar() {
     { name: "Sarpras", href: "/Sarpras" },
     { name: "Humas", href: "/Humas" },
     { name: "Galeri", href: "/galeri" },
-    { name: "SPMB", href: "/SPMB" },
+   
     
   ]
 

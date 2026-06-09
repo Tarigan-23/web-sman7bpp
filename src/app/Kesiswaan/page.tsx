@@ -9,9 +9,10 @@ export default function KesiswaanPage() {
   const menuKesiswaan = [
     { id: "ekskul", nama: "🎪 Ekstrakurikuler", href: "/ekskul" },
     { id: "Osis", nama: "👥 Organisasi (OSIS)", href: "/Osis" },
+    { id: "Mpk", nama: "👥 Organisasi (MPK)", href: "/Mpk" },
     { id: "prestasi", nama: "🏆 Prestasi Siswa", href: "/prestasi" },
-    { id: "siswa", nama: "👨‍🎓 Daftar Siswa", href: "/siswa" }, // Link aktif ke halaman siswa Anda
-    { id: "kelas", nama: "🏫 Daftar Kelas", href: "/kelas" }, // Link aktif ke halaman kelas Anda
+    { id: "siswa", nama: "👨‍🎓 Daftar Siswa", href: "/siswa" }, 
+    { id: "kelas", nama: "🏫 Daftar Kelas", href: "/kelas" }, 
   ]
 
   return (
