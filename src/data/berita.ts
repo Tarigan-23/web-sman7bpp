@@ -19,9 +19,9 @@ export const berita = [
     id: 145,
     judul: "INFORMASI SPMB 2026",
     tanggal: "8 Juni 2026",
-    gambar: "/SPANDUK SPMB 2026.png",
+    gambar: "/SPANDUKSPMB2026.png",
     deskripsi: "Informasi detail mengenai SPMB 2026",
-    sumberUrl: "/galeri"
+    sumberUrl: "/"
   }, 
   {
     id: 144,
