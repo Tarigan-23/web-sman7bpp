@@ -8,7 +8,11 @@ import Image from "next/image"
 // KUMPULAN GAMBAR POSTER / BROSUR SPMB (Bisa kamu tambah sesukamu)
 const daftarPoster = [
   { id: 1, src: "/SPANDUKSPMB2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
-  { id: 2, src: "/SPMB_25.cdr.png", alt: "Informasi Persyaratan & Jalur Masuk" }, // Ganti dengan aset brosurmu jika ada
+  { id: 2, src: "/SPMB_25.cdr.png", alt: "Informasi Persyaratan & Jalur Masuk" }, 
+  { id: 3, src: "/spmb1.jpeg", alt: "pelaksanaan pra pendaftaran" },
+  { id: 4, src: "/spmb2.jpeg", alt: "SPMB" },
+  { id: 5, src: "/spmb3.jpeg", alt: "SPMB" },
+  { id: 6, src: "/spmb4.jpeg", alt: "SPMB" },
 ]
 
 export default function SPMBPage() {

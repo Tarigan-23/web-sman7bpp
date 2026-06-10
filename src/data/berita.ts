@@ -29,7 +29,7 @@ export const berita = [
     tanggal: "8 Juni 2026",
     gambar: "/SPANDUKSPMB2026.png",
     deskripsi: "Informasi detail mengenai SPMB 2026",
-    sumberUrl: ""
+    sumberUrl: "/SPMB"
   }, 
   {
     id: 144,
