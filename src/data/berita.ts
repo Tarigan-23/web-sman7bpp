@@ -1,5 +1,28 @@
 export const berita = [ 
   {
+  id: 150,
+  judul: "Sosialisasi Festival Karya CBP Rupiah 2026",
+  tanggal: "10 Juni 2026",
+  gambar: "/158.png",
+  deskripsi: `Pada Rabu, 10 Juni 2026, bertempat di Aula Beruang Madu Lantai 3 Kantor Perwakilan Bank Indonesia, telah dilaksanakan kegiatan Sosialisasi Festival Karya Cinta, Bangga, dan Paham (CBP) Rupiah 2026. Kegiatan ini dihadiri oleh perwakilan Cabang Dinas Pendidikan Wilayah Balikpapan, perwakilan Bank Indonesia, Yayasan Pijar Setara Nusa, guru pendamping, serta siswa SMA, SMK, dan SLB dari Kota Balikpapan, Kabupaten Penajam Paser Utara (PPU), dan Kabupaten Paser.
+Kegiatan diawali dengan pemaparan materi mengenai Cinta, Bangga, dan Paham Rupiah yang disampaikan oleh Saudara Yudha selaku perwakilan Bank Indonesia. Selanjutnya, peserta mendapatkan penjelasan teknis mengenai Festival Lomba Karya CBP Rupiah 2026 yang disampaikan oleh perwakilan Yayasan Pijar Setara Nusa.
+Melalui pelaksanaan sosialisasi dan lomba ini, diharapkan sekolah menjadi sarana edukasi untuk menanamkan pemahaman mengenai Cinta, Bangga, dan Paham Rupiah kepada generasi muda. Para peserta diharapkan mampu menjadi agen perubahan yang mengajak masyarakat untuk lebih memahami CBP Rupiah, menumbuhkan rasa kepedulian dan empati terhadap Rupiah sebagai simbol kedaulatan bangsa, serta menghasilkan karya-karya inovatif dan tepat guna yang memberikan manfaat nyata dalam kehidupan sehari-hari.
+Bersama generasi muda, mari wujudkan masyarakat yang Cinta, Bangga, dan Paham Rupiah.`,
+  sumberUrl: "https://www.instagram.com/p/DZZMWqfBVmB/"
+  },
+  {
+  id: 149,
+  judul: "🎬 GALAKSI DAY-1 ✨",
+  tanggal: "10 Juni 2026",
+  gambar: "/157.png",
+  deskripsi: `Selasa, 9 Juni 2026. Hari pertama pelaksanaan Classmeeting GALAKSI. Setelah pembukaan, ada penampilan luar biasa dari Koseju Art yang sangat kreatif dan juga menginspirasi, lalu setelah itu dilanjutkan dengan keseruan lomba-lomba hari pertama.
+  Setiap tim yang bertanding diharapkan untuk tetap menjunjung tinggi sportivitas dengan tetap menggelorakan ambisinya melalui langkah terbaik. 🚀⚡
+  Semoga semangat ini tetap bertahan sampai dengan hari terakhir. Sampai jumpa di hari berikutnya! 👀🫵🏻👋🏻
+  GALAKSI
+  𝘎𝘦𝘭𝘰𝘳𝘢𝘬𝘢𝘯 𝘈𝘮𝘣𝘪𝘴𝘪, 𝘓𝘢𝘯𝘨𝘬𝘢𝘩, 𝘈𝘬𝘴𝘪, 𝘒𝘳𝘦𝘢𝘵𝘪𝘷𝘪𝘵𝘢𝘴, 𝘚𝘱𝘰𝘳𝘵𝘪𝘷𝘪𝘵𝘢𝘴, 𝘋𝘢𝘯 𝘐𝘯𝘴𝘱𝘪𝘳𝘢𝘴𝘪`,
+  sumberUrl: "https://www.instagram.com/p/DZYdUMfTCC2/"
+  },
+  {
     id: 148,
     judul: "Hari Kedua Pra-Pendaftaran SPMB SMA Negeri 7 Balikpapan 📢",
     tanggal: "9 Juni 2026",

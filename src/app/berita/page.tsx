@@ -42,12 +42,10 @@ export default function BeritaPage() {
 
   // Fungsi Handler saat Kartu Berita diklik
   const handleCardClick = (e: React.MouseEvent, item: BeritaItem) => {
-    // Jika link valid mengarah ke luar (cth: Instagram), biarkan default membuka tab baru
     if (item.sumberUrl && item.sumberUrl.startsWith("http") && !item.sumberUrl.includes("sman7-bpp.sch.id/galeri")) {
-      return // Biarkan tag <a> menjalankan tugasnya
+      return 
     }
     
-    // Jika link kosong, berisi "#", atau mengarah ke galeri internal, cegah pindah halaman dan buka Detail Modal
     e.preventDefault()
     setSelectedBerita(item)
   }
@@ -135,15 +133,15 @@ export default function BeritaPage() {
                         {item.judul}
                       </h2>
 
-                      {/* Deskripsi Singkat (Line Clamp agar seragam rapi) */}
-                      <p className="text-slate-400 leading-relaxed font-light text-xs md:text-sm text-justify line-clamp-3 mt-3">
+                      {/* Deskripsi Singkat */}
+                      <p className="text-slate-400 leading-relaxed font-light text-xs md:text-sm text-justify line-clamp-3 mt-3 break-words">
                         {item.deskripsi}
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Penanda Aksi di bagian bawah kartu */}
+                {/* Penanda Aksi */}
                 <div className="p-5 md:p-6 pt-0 flex items-center justify-between text-xs font-semibold text-blue-400">
                   <span>
                     {item.sumberUrl && item.sumberUrl.startsWith("http") && !item.sumberUrl.includes("galeri") 
@@ -158,20 +156,19 @@ export default function BeritaPage() {
         </motion.div>
       </div>
 
+      {/* ================= MODAL DETAIL POPUP PREMIUM ================= */}
       <AnimatePresence>
         {selectedBerita && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6 select-text">
             
-            {/* Lapisan Latar Belakang Gelap Modal */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              onClick={() => setSelectedBerita(null)} // Klik luar untuk menutup
+              onClick={() => setSelectedBerita(null)}
               className="absolute inset-0 bg-black/80 backdrop-blur-md"
             />
 
-            {/* Kontainer Utama Box Detail Berita (Ala Web News Premium) */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -180,7 +177,6 @@ export default function BeritaPage() {
               className="relative w-full max-w-3xl bg-slate-900 border border-white/10 rounded-3xl overflow-hidden shadow-2xl z-10 flex flex-col max-h-[85vh]"
             >
               
-              {/* Tombol Close Silang Pojok Kanan Atas */}
               <button
                 onClick={() => setSelectedBerita(null)}
                 className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/60 border border-white/10 flex items-center justify-center text-white text-lg hover:bg-red-500 hover:border-red-500 transition duration-200"
@@ -188,41 +184,39 @@ export default function BeritaPage() {
                 ✕
               </button>
 
-              {/* Area Gambar Utama Berita */}
               <div className="w-full h-56 md:h-80 relative overflow-hidden bg-black/40 border-b border-white/5 flex-shrink-0">
                 <img
                   src={selectedBerita.gambar}
                   alt={selectedBerita.judul}
                   className="w-full h-full object-contain md:object-cover"
                 />
-                {/* Efek gradasi shadow pada gambar */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
               </div>
 
-              {/* Area Text Isi Berita Penuh (Scrollable) */}
+              {/* Area Teks Isi Berita (Scrollable & Perbaikan Baris Baru) */}
               <div className="p-6 md:p-8 overflow-y-auto space-y-4 scrollbar-thin scrollbar-thumb-white/10">
                 
-                {/* Atribut Tanggal & Meta */}
                 <div className="flex items-center gap-2 text-xs font-bold text-blue-400 uppercase tracking-widest">
                   <span>Warta SMANJU</span>
                   <span>•</span>
                   <span>📅 {selectedBerita.tanggal}</span>
                 </div>
 
-                {/* Judul Penuh */}
-                <h2 className="text-xl md:text-3xl font-black text-white leading-tight tracking-tight">
+                <h2 className="text-xl md:text-3xl font-black text-white leading-tight tracking-tight break-words">
                   {selectedBerita.judul}
                 </h2>
 
-                {/* Pembatas Line */}
                 <div className="w-16 h-1 bg-blue-500 rounded-full my-2" />
 
-                {/* Deskripsi Lengkap Tanpa Batasan (Justify Text Paragraf) */}
-                <p className="text-slate-300 text-sm md:text-base leading-relaxed text-justify font-light whitespace-pre-line pt-2">
-                  {selectedBerita.deskripsi}
-                </p>
+                {/* MODIFIKASI DISINI: Mendukung Pemecahan Baris Alami & Mencegah Text Keluar Grid */}
+                <div className="text-slate-300 text-sm md:text-base leading-relaxed text-justify font-light break-words tracking-normal space-y-4">
+                  {selectedBerita.deskripsi.split("\n").map((line, index) => (
+                    <p key={index} className="min-h-[1rem]">
+                      {line}
+                    </p>
+                  ))}
+                </div>
 
-                {/* Tombol Opsi Eksternal jika ada (Misal mengarah ke halaman galeri/pendukung) */}
                 {selectedBerita.sumberUrl && selectedBerita.sumberUrl !== "#" && (
                   <div className="pt-6 border-t border-white/5 flex flex-wrap items-center justify-between gap-4">
                     <span className="text-xs text-slate-400">
@@ -240,7 +234,6 @@ export default function BeritaPage() {
                 )}
               </div>
 
-              {/* Footer Modal Ringkas */}
               <div className="bg-slate-950/50 border-t border-white/5 px-6 py-4 flex items-center justify-between flex-shrink-0">
                 <span className="text-[10px] text-slate-500 font-mono">ID BERITA: #{selectedBerita.id}</span>
                 <button
