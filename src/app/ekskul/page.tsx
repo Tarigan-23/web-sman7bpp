@@ -413,13 +413,14 @@ export default function EkskulPage() {
                 key={ekskul.id} 
                 className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl border border-white/10 flex flex-col overflow-hidden hover:border-blue-500/30 transition-all group"
               >
-                {/* Logo Section */}
-                <div className="h-40 w-full bg-black/20 flex items-center justify-center border-b border-white/5">
-                  <img 
+                {/* Logo/Photo Section */}
+                <div className="h-48 w-full bg-black/30 relative overflow-hidden border-b border-white/5">
+                 <img 
                     src={ekskul.logo} 
                     alt={ekskul.nama} 
-                    className="h-24 w-24 object-contain group-hover:scale-105 transition duration-500 filter drop-shadow-[0_4px_10px_rgba(59,130,246,0.25)]"
-                  />
+                     className="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700 ease-out"
+                   />
+               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
                 </div>
 
                 {/* Content Area */}
