@@ -36,9 +36,6 @@ export default function KurikulumPage() {
       {/* Konten Utama */}
       <div className="relative z-10 pt-24 md:pt-36 pb-20 px-4 md:px-6 max-w-7xl mx-auto space-y-16 md:space-y-24">
         
-        {/* ======================================================== */}
-        {/* HERO TITLE                                               */}
-        {/* ======================================================== */}
         <section className="text-center w-full">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -147,7 +144,7 @@ export default function KurikulumPage() {
             
             <h2 className="text-2xl md:text-3xl font-black text-white">Kurikulum Satuan Pendidikan (KSP)</h2>
             <p className="text-gray-300 text-xs md:text-base leading-relaxed font-light text-justify">
-              KSP SMAN 7 Balikpapan disusun sebagai pedoman operasional kontekstual sekolah yang menyelaraskan karakteristik lingkungan lokal Kalimantan Timur dengan visi misi kemajuan nasional. Dokumen ini memuat seluruh rencana strategis proses pengorganisasian pembelajaran, pemetaan muatan lokal, regulasi beban belajar siswa, hingga strategi peningkatan mutu pendidik secara akuntabel.
+              KSP SMA Negeri 7 Balikpapan disusun sebagai pedoman operasional kontekstual sekolah yang menyelaraskan karakteristik lingkungan lokal Kalimantan Timur dengan visi misi kemajuan nasional. Dokumen ini memuat seluruh rencana strategis proses pengorganisasian pembelajaran, pemetaan muatan lokal, regulasi beban belajar siswa, hingga strategi peningkatan mutu pendidik secara akuntabel.
             </p>
             <div className="pt-2 flex flex-wrap gap-4 text-xs font-mono text-gray-400">
               <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1 rounded-md border border-white/5">📋 Dokumen KSP Aktif</span>
@@ -196,9 +193,9 @@ export default function KurikulumPage() {
             >
               <div className="space-y-3">
                 <div className="text-3xl bg-cyan-500/10 w-12 h-12 rounded-xl flex items-center justify-center border border-cyan-500/20 text-cyan-400 font-bold">02</div>
-                <h3 className="text-lg md:text-xl font-bold text-white">Kokurikuler (Projek P5)</h3>
+                <h3 className="text-lg md:text-xl font-bold text-white">Kokurikuler</h3>
                 <p className="text-gray-300 text-xs md:text-sm font-light leading-relaxed text-justify">
-                  Wadah khusus lintas mata pelajaran berupa <strong className="text-cyan-300 font-normal">Projek Penguatan Profil Pelajar Pancasila (P5)</strong>. Dilaksanakan secara konseptual melalui pengerjaan proyek bertema khusus (seperti Gaya Hidup Berkelanjutan, Kearifan Lokal, & Kewirausahaan) untuk membentuk karakter karakter kepemimpinan nyata siswa.
+                  Wadah khusus lintas mata pelajaran yang dirancang untuk memperkuat <strong className="text-cyan-300 font-normal">kompetensi, karakter, dan keterampilan peserta didik melalui berbagai kegiatan pembelajaran kontekstual</strong>. Kegiatan kokurikuler dilaksanakan secara terintegrasi dengan pembelajaran di kelas melalui tema-tema yang relevan dengan kebutuhan peserta didik, lingkungan, dan perkembangan zaman guna membentuk karakter, kreativitas, kemampuan berpikir kritis, kolaborasi, serta kepemimpinan siswa.
                 </p>
               </div>
               <div className="mt-6 pt-3 border-t border-white/5 text-[11px] font-mono text-cyan-300">

@@ -5,7 +5,7 @@ import { motion, Variants, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 
-// KUMPULAN GAMBAR POSTER / BROSUR SPMB (Bisa kamu tambah sesukamu)
+// KUMPULAN GAMBAR POSTER / BROSUR UTAMA (Slider atas)
 const daftarPoster = [
   { id: 1, src: "/SPANDUKSPMB2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
   { id: 2, src: "/SPMB_25.cdr.png", alt: "Informasi Persyaratan & Jalur Masuk" }, 
@@ -15,8 +15,15 @@ const daftarPoster = [
   { id: 6, src: "/spmb4.jpeg", alt: "SPMB" },
 ]
 
+// DATA UNTUK 3 POSTER BARU DI BAWAH ALUR PENDAFTARAN
+const posterTambahan = [
+  { id: 1, src: "/spmb5.png", title: "Alur Pelaksanaan Pra Pendaftaran", alt: "poster alur pelaksanaan" }, 
+  { id: 2, src: "/spmb6.png", title: "Persyaratan Pra Pendaftaran", alt: "Poster Persyaratan" },   
+  { id: 3, src: "/spmb7.png", title: "Alur Pelaksanaan", alt: "Poster alur" }, 
+]
+
 export default function SPMBPage() {
-  // 1. Konfigurasi animasi kelompok (Staggered) ala KurikulumPage
+  // Konfigurasi animasi kelompok (Staggered)
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -36,8 +43,10 @@ export default function SPMBPage() {
     },
   }
 
-  // State untuk kontrol Slider Brosur/Poster
+  // State untuk kontrol Slider Brosur/Poster Utama
   const [currentSlide, setCurrentSlide] = useState(0)
+  // State untuk Preview Zoom Poster (Bisa buat slider atas maupun 3 poster baru)
+  const [selectedPoster, setSelectedPoster] = useState<string | null>(null)
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === daftarPoster.length - 1 ? 0 : prev + 1))
@@ -47,7 +56,7 @@ export default function SPMBPage() {
     setCurrentSlide((prev) => (prev === 0 ? daftarPoster.length - 1 : prev - 1))
   }
 
-  // 2. State Timer Countdown Stabil
+  // State Timer Countdown Stabil
   const [timeLeft, setTimeLeft] = useState({ hari: 0, jam: 0, menit: 0, detik: 0 })
 
   useEffect(() => {
@@ -79,30 +88,26 @@ export default function SPMBPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white pb-24 relative overflow-hidden select-none">
       
-    
-<div className="absolute inset-0 z-0 w-full h-full">
-  <Image
-    src="/bg3.jpeg"
-    alt="Latar Belakang SMAN 7 Balikpapan"
-    fill
-    priority
-    sizes="100vw"
-    className="object-cover object-center opacity-45 pointer-events-none" />
-  <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/75 to-slate-950" />
-  
-  {/* Efek Lampu Sorot Gradasi Glow Sinematik */}
-  <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none" />
-  <div className="absolute bottom-[20%] right-[-10%] w-[45vw] h-[45vw] bg-indigo-500/10 rounded-full blur-[140px] pointer-events-none" />
-</div>
+      {/* Background Ornamen */}
+      <div className="absolute inset-0 z-0 w-full h-full">
+        <Image
+          src="/bg3.jpeg"
+          alt="Latar Belakang SMAN 7 Balikpapan"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-45 pointer-events-none" 
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/75 to-slate-950" />
+        <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-[20%] right-[-10%] w-[45vw] h-[45vw] bg-indigo-500/10 rounded-full blur-[140px] pointer-events-none" />
+      </div>
 
       {/* Content Container */}
       <div className="relative z-10 pt-24 md:pt-32 px-4 max-w-7xl mx-auto space-y-24">
         
-
         {/* ================= HERO SECTION ================= */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          {/* Sisi Kiri: Judul & Keterangan Utama */}
           <div className="lg:col-span-7 space-y-6">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -132,12 +137,7 @@ export default function SPMBPage() {
               Selamat datang di gerbang pendaftaran resmi SMA Negeri 7 Balikpapan. Proses pendaftaran dilakukan secara online, transparan, dan akuntabel melalui sistem integrasi SPMB Provinsi Kalimantan Timur.
             </motion.p>
 
-            <motion.div 
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-wrap gap-4 pt-2"
-            >
+            <div className="flex flex-wrap gap-4 pt-2">
               <a
                 href="#alur-pendaftaran"
                 className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-3 px-6 rounded-2xl shadow-lg transition duration-300"
@@ -152,10 +152,10 @@ export default function SPMBPage() {
               >
                 ✨ Portal SPMB
               </a>
-            </motion.div>
+            </div>
           </div>
 
-          {/* Sisi Kanan: Card Hitung Mundur (Glassmorphism) */}
+          {/* Sisi Kanan: Card Hitung Mundur */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -169,7 +169,6 @@ export default function SPMBPage() {
               Pendaftaran Tahap I akan dibuka pada <span className="text-blue-400 font-semibold">22 - 24 Juni 2026</span>.
             </p>
 
-            {/* Grid Angka Countdown */}
             <div className="grid grid-cols-4 gap-3 text-center">
               {[
                 { label: "Hari", value: timeLeft.hari },
@@ -215,7 +214,7 @@ export default function SPMBPage() {
           ))}
         </motion.div>
 
-        {/* ================= SECTION BROSUR & POSTER SLIDER (BARU) ================= */}
+        {/* ================= SECTION BROSUR & POSTER SLIDER ================= */}
         <section className="max-w-4xl mx-auto space-y-8">
           <div className="text-center">
             <span className="text-amber-400 text-xs font-bold font-mono tracking-widest uppercase">Media Informasi</span>
@@ -223,9 +222,7 @@ export default function SPMBPage() {
             <div className="w-12 h-1 bg-amber-500 mx-auto rounded-full mt-2" />
           </div>
 
-          {/* Frame Bingkai Slider */}
           <div className="relative bg-white/5 border border-white/10 p-3 md:p-4 rounded-3xl shadow-2xl backdrop-blur-sm overflow-hidden aspect-[4/3] md:aspect-[16/9] max-h-[500px] w-full flex items-center justify-center group">
-            
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-black/40">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -234,7 +231,8 @@ export default function SPMBPage() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 1.02 }}
                   transition={{ duration: 0.4 }}
-                  className="relative w-full h-full"
+                  className="relative w-full h-full cursor-zoom-in"
+                  onClick={() => setSelectedPoster(daftarPoster[currentSlide].src)}
                 >
                   <Image
                     src={daftarPoster[currentSlide].src}
@@ -247,15 +245,12 @@ export default function SPMBPage() {
               </AnimatePresence>
             </div>
 
-            {/* Tombol Geser Kiri */}
             <button
               onClick={prevSlide}
               className="absolute left-6 w-10 h-10 rounded-xl bg-slate-900/80 border border-white/10 flex items-center justify-center text-white text-sm hover:bg-blue-600 transition shadow-lg opacity-0 group-hover:opacity-100 duration-300"
             >
               ❮
             </button>
-
-            {/* Tombol Geser Kanan */}
             <button
               onClick={nextSlide}
               className="absolute right-6 w-10 h-10 rounded-xl bg-slate-900/80 border border-white/10 flex items-center justify-center text-white text-sm hover:bg-blue-600 transition shadow-lg opacity-0 group-hover:opacity-100 duration-300"
@@ -263,7 +258,6 @@ export default function SPMBPage() {
               ❯
             </button>
 
-            {/* Indikator Titik (Dots) di Bawah Slider */}
             <div className="absolute bottom-8 flex gap-2 z-20">
               {daftarPoster.map((_, idx) => (
                 <button
@@ -278,7 +272,7 @@ export default function SPMBPage() {
           </div>
         </section>
 
-        {/* ================= 3. STEP BY STEP ALUR PENDAFTARAN ================= */}
+        {/* ================= STEP BY STEP ALUR PENDAFTARAN ================= */}
         <div id="alur-pendaftaran" className="space-y-10 pt-6">
           <motion.div 
             initial={{ opacity: 0 }}
@@ -323,9 +317,101 @@ export default function SPMBPage() {
               </motion.div>
             ))}
           </motion.div>
+
+          {/* ================= PLACEHOLDER 3 POSTER BARU (DI BAWAH ALUR) ================= */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="pt-12 space-y-6"
+          >
+            <div className="flex items-center gap-4">
+              <div className="h-[1px] bg-white/10 flex-1" />
+              <h3 className="text-sm md:text-base font-bold tracking-wider text-amber-400 uppercase bg-slate-950 px-4 py-1 rounded-full border border-amber-500/20">
+                📌 Brosur & Panduan Pelengkap
+              </h3>
+              <div className="h-[1px] bg-white/10 flex-1" />
+            </div>
+
+            {/* Grid 3 Kolom Khusus Poster Baru */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {posterTambahan.map((poster) => (
+                <motion.div
+                  key={poster.id}
+                  variants={itemVariants}
+                  whileHover={{ y: -5 }}
+                  className="bg-white/5 border border-white/5 hover:border-white/10 p-3 rounded-2xl backdrop-blur-sm shadow-xl flex flex-col gap-3 group"
+                >
+                  {/* Container Image Aset */}
+                  <div 
+                    onClick={() => setSelectedPoster(poster.src)}
+                    className="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-black/40 border border-white/5 cursor-zoom-in group-hover:border-blue-500/30 transition-colors duration-300"
+                  >
+                    <Image
+                      src={poster.src}
+                      alt={poster.alt}
+                      fill
+                      className="object-cover group-hover:scale-102 transition-transform duration-500"
+                      sizes="(max-w-768px) 100vw, 33vw"
+                    />
+                    {/* Hover Glow Masking Overlay */}
+                    <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-slate-950/0 transition-colors duration-300 flex items-center justify-center">
+                      <span className="bg-slate-900/90 text-white border border-white/10 px-3 py-1.5 rounded-xl text-xs font-medium tracking-wide opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 shadow-2xl">
+                        🔍 Ketuk untuk Memperbesar
+                      </span>
+                    </div>
+                  </div>
+                  {/* Label Judul Poster Pendukung */}
+                  <div className="px-1 py-1">
+                    <span className="text-xs font-semibold text-slate-300 group-hover:text-blue-400 transition-colors duration-200 block truncate">
+                      {poster.title}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
         </div>
 
       </div>
+
+      {/* ================= SCREEN-WIDE MODAL OVERLAY ZOOM (PREVIEW PREMIUM) ================= */}
+      <AnimatePresence>
+        {selectedPoster && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedPoster(null)}
+            className="fixed inset-0 z-[100] bg-slate-950/95 backdrop-blur-md flex items-center justify-center p-4 md:p-8 cursor-zoom-out"
+          >
+            {/* Tombol Tutup */}
+            <button className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white font-mono text-xl hover:bg-white/10 transition-colors">
+              ✕
+            </button>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ type: "spring", stiffness: 150, damping: 20 }}
+              className="relative w-full h-full max-w-4xl max-h-[85vh]"
+              onClick={(e) => e.stopPropagation()} // Mencegah modal tertutup tidak sengaja saat gambar diklik
+            >
+              <Image
+                src={selectedPoster}
+                alt="Pratinjau Brosur Diperbesar"
+                fill
+                className="object-contain"
+                sizes="(max-w-1024px) 100vw, 1024px"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
     </div>
   )
 }

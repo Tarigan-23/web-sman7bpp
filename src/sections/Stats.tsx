@@ -19,7 +19,7 @@ export default function Stats() {
     },
     {
       title: "Guru",
-      value: "60",
+      value: "69",
       link: "/guru",
     },
     {
@@ -29,7 +29,7 @@ export default function Stats() {
     },
     {
       title: "Kelas",
-      value: "18",
+      value: "29",
       link: "/kelas",
     },
   ]
