@@ -7,7 +7,8 @@ import Image from "next/image"
 // 1. DATA STRUKTUR ORGANISASI OSIS SMAN 7 BALIKPAPAN
 const pengurusInti = {
   ketua: { nama: "Wira Taqwa Jalarumeksa", kelas: "XI-B1", jabatan: "Ketua Umum OSIS" },
-  wakil: { nama: "Syahla Rifda Oktaviana", kelas: "XI-B1", jabatan: "Wakil Ketua 2" },
+  wakil1: { nama: "Anom Braja Mukti", kelas: "XI-D2", jabatan: "Wakil Ketua 1" },
+  wakil2: { nama: "Syahla Rifda Oktaviana", kelas: "XI-B1", jabatan: "Wakil Ketua 2" },
   sekretaris: [
     { nama: "Gezia Adila", kelas: "XI-A1", jabatan: "Sekretaris Umum" },
     { nama: "Khumairoh", kelas: "XI-A2", jabatan: "Sekretaris 1" },
@@ -204,23 +205,44 @@ export default function OsisPage() {
                 <div className="absolute bottom-0 w-0.5 h-8 bg-amber-500/50" />
               </div>
 
-              {/* LEVEL 2: WAKIL KETUA */}
-              <div className="relative pb-8 pt-2 flex flex-col items-center">
-                {/* Garis Vertikal Atas */}
-                <div className="absolute top-0 w-0.5 h-2 bg-amber-500/50" />
-                <div className="bg-gradient-to-b from-slate-700 to-slate-800 p-0.5 rounded-xl border border-white/5 shadow-md">
-                  <div className="bg-slate-950 px-8 py-3 rounded-[10px] text-center w-56">
-                    <div className="text-[10px] font-mono text-slate-400 font-bold tracking-widest uppercase">{pengurusInti.wakil.jabatan}</div>
-                    <div className="text-sm font-black text-white mt-0.5">{pengurusInti.wakil.nama}</div>
-                    <div className="text-[10px] text-slate-400">Kelas {pengurusInti.wakil.kelas}</div>
+              {/* LEVEL 2: WAKIL KETUA 1 & WAKIL KETUA 2 (SEJAJAR) */}
+              <div className="relative pb-8 pt-2 w-full max-w-xl flex justify-between px-12">
+                {/* Garis Horizontal Atas Penghubung Wakil */}
+                <div className="absolute top-0 left-[23%] right-[23%] h-0.5 bg-amber-500/40" />
+                
+                {/* WAKIL KETUA 1 */}
+                <div className="flex flex-col items-center relative">
+                  <div className="absolute -top-2 w-0.5 h-2 bg-amber-500/40" />
+                  <div className="bg-gradient-to-b from-slate-700 to-slate-800 p-0.5 rounded-xl border border-white/5 shadow-md">
+                    <div className="bg-slate-950 px-6 py-2.5 rounded-[10px] text-center w-48">
+                      <div className="text-[10px] font-mono text-amber-500/80 font-bold tracking-widest uppercase">{pengurusInti.wakil1.jabatan}</div>
+                      <div className="text-xs font-bold text-white mt-0.5 truncate" title={pengurusInti.wakil1.nama}>{pengurusInti.wakil1.nama}</div>
+                      <div className="text-[9px] text-slate-400">Kelas {pengurusInti.wakil1.kelas}</div>
+                    </div>
                   </div>
+                  <div className="absolute -bottom-6 w-0.5 h-6 bg-slate-700" />
                 </div>
-                {/* Garis Vertikal Turun */}
-                <div className="absolute bottom-0 w-0.5 h-8 bg-slate-700" />
+
+                {/* WAKIL KETUA 2 */}
+                <div className="flex flex-col items-center relative">
+                  <div className="absolute -top-2 w-0.5 h-2 bg-amber-500/40" />
+                  <div className="bg-gradient-to-b from-slate-700 to-slate-800 p-0.5 rounded-xl border border-white/5 shadow-md">
+                    <div className="bg-slate-950 px-6 py-2.5 rounded-[10px] text-center w-48">
+                      <div className="text-[10px] font-mono text-amber-500/80 font-bold tracking-widest uppercase">{pengurusInti.wakil2.jabatan}</div>
+                      <div className="text-xs font-bold text-white mt-0.5 truncate" title={pengurusInti.wakil2.nama}>{pengurusInti.wakil2.nama}</div>
+                      <div className="text-[9px] text-slate-400">Kelas {pengurusInti.wakil2.kelas}</div>
+                    </div>
+                  </div>
+                  <div className="absolute -bottom-6 w-0.5 h-6 bg-slate-700" />
+                </div>
+
+                {/* Garis konektor tengah bawah menuju Kesekretariatan */}
+                <div className="absolute bottom-0 left-[23%] right-[23%] h-0.5 bg-slate-700" />
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0.5 h-6 bg-slate-700" />
               </div>
 
               {/* LEVEL 3: SEKRETARIS & BENDAHARA */}
-              <div className="relative w-full max-w-4xl flex justify-between px-12 pb-12">
+              <div className="relative w-full max-w-4xl flex justify-between px-12 pb-12 pt-4">
                 {/* Garis Horizontal Penghubung Utama */}
                 <div className="absolute top-0 left-[16.5%] right-[16.5%] h-0.5 bg-slate-700" />
                 
