@@ -215,7 +215,7 @@ export default function SambutanPage() {
               />
             </div>
           </div>
-        </motion.div>
+        </motion.div> 
 
       </div>
 
@@ -233,7 +233,7 @@ export default function SambutanPage() {
             </button>
             <div className="relative w-full h-[85vh]">
               <Image
-                src="/struktur.png"
+                src="/struktur organisasi.jpeg"
                 alt="Struktur Organisasi Terbuka"
                 fill
                 className="object-contain rounded-xl shadow-2xl"

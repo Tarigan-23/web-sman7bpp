@@ -10,25 +10,24 @@ const dataEkskul = [
     nama: "SMAVE AMBASSADOR",
     kategori: "Umum",
     logo: "/ekskul/ambassador.jpeg",
-    pembina: "",
-    pelatih: "",
+    pembina: "-",
+    pelatih: "-",
   },
   {
     id: 2,
     nama: "ADIWIYATA",
     kategori: "Umum",
     logo: "/ekskul/adiwiata.jpeg",
-    pembina: "",
-    pelatih: "  ",
+    pembina: "-",
+    pelatih: "-",
   },
   {
     id: 3,
     nama: "PRAMUKA",
     kategori: "Umum",
     logo: "/ekskul/pramuka.jpeg",
-    pembina_putra: "Arfah, S.Pd",
-    pembina_putri: "Roslindah, S.Pd",
-    pelatih: " Wimpi",
+    pembina: "Arfah, S.Pd (Putra), Roslindah, S.Pd (Putri)",
+    pelatih: "Wimpi",
   },
   {
     id: 4,
@@ -43,16 +42,16 @@ const dataEkskul = [
     nama: "UKS",
     kategori: "Umum",
     logo: "/ekskul/uks.jpeg",
-    pembina: "",
-    pelatih: "  ",
+    pembina: "-",
+    pelatih: "-",
   },
   {
     id: 6,
-    nama: "KARYA IMIAH REMAJA",
+    nama: "KARYA ILMIAH REMAJA",
     kategori: "Akademik",
     logo: "/ekskul/karyailmiah.jpeg",
     pembina: "Eka Normawati, S.Pd.",
-    pelatih: "  ",
+    pelatih: "-",
   },
   {
     id: 7,
@@ -60,7 +59,7 @@ const dataEkskul = [
     kategori: "Akademik",
     logo: "/ekskul/english.jpeg",
     pembina: "Dita Wardhany, S.Pd.",
-    pelatih: "  ",
+    pelatih: "-",
   },
   {
     id: 8,
@@ -72,27 +71,27 @@ const dataEkskul = [
   },
   {
     id: 9,
-    nama: "KOMUNISAS KRISTEN",
+    nama: "KOMUNITAS KRISTEN",
     kategori: "Keagamaan",
     logo: "/ekskul/kokris.jpeg",
-    pembina: "",
-    pelatih: "  ",
+    pembina: "-",
+    pelatih: "-",
   },
   {
     id: 10,
     nama: "ROHIS",
     kategori: "Keagamaan",
     logo: "/ekskul/rohis.jpeg",
-    pembina: "",
-    pelatih: "  ",
+    pembina: "-",
+    pelatih: "-",
   },
   {
     id: 11,
     nama: "TAHFIDZ",
     kategori: "Keagamaan",
     logo: "/ekskul/tahfidz.jpeg",
-    pembina: "",
-    pelatih: "  ",
+    pembina: "-",
+    pelatih: "-",
   },
   {
     id: 12,
@@ -100,7 +99,7 @@ const dataEkskul = [
     kategori: "Umum",
     logo: "/ekskul/kewirausahaan.jpeg",
     pembina: "Rodatul Jannah, S.Pd.",
-    pelatih: "  ",
+    pelatih: "-",
   },
   {
     id: 13,
@@ -116,7 +115,7 @@ const dataEkskul = [
     kategori: "Umum",
     logo: "/ekskul/pik-r.jpeg",
     pembina: "Juni Alvionita Nainggolan, S.Psi",
-    pelatih: "  ",
+    pelatih: "-",
   },
   {
     id: 15,
@@ -132,11 +131,11 @@ const dataEkskul = [
     kategori: "Umum",
     logo: "/ekskul/dtkecantikan.jpeg",
     pembina: "Nova Agustina, S.Pd",
-    pelatih: " Riska salim",
+    pelatih: "Riska Salim",
   },
   {
     id: 17,
-    nama: "DT TATA BUSAN",
+    nama: "DT TATA BUSANA",
     kategori: "Umum",
     logo: "/ekskul/dttatabusana.jpeg",
     pembina: "Novita Susanti, S.Pd.",
@@ -148,30 +147,23 @@ const dataEkskul = [
     kategori: "Umum",
     logo: "/ekskul/dtmultimedia.jpeg",
     pembina: "Dasril, S.Kom",
-    pelatih1: "Husodo Ragil Prastowo",
-    pelatih2: "Anang Harianto",
+    pelatih: "Husodo Ragil P. / Anang H.",
   },
   {
     id: 19,
     nama: "FUTSAL",
     kategori: "Olahraga",
     logo: "/ekskul/futsal.jpeg",
-    pembina: "Aji utama, S.Pd",
+    pembina: "Aji Utama, S.Pd",
     pelatih: "Achmad Hidayat",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 20,
     nama: "IT CLUB SMAVEN",
     kategori: "Umum",
     logo: "/ekskul/itclub.jpeg",
-    pembina: "",
+    pembina: "-",
     pelatih: "Yegar Tarigan",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 21,
@@ -180,22 +172,19 @@ const dataEkskul = [
     logo: "/ekskul/karate.jpeg",
     pembina: "Yudho Prasetyo, S.Pd.",
     pelatih: "Radian Efendi",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 22,
     nama: "BAND",
     kategori: "Seni",
     logo: "/ekskul/band.jpeg",
-    pembina: "Andi Fadly Amdan, S. Pd.",
-    pelatih: "Abdul Halim muhammad",
+    pembina: "Andi Fadly Amdan, S.Pd.",
+    pelatih: "Abdul Halim Muhammad",
   },
   {
     id: 23,
     nama: "BASKETBALL",
-    kategori: "Olahra",
+    kategori: "Olahraga",
     logo: "/ekskul/basketball.jpeg",
     pembina: "Heriansyah, S.Pd",
     pelatih: "Frisky Pelealu",
@@ -206,7 +195,7 @@ const dataEkskul = [
     kategori: "Umum",
     logo: "/ekskul/green.jpeg",
     pembina: "Amirudin Siwasiwan, S.Pd",
-    pelatih: "  ",
+    pelatih: "-",
   },
   {
     id: 25,
@@ -230,15 +219,15 @@ const dataEkskul = [
     kategori: "Umum",
     logo: "/ekskul/ttb.jpeg",
     pembina: "Rizka Furqany, M.Pd.",
-    pelatih: "  ",
+    pelatih: "-",
   },
   {
     id: 28,
     nama: "KOMUNITAS SENI",
     kategori: "Seni",
     logo: "/ekskul/komsen.jpeg",
-    pembina: "",
-    pelatih: "  ",
+    pembina: "-",
+    pelatih: "-",
   },
   {
     id: 29,
@@ -250,7 +239,7 @@ const dataEkskul = [
   },
   {
     id: 30,
-    nama: "VOLY",
+    nama: "VOLI",
     kategori: "Olahraga",
     logo: "/ekskul/voly.jpeg",
     pembina: "Eka Januardi, S.Pd",
@@ -260,15 +249,15 @@ const dataEkskul = [
     id: 31,
     nama: "Tari Tradisional dan Dance",
     kategori: "Seni",
-    logo: "/ekskul/.jpeg",
-    pembina: "Nirwana, S. Pd",
+    logo: "/ekskul/default.jpeg", 
+    pembina: "Nirwana, S.Pd",
     pelatih: "Sabilillah Sayuti",
   },
   {
     id: 32,
     nama: "E-Sport",
     kategori: "Olahraga",
-    logo: "/ekskul/.jpeg",
+    logo: "/ekskul/default.jpeg",
     pembina: "Sella Lipiantanna, S.Pd.",
     pelatih: "Harly",
   },
@@ -277,27 +266,25 @@ const dataEkskul = [
     nama: "KRIYA",
     kategori: "Seni",
     logo: "/ekskul/krysta.jpeg",
-    pembina: "Darni, S. Pd",
-    pelatih: "  ",
+    pembina: "Darni, S.Pd",
+    pelatih: "-",
   },
   {
     id: 34,
     nama: "Bulu Tangkis",
     kategori: "Olahraga",
-    logo: "/ekskul/.jpeg",
+    logo: "/ekskul/default.jpeg",
     pembina: "Yudho Prasetyo, S.Pd.",
-    pelatih: "  ",
+    pelatih: "-",
   },
   {
     id: 35,
     nama: "Tilawah",
     kategori: "Keagamaan",
-    logo: "/ekskul/.jpeg",
+    logo: "/ekskul/default.jpeg",
     pembina: "Heni Fatmawati, S.Pd",
     pelatih: "Fathul Karim",
-  },
-
-  
+  }
 ]
 
 export default function EkskulPage() {
@@ -312,7 +299,7 @@ export default function EkskulPage() {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
-      style={{ backgroundImage: "url('/bg3.jpg')" }}
+      style={{ backgroundImage: "url('/bg3.jpeg')" }}
     >
       <div className="absolute inset-0 bg-black/75 z-0"></div>
 
@@ -335,7 +322,7 @@ export default function EkskulPage() {
           </p>
         </div>
 
-        {/* STATISTIK BOX TERSIMPLIFIKASI (HANYA TOTAL EKSUAL UTAMA) */}
+        {/* STATISTIK BOX */}
         <div className="max-w-xs mx-auto bg-slate-900/40 backdrop-blur-md border border-white/10 p-5 rounded-2xl shadow-2xl mb-10 text-center">
           <div className="text-4xl md:text-5xl font-black text-blue-400 drop-shadow-[0_0_15px_rgba(59,130,246,0.4)]">
             {totalEkskul}
@@ -374,14 +361,14 @@ export default function EkskulPage() {
                 key={ekskul.id} 
                 className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl border border-white/10 flex flex-col overflow-hidden hover:border-blue-500/30 transition-all group"
               >
-                {/* Logo/Photo Section */}
-                <div className="h-48 w-full bg-black/30 relative overflow-hidden border-b border-white/5">
-                 <img 
+                {/* Logo/Photo Section - DIUPDATE AGAR LOGO TIDAK TERPOTONG */}
+                <div className="h-48 w-full bg-black/50 relative overflow-hidden border-b border-white/5 p-4 flex items-center justify-center">
+                  <img 
                     src={ekskul.logo} 
                     alt={ekskul.nama} 
-                     className="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700 ease-out"
-                   />
-               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                    className="max-w-full max-h-full object-contain group-hover:scale-105 transition duration-500 ease-out z-10"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent z-0"></div>
                 </div>
 
                 {/* Content Area */}
@@ -393,22 +380,18 @@ export default function EkskulPage() {
                     <h3 className="text-lg font-bold text-white mt-2 group-hover:text-blue-400 transition">
                       {ekskul.nama}
                     </h3>
-                    <p className="text-gray-300 text-xs leading-relaxed mt-1 text-justify font-light">
-                      {ekskul.deskripsi}
-                    </p>
                   </div>
 
-                  {/* Metadata Section (Pembina, Pelatih, Ketua) */}
+                  {/* Metadata Section */}
                   <div className="space-y-1.5 border-t border-white/5 pt-3 text-[11px] text-gray-300">
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Pembina:</span>
-                      <span className="text-white font-light">{ekskul.pembina}</span>
+                    <div className="flex justify-between items-start gap-4">
+                      <span className="text-gray-400 shrink-0">Pembina:</span>
+                      <span className="text-white font-light text-right">{ekskul.pembina}</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Pelatih:</span>
-                      <span className="text-white font-light">{ekskul.pelatih}</span>
+                    <div className="flex justify-between items-start gap-4">
+                      <span className="text-gray-400 shrink-0">Pelatih:</span>
+                      <span className="text-white font-light text-right">{ekskul.pelatih}</span>
                     </div>
-
                   </div>
                 </div>
               </motion.div>
