@@ -25,46 +25,46 @@ export default function HumasPage() {
   // ==========================================
   const galeriHumas: GaleriItem[] = [
     {
-      judul: "Kunjungan Kerja IKN",
+      judul: "Lobi Sekolah",
       gambar: ["/bg1.jpeg", "/galeri3.jpg", "/galeri4.jpg"],
-      deskripsi: "Menjalin silaturahmi dan peninjauan area publik bersama perwakilan komite sekolah di area Istana Garuda, Ibu Kota Nusantara.",
+      deskripsi: "",
       tanggal: "12 MEI 2026",
       kategori: "Kemitraan"
     },
     {
-      judul: "Acara Adat Sumpah Pemuda",
+      judul: "no data",
       gambar: ["/bg2.jpeg"],
-      deskripsi: "Mengenakan pakaian adat nusantara guna memperkuat keharmonisan hubungan internal antar civitas akademika sekolah.",
-      tanggal: "28 OKTOBER 2025",
-      kategori: "Komunitas"
+      deskripsi: "no data",
+      tanggal: "",
+      kategori: "Humas"
     },
     {
-      judul: "KEGIATAN 2025",
+      judul: "no data",
       gambar: ["/galeri3.jpg", "/galeri5.jpg"],
-      deskripsi: "Aksi kolaborasi Humas dan Universitas Mulia dalam mengampanyekan gaya hidup sehat ke masyarakat Balikpapan.",
-      tanggal: "15 DESEMBER 2025",
-      kategori: "Sosialisasi"
+      deskripsi: "no data",
+      tanggal: "",
+      kategori: "Humas"
     },
     {
-      judul: "Eksplorasi Lingkungan Hidup",
+      judul: "no data",
       gambar: ["/galeri4.jpg"],
-      deskripsi: "Dokumentasi kegiatan bakti sosial penanaman bibit pohon bersama komunitas hijau lokal di wilayah perbukitan.",
-      tanggal: "22 FEBRUARI 2026",
-      kategori: "Komunitas"
+      deskripsi: "no data",
+      tanggal: "",
+      kategori: "Humas"
     },
     {
-      judul: "Sertifikasi Kompetensi BNSP",
+      judul: "no data",
       gambar: ["/galeri5.jpg"],
-      deskripsi: "Penandatanganan kerja sama pelaksanaan sertifikasi kompetensi keahlian untuk jaminan penyerapan lulusan di dunia industri.",
-      tanggal: "04 MARET 2026",
-      kategori: "Kemitraan"
+      deskripsi: "no data",
+      tanggal: "",
+      kategori: ""
     },
     {
-      judul: "Ramah Tamah Alumni SMAN 7",
+      judul: "no data",
       gambar: ["/galeri6.jpg"],
-      deskripsi: "Malam keakraban, sharing session karir, dan pembentukan pengurus ikatan alumni lintas generasi angkatan.",
-      tanggal: "10 APRIL 2026",
-      kategori: "Alumni"
+      deskripsi: "no data",
+      tanggal: "",
+      kategori: ""
     }
   ]
 
