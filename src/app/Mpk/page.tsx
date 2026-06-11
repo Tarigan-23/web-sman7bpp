@@ -4,17 +4,19 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 
-// 1. DATA STRUKTUR ORGANISASI MPK
+// 1. DATA STRUKTUR ORGANISASI MPK (FULLY UPDATED)
 const pengurusInti = {
-  ketua: { nama: "", kelas: "", jabatan: "Ketua MPK" },
-  wakil: { nama: "", kelas: "", jabatan: "Wakil Ketua MPK" },
+  ketuaUmum: { nama: "Rasya Maulana Saputra", kelas: "XI-A1", jabatan: "Ketua Umum" },
+  ketua1: { nama: "Sundari", kelas: "XI-D2", jabatan: "Ketua 1" },
+  ketua2: { nama: "Rehobot Tadsnima Gultom", kelas: "XI-B1", jabatan: "Ketua 2" }, // Silakan sesuaikan nama & kelasnya nanti
   sekretaris: [
-    { nama: "", kelas: "", jabatan: "Sekretaris I" },
-    { nama: "", kelas: "", jabatan: "Sekretaris II" }
+    { nama: "Muhammad Rizki Apriliyanto", kelas: "XI-B2", jabatan: "Sekretaris Umum" },
+    { nama: "Syarifah Mahani", kelas: "XI-D1", jabatan: "Sekretaris 1" },
+    { nama: "Rahmah Aisyah", kelas: "X-F", jabatan: "Sekretaris 2" }
   ],
   bendahara: [
-    { nama: "", kelas: "", jabatan: "Bendahara I" },
-    { nama: "", kelas: "", jabatan: "Bendahara II" }
+    { nama: "Andi Muhammad Naufal W.N", kelas: "XI-A2", jabatan: "Bendahara Umum" },
+    { nama: "Lusyana Slamet Sambara", kelas: "X-H", jabatan: "Bendahara 1" }
   ]
 }
 
@@ -22,33 +24,43 @@ const daftarKomisi = [
   {
     nomor: "Komisi A",
     bidang: "Komisi Hukum, Tata Tertib, & AD/ART Organisasi",
+    inti: [
+      { jabatan: "Ketua Komisi", nama: "Maryam Dzakiyyatul Haq", kelas: "XI-A1" },
+      { jabatan: "Wakil Ketua", nama: "Muzaina Ilmira", kelas: "XI-A2" },
+      { jabatan: "Sekretaris", nama: "Fitriani Ramadani", kelas: "X-F" }
+    ],
     anggota: [
-      { nama: " ", kelas: "" },
-      { nama: " ", kelas: "" }
+      { nama: "Zahratul Lila", kelas: "X-B" },
+      { nama: "Justia Yuliani", kelas: "X-E" },
+      { nama: "Najwa Aziza Chuluqin Putri", kelas: "XI-A2" }
     ]
   },
   {
     nomor: "Komisi B",
     bidang: "Komisi Pengawasan & Evaluasi Kinerja OSIS",
+    inti: [
+      { jabatan: "Ketua Komisi", nama: "Rahmah Yuni Nabila", kelas: "XI-D3" },
+      { jabatan: "Wakil Ketua", nama: "Anggun Nina", kelas: "XI-D3" },
+      { jabatan: "Sekretaris", nama: "Habibatuz Zahra", kelas: "X-F" }
+    ],
     anggota: [
-      { nama: " ", kelas: "" },
-      { nama: " ", kelas: "" }
+      { nama: "Suci Aina Salsabilah", kelas: "X-B" },
+      { nama: "Venny Olivia Virani Putri", kelas: "X-A" }
     ]
   },
   {
     nomor: "Komisi C",
     bidang: "Komisi Penyerapan & Penyaluran Aspirasi Siswa",
+    inti: [
+      { jabatan: "Ketua Komisi", nama: "Ayu Citra Lestari", kelas: "XI-D2" },
+      { jabatan: "Wakil Ketua", nama: "Jesika Sefira", kelas: "X-C" },
+      { jabatan: "Sekretaris", nama: "Muhammad Raffi Pradipta", kelas: "X-C" }
+    ],
     anggota: [
-      { nama: " ", kelas: "" },
-      { nama: " ", kelas: "" }
-    ]
-  },
-  {
-    nomor: "Komisi D",
-    bidang: "Komisi Pengembangan Sumber Daya Manusia & Pemilu Ketua OSIS",
-    anggota: [
-      { nama: " ", kelas: "" },
-      { nama: " ", kelas: "" }
+      { nama: "Annisa Mulyani", kelas: "X-D" },
+      { nama: "Dinda Aisyah Rasyid", kelas: "X-G" },
+      { nama: "Jesica Dwi Saputri", kelas: "X-G" },
+      { nama: "Muhammad Nafi Setiawan", kelas: "X-I" }
     ]
   }
 ]
@@ -97,18 +109,19 @@ export default function MpkPage() {
     <div className="min-h-screen bg-slate-950 text-white pb-24 relative overflow-hidden select-none">
       
       {/* Background Ornamen Gradasi Emas-Biru Sinematik */}
-    <div className="absolute inset-0 z-0">
-     <Image
-         src="/bg3.jpeg"
-         alt="Latar Belakang SMANJU"
-         fill
-         priority
-         className="object-cover object-center opacity-25 fixed" />
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/bg3.jpeg"
+          alt="Latar Belakang SMANJU"
+          fill
+          priority
+          className="object-cover object-center opacity-25 fixed" 
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/40 to-slate-950" />
   
         <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-[20%] right-[-10%] w-[45vw] h-[45vw] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none" />
-    </div>
+      </div>
 
       <div className="relative z-10 pt-24 md:pt-32 px-4 max-w-7xl mx-auto space-y-24">
     
@@ -141,51 +154,72 @@ export default function MpkPage() {
 
           {/* Wrapper Scrollable untuk Mobile agar Bagan Tidak Hancur */}
           <div className="w-full overflow-x-auto pb-6 pt-2 no-scrollbar">
-            <div className="min-w-[900px] flex flex-col items-center">
+            <div className="min-w-[1000px] flex flex-col items-center">
               
-              {/* LEVEL 1: KETUA */}
+              {/* LEVEL 1: KETUA UMUM */}
               <div className="relative pb-8 flex flex-col items-center">
                 <div className="bg-gradient-to-b from-amber-500 to-yellow-600 p-0.5 rounded-xl shadow-[0_0_20px_rgba(245,158,11,0.2)]">
                   <div className="bg-slate-950 px-8 py-3 rounded-[10px] text-center w-56">
-                    <div className="text-[10px] font-mono text-amber-400 font-bold tracking-widest uppercase">{pengurusInti.ketua.jabatan}</div>
-                    <div className="text-sm font-black text-white mt-0.5">{pengurusInti.ketua.nama || "Belum Diisi"}</div>
-                    <div className="text-[10px] text-slate-400">{pengurusInti.ketua.kelas || "-"}</div>
+                    <div className="text-[10px] font-mono text-amber-400 font-bold tracking-widest uppercase">{pengurusInti.ketuaUmum.jabatan}</div>
+                    <div className="text-sm font-black text-white mt-0.5">{pengurusInti.ketuaUmum.nama || "Belum Diisi"}</div>
+                    <div className="text-[10px] text-slate-400">{pengurusInti.ketuaUmum.kelas || "-"}</div>
                   </div>
                 </div>
                 {/* Garis Vertikal Turun */}
                 <div className="absolute bottom-0 w-0.5 h-8 bg-amber-500/50" />
               </div>
 
-              {/* LEVEL 2: WAKIL KETUA */}
-              <div className="relative pb-8 pt-2 flex flex-col items-center">
-                {/* Garis Vertikal Atas */}
-                <div className="absolute top-0 w-0.5 h-2 bg-amber-500/50" />
-                <div className="bg-gradient-to-b from-slate-700 to-slate-800 p-0.5 rounded-xl border border-white/5 shadow-md">
-                  <div className="bg-slate-950 px-8 py-3 rounded-[10px] text-center w-56">
-                    <div className="text-[10px] font-mono text-slate-400 font-bold tracking-widest uppercase">{pengurusInti.wakil.jabatan}</div>
-                    <div className="text-sm font-black text-white mt-0.5">{pengurusInti.wakil.nama || "Belum Diisi"}</div>
-                    <div className="text-[10px] text-slate-400">{pengurusInti.wakil.kelas || "-"}</div>
+              {/* LEVEL 2: KETUA 1 & KETUA 2 (SEJAJAR) */}
+              <div className="relative pb-8 pt-2 w-full max-w-xl flex justify-between px-12">
+                {/* Garis Horizontal Atas */}
+                <div className="absolute top-0 left-[23%] right-[23%] h-0.5 bg-amber-500/40" />
+                
+                {/* KETUA 1 */}
+                <div className="flex flex-col items-center relative">
+                  <div className="absolute -top-2 w-0.5 h-2 bg-amber-500/40" />
+                  <div className="bg-gradient-to-b from-slate-700 to-slate-800 p-0.5 rounded-xl border border-white/5 shadow-md">
+                    <div className="bg-slate-950 px-6 py-2.5 rounded-[10px] text-center w-48">
+                      <div className="text-[10px] font-mono text-amber-500/80 font-bold tracking-widest uppercase">{pengurusInti.ketua1.jabatan}</div>
+                      <div className="text-xs font-bold text-white mt-0.5 truncate" title={pengurusInti.ketua1.nama}>{pengurusInti.ketua1.nama || "Belum Diisi"}</div>
+                      <div className="text-[9px] text-slate-400">{pengurusInti.ketua1.kelas || "-"}</div>
+                    </div>
                   </div>
+                  <div className="absolute -bottom-6 w-0.5 h-6 bg-slate-700" />
                 </div>
-                {/* Garis Vertikal Turun */}
-                <div className="absolute bottom-0 w-0.5 h-8 bg-slate-700" />
+
+                {/* KETUA 2 */}
+                <div className="flex flex-col items-center relative">
+                  <div className="absolute -top-2 w-0.5 h-2 bg-amber-500/40" />
+                  <div className="bg-gradient-to-b from-slate-700 to-slate-800 p-0.5 rounded-xl border border-white/5 shadow-md">
+                    <div className="bg-slate-950 px-6 py-2.5 rounded-[10px] text-center w-48">
+                      <div className="text-[10px] font-mono text-amber-500/80 font-bold tracking-widest uppercase">{pengurusInti.ketua2.jabatan}</div>
+                      <div className="text-xs font-bold text-white mt-0.5 truncate" title={pengurusInti.ketua2.nama}>{pengurusInti.ketua2.nama || "Belum Diisi"}</div>
+                      <div className="text-[9px] text-slate-400">{pengurusInti.ketua2.kelas || "-"}</div>
+                    </div>
+                  </div>
+                  <div className="absolute -bottom-6 w-0.5 h-6 bg-slate-700" />
+                </div>
+
+                {/* Garis konektor tengah untuk menyatukan aliran ke kesekretariatan */}
+                <div className="absolute bottom-0 left-[23%] right-[23%] h-0.5 bg-slate-700" />
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0.5 h-6 bg-slate-700" />
               </div>
 
               {/* LEVEL 3: SEKRETARIS & BENDAHARA */}
-              <div className="relative w-full max-w-4xl flex justify-between px-12 pb-12">
+              <div className="relative w-full max-w-4xl flex justify-between px-12 pb-12 pt-4">
                 {/* Garis Horizontal Penghubung Utama */}
                 <div className="absolute top-0 left-[16.5%] right-[16.5%] h-0.5 bg-slate-700" />
                 
                 {/* BLOK KIRI: SEKRETARIS */}
-                <div className="w-[320px] flex flex-col items-center relative">
+                <div className="w-[340px] flex flex-col items-center relative">
                   <div className="absolute -top-4 w-0.5 h-4 bg-slate-700" />
                   
                   <div className="text-center text-[10px] font-bold font-mono text-blue-400 tracking-wider mb-2 uppercase">Sekretariat MPK</div>
-                  <div className="grid grid-cols-2 gap-3 w-full">
+                  <div className="grid grid-cols-3 gap-2 w-full">
                     {pengurusInti.sekretaris.map((sek, idx) => (
-                      <div key={idx} className="bg-slate-900/50 backdrop-blur-sm border border-white/10 p-2.5 rounded-xl text-center">
-                        <div className="text-[9px] font-bold text-slate-400 uppercase">{sek.jabatan}</div>
-                        <div className="text-xs font-bold text-white mt-0.5 truncate">{sek.nama || "Nama"}</div>
+                      <div key={idx} className="bg-slate-900/50 backdrop-blur-sm border border-white/10 p-2 rounded-xl text-center">
+                        <div className="text-[8px] font-bold text-slate-400 uppercase truncate">{sek.jabatan}</div>
+                        <div className="text-[11px] font-bold text-white mt-0.5 truncate" title={sek.nama}>{sek.nama || "Nama"}</div>
                         <div className="text-[9px] text-slate-500">{sek.kelas || "-"}</div>
                       </div>
                     ))}
@@ -194,7 +228,7 @@ export default function MpkPage() {
                 </div>
 
                 {/* BLOK KANAN: BENDAHARA */}
-                <div className="w-[320px] flex flex-col items-center relative">
+                <div className="w-[340px] flex flex-col items-center relative">
                   <div className="absolute -top-4 w-0.5 h-4 bg-slate-700" />
 
                   <div className="text-center text-[10px] font-bold font-mono text-emerald-400 tracking-wider mb-2 uppercase">Kebendaharaan MPK</div>
@@ -202,7 +236,7 @@ export default function MpkPage() {
                     {pengurusInti.bendahara.map((ben, idx) => (
                       <div key={idx} className="bg-slate-900/50 backdrop-blur-sm border border-white/10 p-2.5 rounded-xl text-center">
                         <div className="text-[9px] font-bold text-slate-400 uppercase">{ben.jabatan}</div>
-                        <div className="text-xs font-bold text-white mt-0.5 truncate">{ben.nama || "Nama"}</div>
+                        <div className="text-xs font-bold text-white mt-0.5 truncate" title={ben.nama}>{ben.nama || "Nama"}</div>
                         <div className="text-[9px] text-slate-500">{ben.kelas || "-"}</div>
                       </div>
                     ))}
@@ -213,29 +247,43 @@ export default function MpkPage() {
 
               {/* HUBUNGAN KONEKTOR BESAR KE KOMISI */}
               <div className="relative w-full max-w-5xl h-6">
-                <div className="absolute top-0 left-[12%] right-[12%] h-0.5 bg-slate-800" />
+                <div className="absolute top-0 left-[16.5%] right-[16.5%] h-0.5 bg-slate-800" />
               </div>
 
-              {/* LEVEL 4: KOMISI-KOMISI GRID */}
-              <div className="grid grid-cols-4 gap-4 w-full max-w-5xl px-2">
+              {/* LEVEL 4: KOMISI-KOMISI GRID (GRID-COLS-3) WITH INTERNAL HIERARCHY */}
+              <div className="grid grid-cols-3 gap-6 w-full max-w-5xl px-4">
                 {daftarKomisi.map((komisi, idx) => (
                   <div key={idx} className="relative flex flex-col items-center group">
                     <div className="absolute -top-6 w-0.5 h-6 bg-slate-800" />
 
-                    <div className="bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-xl p-3.5 w-full text-center group-hover:border-blue-500/20 transition-all duration-300">
-                      <div className="text-[10px] font-mono text-blue-400 font-bold tracking-widest uppercase mb-1">{komisi.nomor}</div>
+                    <div className="bg-slate-900/40 backdrop-blur-md border border-white/5 rounded-2xl p-4 w-full text-center group-hover:border-blue-500/20 transition-all duration-300 shadow-xl">
+                      <div className="text-[11px] font-mono text-blue-400 font-bold tracking-widest uppercase mb-1">{komisi.nomor}</div>
                       <div className="text-[11px] text-slate-300 font-medium leading-snug h-12 flex items-center justify-center border-b border-white/5 pb-2">
                         {komisi.bidang}
                       </div>
 
-                      {/* Anggota Komisi */}
-                      <div className="pt-2.5 space-y-2 text-left">
-                        {komisi.anggota.map((ang, aIdx) => (
-                          <div key={aIdx} className="bg-black/20 p-1.5 rounded-md border border-white/5">
-                            <div className="text-xs font-semibold text-slate-200 truncate">{ang.nama || "Nama"}</div>
-                            <div className="text-[9px] text-slate-500 font-mono mt-0.5">Kelas {ang.kelas || "-"}</div>
+                      {/* INTERNAL INTI KOMISI (Ketua, Wakil, Sekretaris Komisi) */}
+                      <div className="py-3 space-y-2 border-b border-white/5">
+                        {komisi.inti.map((intKom, iIdx) => (
+                          <div key={iIdx} className="bg-gradient-to-r from-slate-950 to-slate-900 p-2 rounded-xl border border-white/5 flex flex-col items-center">
+                            <span className="text-[8px] font-mono font-bold uppercase tracking-wider text-amber-400/90">{intKom.jabatan}</span>
+                            <span className="text-xs font-bold text-white mt-0.5 truncate max-w-full" title={intKom.nama}>{intKom.nama}</span>
+                            <span className="text-[8px] text-slate-500 font-medium">Kelas {intKom.kelas}</span>
                           </div>
                         ))}
+                      </div>
+
+                      {/* DAFTAR ANGGOTA KOMISI */}
+                      <div className="pt-3 space-y-1.5 text-left">
+                        <div className="text-[9px] font-mono font-bold uppercase text-slate-400 tracking-widest mb-1 px-1">Anggota Komisi:</div>
+                        <div className="max-h-[160px] overflow-y-auto no-scrollbar space-y-1.5">
+                          {komisi.anggota.map((ang, aIdx) => (
+                            <div key={aIdx} className="bg-black/20 px-2 py-1.5 rounded-lg border border-white/5 flex justify-between items-center gap-2">
+                              <span className="text-[11px] font-medium text-slate-300 truncate" title={ang.nama}>{ang.nama}</span>
+                              <span className="text-[9px] text-slate-500 font-mono shrink-0">{ang.kelas}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
 
                     </div>

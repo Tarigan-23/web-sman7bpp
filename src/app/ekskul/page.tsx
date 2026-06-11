@@ -12,9 +12,6 @@ const dataEkskul = [
     logo: "/ekskul/ambassador.jpeg",
     pembina: "",
     pelatih: "",
-    ketua: "",
-    jadwal: "",
-    deskripsi: ""
   },
   {
     id: 2,
@@ -23,20 +20,15 @@ const dataEkskul = [
     logo: "/ekskul/adiwiata.jpeg",
     pembina: "",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 3,
     nama: "PRAMUKA",
     kategori: "Umum",
     logo: "/ekskul/pramuka.jpeg",
-    pembina: " Arfah, S.Pd(putra),Roslindah, S.Pd(putri)",
+    pembina_putra: "Arfah, S.Pd",
+    pembina_putri: "Roslindah, S.Pd",
     pelatih: " Wimpi",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 4,
@@ -45,9 +37,6 @@ const dataEkskul = [
     logo: "/ekskul/pmr.jpeg",
     pembina: "Delis Miftahul Janah, S.Pd.",
     pelatih: "Silvi Wulandari",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 5,
@@ -56,9 +45,6 @@ const dataEkskul = [
     logo: "/ekskul/uks.jpeg",
     pembina: "",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 6,
@@ -67,31 +53,22 @@ const dataEkskul = [
     logo: "/ekskul/karyailmiah.jpeg",
     pembina: "Eka Normawati, S.Pd.",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 7,
     nama: "ENGLISH CLUB",
     kategori: "Akademik",
     logo: "/ekskul/english.jpeg",
-    pembina: "",
+    pembina: "Dita Wardhany, S.Pd.",
     pelatih: "  ",
-    ketua: " ", 
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 8,
     nama: "KALIGRAFI",
-    kategori: "",
+    kategori: "Seni",
     logo: "/ekskul/kalig.jpeg",
-    pembina: "",
-    pelatih: "  ",
-    ketua: " ", 
-    jadwal: " ",
-    deskripsi: ""
+    pembina: "Sukrillah, S.Pd",
+    pelatih: "Ach. Baidhawi",
   },
   {
     id: 9,
@@ -100,9 +77,6 @@ const dataEkskul = [
     logo: "/ekskul/kokris.jpeg",
     pembina: "",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 10,
@@ -111,9 +85,6 @@ const dataEkskul = [
     logo: "/ekskul/rohis.jpeg",
     pembina: "",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 11,
@@ -122,31 +93,22 @@ const dataEkskul = [
     logo: "/ekskul/tahfidz.jpeg",
     pembina: "",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 12,
     nama: "KEWIRAUSAHAAN",
     kategori: "Umum",
     logo: "/ekskul/kewirausahaan.jpeg",
-    pembina: "",
+    pembina: "Rodatul Jannah, S.Pd.",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 13,
     nama: "SEVEN PODCAST",
     kategori: "Umum",
     logo: "/ekskul/pdcast.jpeg",
-    pembina: "",
-    pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
+    pembina: "Setian Adi Nugroho, S.Kom",
+    pelatih: "Ririn Damayanti",
   },
   {
     id: 14,
@@ -155,31 +117,22 @@ const dataEkskul = [
     logo: "/ekskul/pik-r.jpeg",
     pembina: "Juni Alvionita Nainggolan, S.Psi",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 15,
     nama: "DT TATA BOGA",
     kategori: "Umum",
     logo: "/ekskul/dttataboga.jpeg",
-    pembina: "",
-    pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
+    pembina: "Rodatul Jannah, S.Pd",
+    pelatih: "Nirra",
   },
   {
     id: 16,
     nama: "DT KECANTIKAN",
     kategori: "Umum",
     logo: "/ekskul/dtkecantikan.jpeg",
-    pembina: "",
-    pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
+    pembina: "Nova Agustina, S.Pd",
+    pelatih: " Riska salim",
   },
   {
     id: 17,
@@ -188,20 +141,15 @@ const dataEkskul = [
     logo: "/ekskul/dttatabusana.jpeg",
     pembina: "Novita Susanti, S.Pd.",
     pelatih: "Akinawati",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 18,
     nama: "DT MULTIMEDIA",
     kategori: "Umum",
     logo: "/ekskul/dtmultimedia.jpeg",
-    pembina: "",
-    pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
+    pembina: "Dasril, S.Kom",
+    pelatih1: "Husodo Ragil Prastowo",
+    pelatih2: "Anang Harianto",
   },
   {
     id: 19,
@@ -228,7 +176,7 @@ const dataEkskul = [
   {
     id: 21,
     nama: "KARATE",
-    kategori: "",
+    kategori: "Bela diri",
     logo: "/ekskul/karate.jpeg",
     pembina: "Yudho Prasetyo, S.Pd.",
     pelatih: "Radian Efendi",
@@ -239,35 +187,26 @@ const dataEkskul = [
   {
     id: 22,
     nama: "BAND",
-    kategori: "",
+    kategori: "Seni",
     logo: "/ekskul/band.jpeg",
-    pembina: "",
-    pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
+    pembina: "Andi Fadly Amdan, S. Pd.",
+    pelatih: "Abdul Halim muhammad",
   },
   {
     id: 23,
     nama: "BASKETBALL",
     kategori: "Olahra",
     logo: "/ekskul/basketball.jpeg",
-    pembina: "",
-    pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
+    pembina: "Heriansyah, S.Pd",
+    pelatih: "Frisky Pelealu",
   },
   {
     id: 24,
     nama: "GREEN GENERATION",
     kategori: "Umum",
     logo: "/ekskul/green.jpeg",
-    pembina: "",
+    pembina: "Amirudin Siwasiwan, S.Pd",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 25,
@@ -276,75 +215,54 @@ const dataEkskul = [
     logo: "/ekskul/paskibra.jpeg",
     pembina: "Rita Ariyani, S.Pd",
     pelatih: "Riki Adi Putra",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 26,
     nama: "PENCAK SILAT",
-    kategori: "",
+    kategori: "Bela diri",
     logo: "/ekskul/pencaksilat.jpeg",
-    pembina: "",
-    pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
+    pembina: "Sri Narti, S.Pd",
+    pelatih: "Mutaji",
   },
   {
     id: 27,
     nama: "TIM TANGGUH BENCANA",
     kategori: "Umum",
     logo: "/ekskul/ttb.jpeg",
-    pembina: "",
+    pembina: "Rizka Furqany, M.Pd.",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 28,
     nama: "KOMUNITAS SENI",
-    kategori: "",
+    kategori: "Seni",
     logo: "/ekskul/komsen.jpeg",
     pembina: "",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 29,
-    nama: "PADUAN SUARA",
-    kategori: "",
+    nama: "SMAVEN CHOIR",
+    kategori: "Seni",
     logo: "/ekskul/padus.jpeg",
     pembina: "Dame Lasniroha Sitorus, S.Th",
     pelatih: "Gilberd Marada Pakpahan",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 30,
     nama: "VOLY",
     kategori: "Olahraga",
     logo: "/ekskul/voly.jpeg",
-    pembina: "",
-    pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
+    pembina: "Eka Januardi, S.Pd",
+    pelatih: "Kurnia Abdul Fattah",
   },
   {
     id: 31,
     nama: "Tari Tradisional dan Dance",
-    kategori: "Olahraga",
+    kategori: "Seni",
     logo: "/ekskul/.jpeg",
     pembina: "Nirwana, S. Pd",
     pelatih: "Sabilillah Sayuti",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 32,
@@ -353,20 +271,14 @@ const dataEkskul = [
     logo: "/ekskul/.jpeg",
     pembina: "Sella Lipiantanna, S.Pd.",
     pelatih: "Harly",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 33,
     nama: "KRIYA",
-    kategori: "Olahraga",
-    logo: "/ekskul/.jpeg",
+    kategori: "Seni",
+    logo: "/ekskul/krysta.jpeg",
     pembina: "Darni, S. Pd",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
   },
   {
     id: 34,
@@ -375,9 +287,14 @@ const dataEkskul = [
     logo: "/ekskul/.jpeg",
     pembina: "Yudho Prasetyo, S.Pd.",
     pelatih: "  ",
-    ketua: " ",
-    jadwal: " ",
-    deskripsi: ""
+  },
+  {
+    id: 35,
+    nama: "Tilawah",
+    kategori: "Keagamaan",
+    logo: "/ekskul/.jpeg",
+    pembina: "Heni Fatmawati, S.Pd",
+    pelatih: "Fathul Karim",
   },
 
   
@@ -395,7 +312,7 @@ export default function EkskulPage() {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
-      style={{ backgroundImage: "url('/background.jpg')" }}
+      style={{ backgroundImage: "url('/bg3.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/75 z-0"></div>
 
@@ -414,7 +331,7 @@ export default function EkskulPage() {
             Daftar <span className="text-blue-400">Ekstrakurikuler</span>
           </h1>
           <p className="text-gray-300 text-xs md:text-sm max-w-xl mx-auto font-light">
-            Wadah resmi eksplorasi potensi, minat, dan bakat luar biasa di luar jam belajar SMAN 7 Balikpapan.
+            Wadah resmi eksplorasi potensi, minat, dan bakat luar biasa di luar jam belajar SMA Negeri 7 Balikpapan.
           </p>
         </div>
 
@@ -430,7 +347,7 @@ export default function EkskulPage() {
 
         {/* FILTER TABS */}
         <div className="flex flex-wrap justify-center gap-2 mb-10">
-          {["Semua", "Olahraga", "Akademik", "Keagamaan", "Umum"].map((kat) => (
+          {["Semua", "Olahraga", "Akademik", "Keagamaan", "Seni", "Bela diri", "Umum"].map((kat) => (
             <button
               key={kat}
               onClick={() => setKategoriEkskul(kat)}
@@ -491,16 +408,7 @@ export default function EkskulPage() {
                       <span className="text-gray-400">Pelatih:</span>
                       <span className="text-white font-light">{ekskul.pelatih}</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Ketua:</span>
-                      <span className="text-white font-light">{ekskul.ketua}</span>
-                    </div>
-                    <div className="flex justify-between items-center pt-1">
-                      <span className="text-gray-400">Jadwal:</span>
-                      <span className="px-2 py-0.5 bg-blue-500/10 text-blue-300 rounded border border-blue-400/10 font-semibold">
-                        ⏰ {ekskul.jadwal}
-                      </span>
-                    </div>
+
                   </div>
                 </div>
               </motion.div>
