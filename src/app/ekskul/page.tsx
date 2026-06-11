@@ -19,7 +19,7 @@ const dataEkskul = [
   {
     id: 3,
     nama: "ADIWIYATA",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/adiwiata.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -30,7 +30,7 @@ const dataEkskul = [
   {
     id: 4,
     nama: "PRAMUKA",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/pramuka.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -41,7 +41,7 @@ const dataEkskul = [
   {
     id: 5,
     nama: "PMR",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/pmr.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -52,7 +52,7 @@ const dataEkskul = [
   {
     id: 6,
     nama: "UKS",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/uks.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -74,7 +74,7 @@ const dataEkskul = [
   {
     id: 8,
     nama: "ENGLISH CLUB",
-    kategori: "",
+    kategori: "Akademik",
     logo: "/ekskul/english.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -107,7 +107,7 @@ const dataEkskul = [
   {
     id: 11,
     nama: "ROHIS",
-    kategori: "",
+    kategori: "Keagamaan",
     logo: "/ekskul/rohis.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -118,7 +118,7 @@ const dataEkskul = [
   {
     id: 12,
     nama: "TAHFIDZ",
-    kategori: "",
+    kategori: "Keagamaan",
     logo: "/ekskul/tahfidz.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -129,7 +129,7 @@ const dataEkskul = [
   {
     id: 13,
     nama: "KEWIRAUSAHAAN",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/kewirausahaan.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -140,7 +140,7 @@ const dataEkskul = [
   {
     id: 14,
     nama: "SEVEN PODCAST",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/pdcast.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -151,9 +151,9 @@ const dataEkskul = [
   {
     id: 15,
     nama: "PIK-R",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/pik-r.jpeg",
-    pembina: "",
+    pembina: "Juni Alvionita Nainggolan, S.Psi",
     pelatih: "  ",
     ketua: " ",
     jadwal: " ",
@@ -162,7 +162,7 @@ const dataEkskul = [
   {
     id: 16,
     nama: "DT TATA BOGA",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/dttataboga.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -173,7 +173,7 @@ const dataEkskul = [
   {
     id: 17,
     nama: "DT KECANTIKAN",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/dtkecantikan.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -184,7 +184,7 @@ const dataEkskul = [
   {
     id: 18,
     nama: "DT TATA BUSAN",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/dttatabusana.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -195,7 +195,7 @@ const dataEkskul = [
   {
     id: 19,
     nama: "DT MULTIMEDIA",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/dtmultimedia.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -208,8 +208,8 @@ const dataEkskul = [
     nama: "FUTSAL",
     kategori: "Olahraga",
     logo: "/ekskul/futsal.jpeg",
-    pembina: "",
-    pelatih: "  ",
+    pembina: "Aji utama, S.Pd",
+    pelatih: "Achmad Hidayat",
     ketua: " ",
     jadwal: " ",
     deskripsi: ""
@@ -217,10 +217,10 @@ const dataEkskul = [
   {
     id: 21,
     nama: "IT CLUB SMAVEN",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/itclub.jpeg",
     pembina: "",
-    pelatih: "  ",
+    pelatih: "Yegar Tarigan",
     ketua: " ",
     jadwal: " ",
     deskripsi: ""
@@ -250,7 +250,7 @@ const dataEkskul = [
   {
     id: 24,
     nama: "BASKETBALL",
-    kategori: "",
+    kategori: "Olahra",
     logo: "/ekskul/basketball.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -261,7 +261,7 @@ const dataEkskul = [
   {
     id: 25,
     nama: "GREEN GENERATION",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/green.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -272,7 +272,7 @@ const dataEkskul = [
   {
     id: 26,
     nama: "PASKIBRA",
-    kategori: "",
+    kategori: "Akademik",
     logo: "/ekskul/paskibra.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -294,7 +294,7 @@ const dataEkskul = [
   {
     id: 28,
     nama: "TIM TANGGUH BENCANA",
-    kategori: "",
+    kategori: "Umum",
     logo: "/ekskul/ttb.jpeg",
     pembina: "",
     pelatih: "  ",
@@ -327,7 +327,7 @@ const dataEkskul = [
   {
     id: 31,
     nama: "VOLY",
-    kategori: "",
+    kategori: "Olahraga",
     logo: "/ekskul/voly.jpeg",
     pembina: "",
     pelatih: "  ",

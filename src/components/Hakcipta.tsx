@@ -101,11 +101,16 @@ export default function Footer(): React.JSX.Element {
 
       </div>
 
-      {/* Baris Hak Cipta / Copyright di Bagian Paling Bawah */}
-      <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/5 text-center text-xs md:text-sm text-gray-400">
-        <p>&copy; {currentYear} GMCS. All rights reserved.</p>
-      </div>
-
+<div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/5 text-center text-xs md:text-sm text-gray-400">
+  <Link 
+    href="https://gmcs.io" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="hover:text-blue-400 transition-colors inline-block"
+  >
+    <p>&copy; {currentYear} GMCS. All rights reserved.</p>
+  </Link>
+</div>
     </footer>
   )
 }
