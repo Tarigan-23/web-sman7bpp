@@ -7,19 +7,20 @@ import Image from "next/image"
 
 // KUMPULAN GAMBAR POSTER / BROSUR UTAMA (Slider atas)
 const daftarPoster = [
-  { id: 1, src: "/SPANDUKSPMB2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
-  { id: 2, src: "/SPMB_25.cdr.png", alt: "Informasi Persyaratan & Jalur Masuk" }, 
-  { id: 3, src: "/spmb1.jpeg", alt: "pelaksanaan pra pendaftaran" },
-  { id: 4, src: "/spmb2.jpeg", alt: "SPMB" },
-  { id: 5, src: "/spmb3.jpeg", alt: "SPMB" },
-  { id: 6, src: "/spmb4.jpeg", alt: "SPMB" },
+  { id: 1, src: "/spmb/jadwalSPMB", alt: "Jadwal Pelaksanaan SPMB Tahun Ajaran 2026/2027" },
+  { id: 2, src: "/spmb/SPANDUKSPMB2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
+  { id: 3, src: "/spmb/SPMB_25.cdr.png", alt: "Informasi Persyaratan & Jalur Masuk" }, 
+  { id: 4, src: "/spmb/spmb1.jpeg", alt: "pelaksanaan pra pendaftaran" },
+  { id: 5, src: "/spmb/spmb2.jpeg", alt: "SPMB" },
+  { id: 6, src: "/spmb/spmb3.jpeg", alt: "SPMB" },
+  { id: 7, src: "/spmb/spmb4.jpeg", alt: "SPMB" },
 ]
 
 // DATA UNTUK 3 POSTER BARU DI BAWAH ALUR PENDAFTARAN
 const posterTambahan = [
-  { id: 1, src: "/spmb5.png", title: "Alur Pelaksanaan Pra Pendaftaran", alt: "poster alur pelaksanaan" }, 
-  { id: 2, src: "/spmb6.png", title: "Persyaratan Pra Pendaftaran", alt: "Poster Persyaratan" },   
-  { id: 3, src: "/spmb7.png", title: "Alur Pelaksanaan", alt: "Poster alur" }, 
+  { id: 1, src: "/spmb/spmb5.png", title: "Alur Pelaksanaan Pra Pendaftaran", alt: "poster alur pelaksanaan" }, 
+  { id: 2, src: "/spmb/spmb6.png", title: "Persyaratan Pra Pendaftaran", alt: "Poster Persyaratan" },   
+  { id: 3, src: "/spmb/spmb7.png", title: "Alur Pelaksanaan", alt: "Poster alur" }, 
 ]
 
 export default function SPMBPage() {
