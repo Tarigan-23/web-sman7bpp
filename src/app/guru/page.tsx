@@ -64,7 +64,7 @@ export default function GuruPage() {
     { nama: "Tri Wahyuni, S.Pd", jabatan: "Guru Ekonomi", foto: "/gr25.webp" },
     { nama: "Yudho Prasetyo, S.Pd", jabatan: "Guru PJOK", foto: "/gr32.webp" },
     { nama: "Heni Fatmawati, S. Pd.", jabatan: "Guru BK", foto: "/gr49.webp" },
-    { nama: "Andi Fadly Amdan, 5. Pd.", jabatan: "Guru Seni Budaya", foto: "/gr54.webp" },
+    { nama: "Andi Fadly Amdan, S. Pd.", jabatan: "Guru Seni Budaya", foto: "/gr54.webp" },
     { nama: "Setian Adi Nugroho, S. Kom.", jabatan: "Guru TIK", foto: "/gr3.webp" },
     { nama: "Sunarti, S.Pd.", jabatan: "Guru BHS Indonesia", foto: "/gr7.webp" },
     { nama: "Sultan, S. Sos", jabatan: "Guru Sosiologi", foto: "/gr33.webp" },

@@ -1,5 +1,18 @@
 export const berita = [ 
   {
+  id: 151,
+  judul: "🎬 GALAKSI DAY-2 ✨",
+  tanggal: "11 Juni 2026",
+  gambar: "/159.png",
+  deskripsi: `Rabu, 10 Juni 2026. Hari kedua classmeeting GALAKSI, tidak kalah seru dari hari pertama dengan semangat dan antusias para peserta yang masih bertahan dan siap untuk membawa tim nya ke babak selanjutnya
+
+Masih akan ada keseruan lain, tetap bertahan, junjung tinggi sportivitas dan tetap menggelorakan ambisi kalian! Sampai jumpa di hari selanjutnya 👀🔥🫵🏻
+
+GALAKSI
+Gelorakan Ambisi, Langkah, Aksi, Kreativitas, Sportivitas dan Inspirasi 🚀‼️`,
+  sumberUrl: "https://www.instagram.com/p/DZb3HovREfw/"
+  },
+  {
   id: 150,
   judul: "Sosialisasi Festival Karya CBP Rupiah 2026",
   tanggal: "10 Juni 2026",

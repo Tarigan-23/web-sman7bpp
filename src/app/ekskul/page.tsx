@@ -162,7 +162,7 @@ const dataEkskul = [
     nama: "IT CLUB SMAVEN",
     kategori: "Umum",
     logo: "/ekskul/itclub.jpeg",
-    pembina: "-",
+    pembina: "Elok Setyowati, S.Pd",
     pelatih: "Yegar Tarigan",
   },
   {
