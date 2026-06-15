@@ -10,7 +10,7 @@ const dataEkskul = [
     nama: "SMAVE AMBASSADOR",
     kategori: "Umum",
     logo: "/ekskul/ambassador.jpeg",
-    pembina: "-",
+    pembina: "Sri Yunita, S.Pd",
     pelatih: "-",
   },
   {
@@ -194,7 +194,7 @@ const dataEkskul = [
     nama: "GREEN GENERATION",
     kategori: "Umum",
     logo: "/ekskul/green.jpeg",
-    pembina: "Amirudin Siwasiwan, S.Pd",
+    pembina: "Dra. Rohani",
     pelatih: "-",
   },
   {
