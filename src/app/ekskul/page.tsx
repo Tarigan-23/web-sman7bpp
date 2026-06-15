@@ -267,7 +267,7 @@ const dataEkskul = [
     kategori: "Seni",
     logo: "/ekskul/krysta.jpeg",
     pembina: "Darni, S.Pd",
-    pelatih: "-",
+    pelatih: "Turotul Afifah",
   },
   {
     id: 34,
