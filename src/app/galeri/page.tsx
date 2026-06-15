@@ -17,7 +17,7 @@ export default function GaleriPage() {
   const galeri: GaleriItem[] = [
     {
       judul: "Info lengkap SPMB 2026",
-      gambar: ["/spmb/jadwalSPMB.jpeg", "/spmb/spmb4.jpeg", "/spmb/spmb5.png", "/spmb/spmb6.png", "/spmb/spmb7.png"],
+      gambar: ["/spmb/SPANDUKSPMB2026.png", "/spmb/spmb4.jpeg", "/spmb/spmb5.png", "/spmb/spmb6.png", "/spmb/spmb7.png"],
       deskripsi: "",
       tanggal: "08 Juni 2026",
       kategori: "Informasi"
