@@ -1,4 +1,16 @@
 export const berita = [ 
+   {
+  id: 152,
+  judul: "Senam bersama dan Jalan santai",
+  tanggal: "14 Juni 2026",
+  gambar: "/160.png",
+  deskripsi: `Jumat, 12 Juni 2026. Setelah kegiatan classmeeting, kita sama-sama melaksanakan kegiatan Jumat Sehat, yaitu senam bersama dan dilanjutkan dengan jalan santai. Meskipun dengan cuaca yang hujan kecil tetapi hal tersebut tidak mengurangi semangat Bapak Ibu Guru maupun Siswa/i SMA Negeri 7 Balikpapan.
+
+Melalui kegiatan senam dan jalan santai ini, kita kembali diingatkan akan pentingnya menjaga pola hidup sehat di tengah kesibukan sehari-hari.
+
+Mari terus budayakan hidup sehat demi masa depan yang lebih bugar dan produktif! 🍃`,
+  sumberUrl: "https://www.instagram.com/p/DZkJGqkOwIo/"
+  },
   {
   id: 151,
   judul: "🎬 GALAKSI DAY-2 ✨",
