@@ -17,16 +17,15 @@ export default function GaleriPage() {
   const galeri: GaleriItem[] = [
     {
       judul: "Info lengkap SPMB 2026",
-      gambar: ["/SPANDUKSPMB2026.png", "/SPMB_25.cdr.png"],
+      gambar: ["/spmb/jadwalSPMB.jpeg", "/spmb/spmb4.jpeg", "/spmb/spmb5.png", "/spmb/spmb6.png", "/spmb/spmb7.png"],
       deskripsi: "",
       tanggal: "08 Juni 2026",
       kategori: "Informasi"
     },
-    
     {
       judul: "Pramuka Penegak Laksana",
       gambar: ["/41.png"],
-      deskripsi: "Pramuk apenegak laksana SMA Negeri 7 Balikpapan.",
+      deskripsi: "Pramuka penegak laksana SMA Negeri 7 Balikpapan.",
       tanggal: "14 - 15 Februari 2026",
       kategori: "Ekskul"
     }
@@ -76,37 +75,37 @@ export default function GaleriPage() {
   }
 
   return (
-    <div className="min-h-screen relative w-full overflow-hidden bg-slate-950">
-      {/* Background Utama Teroptimasi */}
-      <div className="absolute inset-0 z-0">
-        <Image 
-          src="/background.jpg" 
-          alt="Latar Belakang SMANJU" 
-          fill
-          priority
-          className="object-cover object-center opacity-30 fixed"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/90 to-slate-950"></div>
-      </div>
+    <div
+      className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
+      style={{
+        backgroundImage: "url('/bg3.jpeg')",
+      }}
+    >
+      {/* Overlay Backdrop - Sedikit lebih gelap untuk meningkatkan kontras teks */}
+      <div className="absolute inset-0 bg-black/75 z-0" />
 
-      {/* Content Container */}
-      <div className="relative z-10 pt-28 pb-20 px-4 max-w-6xl mx-auto">
-
-        {/* Judul Halaman */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <span className="text-blue-400 font-mono text-xs font-bold tracking-[0.3em] uppercase block mb-2">
-            Dokumentasi Kegiatan
-          </span>
-          <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight uppercase">
-            Galeri <span className="text-blue-500">SMANJU</span>
-          </h1>
-          <div className="w-16 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
-        </motion.div>
+      {/* Konten Utama */}
+      <div className="relative z-10 pt-24 md:pt-36 pb-20 px-4 md:px-6 max-w-7xl mx-auto space-y-8 md:space-y-12">
+        
+        {/* HERO TITLE - Tampilan super tajam & responsif */}
+        <section className="text-center w-full">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="space-y-2"
+          >
+            <span className="bg-blue-500/10 text-[10px] md:text-xs font-semibold px-4 py-1.5 rounded-full text-blue-300 border border-blue-500/20 uppercase tracking-widest">
+              Dokumentasi Kegiatan
+            </span>
+            <h1 className="text-4xl md:text-6xl font-black text-white tracking-wide mt-3 mb-1">
+              GALERI <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">SMANJU</span>
+            </h1>
+            <p className="text-gray-300 text-sm md:text-xl font-light tracking-wide">
+              SMA Negeri 7 Balikpapan
+            </p>
+          </motion.div>
+        </section>
 
         {/* Grid Galeri Ala Instagram */}
         <motion.div 
@@ -143,7 +142,7 @@ export default function GaleriPage() {
                 </div>
               )}
 
-              {/* Kategori Tag (Hanya muncul di desktop saat di-hover) */}
+              {/* Kategori Tag */}
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-2 text-center">
                 <span className="text-white text-xs md:text-sm font-semibold tracking-wide line-clamp-1 px-1">{item.judul}</span>
                 <span className="text-blue-400 text-[10px] uppercase font-mono mt-1 hidden sm:block bg-blue-950/80 px-2 py-0.5 rounded border border-blue-500/30">{item.kategori}</span>
@@ -224,7 +223,6 @@ export default function GaleriPage() {
 
               {/* KOLOM KANAN: Detail Informasi Instansi */}
               <div className="w-full md:w-[380px] bg-slate-900 flex flex-col h-[55%] md:h-full">
-                
                 {/* Header Akun Sekolah */}
                 <div className="p-4 border-b border-slate-800 flex items-center space-x-3">
                   <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-600 to-cyan-500 flex items-center justify-center text-white text-xs font-black shadow-md">
@@ -249,12 +247,12 @@ export default function GaleriPage() {
                   {/* Section Komentar Interaktif Tiruan */}
                   <div className="pt-3 border-t border-slate-800/60 space-y-2.5 text-xs">
                     <div>
-                      <span className="text-white font-semibold mr-2">osis_sman7</span>
+                      <span className="text-white font-semibold mr-2">osissmaven</span>
                       <span className="text-slate-400">Sukses terus SMANJU! Makin menyala 🔥</span>
                     </div>
                     <div>
-                      <span className="text-white font-semibold mr-2">alumni.sman7</span>
-                      <span className="text-slate-400">Kangen banget suasana event sekolah dulu 🙌</span>
+                      <span className="text-white font-semibold mr-2">mpksmaven</span>
+                      <span className="text-slate-400">SMANJU....Semakin Majuu 🙌</span>
                     </div>
                   </div>
                 </div>
@@ -262,17 +260,13 @@ export default function GaleriPage() {
                 {/* Bagian Bawah: Metadata & Tanggal Kegiatan */}
                 <div className="p-4 border-t border-slate-800 bg-slate-950/40 space-y-3">
                   <div className="flex space-x-4 text-slate-300">
-                    {/* Icon Love */}
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-5 h-5 cursor-pointer hover:text-red-500 transition">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                     </svg>
-                    {/* Icon Comment */}
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-5 h-5 cursor-pointer hover:text-blue-500 transition">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-1.923 2.413a4.474 4.474 0 0 0 3.536-1.003c.43-.244.97-.242 1.4.03a9.14 9.14 0 0 0 3.128.533Z" />
                     </svg>
                   </div>
-                  
-                  {/* Tanggal Postingan */}
                   <p className="text-[10px] text-slate-500 font-mono tracking-wider uppercase">
                     Diupload: {selectedItem.tanggal}
                   </p>
@@ -283,6 +277,6 @@ export default function GaleriPage() {
           </div>
         )}
       </AnimatePresence>
-    </div>
+    </div> 
   )
 }
