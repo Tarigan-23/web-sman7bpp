@@ -18,6 +18,9 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "SMA Negeri 7 Balikpapan",
   description: "Website Resmi SMA Negeri 7 Balikpapan",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 // 4. Root Layout Utama
