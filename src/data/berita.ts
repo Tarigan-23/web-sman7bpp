@@ -1,4 +1,28 @@
 export const berita = [ 
+  {
+  id: 154,
+  judul: "Bimbingan Teknis (Bimtek) Pemanfaatan Rumah Pendidikan, Program Pembelajaran, dan Penilaian pada Satuan Pendidikan",
+  tanggal: "16 Juni 2026",
+  gambar: "/162.png",
+  deskripsi: `Perwakilan SMAN 7 Balikpapan, Rizka Furqany, M.Pd., guru mata pelajaran Matematika, mengikuti Bimbingan Teknis (Bimtek) Pemanfaatan Rumah Pendidikan, Program Pembelajaran, dan Penilaian pada Satuan Pendidikan yang dilaksanakan pada tanggal 10–11 Juni 2026 di SMA Negeri 3 Balikpapan.
+
+Kegiatan ini diselenggarakan oleh Badan Penjaminan Mutu Pendidikan (BPMP) Provinsi Kalimantan Timur dan diikuti oleh perwakilan sekolah negeri maupun swasta jenjang SD, SMP, dan SMA se-Kota Balikpapan.
+
+Melalui kegiatan ini, peserta memperoleh pemahaman dan keterampilan dalam memanfaatkan platform Rumah Pendidikan serta penguatan implementasi program pembelajaran dan penilaian di satuan pendidikan. Diharapkan hasil dari bimtek ini dapat mendukung peningkatan kualitas layanan pendidikan serta mutu pembelajaran di masing-masing satuan pendidikan sehingga mampu memberikan dampak positif bagi peserta didik dan lingkungan sekolah.`,
+  sumberUrl: "https://www.instagram.com/p/DZm7bfwyslA/"
+  },
+  {
+  id: 153,
+  judul: "Selamat Tahun Baru Islam 1 Muharram 1448 Hijriah🌙",
+  tanggal: "16 Juni 2026",
+  gambar: "/161.png",
+  deskripsi: `Keluarga Besar SMA Negeri 7 Balikpapan mengucapkan selamat menyambut Tahun Baru Islam 1 Muharram 1448 Hijriah.
+Pergantian tahun hijriah menjadi momentum bagi kita untuk melakukan hijrah menuju pribadi yang lebih baik, memperkuat keimanan, meningkatkan akhlak mulia, serta menumbuhkan semangat dalam menuntut ilmu dan memberikan manfaat bagi sesama. Mari jadikan tahun yang baru ini sebagai awal untuk memperbaiki diri, mempererat ukhuwah, dan melangkah dengan penuh optimisme dalam meraih prestasi serta keberkahan hidup. Semoga Allah SWT senantiasa melimpahkan rahmat, kesehatan, keselamatan, dan keberkahan kepada kita semua.
+
+Selamat Tahun Baru Islam 1448 Hijriah
+"Hijrah menuju pribadi yang lebih baik, berilmu, berakhlak, dan penuh kebermanfaatan."`,
+  sumberUrl: "https://www.instagram.com/p/DZmwVAtB0Ei/"
+  },
    {
   id: 152,
   judul: "Senam bersama dan Jalan santai",
