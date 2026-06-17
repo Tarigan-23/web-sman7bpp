@@ -16,6 +16,13 @@ export default function GaleriPage() {
   // DATA GALERI KEGIATAN SMAN 7 BALIKPAPAN
   const galeri: GaleriItem[] = [
     {
+      judul: "Rapat Kenaikan Kelas",
+      gambar: ["/galeri/1.jpeg", "/galeri/2.jpeg", "/galeri/3.jpeg", "/galeri/4.jpeg", "/galeri/5.jpeg", "/galeri/6.jpeg", "/galeri/7.jpeg", "/galeri/8.jpeg", "/galeri/9.jpeg", "/galeri/10.jpeg"],
+      deskripsi: "",
+      tanggal: "17 Juni 2026",
+      kategori: "Dokumentasi"
+    },
+    {
       judul: "Info lengkap SPMB 2026",
       gambar: ["/spmb/SPANDUKSPMB2026.png", "/spmb/spmb4.jpeg", "/spmb/spmb5.png", "/spmb/spmb6.png", "/spmb/spmb7.png"],
       deskripsi: "",

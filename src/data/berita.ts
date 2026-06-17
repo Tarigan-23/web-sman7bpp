@@ -1,5 +1,15 @@
 export const berita = [ 
   {
+  id: 155,
+  judul: "Rapat Dinas Kenaikan Kelas sebagai bagian dari proses evaluasi dan penetapan hasil belajar peserta didik selama satu tahun pelajaran.",
+  tanggal: "17 Juni 2026",
+  gambar: "/galeri/1.jpeg",
+  deskripsi: `Rabu, 17 Juni 2026 melaksanakan Rapat Dinas Kenaikan Kelas sebagai bagian dari proses evaluasi dan penetapan hasil belajar peserta didik selama satu tahun pelajaran.
+Kegiatan ini menjadi wujud komitmen bersama dalam memastikan setiap keputusan yang diambil dilakukan secara objektif, profesional, dan penuh tanggung jawab demi kepentingan terbaik bagi peserta didik. Melalui diskusi dan musyawarah yang konstruktif, seluruh guru berkolaborasi untuk menelaah perkembangan akademik maupun karakter peserta didik sebagai dasar dalam menentukan kenaikan kelas.
+Semoga setiap keputusan yang dihasilkan membawa kebaikan, menjadi langkah untuk meningkatkan kualitas pendidikan, serta memotivasi peserta didik untuk terus berkembang dan meraih prestasi yang lebih baik di masa mendatang.`,
+  sumberUrl: ""
+  },
+  {
   id: 154,
   judul: "Bimbingan Teknis (Bimtek) Pemanfaatan Rumah Pendidikan, Program Pembelajaran, dan Penilaian pada Satuan Pendidikan",
   tanggal: "16 Juni 2026",
