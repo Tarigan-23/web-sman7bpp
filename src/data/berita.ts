@@ -1,5 +1,13 @@
 export const berita = [ 
   {
+  id: 156,
+  judul: "konsultasi dan bimbingan siswa-siswi calon duta sadar hukum di Kejaksaan Negeri Kota Balikpapan",
+  tanggal: "17 Juni 2026",
+  gambar: "/163.png",
+  deskripsi: `Kamis, 21 Mei 2026, konsultasi dan bimbingan siswa-siswi calon duta sadar hukum di Kejaksaan Negeri Kota Balikpapan bertujuan membekali siswa-siswi SMA Negeri 7 Balikpapan dengan pemahaman serta keterampilan dasar menyusun karya tulis ilmiah yang relevan dengan peraturan perundang-undangan, agar tumbuh kesadaran bahwa hukum berfungsi melindungi dan mengatur kehidupan bermasyarakat. Melalui bimbingan oleh Bapak Muhammad Mirhan, S.H., peserta diarahkan memilih topik, merumuskan rumusan masalah dan tujuan penelitian, menelusuri serta mengkaji ketentuan dalam undang-undang secara bertanggung jawab, menyusun kerangka tulisan, dan menyampaikan argumentasi ilmiah secara logis serta dapat dipertanggungjawabkan, sehingga kelak mampu menjadi duta sadar hukum yang santun, akurat, dan bermanfaat bagi lingkungan sekolah.`,
+  sumberUrl: "/berita"
+  },
+  {
   id: 155,
   judul: "Rapat Dinas Kenaikan Kelas sebagai bagian dari proses evaluasi dan penetapan hasil belajar peserta didik selama satu tahun pelajaran.",
   tanggal: "17 Juni 2026",
@@ -7,7 +15,7 @@ export const berita = [
   deskripsi: `Rabu, 17 Juni 2026 melaksanakan Rapat Dinas Kenaikan Kelas sebagai bagian dari proses evaluasi dan penetapan hasil belajar peserta didik selama satu tahun pelajaran.
 Kegiatan ini menjadi wujud komitmen bersama dalam memastikan setiap keputusan yang diambil dilakukan secara objektif, profesional, dan penuh tanggung jawab demi kepentingan terbaik bagi peserta didik. Melalui diskusi dan musyawarah yang konstruktif, seluruh guru berkolaborasi untuk menelaah perkembangan akademik maupun karakter peserta didik sebagai dasar dalam menentukan kenaikan kelas.
 Semoga setiap keputusan yang dihasilkan membawa kebaikan, menjadi langkah untuk meningkatkan kualitas pendidikan, serta memotivasi peserta didik untuk terus berkembang dan meraih prestasi yang lebih baik di masa mendatang.`,
-  sumberUrl: ""
+  sumberUrl: "/berita"
   },
   {
   id: 154,
