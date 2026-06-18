@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from "react"
-// Mengimpor motion, Variants, dan AnimatePresence untuk animasi modal pop-up yang halus
 import { motion, Variants, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import berita from "../../data/berita"
