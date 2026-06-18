@@ -1,5 +1,13 @@
 export const berita = [ 
   {
+  id: 157,
+  judul: "🌟 INFORMASI SPMB KALTIM 2026 🌟",
+  tanggal: "18 Juni 2026",
+  gambar: "/galeri/spmb1.jpeg",
+  deskripsi: `Bagi calon peserta didik dan orang tua/wali yang akan mengikuti Sistem Penerimaan Murid Baru (SPMB) Tahun 2026, proses pendaftaran jenjang SMA, SMK, dan SLB di Kota Balikpapan dapat diakses melalui website resmi SPMB Kalimantan Timur. Pastikan seluruh data dan dokumen yang diperlukan telah dipersiapkan dengan baik sebelum melakukan pendaftaran. Melalui sistem yang mudah diakses, transparan, dan objektif, SPMB hadir untuk memberikan kesempatan yang adil bagi seluruh calon peserta didik dalam meraih pendidikan berkualitas. Kunjungi laman resmi atau scan QR Code yang tersedia untuk mendapatkan informasi lengkap mengenai jadwal, persyaratan, dan tahapan pendaftaran. Mari pilih sekolah terbaik dan raih masa depan yang gemilang!`,
+  sumberUrl: "/galeri"
+  },
+  {
   id: 156,
   judul: "konsultasi dan bimbingan siswa-siswi calon duta sadar hukum di Kejaksaan Negeri Kota Balikpapan",
   tanggal: "17 Juni 2026",
