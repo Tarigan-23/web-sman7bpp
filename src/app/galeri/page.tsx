@@ -16,6 +16,13 @@ export default function GaleriPage() {
   // DATA GALERI KEGIATAN SMAN 7 BALIKPAPAN
   const galeri: GaleriItem[] = [
     {
+      judul: "Peserta OSN SMAN 7 Balikpapan",
+      gambar: ["/berita/timosn1.jpeg", "/berita/timosn2.jpeg", "/berita/timosn3.jpeg", "/berita/timosn4.jpeg", "/berita/timosn5.jpeg"],
+      deskripsi: "",
+      tanggal: "18 Juni 2026",
+      kategori: "Informasi"
+    },
+    {
       judul: "🌟 INFORMASI SPMB KALTIM 2026 🌟",
       gambar: ["/galeri/spmb1.jpeg", "/galeri/spmb2.jpeg"],
       deskripsi: "",

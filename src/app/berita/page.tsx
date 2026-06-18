@@ -184,13 +184,14 @@ export default function BeritaPage() {
                 ✕
               </button>
 
-              <div className="w-full h-56 md:h-80 relative overflow-hidden bg-black/40 border-b border-white/5 flex-shrink-0">
+              {/* Area Gambar (Full No-Crop dengan Scroll Fitur) */}
+              <div className="w-full max-h-[40vh] overflow-y-auto bg-black/40 border-b border-white/5 flex-shrink-0 relative">
                 <img
                   src={selectedBerita.gambar}
                   alt={selectedBerita.judul}
-                  className="w-full h-full object-contain md:object-cover"
+                  className="w-full h-auto object-contain block mx-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent pointer-events-none" />
               </div>
 
               {/* Area Teks Isi Berita (Scrollable & Perbaikan Baris Baru) */}
@@ -208,7 +209,6 @@ export default function BeritaPage() {
 
                 <div className="w-16 h-1 bg-blue-500 rounded-full my-2" />
 
-                {/* MODIFIKASI DISINI: Mendukung Pemecahan Baris Alami & Mencegah Text Keluar Grid */}
                 <div className="text-slate-300 text-sm md:text-base leading-relaxed text-justify font-light break-words tracking-normal space-y-4">
                   {selectedBerita.deskripsi.split("\n").map((line, index) => (
                     <p key={index} className="min-h-[1rem]">
@@ -217,6 +217,7 @@ export default function BeritaPage() {
                   ))}
                 </div>
 
+                {/* AREA YANG DIUBAH: Mengapus target="_blank" supaya tetap di tab yang sama */}
                 {selectedBerita.sumberUrl && selectedBerita.sumberUrl !== "#" && (
                   <div className="pt-6 border-t border-white/5 flex flex-wrap items-center justify-between gap-4">
                     <span className="text-xs text-slate-400">
@@ -224,8 +225,6 @@ export default function BeritaPage() {
                     </span>
                     <a
                       href={selectedBerita.sumberUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs md:text-sm py-2.5 px-5 rounded-xl shadow-lg transition duration-200"
                     >
                       🔗 Lihat Dokumen / Galeri Pendukung

@@ -1,4 +1,45 @@
 export const berita = [ 
+   {
+  id: 159,
+  judul: "Peserta OSN SMAN 7 Balikpapan",
+  tanggal: "18 Juni 2026",
+  gambar: "/berita/timosn1.jpeg",
+  deskripsi: `SELEKSI OLIMPIADE SAINS NASIONAL (OSN) SMA/MA/SEDERAJAT TINGKAT KOTA BALIKPAPAN TAHUN 2026 
+Peserta OSN SMAN 7 Balikpapan siap berjuang untuk mengukir prestasi. Pembinaan intensif yang telah dilaksanakan dengan maksimal, semoga menjadi bekal yang bermanfaat bagi seluruh peserta dalam berkompetisi. 
+Hari Kamis - Jumat, Tanggal 18-19 Juni 2026 akan dilaksanakan seleksi nasional tingkat kota secara serentak seluruh Indonesia.
+Selamat berjuang 45 siswa  terbaik SMAN 7 Balikpapan dalam Seleksi Olimpiade Sains Nasional (OSN)  Tingkat Kota Balikpapan dibidang Fisika, Astronomi, Kimia, Biologi, Matematika, Informatika, Kebumian, Geografi dan Ekonomi. 
+OSN SMA NEGERI 7 BALIKPAPAN,
+BISA, BISA, JUARA!
+"Jujur Itu Juara"`,
+  sumberUrl: "/galeri"
+  },
+  {
+  id: 158,
+  judul: "Tim Duta Sadar Hukum berhasil meraih 10 Besar Finalis Tingkat Kabupaten/Kota se-Kalimantan Timur Tahun 2026",
+  tanggal: "18 Juni 2026",
+  gambar: "/berita/dpsh.jpeg",
+  deskripsi: `SMA Negeri 7 Balikpapan dengan bangga mengapresiasi prestasi Tim Duta Sadar Hukum yang berhasil meraih 10 Besar Finalis Tingkat Kabupaten/Kota se-Kalimantan Timur Tahun 2026 dalam ajang Pemilihan Duta Pelajar Sadar Hukum Jenjang SMA/SMK/MA/SLB (Tuna Daksa). Tetap semangat, teruslah melaju ke tahap berikutnya!
+
+Ajang ini dilaksanakan untuk meningkatkan kesadaran serta pemahaman hukum di kalangan pelajar, mendorong peserta agar aktif menjadi agen perubahan dalam menyosialisasikan pentingnya taat hukum, melatih kemampuan komunikasi dan kreativitas dalam menyampaikan pesan sadar hukum.
+
+Daftar 10 Finalis Pemilihan Duta Pelajar Sadar Hukum Tingkat Kota Balikpapan Tahun 2026:
+
+1. Syauqi Ghifary Firdaus - Azzahra Nur Hafidzia Ku suma (SMAN 6 Balikpapan)
+2. Faqih Rizqi Haq - Cheisya Zahira Nurashila Hariyanto (SMAN 3 Balikpapan)
+3. Muthia Alya - Muhammad Kenny Kusuma (SMAN 5 Balikpapan)
+4. Dhia Khairunnisa Wahab - Mario Rafael Yohanes Damopoli (SMAN 6 Balikpapan)
+5. Manu Hindun Tamamaz - Muhammad Faliq Rizky (MAN Balikpapan)
+6. Risky Nakhrow Bahri - Rasiiyah Sitti Nur Annisah (SMKS Nusantara Balikpapan)
+7. Alif Wira Zakaria - Deswita Puspa Ariyanti (SMA Muhammadiyah 2 Al Mujahidin)
+8. Jordan Yusuf Ariyanto - Bintang Sendria Simangunsong (SMAN 1 Balikpapan)
+9. Kurnia Akifah Nailah - Earsan Rain Nasyith Setia B (SMAN 7 Balikpapan)
+10. M. Ardhan Syahputra - Cahaya Keyzha Putri (SMK Nusantara Balikpapan)
+
+Kami berharap kegiatan Pemilihan Duta Pelajar Sadar Hukum tingkat Kabupaten/Kota se-Kalimantan Timur Tahun 2026 dapat melahirkan generasi pelajar yang lebih peduli dan paham hukum, serta mampu menjadi agen perubahan dalam menyebarkan budaya taat hukum di lingkungan sekolah dan masyarakat.
+
+Teruslah berkarya, berinovasi dan jadilah agen perubahan untuk masa depan yang lebih baik ❤️🤍🫰🏻`,
+  sumberUrl: ""
+  },
   {
   id: 157,
   judul: "🌟 INFORMASI SPMB KALTIM 2026 🌟",
