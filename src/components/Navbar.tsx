@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: "Kesiswaan", href: "/Kesiswaan" },
     { name: "Sarpras", href: "/Sarpras" },
     { name: "Humas", href: "/Humas" },
+    { name: "komite", href: "/Komite" },
     { name: "Galeri", href: "/galeri" },
   ]
 
