@@ -74,7 +74,7 @@ export default function KomitePage() {
       {/* ================= BACKGROUND SINEMATIK PREMIUM ================= */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/bg3.jpg" // Menggunakan bg3 agar seragam dengan halaman berita
+          src="/bg3.jpg" 
           alt="Latar Belakang SMANJU"
           fill
           priority
