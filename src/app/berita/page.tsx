@@ -156,93 +156,111 @@ export default function BeritaPage() {
         </motion.div>
       </div>
 
-      {/* ================= MODAL DETAIL POPUP PREMIUM ================= */}
+      {/* ================= MODAL DETAIL POPUP PREMIUM (ALA INSTAGRAM DARI GALERI) ================= */}
       <AnimatePresence>
         {selectedBerita && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6 select-text">
-            
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+          <div 
+            className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-10 bg-black/90 backdrop-blur-md"
+            onClick={() => setSelectedBerita(null)}
+          >
+            {/* Tombol Close Pojok Atas Kanan Layar */}
+            <button 
+              className="absolute top-4 right-4 text-white hover:text-red-400 transition z-50 p-2" 
               onClick={() => setSelectedBerita(null)}
-              className="absolute inset-0 bg-black/80 backdrop-blur-md"
-            />
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ type: "spring", duration: 0.5 }}
-              className="relative w-full max-w-3xl bg-slate-900 border border-white/10 rounded-3xl overflow-hidden shadow-2xl z-10 flex flex-col max-h-[85vh]"
             >
-              
-              <button
-                onClick={() => setSelectedBerita(null)}
-                className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/60 border border-white/10 flex items-center justify-center text-white text-lg hover:bg-red-500 hover:border-red-500 transition duration-200"
-              >
-                ✕
-              </button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6 sm:w-8 sm:h-8">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
 
-              {/* Area Gambar (Full No-Crop dengan Scroll Fitur) */}
-              <div className="w-full max-h-[40vh] overflow-y-auto bg-black/40 border-b border-white/5 flex-shrink-0 relative">
-                <img
-                  src={selectedBerita.gambar}
-                  alt={selectedBerita.judul}
-                  className="w-full h-auto object-contain block mx-auto"
+            {/* Kotak Utama Postingan Split View */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95, y: 10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 10 }}
+              transition={{ duration: 0.25 }}
+              className="bg-slate-900 border border-slate-800 w-full max-w-5xl h-[85vh] md:h-[80vh] flex flex-col md:flex-row rounded-xl overflow-hidden shadow-2xl select-text"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* KOLOM KIRI: Media Image Viewer (Full Tanpa Potong) */}
+              <div className="relative flex-1 bg-slate-950 flex items-center justify-center h-[45%] md:h-full group border-b md:border-b-0 border-slate-800">
+                <img 
+                  src={selectedBerita.gambar} 
+                  alt={selectedBerita.judul} 
+                  className="w-full h-full object-contain max-h-full block p-1"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent pointer-events-none" />
               </div>
 
-              {/* Area Teks Isi Berita (Scrollable & Perbaikan Baris Baru) */}
-              <div className="p-6 md:p-8 overflow-y-auto space-y-4 scrollbar-thin scrollbar-thumb-white/10">
-                
-                <div className="flex items-center gap-2 text-xs font-bold text-blue-400 uppercase tracking-widest">
-                  <span>Warta SMANJU</span>
-                  <span>•</span>
-                  <span>📅 {selectedBerita.tanggal}</span>
-                </div>
-
-                <h2 className="text-xl md:text-3xl font-black text-white leading-tight tracking-tight break-words">
-                  {selectedBerita.judul}
-                </h2>
-
-                <div className="w-16 h-1 bg-blue-500 rounded-full my-2" />
-
-                <div className="text-slate-300 text-sm md:text-base leading-relaxed text-justify font-light break-words tracking-normal space-y-4">
-                  {selectedBerita.deskripsi.split("\n").map((line, index) => (
-                    <p key={index} className="min-h-[1rem]">
-                      {line}
-                    </p>
-                  ))}
-                </div>
-
-                {/* AREA YANG DIUBAH: Mengapus target="_blank" supaya tetap di tab yang sama */}
-                {selectedBerita.sumberUrl && selectedBerita.sumberUrl !== "#" && (
-                  <div className="pt-6 border-t border-white/5 flex flex-wrap items-center justify-between gap-4">
-                    <span className="text-xs text-slate-400">
-                      Punya informasi tambahan terkait berita ini?
-                    </span>
-                    <a
-                      href={selectedBerita.sumberUrl}
-                      className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs md:text-sm py-2.5 px-5 rounded-xl shadow-lg transition duration-200"
-                    >
-                      🔗 Lihat Dokumen / Galeri Pendukung
-                    </a>
+              {/* KOLOM KANAN: Detail Informasi Berita */}
+              <div className="w-full md:w-[380px] bg-slate-900 flex flex-col h-[55%] md:h-full">
+                {/* Header Akun Sekolah */}
+                <div className="p-4 border-b border-slate-800 flex items-center space-x-3">
+                  <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-600 to-cyan-500 flex items-center justify-center text-white text-xs font-black shadow-md">
+                    S7
                   </div>
-                )}
-              </div>
+                  <div>
+                    <h3 className="text-white text-sm font-bold tracking-wide">sman7balikpapan</h3>
+                    <p className="text-slate-400 text-[11px] font-medium">Balikpapan, Kalimantan Timur</p>
+                  </div>
+                </div>
 
-              <div className="bg-slate-950/50 border-t border-white/5 px-6 py-4 flex items-center justify-between flex-shrink-0">
-                <span className="text-[10px] text-slate-500 font-mono">ID BERITA: #{selectedBerita.id}</span>
-                <button
-                  onClick={() => setSelectedBerita(null)}
-                  className="text-xs text-slate-400 hover:text-white transition duration-150 font-medium"
-                >
-                  Tutup Halaman ✕
-                </button>
-              </div>
+                {/* Area Konten Deskripsi Berita (Scrollable & Dukung Baris Baru) */}
+                <div className="p-4 flex-1 overflow-y-auto space-y-4 text-slate-300 text-xs sm:text-sm scrollbar-thin scrollbar-thumb-slate-800">
+                  <div>
+                    <p className="text-blue-400 text-xs font-mono font-bold uppercase mb-1">[Warta SMANJU]</p>
+                    <h2 className="text-white font-bold text-base mb-2 leading-snug">{selectedBerita.judul}</h2>
+                    
+                    {/* Pembacaan deskripsi split baris baru \n */}
+                    <div className="text-slate-300 text-xs sm:text-sm leading-relaxed text-justify font-light space-y-3">
+                      {selectedBerita.deskripsi.split("\n").map((line, index) => (
+                        <p key={index} className="min-h-[1rem]">
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
 
+                  {/* Section Dokumen / Galeri Pendukung (Tetap di tab yang sama jika ada) */}
+                  {selectedBerita.sumberUrl && selectedBerita.sumberUrl !== "#" && (
+                    <div className="pt-4 border-t border-slate-800/60">
+                      <a
+                        href={selectedBerita.sumberUrl}
+                        className="w-full inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs py-2.5 px-4 rounded-xl shadow-lg transition duration-200"
+                      >
+                        🔗 Lihat Dokumen / Galeri Pendukung
+                      </a>
+                    </div>
+                  )}
+
+                  {/* Section Komentar Interaktif Tiruan Biar Sama Persis */}
+                  <div className="pt-3 border-t border-slate-800/60 space-y-2.5 text-xs">
+                    <div>
+                      <span className="text-white font-semibold mr-2">osissmaven</span>
+                      <span className="text-slate-400">Sukses terus SMANJU! Makin menyala 🔥</span>
+                    </div>
+                    <div>
+                      <span className="text-white font-semibold mr-2">mpksmaven</span>
+                      <span className="text-slate-400">SMANJU....Semakin Majuu 🙌</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bagian Bawah: Metadata & Tanggal Kegiatan */}
+                <div className="p-4 border-t border-slate-800 bg-slate-950/40 space-y-3">
+                  <div className="flex space-x-4 text-slate-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-5 h-5 cursor-pointer hover:text-red-500 transition">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-5 h-5 cursor-pointer hover:text-blue-500 transition">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-1.923 2.413a4.474 4.474 0 0 0 3.536-1.003c.43-.244.97-.242 1.4.03a9.14 9.14 0 0 0 3.128.533Z" />
+                    </svg>
+                  </div>
+                  <p className="text-[10px] text-slate-500 font-mono tracking-wider uppercase">
+                    Diupload: {selectedBerita.tanggal}
+                  </p>
+                </div>
+
+              </div>
             </motion.div>
           </div>
         )}
