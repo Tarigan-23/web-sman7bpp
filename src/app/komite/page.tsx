@@ -105,7 +105,7 @@ export default function KomitePage() {
               Komite <span className="bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent">Sekolah</span>
             </h1>
             <p className="text-slate-400 text-sm md:text-lg font-light tracking-wide max-w-2xl mx-auto">
-              Sinergi Orang Tua Siswa dan Sekolah SMA Negeri 7 Balikpapan
+              Sinergi Orang Tua Siswa dan SMA Negeri 7 Balikpapan
             </p>
           </motion.div>
         </section>

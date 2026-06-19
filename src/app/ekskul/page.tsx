@@ -18,7 +18,7 @@ const dataEkskul = [
     nama: "ADIWIYATA",
     kategori: "Umum",
     logo: "/ekskul/adiwiata.jpeg",
-    pembina: "-",
+    pembina: "Rohani, S.Pd",
     pelatih: "-",
   },
   {
@@ -42,8 +42,7 @@ const dataEkskul = [
     nama: "UKS",
     kategori: "Umum",
     logo: "/ekskul/uks.jpeg",
-    pembina: "-",
-    pelatih: "-",
+    pembina: "Murdiana, S.Pd",
   },
   {
     id: 6,
@@ -51,7 +50,6 @@ const dataEkskul = [
     kategori: "Akademik",
     logo: "/ekskul/karyailmiah.jpeg",
     pembina: "Eka Normawati, S.Pd.",
-    pelatih: "-",
   },
   {
     id: 7,
@@ -74,8 +72,7 @@ const dataEkskul = [
     nama: "KOMUNITAS KRISTEN",
     kategori: "Keagamaan",
     logo: "/ekskul/kokris.jpeg",
-    pembina: "-",
-    pelatih: "-",
+    pembina: "Dame Lasniroha Sitorus, S.Th",
   },
   {
     id: 10,
@@ -115,7 +112,6 @@ const dataEkskul = [
     kategori: "Umum",
     logo: "/ekskul/pik-r.jpeg",
     pembina: "Juni Alvionita Nainggolan, S.Psi",
-    pelatih: "-",
   },
   {
     id: 15,
@@ -194,8 +190,7 @@ const dataEkskul = [
     nama: "GREEN GENERATION",
     kategori: "Umum",
     logo: "/ekskul/green.jpeg",
-    pembina: "Dra. Rohani",
-    pelatih: "-",
+    pembina: "Amirudin Siwasiwan, S.Pd",
   },
   {
     id: 25,

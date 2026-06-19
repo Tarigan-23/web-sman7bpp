@@ -24,7 +24,7 @@ export default function SarprasPage() {
       id: "Masjid",
       nama: "Masjid Al-Khawarizmi",
       kategori: "Fasilitas Umum",
-      gambar: "/masjid.jpeg",
+      gambar: "/sarpras/masjid.jpeg",
       deskripsi: "Pusat ibadah dan kegiatan keagamaan seluruh warga sekolah yang bersih, sejuk, serta nyaman.",
       jumlah: "1 Unit"
     },
@@ -73,10 +73,17 @@ export default function SarprasPage() {
       deskripsi: "Pusat referensi dan jendela ilmu sekolah yang mengoleksi ribuan buku fiksi, non-fiksi, hingga jurnal pendidikan."
     },
     {
-      id: "pojok-literasi",
+      id: "pojok Literasi",
       nama: "Pojok Literasi",
       kategori: "Belajar",
-      gambar: "/literasi.jpeg",
+      gambar: "/sarpras/literasi.jpeg",
+      deskripsi: "Spot baca santai yang tersebar di beberapa koridor sekolah guna membangun ekosistem membaca yang asyik bagi siswa di waktu istirahat."
+    },
+    {
+      id: "Pojok Numerasi",
+      nama: "Pojok Numerasi",
+      kategori: "Belajar",
+      gambar: "/sarpras/nut.jpeg",
       deskripsi: "Spot baca santai yang tersebar di beberapa koridor sekolah guna membangun ekosistem membaca yang asyik bagi siswa di waktu istirahat."
     },
     {
