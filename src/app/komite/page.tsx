@@ -16,7 +16,7 @@ export default function KomitePage() {
   const ketuaKomite: KomiteItem = {
     nama: "Heny yohana",
     jabatan: "Ketua Komite Sekolah",
-    foto: "/komite/ketua.webp", 
+    foto: "/komite/ketua.jpeg", 
   }
 
   // === 2. INTI KOMITE (Wakil, Sekretaris, Bendahara) ===
@@ -24,32 +24,32 @@ export default function KomitePage() {
     {
       nama: "Ir. Budyastono",
       jabatan: "Wakil Ketua Komite",
-      foto: "/komite/wakil.webp",
+      foto: "/komite/waka.jpeg",
     },
     {
       nama: "Yuliana",
       jabatan: "Sekretaris",
-      foto: "/komite/sekretaris.webp",
+      foto: "/komite/seketaris.jpeg",
     },
     {
       nama: "Nur Fitria Akbar",
       jabatan: "Bendahara",
-      foto: "/komite/bendahara.webp",
+      foto: "/komite/bendehara.jpeg",
     },
   ]
 
   // === 3. ANGGOTA / JABATAN BIDANG LAINNYA ===
   const bidangKomite: KomiteItem[] = [
-    { nama: "Nurul Bidayah", jabatan: "Pengolahan Dana Masyaraka", foto: "/komite/b1.webp" },
-    { nama: "Erna Astuti ", jabatan: "Pengolahan Dana Masyaraka", foto: "/komite/b1.webp" },
-    { nama: "Dewi susanti", jabatan: "Sarana Prasarana", foto: "/komite/b2.webp" },
-    { nama: "Eka Lestari", jabatan: "Sarana Prasarana", foto: "/komite/b2.webp" },
-    { nama: "dr.h.Hadi Pitono, M.Pd", jabatan: "Sarana Prasarana", foto: "/komite/b2.webp" },
-    { nama: "Bambang Hermanto", jabatan: "Jaringan Kerjasama dan Sistem Informasi", foto: "/komite/b3.webp" },
-    { nama: "Yohana", jabatan: "Jaringan Kerjasama dan Sistem Informasi", foto: "/komite/b3.webp" },
-    { nama: "Heni Panjaya ", jabatan: "Penggalian Sumber Daya Sekolah", foto: "/komite/b4.webp" },
-    { nama: "Muhammad Mujib Ridwan", jabatan: "Penggalian Sumber Daya Sekolah", foto: "/komite/b5.webp" },
-    { nama: "Darul Arkam Nurkarim,S.Pd", jabatan: "Pengendalian Kualitas Pelayanan Pendidikan", foto: "/komite/b6.webp" },
+    { nama: "Nurul Bidayah", jabatan: "Pengolahan Dana Masyaraka", foto: "/komite/bpdm1.jpeg" },
+    { nama: "Erna Astuti ", jabatan: "Pengolahan Dana Masyaraka", foto: "/komite/bpdm2.jpeg" },
+    { nama: "Dewi susanti", jabatan: "Sarana Prasarana", foto: "/komite/bsp1.jpeg" },
+    { nama: "Eka Lestari", jabatan: "Sarana Prasarana", foto: "/komite/bsp2.jpeg" },
+    { nama: "dr.h.Hadi Pitono, M.Pd", jabatan: "Sarana Prasarana", foto: "/komite/bsp3.jpeg" },
+    { nama: "Bambang Hermanto", jabatan: "Jaringan Kerjasama dan Sistem Informasi", foto: "/komite/bjksi1.jpeg" },
+    { nama: "Yohana", jabatan: "Jaringan Kerjasama dan Sistem Informasi", foto: "/komite/bjksi2.jpeg" },
+    { nama: "Heni Panjaya ", jabatan: "Penggalian Sumber Daya Sekolah", foto: "/komite/bpsds1.jpeg" },
+    { nama: "Muhammad Mujib Ridwan", jabatan: "Penggalian Sumber Daya Sekolah", foto: "/komite/bpsds2.jpeg" },
+    { nama: "Darul Arkam Nurkarim,S.Pd", jabatan: "Pengendalian Kualitas Pelayanan Pendidikan", foto: "/komite/bpkpp1.jpeg" },
   ]
 
   // Framer Motion Variants untuk Efek Stagger Loading
