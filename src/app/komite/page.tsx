@@ -41,8 +41,10 @@ export default function KomitePage() {
   // === 3. ANGGOTA / JABATAN BIDANG LAINNYA ===
   const bidangKomite: KomiteItem[] = [
     { nama: "Nurul Bidayah", jabatan: "Pengolahan Dana Masyaraka", foto: "/komite/b1.webp" },
+    { nama: "Erna Astuti ", jabatan: "Pengolahan Dana Masyaraka", foto: "/komite/b1.webp" },
     { nama: "Dewi susanti", jabatan: "Sarana Prasarana", foto: "/komite/b2.webp" },
     { nama: "Eka Lestari", jabatan: "Sarana Prasarana", foto: "/komite/b2.webp" },
+    { nama: "dr.h.Hadi Pitono, M.Pd", jabatan: "Sarana Prasarana", foto: "/komite/b2.webp" },
     { nama: "Bambang Hermanto", jabatan: "Jaringan Kerjasama dan Sistem Informasi", foto: "/komite/b3.webp" },
     { nama: "Yohana", jabatan: "Jaringan Kerjasama dan Sistem Informasi", foto: "/komite/b3.webp" },
     { nama: "Heni Panjaya ", jabatan: "Penggalian Sumber Daya Sekolah", foto: "/komite/b4.webp" },
@@ -103,7 +105,7 @@ export default function KomitePage() {
               Komite <span className="bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent">Sekolah</span>
             </h1>
             <p className="text-slate-400 text-sm md:text-lg font-light tracking-wide max-w-2xl mx-auto">
-              Sinergi Orang Tua Siswa dan Sekolah Mandiri SMA Negeri 7 Balikpapan
+              Sinergi Orang Tua Siswa dan Sekolah SMA Negeri 7 Balikpapan
             </p>
           </motion.div>
         </section>
