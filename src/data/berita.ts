@@ -3,7 +3,7 @@ export const berita = [
   id: 157,
   judul: "IBADAH KOMUNITAS KRISTEN SMAVEN",
   tanggal: "20 Juni 2026",
-  gambar: "/berita/163.jpeg",
+  gambar: "/berita/164.jpeg",
   deskripsi: `Dengan penuh sukacita, Komunitas Kristen SMAVEN (KKS) kelas X dan XI melaksanakan ibadah bersama pada Kamis, 18 Juni 2026, sebagai wujud semangat dalam menumbuhkan dan mengembangkan iman kepada Kristus di kalangan remaja Kristen.
 
 Mengusung tema "Jangan Khawatir dalam Hidup" berdasarkan Filipi 4:6, ibadah ini mengajak seluruh siswa Kristen untuk tidak terus-menerus diliputi kekhawatiran dalam menghadapi berbagai tantangan dan ujian kehidupan. Sebaliknya, mereka diajak untuk membangun semangat kebersamaan, melepaskan segala kecemasan, kegelisahan, dan kekhawatiran, serta menyerahkan setiap harapan dan keinginan hanya kepada Tuhan melalui doa dan ucapan syukur.
@@ -11,7 +11,7 @@ Mengusung tema "Jangan Khawatir dalam Hidup" berdasarkan Filipi 4:6, ibadah ini 
 Kiranya melalui kegiatan ini, iman peserta didik semakin bertumbuh, hati semakin diteguhkan, dan setiap langkah kehidupan senantiasa dipenuhi pengharapan di dalam Kristus.
 
 "Janganlah hendaknya kamu khawatir tentang apa pun juga, tetapi nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur." (Filipi 4:6)`,
-  sumberUrl: "/galeri"
+  sumberUrl: ""
   },
   {
   id: 160,
@@ -32,7 +32,7 @@ Spesial tahun ini, peserta akan berkesempatan belajar dan berinteraksi langsung 
 ✔️ Talk with Aaron
 
 Mari jadikan English Camp 2026 sebagai langkah untuk mengembangkan kemampuan komunikasi global sekaligus menciptakan kenangan indah bersama teman-teman. Jangan lewatkan kesempatan berharga ini!`,
-  sumberUrl: "/berita"
+  sumberUrl: ""
   },
    {
   id: 159,
