@@ -1,6 +1,28 @@
 export const berita = [ 
   {
-  id: 157,
+  id: 162,
+  judul: "📢 PENGUMUMAN LAYANAN SPMB",
+  tanggal: "22 Juni 2026",
+  gambar: "/spmb/spmb5.jpeg",
+  deskripsi: `Yth. Calon Murid Baru, Orang Tua/Wali, dan Masyarakat Kalimantan Timur.
+
+Saat ini aplikasi SPMB Provinsi Kalimantan Timur sedang mengalami gangguan teknis (down server) sehingga beberapa layanan belum dapat diakses secara normal.
+
+🙏 Kami mohon maaf atas ketidaknyamanan yang terjadi. Tim teknis sedang bekerja maksimal untuk melakukan perbaikan dan pemulihan layanan secepatnya.
+
+⚠️ Kami mengimbau kepada seluruh masyarakat untuk tetap tenang dan tidak panik. Proses perbaikan sedang berlangsung dan informasi resmi akan kami sampaikan melalui kanal resmi Disdikbud Kaltim.
+
+🔄 Silakan melakukan pengecekan secara berkala pada laman SPMB untuk mengetahui perkembangan terbaru.
+
+🌐 Link SPMB: https://spmb.kaltimprov.go.id/
+
+Terima kasih atas pengertian, kesabaran, dan kerja samanya.
+
+Dinas Pendidikan dan Kebudayaan Provinsi Kalimantan Timur`,
+  sumberUrl: "/SPMB"
+  },
+  {
+  id: 161,
   judul: "IBADAH KOMUNITAS KRISTEN SMAVEN",
   tanggal: "20 Juni 2026",
   gambar: "/berita/164.png",

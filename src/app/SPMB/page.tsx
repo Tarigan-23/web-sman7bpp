@@ -7,8 +7,9 @@ import Image from "next/image"
 
 // KUMPULAN GAMBAR POSTER / BROSUR UTAMA (Slider atas)
 const daftarPoster = [
-  { id: 1, src: "/spmb/jadwalSPMB.jpeg", alt: "Jadwal Pelaksanaan SPMB Tahun Ajaran 2026/2027" },
-  { id: 2, src: "/spmb/SPANDUKSPMB2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
+  
+  { id: 1, src: "/spmb/SPANDUKSPMB2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
+  { id: 2, src: "/spmb/jadwalSPMB.jpeg", alt: "Jadwal Pelaksanaan SPMB Tahun Ajaran 2026/2027" },
   { id: 3, src: "/spmb/SPMB_25.cdr.png", alt: "Informasi Persyaratan & Jalur Masuk" }, 
   { id: 4, src: "/spmb/spmb1.jpeg", alt: "pelaksanaan pra pendaftaran" },
   { id: 5, src: "/spmb/spmb2.jpeg", alt: "SPMB" },
