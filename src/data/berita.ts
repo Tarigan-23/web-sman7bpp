@@ -1,5 +1,15 @@
 export const berita = [ 
   {
+  id: 163,
+  judul: "📢 Halo Calon Murid Baru!",
+  tanggal: "22 Juni 2026",
+  gambar: "/berita/daftarspmb.png",
+  deskripsi: `Masih bingung bagaimana cara membuat akun untuk mengikuti Seleksi Penerimaan Murid Baru (SPMB) SMA/SMK Tahun 2026? Tenang, kami telah menyiapkan video tutorial yang akan memandu langkah demi langkah proses pendaftaran akun baru dengan mudah dan jelas.
+Simak video ini hingga selesai agar tidak ada tahapan yang terlewat. Pastikan data yang diinput sesuai dengan dokumen yang dimiliki agar proses pendaftaran berjalan lancar.
+Mari persiapkan diri sebaik mungkin dan raih kesempatan untuk melanjutkan pendidikan di sekolah impian. Selamat mengikuti proses SPMB 2026, semoga sukses!`,
+  sumberUrl: "https://www.instagram.com/p/DZ4KbCZhq3y/"
+  },
+  {
   id: 162,
   judul: "📢 PENGUMUMAN LAYANAN SPMB",
   tanggal: "22 Juni 2026",
