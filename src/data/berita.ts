@@ -1,5 +1,13 @@
 export const berita = [ 
   {
+  id: 164,
+  judul: "memperingati Tahun Baru Islam 1 Muharram 1448 Hijriah",
+  tanggal: "22 Juni 2026",
+  gambar: "/berita/165.png",
+  deskripsi: `Dalam rangka memperingati Tahun Baru Islam 1 Muharram 1448 Hijriah, SMA Negeri 7 Balikpapan menggelar kegiatan keagamaan yang dilaksanakan di Masjid Al-Hawarizmi pada Jumat, 19 Juni 2026. Kegiatan diawali dengan pelaksanaan salat dhuha berjamaah sebagai bentuk ikhtiar mendekatkan diri kepada Allah SWT, kemudian dilanjutkan dengan kajian islami yang disampaikan oleh ustaz sebagai penguat iman dan motivasi bagi seluruh peserta. Melalui momentum tahun baru Hijriah ini, diharapkan seluruh warga sekolah dapat melakukan refleksi diri, memperkuat nilai-nilai keislaman, serta menumbuhkan semangat untuk menjadi pribadi yang lebih baik dalam menjalani kehidupan dan menuntut ilmu.`,
+  sumberUrl: "https://www.instagram.com/p/DZ4IeFuBvIX/"
+  },
+  {
   id: 163,
   judul: "📢 Halo Calon Murid Baru!",
   tanggal: "22 Juni 2026",
