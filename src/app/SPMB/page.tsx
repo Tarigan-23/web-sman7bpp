@@ -19,9 +19,9 @@ const daftarPoster = [
 
 // DATA UNTUK 3 POSTER BARU DI BAWAH ALUR PENDAFTARAN
 const posterTambahan = [
-  { id: 1, src: "/spmb/spmb5.png", title: "Alur Pelaksanaan Pra Pendaftaran", alt: "poster alur pelaksanaan" }, 
-  { id: 2, src: "/spmb/spmb6.png", title: "Persyaratan Pra Pendaftaran", alt: "Poster Persyaratan" },   
-  { id: 3, src: "/spmb/spmb7.png", title: "Alur Pelaksanaan", alt: "Poster alur" }, 
+  { id: 1, src: "/spmb/spmb5.jpeg", title: "Pemberitahuan Untuk Masyarakat", alt: "Info Terbaru" }, 
+  { id: 2, src: "/spmb/spmb8.jpeg", title: "Jadwal Akses SPMB", alt: "Poster Informasi untuk mengakses SPMB" },   
+  { id: 3, src: "/spmb/spmb4.jpeg", title: "Contoh Kategiri Prestasi", alt: "Poster Kategori Prestasi" }, 
 ]
 
 export default function SPMBPage() {
@@ -62,7 +62,7 @@ export default function SPMBPage() {
   const [timeLeft, setTimeLeft] = useState({ hari: 0, jam: 0, menit: 0, detik: 0 })
 
   useEffect(() => {
-    const targetDate = new Date("2026-06-22T23:59:59")
+    const targetDate = new Date("2026-06-24T23:59:59")
     const targetUnix = Math.floor(targetDate.getTime() / 1000)
 
     const calculateTime = () => {
@@ -168,7 +168,7 @@ export default function SPMBPage() {
               🔥 Hitung Mundur Pendaftaran Tahap I
             </h3>
             <p className="text-slate-400 text-xs mb-6">
-              Pendaftaran Tahap I akan dibuka pada <span className="text-blue-400 font-semibold">22 - 24 Juni 2026</span>.
+              Pendaftaran Tahap I telah dibuka <span className="text-blue-400 font-semibold">22 - 24 Juni 2026</span>.
             </p>
 
             <div className="grid grid-cols-4 gap-3 text-center">

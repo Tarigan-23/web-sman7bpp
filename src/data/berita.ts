@@ -1,5 +1,25 @@
 export const berita = [ 
   {
+  id: 165,
+  judul: "📢 PENGUMUMAN PENGATURAN JADWAL AKSES SPMB SMA/SMK PROVINSI KALIMANTAN TIMUR TAHUN AJARAN 2026/2027",
+  tanggal: "23 Juni 2026",
+  gambar: "/spmb/spmb8.jpeg",
+  deskripsi: `Dalam rangka menjaga kelancaran proses pendaftaran Sistem Penerimaan Murid Baru (SPMB) SMA/SMK Tahun Ajaran 2026/2027, Dinas Pendidikan dan Kebudayaan Provinsi Kalimantan Timur memberlakukan pengaturan jadwal akses aplikasi SPMB berdasarkan wilayah kabupaten/kota.
+
+Pengaturan ini dilakukan untuk menjaga kestabilan sistem serta mengurangi kepadatan akses, sehingga seluruh calon murid dapat melakukan pendaftaran dengan lebih lancar dan nyaman.
+
+Kami mengimbau kepada calon murid dan orang tua/wali agar mengakses aplikasi sesuai jadwal wilayah masing-masing. Apabila belum sempat mengakses pada waktu yang telah ditentukan, aplikasi tetap dapat diakses pada pukul 22.00–07.00 WITA.
+
+🙏 Kami mohon maaf atas ketidaknyamanan yang mungkin terjadi selama proses pendaftaran. Terima kasih atas pengertian, kesabaran, dan kerja sama seluruh masyarakat Kalimantan Timur dalam mendukung kelancaran pelaksanaan SPMB Tahun Ajaran 2026/2027.
+
+Mohon diperhatikan:
+✅ Tetap tenang dan tidak perlu panik.
+✅ Pastikan koneksi internet dalam kondisi stabil.
+✅ Siapkan seluruh dokumen persyaratan sebelum melakukan pendaftaran.
+✅ Pantau informasi resmi melalui kanal Dinas Pendidikan dan Kebudayaan Provinsi Kalimantan Timur serta Cabang Dinas Wilayah I s.d. VI. 🙏`,
+  sumberUrl: "/SPMB"
+  },
+  {
   id: 164,
   judul: "memperingati Tahun Baru Islam 1 Muharram 1448 Hijriah",
   tanggal: "22 Juni 2026",
