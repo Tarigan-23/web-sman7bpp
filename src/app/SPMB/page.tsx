@@ -62,7 +62,7 @@ export default function SPMBPage() {
   const [timeLeft, setTimeLeft] = useState({ hari: 0, jam: 0, menit: 0, detik: 0 })
 
   useEffect(() => {
-    const targetDate = new Date("2026-06-24T23:59:59")
+    const targetDate = new Date("2026-06-26T23:59:59")
     const targetUnix = Math.floor(targetDate.getTime() / 1000)
 
     const calculateTime = () => {
@@ -165,10 +165,10 @@ export default function SPMBPage() {
             className="lg:col-span-5 bg-white/5 backdrop-blur-md rounded-3xl shadow-2xl p-6 md:p-8 border border-white/10"
           >
             <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
-              🔥 Hitung Mundur Pendaftaran Tahap I
+              🔥 Hitung Mundur Pengumuman Tahap I
             </h3>
             <p className="text-slate-400 text-xs mb-6">
-              Pendaftaran Tahap I telah dibuka <span className="text-blue-400 font-semibold">22 - 24 Juni 2026</span>.
+              Pendaftaran Tahap I telah berakhir <span className="text-blue-400 font-semibold">Liat Pengumuman Tahap I</span>.
             </p>
 
             <div className="grid grid-cols-4 gap-3 text-center">
