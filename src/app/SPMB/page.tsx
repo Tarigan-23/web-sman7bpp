@@ -62,7 +62,7 @@ export default function SPMBPage() {
   const [timeLeft, setTimeLeft] = useState({ hari: 0, jam: 0, menit: 0, detik: 0 })
 
   useEffect(() => {
-    const targetDate = new Date("2026-06-26T23:59:59")
+    const targetDate = new Date("2026-06-26T12:00:00")
     const targetUnix = Math.floor(targetDate.getTime() / 1000)
 
     const calculateTime = () => {
