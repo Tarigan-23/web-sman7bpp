@@ -69,7 +69,7 @@ export default function GuruPage() {
     { nama: "Sunarti, S.Pd.", jabatan: "Guru BHS Indonesia", foto: "/gr7.webp" },
     { nama: "Sultan, S. Sos", jabatan: "Guru Sosiologi", foto: "/gr33.webp" },
     { nama: "Dasril Hidayat, S. Kom.", jabatan: "Guru TIK", foto: "/gr44.webp" },
-    { nama: "Hj. Murdiana, S.Pd.", jabatan: "Guru Prakarya/Ekonomi", foto: "/gr.webp" },
+    { nama: "Hj. Murdiana, S.Pd.", jabatan: "Guru Prakarya/Ekonomi", foto: "/guru/murdiana.jpeg" },
     { nama: "Sri Yunita, S.Pd.", jabatan: "Guru Prakarya/Biologi", foto: "/gr10.webp" },
     { nama: "Tri Nur Janah Kusumaningrum,", jabatan: "Guru Antropologi", foto: "/gr42.webp" },
     { nama: "Aji Utama, S. Pd.", jabatan: "Guru PJOK", foto: "/gr18.webp" },
@@ -78,7 +78,7 @@ export default function GuruPage() {
     { nama: "Heriansyah, S. Pd.", jabatan: "Guru Sejarah", foto: "/gr14.webp" },
     { nama: "Liliyanda Megawati, S.Pd", jabatan: "Guru BK", foto: "/gr31.webp" },
     { nama: "Rizka Furqany, M.Pd", jabatan: "Guru matematika", foto: "/gr30.webp" },
-    { nama: "Ratna Hastati, S. Pd.", jabatan: "Guru Bhs ingris", foto: "/gr.webp" },
+    { nama: "Ratna Hastati, S. Pd.", jabatan: "Guru Bhs ingris", foto: "/guru/ratna.jpeg" },
     { nama: "Sukrillah, S. Pd. I", jabatan: "Guru PAI", foto: "/gr27.webp" },
     { nama: "Dame Lasniroha Sitorus, S. Th.", jabatan: "Guru PAK", foto: "/gr35.webp" },
     { nama: "Marpuah, S. Pd.", jabatan: "Guru BHS Indonesia", foto: "/gr47.webp" },
@@ -86,7 +86,7 @@ export default function GuruPage() {
     { nama: "Sella Lipiantanna, S. Pd.", jabatan: "Guru matematika", foto: "/gr50.webp" },
     { nama: "Juni Alvionita Nainggolan, S.Psi", jabatan: "Guru BK", foto: "/gr34.webp" },
     { nama: "Ikka Desy Fatmawaty, S. Pd", jabatan: "Guru Biologi", foto: "/gr37.webp" },
-    { nama: "Nirwana, S. Pd.", jabatan: "Guru Seni Budaya", foto: "/gr.webp" },
+    { nama: "Nirwana, S. Pd.", jabatan: "Guru Seni Budaya", foto: "/guru/nirwana.jpeg" },
     { nama: "Roslindah, S. Pd.", jabatan: "Guru Sosiologi", foto: "/gr51.webp" },
     { nama: "Eka Normawati, S. Pd", jabatan: "Guru Kimia", foto: "/gr48.webp" },
     { nama: "Sri Narti, S. Pd.", jabatan: "Guru matematika", foto: "/gr52.webp" },
@@ -100,11 +100,11 @@ export default function GuruPage() {
 
   const staf: PersonelItem[] = [
     { nama: "Retno Ayu Lestari", jabatan: "Staf Tata Usaha", foto: "/gr41.webp" },
-    { nama: "Umrail", jabatan: "Bendehara", foto: "/gr.webp" },
+    { nama: "Umrail", jabatan: "Bendehara", foto: "/guru/UMRAIL.png" },
     { nama: "Mirnawati", jabatan: "Staf Tata Usaha", foto: "/gr36.webp" },
     { nama: "Mudhofir", jabatan: "Staf Tata Usaha", foto: "/gr22.webp" },
     { nama: "Sudawati", jabatan: "Staf Tata Usaha", foto: "/gr40.webp" },   
-    { nama: "Anang Aryanto", jabatan: "Staf Tata Usaha", foto: "/gr.webp" },
+    { nama: "Anang Aryanto", jabatan: "Staf Tata Usaha", foto: "/guru/ANANG.png" },
   ]
 
   const keamanan: PersonelItem[] = [
