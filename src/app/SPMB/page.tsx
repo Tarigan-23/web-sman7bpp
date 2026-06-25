@@ -165,10 +165,10 @@ export default function SPMBPage() {
             className="lg:col-span-5 bg-white/5 backdrop-blur-md rounded-3xl shadow-2xl p-6 md:p-8 border border-white/10"
           >
             <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
-              🔥 Hitung Mundur Pengumuman Tahap I
+              🔥 Hitung Mundur Pendaftaran Tahap I
             </h3>
             <p className="text-slate-400 text-xs mb-6">
-              Pendaftaran Tahap I telah berakhir <span className="text-blue-400 font-semibold">Liat Pengumuman Tahap I</span>.
+              Pendaftaran Tahap I diperpanjang s/d<span className="text-blue-400 font-semibold">JUMAT 26 JUNI 2026</span>.
             </p>
 
             <div className="grid grid-cols-4 gap-3 text-center">
