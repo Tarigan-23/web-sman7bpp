@@ -1,5 +1,28 @@
 export const berita = [ 
   {
+  id: 166,
+  judul: "Grand Final Duta GenRe dan GenRe Awards Tahun 2026.",
+  tanggal: "26 Juni 2026",
+  gambar: "/prestasi/pres1.jpeg",
+  deskripsi: `Selamat dan Sukses!
+Keluarga Besar SMA Negeri 7 Balikpapan mengucapkan selamat dan apresiasi setinggi-tingginya kepada peserta didik yang telah mengharumkan nama sekolah dalam Ajang Grand Final Duta GenRe dan GenRe Awards Tahun 2026.
+🏆 Prestasi yang diraih:
+🌸 Trie Wahdana (Kelas XI-A1)
+🥉 Juara Kategori Duta GenRe Persahabatan Puteri
+
+🥇 Rasya Maulana Putra (Kelas XII-A1)
+🏆 Juara 1 Kategori GenRengers Terbaik
+
+🥈 Kurnia Akifah Nailah (Kelas XII-A1)
+Ketua PIK-R mewakili Ekstrakurikuler PIK-R
+📱 Juara 2 Kategori Sosial Media Terbaik
+
+Prestasi ini merupakan bukti bahwa generasi muda SMA Negeri 7 Balikpapan tidak hanya unggul dalam bidang akademik, tetapi juga mampu menjadi teladan, inspirator, dan agen perubahan dalam menyuarakan nilai-nilai kehidupan yang sehat, berkarakter, serta berdaya saing.
+Apresiasi dan terima kasih juga kami sampaikan kepada Ibu Juni Alvionita Nainggolan, S.Psi. selaku pembina yang telah mendampingi dan membimbing para peserta hingga meraih prestasi membanggakan.
+Semoga pencapaian ini menjad`,
+  sumberUrl: "/prestasi"
+  },
+  {
   id: 165,
   judul: "📢 PENGUMUMAN PENGATURAN JADWAL AKSES SPMB SMA/SMK PROVINSI KALIMANTAN TIMUR TAHUN AJARAN 2026/2027",
   tanggal: "23 Juni 2026",

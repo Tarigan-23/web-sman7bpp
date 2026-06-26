@@ -20,6 +20,39 @@ export default function PrestasiPage() {
 
   const daftarPrestasi: PrestasiItem[] = [
     {
+      id: "p21",
+      judul: "Juara 2 Kategori Sosial Media Terbaik",
+      peraih: "Kurnia Akifah Nailah (Kelas XII-A1)",
+      kategori: "Akademik",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/prestasi/pres1.jpeg",
+      deskripsi: "Prestasi ini merupakan bukti bahwa generasi muda SMA Negeri 7 Balikpapan tidak hanya unggul dalam bidang akademik, tetapi juga mampu menjadi teladan, inspirator, dan agen perubahan dalam menyuarakan nilai-nilai kehidupan yang sehat, berkarakter, serta berdaya saing.",
+      isHighlight: true
+    },
+    {
+      id: "p20",
+      judul: "Juara 1 Kategori GenRengers Terbaik",
+      peraih: "Rasya Maulana Saputra (Kelas XII-A1)",
+      kategori: "Akademik",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/prestasi/pres1.jpeg",
+      deskripsi: "Prestasi ini merupakan bukti bahwa generasi muda SMA Negeri 7 Balikpapan tidak hanya unggul dalam bidang akademik, tetapi juga mampu menjadi teladan, inspirator, dan agen perubahan dalam menyuarakan nilai-nilai kehidupan yang sehat, berkarakter, serta berdaya saing.",
+      isHighlight: true
+    },
+    {
+      id: "p19",
+      judul: "Juara Kategori Duta GenRe Persahabatan Puteri",
+      peraih: "Trie Wahdana (Kelas XI-A1)",
+      kategori: "Akademik",
+      tingkat: "Kota",
+      tahun: "2026",
+      gambar: "/prestasi/pres1.jpeg",
+      deskripsi: "Prestasi ini merupakan bukti bahwa generasi muda SMA Negeri 7 Balikpapan tidak hanya unggul dalam bidang akademik, tetapi juga mampu menjadi teladan, inspirator, dan agen perubahan dalam menyuarakan nilai-nilai kehidupan yang sehat, berkarakter, serta berdaya saing.",
+      isHighlight: true
+    },
+    {
       id: "p18",
       judul: "Juara 2 KRENOVA 2026 ",
       peraih: "Tim Nyscientia",
