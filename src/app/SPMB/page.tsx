@@ -7,7 +7,6 @@ import Image from "next/image"
 
 // KUMPULAN GAMBAR POSTER / BROSUR UTAMA (Slider atas)
 const daftarPoster = [
-  
   { id: 1, src: "/spmb/SPANDUKSPMB2026.png", alt: "Spanduk Utama SPMB SMANJU 2026" },
   { id: 2, src: "/spmb/jadwalSPMB.jpeg", alt: "Jadwal Pelaksanaan SPMB Tahun Ajaran 2026/2027" },
   { id: 3, src: "/spmb/SPMB_25.cdr.png", alt: "Informasi Persyaratan & Jalur Masuk" }, 
@@ -23,6 +22,10 @@ const posterTambahan = [
   { id: 2, src: "/spmb/spmb8.jpeg", title: "Jadwal Akses SPMB", alt: "Poster Informasi untuk mengakses SPMB" },   
   { id: 3, src: "/spmb/spmb4.jpeg", title: "Contoh Kategiri Prestasi", alt: "Poster Kategori Prestasi" }, 
 ]
+
+// PATH FILE LENGKAP DOKUMEN PENGUMUMAN FORMAL
+const FILE_PENGUMUMAN_PDF = "/pdf/SPMB_2026_Pengumuman_Hasil_Seleksi_Tahap_1.pdf"
+const FILE_PANDUAN_DAFTAR_ULANG = "/pdf/SPMB_2026_Panduan_Daftar_Ulang.pdf"
 
 export default function SPMBPage() {
   // Konfigurasi animasi kelompok (Staggered)
@@ -47,7 +50,7 @@ export default function SPMBPage() {
 
   // State untuk kontrol Slider Brosur/Poster Utama
   const [currentSlide, setCurrentSlide] = useState(0)
-  // State untuk Preview Zoom Poster (Bisa buat slider atas maupun 3 poster baru)
+  // State untuk Preview Zoom Poster
   const [selectedPoster, setSelectedPoster] = useState<string | null>(null)
 
   const nextSlide = () => {
@@ -141,10 +144,10 @@ export default function SPMBPage() {
 
             <div className="flex flex-wrap gap-4 pt-2">
               <a
-                href="#alur-pendaftaran"
-                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-3 px-6 rounded-2xl shadow-lg transition duration-300"
+                href="#pengumuman-tahap1"
+                className="bg-amber-500 hover:bg-amber-600 text-slate-950 text-sm font-black py-3 px-6 rounded-2xl shadow-lg transition duration-300 flex items-center gap-2"
               >
-                Lihat Alur Pendaftaran
+                📄 Buka Hasil Seleksi Tahap I
               </a>
               <a
                 href="https://spmb-balikpapan.kaltimprov.go.id/" 
@@ -168,7 +171,7 @@ export default function SPMBPage() {
               🔥 Hitung Mundur Pendaftaran Tahap I
             </h3>
             <p className="text-slate-400 text-xs mb-6">
-              Pendaftaran Tahap I diperpanjang s/d<span className="text-blue-400 font-semibold">JUMAT 26 JUNI 2026</span>.
+              Pendaftaran Tahap I diperpanjang s/d <span className="text-blue-400 font-semibold">JUMAT 26 JUNI 2026</span>.
             </p>
 
             <div className="grid grid-cols-4 gap-3 text-center">
@@ -188,6 +191,62 @@ export default function SPMBPage() {
             </div>
           </motion.div>
         </div>
+
+
+        {/* ================= REVISI TOTAL: BANNER PENGUMUMAN HASIL SELEKSI TAHAP I (DOKUMEN UTAMA) ================= */}
+        <motion.section 
+          id="pengumuman-tahap1"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="bg-gradient-to-r from-emerald-950/40 to-slate-900/60 backdrop-blur-md rounded-3xl p-6 md:p-8 border border-emerald-500/30 shadow-[0_0_40px_rgba(16,185,129,0.08)]"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            
+            {/* Informasi Teks Kiri */}
+            <div className="md:col-span-8 space-y-4">
+              <div className="w-fit bg-emerald-500/10 border border-emerald-400/30 rounded-full px-3 py-1 text-[10px] font-black text-emerald-400 uppercase tracking-wider">
+                📢 PENGUMUMAN RESMI KELULUSAN
+              </div>
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight">
+                Hasil Seleksi Administrasi &amp; Berkas <br />
+                <span className="text-emerald-400">Pendaftaran SPMB Tahap I</span>
+              </h2>
+              <p className="text-slate-300 text-xs md:text-sm font-light leading-relaxed text-justify max-w-2xl">
+                Surat Ketetapan Kepala Sekolah mengenai daftar nama calon peserta didik baru yang dinyatakan <b>Lolos Seleksi Berkas Tahap I</b> Tahun Ajaran 2026/2027 telah diterbitkan. Silakan klik tombol unduh dokumen PDF resmi di samping untuk membuka lembar lampiran kelulusan dan mencari nama Anda.
+              </p>
+            </div>
+
+            {/* Aksi Unduh PDF Kanan */}
+            <div className="md:col-span-4 flex flex-col sm:flex-row md:flex-col gap-3 justify-center w-full">
+              <a 
+                href="/download/HASIL-SLEKSI-SPMB-TAHAP1.PDF"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-emerald-500 hover:bg-emerald-600 text-slate-950 text-xs py-4 px-6 rounded-xl font-black tracking-wide text-center transition shadow-xl shadow-emerald-500/10 active:scale-95 flex items-center justify-center gap-2"
+              >
+                📥 Lihat Daftar Kelulusan (PDF)
+              </a>
+              <a 
+                href="/spmb/dok-daftarulang.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 text-xs py-4 px-6 rounded-xl font-bold text-center transition flex items-center justify-center gap-2"
+              >
+                📋 Alur &amp; Syarat Daftar Ulang
+              </a>
+            </div>
+
+          </div>
+
+          {/* Catatan Kaki Tambahan Pemberitahuan */}
+          <div className="mt-6 pt-4 border-t border-white/5 text-[11px] text-slate-400 flex flex-wrap gap-x-6 gap-y-2 font-mono">
+            <span>📍 Lokasi Verifikasi Fisik: Aula SMAN 7 Balikpapan</span>
+            <span>📅 Pelaksanaan Daftar Ulang: 29 Juni – 01 Juli 2026</span>
+          </div>
+        </motion.section>
+
 
         {/* ================= CORE STATISTICS SECTION ================= */}
         <motion.div 
@@ -336,7 +395,6 @@ export default function SPMBPage() {
               <div className="h-[1px] bg-white/10 flex-1" />
             </div>
 
-            {/* Grid 3 Kolom Khusus Poster Baru */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {posterTambahan.map((poster) => (
                 <motion.div
@@ -345,7 +403,6 @@ export default function SPMBPage() {
                   whileHover={{ y: -5 }}
                   className="bg-white/5 border border-white/5 hover:border-white/10 p-3 rounded-2xl backdrop-blur-sm shadow-xl flex flex-col gap-3 group"
                 >
-                  {/* Container Image Aset */}
                   <div 
                     onClick={() => setSelectedPoster(poster.src)}
                     className="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-black/40 border border-white/5 cursor-zoom-in group-hover:border-blue-500/30 transition-colors duration-300"
@@ -357,14 +414,12 @@ export default function SPMBPage() {
                       className="object-cover group-hover:scale-102 transition-transform duration-500"
                       sizes="(max-w-768px) 100vw, 33vw"
                     />
-                    {/* Hover Glow Masking Overlay */}
                     <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-slate-950/0 transition-colors duration-300 flex items-center justify-center">
                       <span className="bg-slate-900/90 text-white border border-white/10 px-3 py-1.5 rounded-xl text-xs font-medium tracking-wide opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 shadow-2xl">
                         🔍 Ketuk untuk Memperbesar
                       </span>
                     </div>
                   </div>
-                  {/* Label Judul Poster Pendukung */}
                   <div className="px-1 py-1">
                     <span className="text-xs font-semibold text-slate-300 group-hover:text-blue-400 transition-colors duration-200 block truncate">
                       {poster.title}
@@ -389,7 +444,6 @@ export default function SPMBPage() {
             onClick={() => setSelectedPoster(null)}
             className="fixed inset-0 z-[100] bg-slate-950/95 backdrop-blur-md flex items-center justify-center p-4 md:p-8 cursor-zoom-out"
           >
-            {/* Tombol Tutup */}
             <button className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white font-mono text-xl hover:bg-white/10 transition-colors">
               ✕
             </button>
@@ -400,7 +454,7 @@ export default function SPMBPage() {
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ type: "spring", stiffness: 150, damping: 20 }}
               className="relative w-full h-full max-w-4xl max-h-[85vh]"
-              onClick={(e) => e.stopPropagation()} // Mencegah modal tertutup tidak sengaja saat gambar diklik
+              onClick={(e) => e.stopPropagation()}
             >
               <Image
                 src={selectedPoster}

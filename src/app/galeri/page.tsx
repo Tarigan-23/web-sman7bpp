@@ -16,6 +16,13 @@ export default function GaleriPage() {
   // DATA GALERI KEGIATAN SMAN 7 BALIKPAPAN
   const galeri: GaleriItem[] = [
     {
+      judul: "Pengumuman Hasil Sleksi SPMB Tahap 1",
+      gambar: ["/berita/164.jpeg", "/galeri/pngumspmb1.jpeg", "/galeri/pngumspmb2.jpeg", "/galeri/pngumspmb3.jpeg", "/galeri/pngumspmb4.jpeg", "/galeri/pngumspmb5.jpeg", "/galeri/pngumspmb6.jpeg"],
+      deskripsi: "",
+      tanggal: "18 Juni 2026",
+      kategori: "Informasi"
+    },
+    {
       judul: "Peserta OSN SMAN 7 Balikpapan",
       gambar: ["/berita/timosn1.jpeg", "/berita/timosn2.jpeg", "/berita/timosn3.jpeg", "/berita/timosn4.jpeg", "/berita/timosn5.jpeg"],
       deskripsi: "",

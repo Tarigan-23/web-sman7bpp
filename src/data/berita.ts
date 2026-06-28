@@ -1,5 +1,22 @@
 export const berita = [ 
   {
+  id: 167,
+  judul: "📢 PENGUMUMAN HASIL SPMB TAHAP 1",
+  tanggal: "28 juni 2026",
+  gambar: "/berita/164.jpeg",
+  deskripsi: `SMA Negeri 7 Balikpapan
+Tahun Ajaran 2026/2027
+Selamat kepada seluruh calon peserta didik yang telah dinyatakan lulus seleksi pada Seleksi Penerimaan Murid Baru (SPMB) Tahap 1 SMA Negeri 7 Balikpapan Tahun Ajaran 2026/2027.
+Hasil seleksi resmi dapat diakses melalui portal SPMB Kalimantan Timur. Bagi calon peserta didik yang dinyatakan diterima, harap segera memperhatikan dan mengikuti seluruh prosedur daftar ulang sesuai dengan jadwal yang telah ditetapkan. Peserta yang tidak melakukan daftar ulang hingga batas waktu yang ditentukan akan dianggap mengundurkan diri.
+Kami mengimbau seluruh calon peserta didik dan orang tua/wali untuk terus memantau informasi resmi melalui media sosial dan website SMA Negeri 7 Balikpapan agar tidak melewatkan informasi penting selanjutnya.
+
+🔗 Cek hasil seleksi melalui:
+[https://spmb-balikpapan.kaltimprov.go.id/](https://spmb-balikpapan.kaltimprov.go.id/)
+
+Selamat kepada seluruh peserta yang berhasil lolos. Sampai jumpa di SMA Negeri 7 Balikpapan!`,
+  sumberUrl: "/SPMB"
+  },
+  {
   id: 166,
   judul: "Grand Final Duta GenRe dan GenRe Awards Tahun 2026.",
   tanggal: "26 Juni 2026",
