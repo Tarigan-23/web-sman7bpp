@@ -221,7 +221,7 @@ export default function SPMBPage() {
             {/* Aksi Unduh PDF Kanan */}
             <div className="md:col-span-4 flex flex-col sm:flex-row md:flex-col gap-3 justify-center w-full">
               <a 
-                href="/download/HASIL-SLEKSI-SPMB-TAHAP1.PDF"
+                href="/download/HASIL-SLEKSI-SPMB-TAHAP1.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-emerald-500 hover:bg-emerald-600 text-slate-950 text-xs py-4 px-6 rounded-xl font-black tracking-wide text-center transition shadow-xl shadow-emerald-500/10 active:scale-95 flex items-center justify-center gap-2"
