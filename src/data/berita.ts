@@ -1,5 +1,15 @@
 export const berita = [ 
   {
+  id: 168,
+  judul: "Halo, Calon Peserta Didik SMA Negeri 7 Balikpapan!",
+  tanggal: "28 juni 2026",
+  gambar: "/SPMB-Tahap-II/1.jpg",
+  deskripsi: `Masih ada pertanyaan seputar SPMB Tahap II, khususnya Jalur Domisili? Tenang, kamu tidak sendirian. Kami memahami bahwa proses pendaftaran sering kali menimbulkan berbagai pertanyaan dan kebingungan
+Melalui postingan ini, SMA Negeri 7 Balikpapan telah merangkum beberapa pertanyaan yang paling sering ditanyakan beserta jawabannya untuk membantu kamu memahami proses SPMB dengan lebih mudah. Yuk, geser slide berikutnya dan temukan jawaban atas pertanyaanmu!
+Jika masih ada hal yang ingin ditanyakan, jangan ragu untuk menghubungi kami melalui layanan informasi resmi SMA Negeri 7 Balikpapan. Kami siap membantu dan menantikan kehadiranmu sebagai bagian dari keluarga besar SMAN 7 Balikpapan.`,
+  sumberUrl: "/galeri"
+  },
+  {
   id: 167,
   judul: "📢 PENGUMUMAN HASIL SPMB TAHAP 1",
   tanggal: "28 juni 2026",

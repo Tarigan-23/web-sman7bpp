@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "SMA Negeri 7 Balikpapan",
   description: "Website Resmi SMA Negeri 7 Balikpapan",
   icons: {
-    icon: "/icon.png",
+    icon: "/pavicon.png",
   },
 };
 
