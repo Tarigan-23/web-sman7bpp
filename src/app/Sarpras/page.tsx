@@ -104,7 +104,7 @@ export default function SarprasPage() {
       id: "lapangan",
       nama: "Lapangan Olahraga & Upacara",
       kategori: "Fasilitas Umum",
-      gambar: "/sarpras/11.jpeg",
+      gambar: "/sarpras/19.jpeg",
       deskripsi: "Area terbuka serbaguna yang luas untuk kegiatan upacara bendera, senam, hingga pertandingan basket, futsal, dan voli."
     },
     {
