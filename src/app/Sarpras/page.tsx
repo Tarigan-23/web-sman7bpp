@@ -29,10 +29,24 @@ export default function SarprasPage() {
       jumlah: "1 Unit"
     },
     {
+      id: "tu",
+      nama: "Tata Usaha",
+      kategori: "Fasilitas Umum",
+      gambar: "/sarpras/2.jpeg",
+      deskripsi: "Pusat Data dan Informasi"
+    },
+    {
+      id: "literasi",
+      nama: "Aula Literasi",
+      kategori: "Fasilitas Umum",
+      gambar: "/sarpras/16.jpeg",
+      deskripsi: "Tempat Yang Adem dan Nyaman"
+    },
+    {
       id: "kelas",
       nama: "Ruang Kelas Teori",
       kategori: "Belajar",
-      gambar: "/sarpras/kelas.jpg",
+      gambar: "/sarpras/15.jpeg",
       deskripsi: "Ruang kelas yang nyaman, bersih, dan representatif untuk mendukung kegiatan belajar mengajar harian.",
       jumlah: "29 Ruang Kelas"
     },
@@ -40,7 +54,7 @@ export default function SarprasPage() {
       id: "lab-kom",
       nama: "Laboratorium Komputer",
       kategori: "Praktikum",
-      gambar: "/sarpras/lab-komputer.jpg",
+      gambar: "/sarpras/12.jpeg",
       deskripsi: "Laboratorium komputer dengan spesifikasi mumpuni untuk praktik pemrograman, ujian berbasis komputer, dan asesmen nasional.",
       jumlah: "3 Laboratorium"
     },
@@ -62,7 +76,7 @@ export default function SarprasPage() {
       id: "lab-bahasa",
       nama: "Laboratorium Bahasa",
       kategori: "Praktikum",
-      gambar: "/sarpras/lab-bahasa.jpg",
+      gambar: "/sarpras/11.jpeg",
       deskripsi: "Fasilitas multimedia terintegrasi audio-headset untuk mengasah kemampuan listening dan percakapan bahasa asing."
     },
     {
@@ -90,7 +104,7 @@ export default function SarprasPage() {
       id: "lapangan",
       nama: "Lapangan Olahraga & Upacara",
       kategori: "Fasilitas Umum",
-      gambar: "/sarpras/lapangan.jpg",
+      gambar: "/sarpras/11.jpeg",
       deskripsi: "Area terbuka serbaguna yang luas untuk kegiatan upacara bendera, senam, hingga pertandingan basket, futsal, dan voli."
     },
     {
@@ -105,8 +119,22 @@ export default function SarprasPage() {
       id: "smart-tv",
       nama: "Smart TV Pembelajaran",
       kategori: "Teknologi",
-      gambar: "/sarpras/smart-tv.jpg",
+      gambar: "/sarpras/3.jpeg",
       deskripsi: "Media interaktif digital pengganti papan tulis konvensional di kelas-kelas terpilih untuk presentasi multimedia yang dinamis."
+    },
+    {
+      id: "gajebo",
+      nama: "Gajebo",
+      kategori: "Fasilitas Umum",
+      gambar: "/sarpras/18.jpeg",
+      deskripsi: "Tempat Untuk Belajar dan Bersantai."
+    },
+    {
+      id: "kamarmandi",
+      nama: "Kamarmandi",
+      kategori: "Fasilitas Umum",
+      gambar: "/sarpras/14.jpeg",
+      deskripsi: "Kamarmandi yang bersih dan nyaman."
     }
   ]
 
