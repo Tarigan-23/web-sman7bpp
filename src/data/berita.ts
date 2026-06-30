@@ -10,7 +10,7 @@ export const berita = [
   {
   id: 169,
   judul: "ECamp 2026 ~ S P E A K . S H A R E . S H I N E ✨",
-  tanggal: "28 juni 2026",
+  tanggal: "30 juni 2026",
   gambar: "/berita/168.png",
   deskripsi: `Liburan makin berarti bareng E-Camp SMAN 7 Balikpapan! 🇬🇧
 Sehari penuh tawa, keseruan, inspirasi, dan pastinya ngomong Inggris tanpa takut salah.
