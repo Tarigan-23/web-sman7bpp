@@ -16,6 +16,13 @@ export default function GaleriPage() {
   // DATA GALERI KEGIATAN SMAN 7 BALIKPAPAN
   const galeri: GaleriItem[] = [
     {
+      judul: "ECamp 2026 ~ S P E A K . S H A R E . S H I N E ✨",
+      gambar: ["/berita/168.png", "/berita/169.jpeg", "/berita/166.jpeg", ],
+      deskripsi: "Liburan makin berarti bareng E-Camp SMAN 7 Balikpapan! 🇬🇧",
+      tanggal: "30 Juni 2026",
+      kategori: "Dokumentasi"
+    },
+    {
       judul: "Masih ada pertanyaan seputar SPMB Tahap II, khususnya Jalur Domisili?",
       gambar: ["/SPMB-Tahap-II/1.jpg", "/SPMB-Tahap-II/2.jpg", "/SPMB-Tahap-II/3.jpg", "/SPMB-Tahap-II/4.jpg", "/SPMB-Tahap-II/5.jpg", "/SPMB-Tahap-II/6.jpg"],
       deskripsi: "Tenang, kamu tidak sendirian. Kami memahami bahwa proses pendaftaran sering kali menimbulkan berbagai pertanyaan dan kebingungan Melalui postingan ini, SMA Negeri 7 Balikpapan telah merangkum beberapa pertanyaan yang paling sering ditanyakan beserta jawabannya untuk membantu kamu memahami proses SPMB dengan lebih mudah. Yuk, geser slide berikutnya dan temukan jawaban atas pertanyaanmu! Jika masih ada hal yang ingin ditanyakan, jangan ragu untuk menghubungi kami melalui layanan informasi resmi SMA Negeri 7 Balikpapan. Kami siap membantu dan menantikan kehadiranmu sebagai bagian dari keluarga besar SMAN 7 Balikpapan.",

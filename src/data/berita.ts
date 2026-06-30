@@ -1,5 +1,27 @@
 export const berita = [ 
   {
+  id: 170,
+  judul: "Evaluasi Program Kerja",
+  tanggal: "30 juni 2026",
+  gambar: "/berita/170.jpeg",
+  deskripsi: `Komitmen untuk terus meningkatkan kualitas layanan pendidikan diwujudkan melalui Rapat Evaluasi Program Kerja SMA Negeri 7 Balikpapan yang diikuti oleh seluruh warga sekolah. Kegiatan ini menjadi wadah untuk merefleksikan capaian program yang telah dilaksanakan, mengidentifikasi berbagai tantangan, serta menyusun langkah-langkah strategis sebagai upaya perbaikan dan pengembangan di masa mendatang. Melalui semangat kolaborasi, komunikasi, dan evaluasi yang berkelanjutan, SMA Negeri 7 Balikpapan terus berkomitmen menciptakan lingkungan belajar yang unggul, berkarakter, dan adaptif dalam memberikan pelayanan pendidikan terbaik bagi seluruh peserta didik.`,
+  sumberUrl: ""
+  },
+  {
+  id: 169,
+  judul: "ECamp 2026 ~ S P E A K . S H A R E . S H I N E ✨",
+  tanggal: "28 juni 2026",
+  gambar: "/berita/168.png",
+  deskripsi: `Liburan makin berarti bareng E-Camp SMAN 7 Balikpapan! 🇬🇧
+Sehari penuh tawa, keseruan, inspirasi, dan pastinya ngomong Inggris tanpa takut salah.
+Terima kasih buat seluruh peserta ECamp 2026 SMAN 7 Balikpapan yang udah all-out!
+Special thanks untuk bintang tamu kita, Mr. Aaron English 🙌
+Bener-bener jadi highlight karena vibes-nya seru, materi daging, dan bikin PD naik 100%!
+Liburan positif = ketemu teman baru + upgrade skill + banyak kenangan 💙
+See you at the next camp, SMAN 7!`,
+  sumberUrl: "/galeri"
+  },
+  {
   id: 168,
   judul: "Halo, Calon Peserta Didik SMA Negeri 7 Balikpapan!",
   tanggal: "28 juni 2026",
