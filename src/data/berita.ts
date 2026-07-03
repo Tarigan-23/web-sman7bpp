@@ -1,4 +1,52 @@
 export const berita = [ 
+   {
+  id: 176,
+  judul: "Pengumuman Jadwal Pelaksanaan SPMB Tahap Kedua",
+  tanggal: "3 juli 2026",
+  gambar: "/spmb/tahap2.jpeg",
+  deskripsi: ``,
+  sumberUrl: "/SPMB"
+  },
+   {
+  id: 175,
+  judul: "Evaluasi Program Kerja",
+  tanggal: "2 juli 2026",
+  gambar: "/berita/175.png",
+  deskripsi: `SMA Negeri 7 Balikpapan menerima kunjungan Pengawas Pembina dalam rangka monitoring dan pembinaan pelaksanaan Sistem Penerimaan Murid Baru (SPMB) Tahun Ajaran 2026/2027. Kegiatan ini merupakan bentuk pendampingan dan pengawasan guna memastikan seluruh tahapan SPMB berjalan sesuai dengan prinsip objektif, transparan, akuntabel, berkeadilan, dan sesuai dengan ketentuan yang berlaku. Kami mengucapkan terima kasih kepada Pengawas Pembina atas arahan, masukan, serta dukungan yang diberikan dalam upaya meningkatkan kualitas layanan pendidikan di SMA Negeri 7 Balikpapan. Semoga pelaksanaan SPMB tahun ini dapat berjalan dengan lancar dan memberikan pelayanan terbaik bagi masyarakat.`,
+  sumberUrl: ""
+  },
+   {
+  id: 174,
+  judul: "SMA Negeri 7 Balikpapan menerima kunjungan monitoring pelaksanaan Sistem Penerimaan Murid Baru (SPMB) Tahun Ajaran 2026/2027 dari Dewan Pendidikan Provinsi Kalimantan Timur",
+  tanggal: "2 juli 2026",
+  gambar: "/berita/170.jpeg",
+  deskripsi: `SMA Negeri 7 Balikpapan menerima kunjungan monitoring pelaksanaan Sistem Penerimaan Murid Baru (SPMB) Tahun Ajaran 2026/2027 dari Dewan Pendidikan Provinsi Kalimantan Timur. Kegiatan monitoring ini dilaksanakan sebagai bentuk evaluasi, pengawasan, dan upaya memastikan seluruh proses SPMB berjalan secara objektif, transparan, akuntabel, dan sesuai dengan ketentuan yang berlaku. Kami mengucapkan terima kasih kepada tim monitoring Dewan Pendidikan Provinsi Kalimantan Timur atas arahan, masukan, dan pendampingan yang diberikan. Semoga pelaksanaan SPMB di SMA Negeri 7 Balikpapan dapat terus memberikan pelayanan terbaik bagi seluruh calon peserta didik dan masyarakat.`,
+  sumberUrl: "https://www.instagram.com/p/DaSqD5YhXzj/"
+  },
+   {
+  id: 173,
+  judul: "Kegiatan murid-murid SMA Negeri 7 Balikpapan bekerjasama dengan Komite Sekolah",
+  tanggal: "1 juli 2026",
+  gambar: "/berita/173.png",
+  deskripsi: `Kegiatan murid-murid SMA Negeri 7 Balikpapan bekerjasama dengan Komite Sekolah, mengisi liburan sekolah murid-murid dengan mengikuti kegiatan English Camp dengan Native English Teacher dari Australia`,
+  sumberUrl: "https://www.instagram.com/p/DaOzmR4z1Hi/"
+  },
+   {
+  id: 172,
+  judul: "“Grand Final Duta GenRe dan GenRe Awards Kota Balikpapan”",
+  tanggal: "1 juli 2026",
+  gambar: "/berita/172.png",
+  deskripsi: `Kamis, 25 Juni 2026 pukul 09.00 s/d 13.30 WITA bertempat di Gedung Kantor DP3AKB Kota Balikpapan, telah dilaksanakan Ajang Grand Final Duta GenRe dan GenRe Awards Kota Balikpapan dengan pengisi kegiatan yakni para finalis Duta GenRe dan pihak penyelenggara. Kegiatan tersebut disaksikan langsung oleh para finalis, anggota PIK-R dan para tamu undangan seperti pembina PIK-R dan orang tua para finalis dari berbagai sekolah dengan tujuan sebagai wadah apresiasi dan seleksi generasi muda yang mampu menjadi role model dalam menyuarakan program GenRe. Diharapkan melalui kegiatan tersebut dapat melahirkan Duta GenRe yang inspiratif, berkarakter dan mampu memberikan dampak positif bagi remaja di Kota Balikpapan. #SMAN7Balikpapan #GenReBalikpapan #DutaGenRe #GenReAwards #PIKR`,
+  sumberUrl: "https://www.instagram.com/p/DaOmNoNh0u9/"
+  },
+   {
+  id: 171,
+  judul: "Evaluasi Program Kerja",
+  tanggal: "1 juli 2026",
+  gambar: "/berita/171.png",
+  deskripsi: `Komitmen untuk terus meningkatkan kualitas layanan pendidikan diwujudkan melalui Rapat Evaluasi Program Kerja SMA Negeri 7 Balikpapan yang diikuti oleh seluruh warga sekolah. Kegiatan ini menjadi wadah untuk merefleksikan capaian program yang telah dilaksanakan, mengidentifikasi berbagai tantangan, serta menyusun langkah-langkah strategis sebagai upaya perbaikan dan pengembangan di masa mendatang. Melalui semangat kolaborasi, komunikasi, dan evaluasi yang berkelanjutan, SMA Negeri 7 Balikpapan terus berkomitmen menciptakan lingkungan belajar yang unggul, berkarakter, dan adaptif dalam memberikan pelayanan pendidikan terbaik bagi seluruh peserta didik.`,
+  sumberUrl: ""
+  },
   {
   id: 170,
   judul: "Evaluasi Program Kerja",

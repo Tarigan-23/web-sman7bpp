@@ -6,8 +6,9 @@ import Image from "next/image"
 
 const images = [
   "/bg1.jpeg",
-  "/masjid.jpeg",
+  "/sarpras/masjid.jpeg",
   "/bg3.jpeg",
+  "/sarpras/8.jpeg",
 ]
 
 export default function Hero() {

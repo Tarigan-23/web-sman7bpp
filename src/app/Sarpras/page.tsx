@@ -123,15 +123,15 @@ export default function SarprasPage() {
       deskripsi: "Media interaktif digital pengganti papan tulis konvensional di kelas-kelas terpilih untuk presentasi multimedia yang dinamis."
     },
     {
-      id: "gajebo",
-      nama: "Gajebo",
+      id: "gazebo",
+      nama: "Gazebo",
       kategori: "Fasilitas Umum",
       gambar: "/sarpras/18.jpeg",
       deskripsi: "Tempat Untuk Belajar dan Bersantai."
     },
     {
-      id: "kamarmandi",
-      nama: "Kamarmandi",
+      id: "Toilet",
+      nama: "Toilet",
       kategori: "Fasilitas Umum",
       gambar: "/sarpras/14.jpeg",
       deskripsi: "Kamarmandi yang bersih dan nyaman."
