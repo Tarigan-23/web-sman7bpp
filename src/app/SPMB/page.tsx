@@ -24,7 +24,8 @@ const posterTambahan = [
 ]
 
 // PATH FILE LENGKAP DOKUMEN PENGUMUMAN FORMAL
-const FILE_PENGUMUMAN_PDF = "/pdf/SPMB_2026_Pengumuman_Hasil_Seleksi_Tahap_1.pdf"
+const FILE_PENGUMUMAN_TAHAP_1_PDF = "/download/HASIL-SLEKSI-SPMB-TAHAP1.pdf"
+const FILE_PENGUMUMAN_TAHAP_2_PDF = "/download/HASIL SELEKSI SPMB TAHAP 2 2026 SMAN 7 BALIKPAPAN.pdf" 
 const FILE_PANDUAN_DAFTAR_ULANG = "/pdf/SPMB_2026_Panduan_Daftar_Ulang.pdf"
 
 export default function SPMBPage() {
@@ -109,7 +110,7 @@ export default function SPMBPage() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 pt-24 md:pt-32 px-4 max-w-7xl mx-auto space-y-24">
+      <div className="relative z-10 pt-24 md:pt-32 px-4 max-w-7xl mx-auto space-y-16 md:space-y-24">
         
         {/* ================= HERO SECTION ================= */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -144,10 +145,10 @@ export default function SPMBPage() {
 
             <div className="flex flex-wrap gap-4 pt-2">
               <a
-                href="#pengumuman-tahap1"
+                href="#pengumuman-tahap2"
                 className="bg-amber-500 hover:bg-amber-600 text-slate-950 text-sm font-black py-3 px-6 rounded-2xl shadow-lg transition duration-300 flex items-center gap-2"
               >
-                📄 Buka Hasil Seleksi Tahap I
+                📄 Buka Hasil Seleksi Tahap II
               </a>
               <a
                 href="https://spmb-balikpapan.kaltimprov.go.id/" 
@@ -192,61 +193,99 @@ export default function SPMBPage() {
           </motion.div>
         </div>
 
-
-        {/* ================= REVISI TOTAL: BANNER PENGUMUMAN HASIL SELEKSI TAHAP I (DOKUMEN UTAMA) ================= */}
-        <motion.section 
-          id="pengumuman-tahap1"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="bg-gradient-to-r from-emerald-950/40 to-slate-900/60 backdrop-blur-md rounded-3xl p-6 md:p-8 border border-emerald-500/30 shadow-[0_0_40px_rgba(16,185,129,0.08)]"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-            
-            {/* Informasi Teks Kiri */}
-            <div className="md:col-span-8 space-y-4">
-              <div className="w-fit bg-emerald-500/10 border border-emerald-400/30 rounded-full px-3 py-1 text-[10px] font-black text-emerald-400 uppercase tracking-wider">
-                📢 PENGUMUMAN RESMI KELULUSAN
+        {/* ================= SECTION BUNDLE: PENGUMUMAN HASIL SELEKSI TAHAP I & II ================= */}
+        <div className="space-y-6">
+          
+          {/* BANNER TAHAP II (BARU & UTAMA) */}
+          <motion.section 
+            id="pengumuman-tahap2"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="bg-gradient-to-r from-blue-950/40 to-slate-900/60 backdrop-blur-md rounded-3xl p-6 md:p-8 border border-blue-500/30 shadow-[0_0_40px_rgba(59,130,246,0.12)]"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              
+              {/* Informasi Teks Kiri */}
+              <div className="md:col-span-8 space-y-4">
+                <div className="w-fit bg-blue-500/20 border border-blue-400/40 rounded-full px-3 py-1 text-[10px] font-black text-blue-400 uppercase tracking-wider animate-pulse">
+                  🔥 UPDATE TERBARU: PENGUMUMAN TAHAP II
+                </div>
+                <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight">
+                  Hasil Seleksi Final &amp; Kelulusan <br />
+                  <span className="bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">Pendaftaran SPMB Tahap II</span>
+                </h2>
+                <p className="text-slate-300 text-xs md:text-sm font-light leading-relaxed text-justify max-w-2xl">
+                  Surat Keputusan Resmi hasil akhir seleksi <b>Tahap II</b> Tahun Ajaran 2026/2027 telah dirilis secara transparan. Klik tombol di samping untuk mengunduh dokumen PDF resmi dan memeriksa status kelulusan Anda serta instruksi langkah registrasi berikutnya.
+                </p>
               </div>
-              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight">
-                Hasil Seleksi Administrasi &amp; Berkas <br />
-                <span className="text-emerald-400">Pendaftaran SPMB Tahap I</span>
-              </h2>
-              <p className="text-slate-300 text-xs md:text-sm font-light leading-relaxed text-justify max-w-2xl">
-                Surat Ketetapan Kepala Sekolah mengenai daftar nama calon peserta didik baru yang dinyatakan <b>Lolos Seleksi Berkas Tahap I</b> Tahun Ajaran 2026/2027 telah diterbitkan. Silakan klik tombol unduh dokumen PDF resmi di samping untuk membuka lembar lampiran kelulusan dan mencari nama Anda.
-              </p>
+
+              {/* Aksi Unduh PDF Kanan */}
+              <div className="md:col-span-4 flex flex-col sm:flex-row md:flex-col gap-3 justify-center w-full">
+                <a 
+                  href={FILE_PENGUMUMAN_TAHAP_2_PDF}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-500 hover:bg-blue-600 text-slate-950 text-xs py-4 px-6 rounded-xl font-black tracking-wide text-center transition shadow-xl shadow-blue-500/10 active:scale-95 flex items-center justify-center gap-2"
+                >
+                  📥 Unduh Hasil Seleksi Tahap II (PDF)
+                </a>
+                
+                <a 
+                  href="/spmb/dok-daftarulang.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 text-xs py-4 px-6 rounded-xl font-bold text-center transition flex items-center justify-center gap-2"
+                >
+                  📋 Panduan Registrasi Ulang
+                </a>
+              </div>
+
             </div>
 
-            {/* Aksi Unduh PDF Kanan */}
-            <div className="md:col-span-4 flex flex-col sm:flex-row md:flex-col gap-3 justify-center w-full">
-              <a 
-                href="/download/HASIL-SLEKSI-SPMB-TAHAP1.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-emerald-500 hover:bg-emerald-600 text-slate-950 text-xs py-4 px-6 rounded-xl font-black tracking-wide text-center transition shadow-xl shadow-emerald-500/10 active:scale-95 flex items-center justify-center gap-2"
-              >
-                📥 Lihat Daftar Kelulusan (PDF)
-              </a>
-              <a 
-                href="/spmb/dok-daftarulang.png"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 text-xs py-4 px-6 rounded-xl font-bold text-center transition flex items-center justify-center gap-2"
-              >
-                📋 Alur &amp; Syarat Daftar Ulang
-              </a>
+            {/* Catatan Kaki Tambahan Pemberitahuan */}
+            <div className="mt-6 pt-4 border-t border-white/5 text-[11px] text-slate-400 flex flex-wrap gap-x-6 gap-y-2 font-mono">
+              <span>📅 Pelaksanaan Daftar Ulang Tahap II: Silakan lihat detail di berkas lampiran PDF</span>
             </div>
+          </motion.section>
 
-          </div>
+          {/* BANNER TAHAP I (ARSIP / PENDUKUNG) */}
+          <motion.section 
+            id="pengumuman-tahap1"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-gradient-to-r from-emerald-950/20 to-slate-900/40 backdrop-blur-md rounded-3xl p-6 border border-emerald-500/20 shadow-md opacity-85 hover:opacity-100 transition-opacity duration-300"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div className="md:col-span-8 space-y-2">
+                <div className="w-fit bg-emerald-500/10 border border-emerald-400/20 rounded-full px-2.5 py-0.5 text-[9px] font-bold text-emerald-400 uppercase tracking-wider">
+                  📂 ARSIP: PENGUMUMAN TAHAP I
+                </div>
+                <h3 className="text-lg md:text-xl font-bold uppercase tracking-tight text-slate-200">
+                  Hasil Seleksi Administrasi &amp; Berkas Tahap I
+                </h3>
+                <p className="text-slate-400 text-xs font-light max-w-xl">
+                  Bagi calon peserta didik yang telah dinyatakan lolos berkas pada seleksi gelombang/tahap pertama. Dokumen SK kelulusan tetap dapat diakses di bawah ini.
+                </p>
+              </div>
 
-          {/* Catatan Kaki Tambahan Pemberitahuan */}
-          <div className="mt-6 pt-4 border-t border-white/5 text-[11px] text-slate-400 flex flex-wrap gap-x-6 gap-y-2 font-mono">
-            <span>📍 Lokasi Verifikasi Fisik: Aula SMAN 7 Balikpapan</span>
-            <span>📅 Pelaksanaan Daftar Ulang: 29 Juni – 01 Juli 2026</span>
-          </div>
-        </motion.section>
+              <div className="md:col-span-4 flex flex-col sm:flex-row md:flex-col gap-2 justify-center w-full">
+                <a 
+                  href={FILE_PENGUMUMAN_TAHAP_1_PDF}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs py-3 px-4 rounded-xl font-bold text-center transition flex items-center justify-center gap-2"
+                >
+                  📄 Lihat Dokumen Kelulusan Tahap I
+                </a>
+              </div>
+            </div>
+          </motion.section>
 
+        </div>
 
         {/* ================= CORE STATISTICS SECTION ================= */}
         <motion.div 

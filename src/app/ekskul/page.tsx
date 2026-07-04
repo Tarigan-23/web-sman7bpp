@@ -294,7 +294,7 @@ export default function EkskulPage() {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
-      style={{ backgroundImage: "url('/bg3.jpeg')" }}
+      style={{ backgroundImage: "url('/sarpras/8.jpeg')" }}
     >
       <div className="absolute inset-0 bg-black/75 z-0"></div>
 
