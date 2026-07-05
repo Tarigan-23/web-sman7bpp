@@ -115,7 +115,6 @@ export default function GuruPage() {
     { nama: "Suwisno", jabatan: "Kebersihan", foto: "/st5.webp" },
     { nama: "Meriya", jabatan: "Kebersihan", foto: "/st2.webp" },
     { nama: "Muari", jabatan: "Kebersihan", foto: "/st3.webp" },
-    { nama: "Ika Jadiyati", jabatan: "Kebersihan", foto: "/st1.webp" },
     { nama: "Sonhaji", jabatan: "Kebersihan", foto: "/st4.webp" },
   ]
 
