@@ -1,4 +1,18 @@
 export const berita = [ 
+  {
+  id: 177,
+  judul: "📢 PENGUMUMAN KEMBALI KE SEKOLAH 🎒✨",
+  tanggal: "12 juli 2026",
+  gambar: "/berita/176.jpeg",
+  deskripsi: `Halo, peserta didik SMA Negeri 7 Balikpapan! Liburan telah usai, saatnya kembali ke sekolah dengan semangat baru dan energi yang lebih positif. 🌟
+Kami menginformasikan bahwa kegiatan belajar mengajar Tahun Ajaran 2026/2027 akan dimulai pada Senin, 13 Juli 2026. Mari kita sambut tahun ajaran baru dengan tekad untuk terus belajar, berkarya, dan meraih prestasi terbaik.
+
+Siapkan perlengkapan sekolah, jaga kesehatan, datang tepat waktu, dan jangan lupa membawa semangat terbaikmu. Bersama kita wujudkan lingkungan belajar yang disiplin, santun, peduli, dan berprestasi.
+Sampai jumpa di sekolah! Selamat datang kembali di SMA Negeri 7 Balikpapan. 
+Religius, Cerdas, Berprestasi!
+#SMANJU_SemakinMaju`,
+  sumberUrl: ""
+  },
    {
   id: 176,
   judul: "Pengumuman Jadwal Pelaksanaan SPMB Tahap Kedua",
