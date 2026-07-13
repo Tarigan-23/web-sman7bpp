@@ -31,9 +31,9 @@ export default function GuruPage() {
       foto: "/gr33.webp",
     },
     {
-      nama: "Suyanto, S.Pd.",
+      nama: "Petrus Pasiakan, S. Pd.",
       jabatan: "Waka Sarana & Prasarana",
-      foto: "/gr4.webp",
+      foto: "/gr12.webp",
     },
     {
       nama: "Ayi Solihin, M.Pd.",
