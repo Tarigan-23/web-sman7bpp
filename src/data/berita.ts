@@ -1,5 +1,57 @@
 export const berita = [ 
   {
+  id: 182,
+  judul: "Day 3 MPLS Ramah 2026: Unlocking Potential & Staying Safe! ",
+  tanggal: "15 juli 2026",
+  gambar: "/berita/181.png",
+  deskripsi: `Hari ini kami fokus mengenali potensi lewat asesmen minat bakat, sekaligus belajar membentengi diri dari bahaya NAPZA dan kecanduan game online di ruang kelas dan ruang literasi SMAN 7. Semua keseruan hari ini ditutup manis lewat sesi refleksi bersama guru fasilitator tiap gugus.
+
+Makin siap, makin bijak, makin bangga jadi warga Smanju! 🤩`,
+  sumberUrl: "https://www.instagram.com/p/Da1-EeOh8e9/"
+  },
+  {
+  id: 181,
+  judul: "Day 2 MPLS Ramah 2026: Stronger, Closer, and Brighter! ",
+  tanggal: "14 juli 2026",
+  gambar: "/berita/180.png",
+  deskripsi: `Dari olahraga bareng di lapangan saat senam dan tes fisik, sampai deep talk tentang potensi diri dan keseruan bareng sahabat baru di ruang literasi. Sungguh hari kedua yang penuh energi dan cerita berharga!
+
+Proud to be a part of SMAN 7 Balikpapan!`,
+  sumberUrl: "https://www.instagram.com/p/DaydvyXBZfg/"
+  },
+  {
+  id: 180,
+  judul: "Day 1 MPLS Ramah 2026: Officially Started !",
+  tanggal: "13 juli 2026",
+  gambar: "/berita/179.png",
+  deskripsi: `Dimulai dengan keseruan parade dan upacara bendera sekaligus pembukaan MPLS Ramah 2026 oleh Ibu Kepala SMAN 7 Balikpapan, Ibu Puspani, M.Pd.
+
+Lalu dilanjutkan dengan recharge ilmu tentang lingkungan sekolah baru plus tips bijak bermedia sosial. Seru, bermakna, dan penuh cerita baru!
+
+Selamat datang murid baru baru SMAN 7 Balikpapan! Let’s make it unforgettable!`,
+  sumberUrl: "https://www.instagram.com/p/DaxFLyCBcyO/"
+  },
+  {
+  id: 179,
+  judul: "Pra-MPLS Day 2: Kompak, Kreatif, dan Siap Tampil Memukau! ",
+  tanggal: "11 juli 2026",
+  gambar: "/berita/178.png",
+  deskripsi: `Sabtu, 11 Juli 2026 halaman SMANJU dibuat heboh dengan latihan parade dari masing-masing gugus! Semua kompak dan penuh semangat untuk unjuk gigi di Upacara Pembukaan MPLS hari Senin nanti.
+
+Ingat ya Sobat SMANJU dan Bapak/Ibu wali murid, hari Senin, 13 Juli 2026, kita kumpul di lapangan pukul 07.00 WITA tepat. Jangan sampai terlambat, siapkan atributmu, dan mari kita mulai hari pertama MPLS dengan energi luar biasa!`,
+  sumberUrl: "https://www.instagram.com/p/Daq66PeBdoG/"
+  },
+  {
+  id: 178,
+  judul: "Pra-MPLS Day 1: Awal Seru Generasi Hebat SMANJU !",
+  tanggal: "10 juli 2026",
+  gambar: "/berita/177.png",
+  deskripsi: `Jumat, 10 Juli 2026 menjadi langkah awal yang luar biasa! Dimulai dengan para murid baru Senam Indonesia Sehat, dilanjutkan dengan pembagian kelompok gugus dan koordinasi seru untuk persiapan hari berikutnya.
+
+Untuk seluruh siswa baru dan Bapak/Ibu wali murid, yuk satukan semangat! Perjalanan di SMAN 7 Balikpapan baru saja dimulai dengan lingkungan yang ramah, aman, dan menyenangkan. Siap untuk petualangan berikutnya? Ketik "SIAP!" di kolom komentar ya!`,
+  sumberUrl: "https://www.instagram.com/p/Daq6jEUhak8/"
+  },
+  {
   id: 177,
   judul: "📢 PENGUMUMAN KEMBALI KE SEKOLAH 🎒✨",
   tanggal: "12 juli 2026",
