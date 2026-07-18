@@ -3,23 +3,30 @@
 import React, { useState } from "react"
 import { motion, Variants, AnimatePresence } from "framer-motion"
 import Image from "next/image"
-import berita from "../../data/berita"
+import beritaRaw from "../../data/berita"
 
-// Definisikan tipe data berita agar aman
+// 1. UPDATE TIPE DATA: Mengubah gambar menjadi array string (string[])
 interface BeritaItem {
   id: number
   judul: string
   tanggal: string
-  gambar: string
+  gambar: string[] // Diubah agar bisa menerima banyak foto
   deskripsi: string
   sumberUrl: string
 }
 
-export default function BeritaPage() {
-  // State untuk menyimpan berita yang sedang aktif dipilih/diklik untuk detail
-  const [selectedBerita, setSelectedBerita] = useState<BeritaItem | null>(null)
+// 2. PARSING OTOMATIS: Mengubah gambar string biasa menjadi [gambar], atau tetap jika sudah array
+const berita: BeritaItem[] = (beritaRaw as any[]).map((item) => ({
+  ...item,
+  gambar: Array.isArray(item.gambar) ? item.gambar : [item.gambar]
+}))
 
-  // Cetakan animasi kelompok (Stagger)
+export default function BeritaPage() {
+  const [selectedBerita, setSelectedBerita] = useState<BeritaItem | null>(null)
+  
+  // State untuk melacak index foto yang sedang aktif di dalam modal detail
+  const [currentImgIndex, setCurrentImgIndex] = useState<number>(0)
+
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -39,7 +46,6 @@ export default function BeritaPage() {
     },
   }
 
-  // Fungsi Handler saat Kartu Berita diklik
   const handleCardClick = (e: React.MouseEvent, item: BeritaItem) => {
     if (item.sumberUrl && item.sumberUrl.startsWith("http") && !item.sumberUrl.includes("sman7-bpp.sch.id/galeri")) {
       return 
@@ -47,12 +53,28 @@ export default function BeritaPage() {
     
     e.preventDefault()
     setSelectedBerita(item)
+    setCurrentImgIndex(0) // Reset index foto ke yang pertama saat membuka modal baru
+  }
+
+  // Navigasi Slider Foto
+  const nextImage = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    if (selectedBerita) {
+      setCurrentImgIndex((prev) => (prev + 1) % selectedBerita.gambar.length)
+    }
+  }
+
+  const prevImage = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    if (selectedBerita) {
+      setCurrentImgIndex((prev) => (prev - 1 + selectedBerita.gambar.length) % selectedBerita.gambar.length)
+    }
   }
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pb-24 relative overflow-hidden select-none">
       
-      {/* ================= BACKGROUND ORNAMEN SERAGAM SINEMATIK ================= */}
+      {/* Background Ornamen */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/bg3.jpg" 
@@ -89,7 +111,7 @@ export default function BeritaPage() {
           </motion.div>
         </section>
 
-        {/* Pembungkus Kartu Berita (Grid) */}
+        {/* Grid Kartu Berita */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
@@ -107,32 +129,35 @@ export default function BeritaPage() {
               onClick={(e) => handleCardClick(e, item)}
               className="block group h-full focus:outline-none"
             >
-              {/* Kartu Utama */}
               <div className="bg-white/5 backdrop-blur-md rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 sm:group-hover:scale-[1.02] sm:group-hover:border-white/20 transition duration-300 cursor-pointer h-full shadow-xl flex flex-col justify-between">
                 
                 <div>
-                  {/* 1. UKURAN GAMBAR */}
+                  {/* TAMPILAN GAMBAR UTAMA KARTU (Mengambil index pertama [0]) */}
                   <div className="w-full h-48 md:h-56 overflow-hidden relative border-b border-white/5 flex-shrink-0 bg-black/20">
                     <img
-                      src={item.gambar}
+                      src={item.gambar[0]} 
                       alt={item.judul}
                       className="w-full h-full object-cover transition duration-500 sm:group-hover:scale-105"
                     />
+                    {/* Icon Indikator Multi-Post ala Instagram di pojok kanan atas kartu */}
+                    {item.gambar.length > 1 && (
+                      <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm p-1.5 rounded-lg text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h10.5m-10.5 3h10.5m-10.5 3h10.5m-10.5 3h10.5M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15A2.25 2.25 0 0 0 2.25 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
+                      </div>
+                    )}
                   </div>
 
-                  {/* 2. AREA KONTEN TEXT */}
+                  {/* Area Konten Text */}
                   <div className="p-5 md:p-6 flex flex-col justify-between">
                     <div>
                       <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider">
                         📅 {item.tanggal}
                       </p>
-
-                      {/* Judul */}
                       <h2 className="text-base md:text-lg font-bold text-slate-100 mt-2 line-clamp-2 group-hover:text-blue-400 transition duration-200 leading-snug min-h-[2.8rem]">
                         {item.judul}
                       </h2>
-
-                      {/* Deskripsi Singkat */}
                       <p className="text-slate-400 leading-relaxed font-light text-xs md:text-sm text-justify line-clamp-3 mt-3 break-words">
                         {item.deskripsi}
                       </p>
@@ -155,14 +180,14 @@ export default function BeritaPage() {
         </motion.div>
       </div>
 
-      {/* ================= MODAL DETAIL POPUP PREMIUM (ALA INSTAGRAM DARI GALERI) ================= */}
+      {/* Modal Detail Popup Premium */}
       <AnimatePresence>
         {selectedBerita && (
           <div 
             className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-10 bg-black/90 backdrop-blur-md"
             onClick={() => setSelectedBerita(null)}
           >
-            {/* Tombol Close Pojok Atas Kanan Layar */}
+            {/* Tombol Close */}
             <button 
               className="absolute top-4 right-4 text-white hover:text-red-400 transition z-50 p-2" 
               onClick={() => setSelectedBerita(null)}
@@ -181,13 +206,55 @@ export default function BeritaPage() {
               className="bg-slate-900 border border-slate-800 w-full max-w-5xl h-[85vh] md:h-[80vh] flex flex-col md:flex-row rounded-xl overflow-hidden shadow-2xl select-text"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* KOLOM KIRI: Media Image Viewer (Full Tanpa Potong) */}
-              <div className="relative flex-1 bg-slate-950 flex items-center justify-center h-[45%] md:h-full group border-b md:border-b-0 border-slate-800">
-                <img 
-                  src={selectedBerita.gambar} 
+              {/* KOLOM KIRI: Media Image Viewer (Dengan Mekanisme Slider Instagram) */}
+              <div className="relative flex-1 bg-slate-950 flex items-center justify-center h-[45%] md:h-full group border-b md:border-b-0 border-slate-800 overflow-hidden">
+                
+                {/* Gambar Berdasarkan Index Aktif */}
+                <motion.img 
+                  key={currentImgIndex}
+                  src={selectedBerita.gambar[currentImgIndex]} 
                   alt={selectedBerita.judul} 
-                  className="w-full h-full object-contain max-h-full block p-1"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="w-full h-full object-contain max-h-full block p-1 select-none"
                 />
+
+                {/* Tombol Navigasi Slider (Hanya muncul jika foto > 1) */}
+                {selectedBerita.gambar.length > 1 && (
+                  <>
+                    {/* Tombol Kiri */}
+                    <button 
+                      onClick={prevImage}
+                      className="absolute left-3 bg-black/50 hover:bg-black/80 p-2 rounded-full text-white transition backdrop-blur-sm"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                      </svg>
+                    </button>
+
+                    {/* Tombol Kanan */}
+                    <button 
+                      onClick={nextImage}
+                      className="absolute right-3 bg-black/50 hover:bg-black/80 p-2 rounded-full text-white transition backdrop-blur-sm"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>
+                    </button>
+
+                    {/* Indikator Titik (Dots Slider) ala Instagram */}
+                    <div className="absolute bottom-4 flex justify-center space-x-1.5 z-10 w-full">
+                      {selectedBerita.gambar.map((_, idx) => (
+                        <div 
+                          key={idx}
+                          className={`h-1.5 rounded-full transition-all duration-300 ${idx === currentImgIndex ? 'w-4 bg-blue-500' : 'w-1.5 bg-white/40'}`}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
               </div>
 
               {/* KOLOM KANAN: Detail Informasi Berita */}
@@ -203,13 +270,12 @@ export default function BeritaPage() {
                   </div>
                 </div>
 
-                {/* Area Konten Deskripsi Berita (Scrollable & Dukung Baris Baru) */}
+                {/* Area Konten Deskripsi Berita */}
                 <div className="p-4 flex-1 overflow-y-auto space-y-4 text-slate-300 text-xs sm:text-sm scrollbar-thin scrollbar-thumb-slate-800">
                   <div>
                     <p className="text-blue-400 text-xs font-mono font-bold uppercase mb-1">[Warta SMANJU]</p>
                     <h2 className="text-white font-bold text-base mb-2 leading-snug">{selectedBerita.judul}</h2>
                     
-                    {/* Pembacaan deskripsi split baris baru \n */}
                     <div className="text-slate-300 text-xs sm:text-sm leading-relaxed text-justify font-light space-y-3">
                       {selectedBerita.deskripsi.split("\n").map((line, index) => (
                         <p key={index} className="min-h-[1rem]">
@@ -219,7 +285,7 @@ export default function BeritaPage() {
                     </div>
                   </div>
 
-                  {/* Section Dokumen / Galeri Pendukung (Tetap di tab yang sama jika ada) */}
+                  {/* Section Dokumen / Galeri Pendukung */}
                   {selectedBerita.sumberUrl && selectedBerita.sumberUrl !== "#" && (
                     <div className="pt-4 border-t border-slate-800/60">
                       <a
@@ -231,7 +297,7 @@ export default function BeritaPage() {
                     </div>
                   )}
 
-                  {/* Section Komentar Interaktif Tiruan Biar Sama Persis */}
+                  {/* Section Komentar Interaktif Tiruan */}
                   <div className="pt-3 border-t border-slate-800/60 space-y-2.5 text-xs">
                     <div>
                       <span className="text-white font-semibold mr-2">osissmaven</span>
@@ -244,7 +310,7 @@ export default function BeritaPage() {
                   </div>
                 </div>
 
-                {/* Bagian Bawah: Metadata & Tanggal Kegiatan */}
+                {/* Bagian Bawah: Metadata & Tanggal */}
                 <div className="p-4 border-t border-slate-800 bg-slate-950/40 space-y-3">
                   <div className="flex space-x-4 text-slate-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-5 h-5 cursor-pointer hover:text-red-500 transition">
