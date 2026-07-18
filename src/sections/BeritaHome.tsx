@@ -58,7 +58,7 @@ export default function BeritaHome() {
                 {/* Wadah Gambar Berita yang dioptimasi */}
                 <div className="h-48 overflow-hidden relative w-full">
                   <Image 
-                    src={berita.gambar} 
+                    src={Array.isArray(berita.gambar) ? berita.gambar[0] : berita.gambar} 
                     alt={berita.judul}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
