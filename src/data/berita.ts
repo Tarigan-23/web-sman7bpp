@@ -1,4 +1,14 @@
 export const berita = [
+   {
+    id: 187,
+    judul: "Last Day MPLS Ramah 2026: Welcoming a new family!",
+    tanggal: "19 juli 2026",
+    gambar: ["/berita/196.png"],
+    deskripsi: `Hari terakhir yang tidak akan terlupakan! Mulai dari mengenal seluruh tenaga pendidik dan tenaga kependidikan SMA Negeri 7 Balikpapan, serunya flashmob bareng OSIS, MPK & Duta hingga kompetisi Gelar Karya yang seru dan kreatif! MPLS Ramah 2026 ditutup secara resmi oleh Kepala SMA Negeri 7 Balikpapan yakni Ibu Puspani, M.Pd.
+
+Perjuangan MPLS telah usai, petualangan di SMA Negeri 7 Balikpapan baru saja dimulai. Selamat telah resmi menjadi bagian dari keluarga besar SMANJU! Semangat untuk selalu berprestasi dan semakin maju! 🤩✨`,
+    sumberUrl: "https://www.instagram.com/p/Da-jMknhIEs/"
+  },
   {
     id: 187,
     judul: "MPLS Day 4: Eco-Friendly & Super Fun !",
