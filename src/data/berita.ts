@@ -1,6 +1,18 @@
 export const berita = [
+  {
+    id: 189,
+    judul: "🏆 Championship Festival Karya Cinta, Bangga, Paham (CBP) Rupiah 2026 💙🇮🇩",
+    tanggal: "21 juli 2026",
+    gambar: ["/berita/197.png"],
+    deskripsi: `SMA Negeri 7 Balikpapan berhasil meraih Juara 2 pada Championship Festival Karya CBP Rupiah 2026 yang diselenggarakan oleh Bank Indonesia. Karya yang dipresentasikan berupa buku edukasi (ScrapBook) RUPSA7 (Rupiah Sahabat SMA7).
+Rangkaian kegiatan berlangsung pada 17–19 Juli 2026 di Taman Bekapai, diawali pembukaan yang dihadiri perwakilan Bank Indonesia, Kepala Cabang Dinas Wilayah I Balikpapan, perwakilan Wali Kota, serta 15 finalis. Kegiatan dilanjutkan dengan presentasi, evaluasi karya, dan ditutup dengan pengumuman pemenang.
+Festival ini bertujuan menumbuhkan kecintaan, kebanggaan, dan pemahaman masyarakat, khususnya generasi muda, terhadap Rupiah melalui karya kreatif dan inovatif. Dari 70 peserta, terseleksi menjadi 30, hingga akhirnya 15 tim terbaik melaju ke babak final.
+Selain lomba, 15 finalis juga mendapat kesempatan membuka stan pameran. SMA Negeri 7 Balikpapan menampilkan karya unggulan dari ekstrakurikuler Tata Busana, Tata Boga, dan Multimedia yang mendapat antusiasme tinggi dari para pengunjung.
+Selamat kepada tim SMA Negeri 7 Balikpapan atas prestasi yang membanggakan. Terus berkarya, berprestasi, dan menjadi generasi yang Cinta, Bangga, dan Paham Rupiah! 🇮🇩✨`,
+    sumberUrl: "https://www.instagram.com/p/DbCwxtlhAs8/"
+  },
    {
-    id: 187,
+    id: 188,
     judul: "Last Day MPLS Ramah 2026: Welcoming a new family!",
     tanggal: "19 juli 2026",
     gambar: ["/berita/196.png"],
