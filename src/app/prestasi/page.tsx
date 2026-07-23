@@ -22,12 +22,12 @@ export default function PrestasiPage() {
     {
       id: "p22",
       judul: "Juara 2 Festival Karya CBP 2026",
-      peraih: "",
+      peraih: "Tim CBP SMA Negeri 7 Balikpapan",
       kategori: "Akademik",
       tingkat: "Kota",
       tahun: "2026",
       gambar: "/prestasi/pres2.jpeg",
-      deskripsi: "SELAMAT & SUKSES Segenap keluarga besar SMA Negeri 7 Balikpapan mengucapkan selamat dan sukses kepada Tim CBP SMA Negeri 7 Balikpapan atas prestasi yang membanggakan dengan meraih Juara II pada Festival Karya CBP Tahun 2026 Prestasi ini merupakan buah dari kerja keras, kreativitas, semangat pantang menyerah, serta kolaborasi yang luar biasa antara peserta didik dan pembina. Semoga pencapaian ini menjadi motivasi untuk terus berkarya, berinovasi, dan mengukir prestasi yang lebih tinggi di masa mendatang. Terima kasih kepada seluruh pihak yang telah memberikan dukungan. Teruslah menjadi generasi yang Religius, Cerdas, dan Berprestasi. 👏 Selamat kepada Tim CBP SMAN 7 Balikpapan! Kami bangga atas pencapaian kalian.",
+      deskripsi: "1. Ibu Hj. Murdiana, S.Pd. (Pembina) 2. Keysa Fortuna Alfisari (XII-A2) 3.Nadia Friska Pakpahan (XII-B1)  4. Nazril Al Ihksan (XII-B2) 5. Jezi Maiza (XII-B1) 6. Muhammad Rizki Apriliyanto (XII-B2)SELAMAT & SUKSES Segenap keluarga besar SMA Negeri 7 Balikpapan mengucapkan selamat dan sukses kepada Tim CBP SMA Negeri 7 Balikpapan atas prestasi yang membanggakan dengan meraih Juara II pada Festival Karya CBP Tahun 2026 Prestasi ini merupakan buah dari kerja keras, kreativitas, semangat pantang menyerah, serta kolaborasi yang luar biasa antara peserta didik dan pembina. Semoga pencapaian ini menjadi motivasi untuk terus berkarya, berinovasi, dan mengukir prestasi yang lebih tinggi di masa mendatang. Terima kasih kepada seluruh pihak yang telah memberikan dukungan. Teruslah menjadi generasi yang Religius, Cerdas, dan Berprestasi. 👏 Selamat kepada Tim CBP SMAN 7 Balikpapan! Kami bangga atas pencapaian kalian.",
       isHighlight: true
     },
     {
