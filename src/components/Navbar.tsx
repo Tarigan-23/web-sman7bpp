@@ -11,7 +11,6 @@ export default function Navbar() {
   const pathname = usePathname() 
 
   const menuItems = [
-    { name: "SPMB", href: "/SPMB" },
     { name: "Beranda", href: "/" },
     { name: "Sambutan", href: "/sambutan" },
     { name: "Profil", href: "/profil" },
@@ -22,6 +21,7 @@ export default function Navbar() {
     { name: "Humas", href: "/Humas" },
     { name: "Komite", href: "/komite" },
     { name: "Galeri", href: "/galeri" },
+    { name: "SPMB", href: "/SPMB" },
   ]
 
   // Handler Interseptor Klik Menu Aktif (Biar Halus Scroll ke Atas tanpa Reload Kaku)

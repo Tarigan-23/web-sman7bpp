@@ -1,5 +1,19 @@
 export const berita = [
   {
+    id: 193,
+    judul: "TimKurikulum – Seluruh guru SMA Negeri 7 Balikpapan melaksanakan pengisian Survei Lingkungan Belajar (Sulingjar) Tahun 2026",
+    tanggal: "23 juli 2026",
+    gambar: ["/berita/208.jpeg","/berita/209.jpeg","/berita/210.jpeg"],
+    deskripsi: `TimKurikulum – Seluruh guru SMA Negeri 7 Balikpapan telah melaksanakan pengisian Survei Lingkungan Belajar (Sulingjar) Tahun 2026 sebagai bentuk dukungan terhadap upaya peningkatan mutu pendidikan nasional. Sulingjar merupakan instrumen yang digunakan untuk memotret kondisi lingkungan belajar di satuan pendidikan sebagai dasar penyusunan kebijakan dan peningkatan kualitas layanan pendidikan. 
+
+Meskipun jadwal pengisian Sulingjar Tahun 2026 masih berlangsung hingga 17 Agustus 2026, para guru SMA Negeri 7 Balikpapan memilih untuk menyelesaikan pengisian lebih awal. Langkah ini menunjukkan komitmen, kedisiplinan, serta partisipasi aktif seluruh pendidik dalam mendukung program Kementerian Pendidikan Dasar dan Menengah. 
+
+Melalui pengisian Sulingjar yang dilakukan secara jujur dan objektif, diharapkan data yang diperoleh dapat memberikan gambaran nyata mengenai iklim pembelajaran di sekolah. Hasil survei ini nantinya akan menjadi salah satu bahan evaluasi dalam meningkatkan kualitas pembelajaran, budaya sekolah, serta pelayanan pendidikan di SMA Negeri 7 Balikpapan.
+
+Semangat kolaborasi dan tanggung jawab yang ditunjukkan oleh seluruh guru menjadi bukti bahwa SMA Negeri 7 Balikpapan terus berkomitmen mewujudkan lingkungan belajar yang aman, nyaman, inklusif, dan berkualitas demi terciptanya pendidikan yang semakin baik.`,
+    sumberUrl: ""
+  },
+  {
     id: 192,
     judul: "Sosialisasi Masuk Jalur PTN dan Program Beasiswa Kelas XII Tahun Pelajaran 2026/2027",
     tanggal: "22 juli 2026",

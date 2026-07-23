@@ -30,11 +30,7 @@ export default function Footer(): React.JSX.Element {
               Navigasi Halaman
             </h3>
             <ul className="space-y-3 md:space-y-2.5 text-gray-300 text-sm md:text-base">
-              <li>
-                <Link href="/SPMB" className="hover:text-blue-400 transition-colors block py-0.5">
-                  SPMB
-                </Link>
-              </li>
+              
               <li>
                 <Link href="/" className="hover:text-blue-400 transition-colors block py-0.5">
                   Beranda
@@ -88,6 +84,11 @@ export default function Footer(): React.JSX.Element {
               <li>
                 <Link href="/galeri" className="hover:text-blue-400 transition-colors block py-0.5">
                   Galeri Foto
+                </Link>
+              </li>
+              <li>
+                <Link href="/SPMB" className="hover:text-blue-400 transition-colors block py-0.5">
+                  SPMB
                 </Link>
               </li>
             </ul>
