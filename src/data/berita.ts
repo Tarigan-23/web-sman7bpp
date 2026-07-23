@@ -1,5 +1,40 @@
 export const berita = [
   {
+    id: 192,
+    judul: "Sosialisasi Masuk Jalur PTN dan Program Beasiswa Kelas XII Tahun Pelajaran 2026/2027",
+    tanggal: "22 juli 2026",
+    gambar: ["/berita/203.jpeg","/berita/204.jpeg","/berita/205.jpeg","/berita/206.jpeg","/berita/207.jpeg"],
+    deskripsi: `Sebagai bentuk komitmen dalam mempersiapkan masa depan peserta didik, SMA Negeri 7 Balikpapan melaksanakan kegiatan Sosialisasi Masuk Jalur Perguruan Tinggi Negeri (PTN) dan Program Beasiswa bagi peserta didik Kelas XII Tahun Pelajaran 2026/2027.
+Kegiatan ini bertujuan untuk memberikan informasi yang komprehensif mengenai berbagai jalur seleksi masuk PTN, strategi menghadapi proses seleksi, serta peluang memperoleh beasiswa dari berbagai perguruan tinggi maupun lembaga penyedia beasiswa. Diharapkan melalui sosialisasi ini, peserta didik dapat menyusun rencana studi lanjutan dengan lebih matang, memiliki motivasi yang tinggi untuk melanjutkan pendidikan ke perguruan tinggi, serta mampu memanfaatkan setiap peluang yang tersedia.
+Semoga kegiatan ini menjadi langkah awal dalam mengantarkan peserta didik SMAN 7 Balikpapan meraih cita-cita dan melanjutkan pendidikan ke perguruan tinggi impian.
+"Masa depan dimulai dari langkah yang dipersiapkan hari ini." 🌟`,
+    sumberUrl: ""
+  },
+  {
+    id: 191,
+    judul: "Sosialisasi Program Sekolah, Sosialisasi SSK, dan Pembentukan Komite Kelas XI",
+    tanggal: "21 juli 2026",
+    gambar: ["/berita/198.jpeg","/berita/199.jpeg","/berita/200.jpeg","/berita/201.jpeg","/berita/202.jpeg"],
+    deskripsi: `SMA Negeri 7 Balikpapan melaksanakan kegiatan Sosialisasi Program Sekolah, Sosialisasi SSK (Sistem Sekolah/Kurikulum Sekolah), serta Pembentukan Komite Kelas XI yang dihadiri oleh orang tua/wali peserta didik kelas XI pada Selasa, 21 Juli 2026.
+Kegiatan ini bertujuan untuk menyampaikan berbagai program dan kebijakan sekolah, memberikan pemahaman kepada orang tua mengenai pelaksanaan SSK di SMAN 7 Balikpapan, serta membentuk kepengurusan komite kelas sebagai wadah komunikasi dan kerja sama antara sekolah dan orang tua.
+Melalui kegiatan ini diharapkan terjalin sinergi yang kuat antara sekolah dan orang tua dalam mendampingi peserta didik agar mampu berkembang secara optimal, baik dalam bidang akademik maupun nonakademik.
+Terima kasih kepada seluruh orang tua/wali yang telah hadir dan berpartisipasi aktif dalam mendukung kemajuan pendidikan di SMA Negeri 7 Balikpapan.
+Religius, Cerdas, Berprestasi!`,
+    sumberUrl: ""
+  },
+  {
+    id: 190,
+    judul: "Sosialisasi Program SMA Negeri 7 Balikpapan Tahun Ajaran 2026/2027",
+    tanggal: "20 juli 2026",
+    gambar: ["/berita/193.jpeg","/berita/194.jpeg","/berita/195.jpeg","/berita/196.jpeg","/berita/197.jpeg"],
+    deskripsi: `Sosialisasi Program SMA Negeri 7 Balikpapan Tahun Ajaran 2026/2027
+Dalam rangka memperkuat sinergi antara sekolah dan orang tua, SMA Negeri 7 Balikpapan melaksanakan kegiatan Sosialisasi Program Sekolah kepada orang tua/wali peserta didik kelas X pada Senin, 20 Juli 2026.
+
+Kegiatan ini menjadi wadah untuk memperkenalkan visi, misi, program unggulan, tata tertib, Sosialisasi SSK serta berbagai layanan yang akan diterima peserta didik selama menempuh pendidikan di SMAN 7 Balikpapan. Melalui pertemuan ini, diharapkan terjalin komunikasi dan kolaborasi yang baik antara sekolah dan orang tua dalam mendukung tumbuh kembang peserta didik, baik dalam bidang akademik maupun nonakademik.
+Mari bersama membangun generasi yang Religius, Cerdas, dan Berprestasi melalui kerja sama yang harmonis antara sekolah, orang tua, dan peserta didik.`,
+    sumberUrl: ""
+  },
+  {
     id: 189,
     judul: "🏆 Championship Festival Karya Cinta, Bangga, Paham (CBP) Rupiah 2026 💙🇮🇩",
     tanggal: "21 juli 2026",
