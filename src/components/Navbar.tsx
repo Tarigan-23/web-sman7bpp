@@ -21,7 +21,7 @@ export default function Navbar() {
     { name: "Humas", href: "/Humas" },
     { name: "Komite", href: "/komite" },
     { name: "Galeri", href: "/galeri" },
-    { name: "SPMB", href: "/SPMB" },
+    { name: "SSK", href: "/ssk" },
   ]
 
   // Handler Interseptor Klik Menu Aktif (Biar Halus Scroll ke Atas tanpa Reload Kaku)

@@ -1,5 +1,15 @@
 export const berita = [
   {
+    id: 194,
+    judul: "Kegiatan Pelatihan Ekstrakurikuler PIK-R Rayuan Pulau Kelapa",
+    tanggal: "24 juli 2026",
+    gambar: ["/berita/211.png"],
+    deskripsi: `Kegiatan Pelatihan Ekstrakurikuler PIK-R Rayuan Pulau Kelapa pada Program Sekolah Siaga Kependudukan “Generasi Berencana, Generasi Bercahaya” telah dilaksanakan pada Jumat, 24 Juli 2026 pukul 09.00 s.d. 11.00 WITA di SMA Negeri 7 Balikpapan bersama narasumber Kak Alfin Agung Nugroho, S.I.Kom dari BNN Kota Balikpapan.
+
+Kegiatan ini bertujuan untuk meningkatkan kesadaran dan penguatan anggota dalam memahami perencanaan kehidupan remaja serta pencegahan perilaku berisiko, sehingga diharapkan peserta dapat menjadi remaja yang lebih sadar, bertanggung jawab, dan berperan aktif dalam menyebarkan informasi positif di lingkungan sekitarnya.`,
+    sumberUrl: "https://www.instagram.com/p/DbPSiGfTPYn/"
+  },
+  {
     id: 193,
     judul: "TimKurikulum – Seluruh guru SMA Negeri 7 Balikpapan melaksanakan pengisian Survei Lingkungan Belajar (Sulingjar) Tahun 2026",
     tanggal: "23 juli 2026",

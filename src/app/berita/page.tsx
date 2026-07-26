@@ -5,7 +5,6 @@ import { motion, Variants, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import beritaRaw from "../../data/berita"
 
-// 1. UPDATE TIPE DATA: Mengubah gambar menjadi array string (string[])
 interface BeritaItem {
   id: number
   judul: string

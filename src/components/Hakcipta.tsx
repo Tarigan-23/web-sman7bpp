@@ -87,8 +87,8 @@ export default function Footer(): React.JSX.Element {
                 </Link>
               </li>
               <li>
-                <Link href="/SPMB" className="hover:text-blue-400 transition-colors block py-0.5">
-                  SPMB
+                <Link href="/ssk" className="hover:text-blue-400 transition-colors block py-0.5">
+                  SSK
                 </Link>
               </li>
             </ul>
