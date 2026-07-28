@@ -38,7 +38,7 @@ SMANJU : Semakin Maju !
 SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
 `,
     tipeMedia: "foto",
-    mediaUrls: ["/ssk/sementara.png"],
+    mediaUrls: ["/ssk/sementara.png","/ssk/drive-download/3.jpg","/ssk/drive-download/4.jpg","/ssk/drive-download/5.jpg","/ssk/drive-download/6.jpg","/ssk/drive-download/7.jpg"],
     videoEmbedUrl: "embed",
     tautanBerita: "",
     penanggungJawab: ""
@@ -106,7 +106,7 @@ SMANJU : Religius, Cerdas, Berprestasi !
 SMANJU : Semakin Maju !
 SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
     tipeMedia: "foto",
-    mediaUrls: ["/ssk/buletin27juli.png"],
+    mediaUrls: ["/ssk/Buletin27juli.png"],
     videoEmbedUrl: "embed",
     tautanBerita: "",
     penanggungJawab: ""
