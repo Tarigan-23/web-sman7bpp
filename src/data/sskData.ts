@@ -12,7 +12,409 @@ export interface SSKProgram {
 }
 
 export const DATA_PROGRAM_SSK: SSKProgram[] = [
-  
+  {
+    id: "33",
+    judul: "Senin, 27 Juli 2026, Tim Sekolah Siaga Kependudukan (SSK) SMAN 7 Balikpapan bergerak serentak memperkuat pemahaman kependudukan dengan merangkul seluruh ekstrakurikuler di sekolah! 🏫",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Sosialisasi berlangsung secara bergantian di berbagai ruang belajar dengan pendampingan langsung dari guru-guru hebat kita:
+
+📖 Pukul 13.00 WITA (Perpustakaan Swarga Pustaka)
+
+Ibu Sri Yunita, S.Pd. berbagi wawasan kependudukan bersama adik-adik dari ekskul Duta dan KIR (Karya Ilmiah Remaja).
+
+💻 Pukul 14.00 WITA (Lab Komputer)
+
+Ibu Hj. Murdiana, S.Pd. memberikan pemaparan interaktif kepada tim PMR, Green Generation (GG), dan OSIS.
+
+🗣️ Pukul 15.00 WITA (Lab Bahasa)
+
+Ibu Anisa Ulfa, S.Pd. mengobarkan semangat pemahaman kependudukan untuk ekskul Tanggap Bencana, Pramuka, dan MPK.
+
+Sinergi antar ekskul inilah yang menjadi bahan bakar utama SMAN 7 Balikpapan dalam mewujudkan remaja yang kritis, peduli, dan siap menyongsong masa depan!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
+`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/sementara.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "32",
+    judul: "Mading SSK hadir sebagai jendela pengetahuan!✨",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Mari tingkatkan wawasan tentang kependudukan, kesehatan, dan masa depan yang lebih baik. Dengan informasi yang tepat, kita dapat menjadi generasi yang cerdas, peduli, dan bertanggung jawab. Yuk, baca dan temukan inspirasi di setiap sudut mading!`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/mading.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbS1mYuPnbV/embed",
+    tautanBerita: "https://www.instagram.com/p/DbS1mYuPnbV/",
+    penanggungJawab: ""
+  },
+  {
+    id: "31",
+    judul: "Sebagai Sekolah Siaga Kependudukan (SSK), kami membagikan kabar bahagia atas deretan piala yang berhasil diboyong pulang oleh murid-murid berbakat SMAN 7 Balikpapan 🏫.",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Senin, 27 Juli 2026, usai pelaksanaan upacara bendera, suasana sekolah terasa makin hangat dan meriah. Sebagai Sekolah Siaga Kependudukan (SSK), kami membagikan kabar bahagia atas deretan piala yang berhasil diboyong pulang oleh murid-murid berbakat SMAN 7 Balikpapan 🏫.
+
+Apresiasi setinggi-tingginya untuk para pemenang:
+
+👑 Ajang Grand Final Duta GenRe & GenRe Awards:
+
+Trie Wahdana (XI-A1) – Juara Duta GenRe Persahabatan Puteri
+
+Rasya Maulana Putra (XII-A1) – Juara GenRengers Terbaik
+
+Kurnia Akifah Nailah, XII-A1) – Juara 2 Sosial Media Terbaik
+
+🪙 Festival CBP Rupiah (Bank Indonesia):
+
+Juara 2 yang diraih oleh tim hebat: Nazril Al Ihksan (XII-B2), Nadia Friska Pakpahan (XII-B1), Jezi Maiza (XII-B1), Keysa Fortuna Alfisari (XII-A2), dan Muhammad Rizki Apriliyanto (XII-B2).
+
+🏸 O2SN Kategori Bulutangkis Putra:
+
+Muhammad Rizki Amin – Juara 1
+
+Terima kasih telah mengharumkan nama SMAN 7 Balikpapan! Teruslah menginspirasi dan jadilah pilar Generasi Berencana yang unggul serta berprestasi!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/pres/1.png","/ssk/pres/2.png","/ssk/pres/3.png","/ssk/pres/4.png","/ssk/pres/5.png","/ssk/pres/6.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "30",
+    judul: "Buletin Mingguan persembahan ekstrakurikuler PIK-R SMAN 7 Balikpapan resmi rilis! 🏫",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Sebagai Sekolah Siaga Kependudukan (SSK), teman-teman PIK-R akan rutin merangkum berbagai topik hangat seputar perencanaan masa depan remaja, kesehatan reproduksi, life skills, hingga edukasi kependudukan yang dikemas seru dan relevan dengan kehidupan kita sehari-hari 💡
+
+Penasaran apa saja pembahasan menarik dan tips keren di edisi minggu ini? Yuk, baca buletin selengkapnya!
+
+Jangan lupa like, save, dan share ke teman-temanmu agar makin banyak remaja yang teredukasi dan siap jadi Generasi Berencana!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/buletin27juli.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "29",
+    judul: "Siap menyambut semangat baru di SMAN 7 Balikpapan! ✨",
+    tanggal: "6 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Langkah awal menuju perubahan positif! Senin (06/07) lalu, Bapak/Ibu Guru dan staf SMAN 7 Balikpapan mengikuti rapat koordinasi dan sosialisasi program Sekolah Siaga Kependudukan (SSK) 🌿
+
+Ibu Kepala Sekolah mengajak seluruh pendidik dan tenaga kependidikan untuk bersiap mengawal program SSK ini agar dapat memberikan dampak nyata bagi siswa-siswi kita.
+
+Satu komitmen, satu tujuan: mewujudkan Generasi Berencana yang sehat, cerdas, dan siap bersaing! Semangat mengabdi!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/rap6juli/1.png","/ssk/rap6juli/2.png","/ssk/rap6juli/3.png","/ssk/rap6juli/4.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "28",
+    judul: "Gagasan berani dan menginspirasi dari para orator muda SMAN 7 Balikpapan! 📣🔥",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Kembali memberikan apresiasi untuk talenta hebat sekolah kita! Senin (27/07) setelah upacara bendera, diumumkan para pemenang Lomba Orasi memperingati Hari Kependudukan Sedunia ✨.
+
+Selamat atas prestasi membanggakan yang diraih oleh:
+
+✨ Juara 1: Adinda Wahyu Nuraini (X-D)
+
+✨ Juara 2: Wahidatuzzahra (X-K)
+
+✨ Juara 3: Fathul Azkiya Mahani (X-B)
+
+Keberanian kalian menyuarakan isu kependudukan adalah bukti nyata semangat remaja peduli masa depan. Congratulations, champions!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
+`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/jr1.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbST84Qvts2/embed",
+    tautanBerita: "https://www.instagram.com/p/DbST84Qvts2/",
+    penanggungJawab: ""
+  },
+  {
+    id: "27",
+    judul: "Gagasan berani dan menginspirasi dari para orator muda SMAN 7 Balikpapan! 📣🔥",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Kembali memberikan apresiasi untuk talenta hebat sekolah kita! Senin (27/07) setelah upacara bendera, diumumkan para pemenang Lomba Orasi memperingati Hari Kependudukan Sedunia ✨.
+
+Selamat atas prestasi membanggakan yang diraih oleh:
+
+✨ Juara 1: Adinda Wahyu Nuraini (X-D)
+
+✨ Juara 2: Wahidatuzzahra (X-K)
+
+✨ Juara 3: Fathul Azkiya Mahani (X-B)
+
+Keberanian kalian menyuarakan isu kependudukan adalah bukti nyata semangat remaja peduli masa depan. Congratulations, champions!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
+`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/jr2.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbSTdg_P1cX/embed",
+    tautanBerita: "https://www.instagram.com/p/DbSTdg_P1cX/",
+    penanggungJawab: ""
+  },
+  {
+    id: "26",
+    judul: "Gagasan berani dan menginspirasi dari para orator muda SMAN 7 Balikpapan! 📣🔥",
+    tanggal: "23 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Kembali memberikan apresiasi untuk talenta hebat sekolah kita! Senin (27/07) setelah upacara bendera, diumumkan para pemenang Lomba Orasi memperingati Hari Kependudukan Sedunia ✨.
+
+Selamat atas prestasi membanggakan yang diraih oleh:
+
+✨ Juara 1: Adinda Wahyu Nuraini (X-D)
+
+✨ Juara 2: Wahidatuzzahra (X-K)
+
+✨ Juara 3: Fathul Azkiya Mahani (X-B)
+
+Keberanian kalian menyuarakan isu kependudukan adalah bukti nyata semangat remaja peduli masa depan. Congratulations, champions!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/jr3.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbSTF5TPg7x/embed",
+    tautanBerita: "https://www.instagram.com/p/DbSTF5TPg7x/",
+    penanggungJawab: ""
+  },
+  {
+    id: "25",
+    judul: "Suara lantang generasi muda untuk masa depan kependudukan yang lebih baik! ✨",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Senin, 27 Juli 2026, usai pelaksanaan upacara bendera, lapangan SMAN 7 Balikpapan kembali bergemuruh! Sebagai Sekolah Siaga Kependudukan (SSK), kami mengumumkan para orator terbaik dalam Lomba Orasi Hari Kependudukan Sedunia yang telah berlangsung pada 21–25 Juli 2026 lalu 🏫
+
+Selamat dan apresiasi setinggi-tingginya kepada para pemenang yang telah menyuarakan gagasan kritis dan inspiratifnya:
+
+🥇 Juara 1: Adinda Wahyu Nuraini (Kelas X-D)
+
+🥈 Juara 2: Wahidatuzzahra (Kelas X-K)
+
+🥉 Juara 3: Fathul Azkiya Mahani (Kelas X-B)
+
+Terima kasih untuk seluruh peserta yang telah berani bersuara dan menyampaikan pesan-pesan kependudukan. Teruslah menginspirasi dan jadilah pilar Generasi Berencana bersama SSK SMAN 7 Balikpapan!
+
+Video orasi pemenang akan kami tampilkan dipostingan berikutnya,, Stay Tune !!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
+`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/pres-ssk2/1.png","/ssk/pres-ssk2/2.png","/ssk/pres-ssk2/3.png","/ssk/pres-ssk2/4.png",],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "24",
+    judul: "Satu langkah lebih dekat menuju pembelajaran berwawasan kependudukan! 💡",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Usai upacara bendera, Senin (27/07), Bapak/Ibu Guru dan staf SMAN 7 Balikpapan langsung bergerak cepat mengikuti Rapat Koordinasi & Sosialisasi Pembuatan Modul Ajar Terintegrasi SSK! ✨
+
+Acara dibuka khidmat dengan doa oleh Pak Ayi Sholihin, M.Pd. dan arahan motivatif dari Ibu Kepsek, Ibu Puspani, M.Pd. Sesi sosialisasi penyusunan RPP/Modul Ajar SSK dibawakan oleh Bu Lulik Ariyani, M.Pd., dilanjutkan dengan update tindak lanjut program SSK oleh Ketua SSK, Bu Sri Yunita, S.Pd.
+
+Komitmen penuh dari bapak dan ibu guru demi mencetak generasi muda yang cerdas, berencana, dan berkarakter. Semangat mengabdi!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/rapat-koor2/1.png","/ssk/rapat-koor2/2.png","/ssk/rapat-koor2/3.png","/ssk/rapat-koor2/4.png","/ssk/rapat-koor2/5.png","/ssk/rapat-koor2/6.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "23",
+    judul: "Kreativitas tanpa batas untuk menyuarakan kepedulian kependudukan! ✨",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Senin, 27 Juli 2026, suasana lapangan SMAN 7 Balikpapan terasa makin istimewa setelah pelaksanaan upacara bendera. Sebagai Sekolah Siaga Kependudukan (SSK), kami mengumumkan para pemenang Lomba Poster Digital Hari Kependudukan Sedunia yang telah berlangsung pada 21–25 Juli 2026 lalu!
+
+Selamat kepada para pemenang yang telah menumpahkan ide kreatif dan pesan edukatif terbaiknya:
+
+🥇 Juara 1: Adelia Andriani Manalu (Kelas X-A)
+
+🥈 Juara 2: Fina Nailatul Izzah Ayusri (Kelas XI-B1)
+
+🥉 Juara 3: Muhammad Gilang Pratama (Kelas XI-A1)
+
+Terima kasih untuk seluruh siswa yang sudah berpartisipasi dan berkarya! Teruslah berkarya, menginspirasi, dan menjadi agen perubahan bersama SSK SMAN 7 Balikpapan!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/pres-ssk/5.png","/ssk/pres-ssk/1.png","/ssk/pres-ssk/2.png","/ssk/pres-ssk/3.png","/ssk/pres-ssk/4.png","/ssk/pres-ssk/6.png","/ssk/pres-ssk/7.png","/ssk/pres-ssk/8.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "22",
+    judul: "Sinergi sekolah dan orang tua untuk fondasi kuat murid kelas X! ✨",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Kebersamaan hangat terjalin pada Senin (27/07) saat SMAN 7 Balikpapan menggelar Sosialisasi Program Sekolah Siaga Kependudukan (SSK) bersama Orang Tua/Wali Murid Kelas X 🌿
+
+Acara dibuka dengan penuh kehangatan oleh Ketua Komite Ibu Heni Yohana & Kepala Sekolah Ibu Puspani, M.Pd., lalu disambung pemaparan Kurikulum oleh Ibu Lulik Ariyani, M.Pd. serta program Kesiswaan oleh Bapak Sultan, S.Sos., Gr.
+
+Tak kalah krusial, Ibu Liliyanda Megawati, S.Pd. turut memaparkan program SSK seputar pentingnya pengenalan identitas diri bagi para siswa baru ✨
+
+Terima kasih atas kehadiran dan partisipasi aktif Bapak/Ibu wali murid. Mari bergandengan tangan mengawal tumbuh kembang dan masa depan putra-putri kita!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
+`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/rap-koor.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbSK6hjvOOc/embed",
+    tautanBerita: "https://www.instagram.com/p/DbSK6hjvOOc/",
+    penanggungJawab: ""
+  },
+  {
+    id: "21",
+    judul: "Menjaga ritme, menguatkan komitmen demi keberlanjutan program! ✨",
+    tanggal: "24 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Jumat, 24 Juli 2026, tim kepanitiaan Sekolah Siaga Kependudukan (SSK) SMAN 7 Balikpapan kembali menggelar Rapat Koordinasi Lanjutan guna mengevaluasi agenda yang telah berjalan serta memantapkan rencana program di pekan mendatang 🏫
+
+Rapat dipimpin langsung oleh Ketua Program SSK, Ibu Sri Yunita, S.Pd., yang memberikan arahan strategis terkait penajaman langkah dan efektivitas pelaksanaan program SSK ke depan.
+
+Geser slide untuk melihat fokus dan keseriusan Bapak/Ibu guru panitia dalam merancang kegiatan yang bermanfaat bagi seluruh warga sekolah dan masyarakat sekitar.
+
+Bersama SSK SMAN 7 Balikpapan, terus bergerak mewujudkan generasi muda yang terencana, berkualitas, dan berdampak!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/rapat-koor/1.png","/ssk/rapat-koor/2.png","/ssk/rapat-koor/3.png","/ssk/rapat-koor/4.png","/ssk/rapat-koor/5.png","/ssk/rapat-koor/6.png","/ssk/rapat-koor/7.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "20",
+    judul: "Lepas penat sejenak, kembali ceria lewat permainan tradisional! ✨",
+    tanggal: "24 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Merayakan Hari Anak Nasional (24/07) lalu, keluarga besar SMAN 7 Balikpapan ciptakan momen penuh kenangan di luar kelas! Seluruh murid diajak nostalgia dan seru-seruan bareng lewat berbagai permainan tradisional khas Indonesia.
+
+Di bawah bimbingan Pak Aji Utama, S.Pd., suasana sekolah makin hidup dengan keseruan balap bakiak, gobak sodor, egrang, lompat tali, hingga congklak bareng teman-teman 🤝. Semua sehat, heboh, dan bahagia!
+
+Karena remaja Indonesia berhak atas masa muda yang sehat, ceria, dan penuh tawa. Selamat Hari Anak Nasional!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/mhan/5.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbQaOFZPo0Y/embed",
+    tautanBerita: "https://www.instagram.com/p/DbQaOFZPo0Y/",
+    penanggungJawab: ""
+  },
+  {
+    id: "19",
+    judul: "Tertawa bebas, melestarikan budaya, dan merayakan indahnya masa muda! ✨",
+    tanggal: "24 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Jumat, 24 Juli 2026, suasana lapangan SMAN 7 Balikpapan berubah jadi penuh warna dan gelak tawa! Dalam rangka memperingati Hari Anak Nasional, sekolah kami mengajak seluruh murid istirahat sejenak dari rutinitas kelas untuk bermain bersama di luar ruangan ☀️
+
+Diarahkan langsung oleh Bapak Aji Utama, S.Pd. (Guru PJOK SMAN 7 Balikpapan), para siswa asyik mencoba beragam permainan tradisional—mulai dari congklak, egrang, gobak sodor, balap bakiak, hingga lompat tali!
+
+Sebagai Sekolah Siaga Kependudukan (SSK), kami percaya bahwa kebahagiaan dan kesehatan mental remaja adalah bagian penting dalam menyiapkan generasi masa depan yang unggul.
+
+Swipe sampai akhir buat lihat keseruan dan senyum lepas warga SMAN 7 Balikpapan! Game tradisional mana nih yang paling kamu jagoin?
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
+`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/mhan/3.png","/ssk/mhan/1.png","/ssk/mhan/2.png","/ssk/mhan/4.png","/ssk/mhan/5.png","/ssk/mhan/6.png","/ssk/mhan/7.png","/ssk/mhan/8.png","/ssk/mhan/9.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "18",
+    judul: "Safari SSK SMAN 7 Balikpapan: 1 hari, 3 sekolah hebat! ✨",
+    tanggal: "24 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Langkah nyata SMAN 7 Balikpapan sebagai Sekolah Siaga Kependudukan (SSK) terus berlanjut! Rabu (22/07) lalu, tim SSK bertandang ke MTs Al-Falah, SMPN 23, dan SMPN 28 Balikpapan untuk berbagi pemahaman kependudukan bersama teman-teman PMR dan PIK-R 🌿
+
+Materi menarik dibawakan oleh Duta SSK kita, Trie Wahdana & Dzaki Dzulfikar, dengan pendampingan penuh dari Bapak Amirudin Siwasiwan, S.Pd., Bapak Arfah, S.Pd., Ibu Anisa Ulfa, S.Pd., serta Ibu Hj. Rita Ariyani, S.Pd. ✨
+
+Terima kasih atas semangat dan keaktifan luar biasa dari adik-adik di ketiga sekolah! Sampai jumpa di kolaborasi seru berikutnya!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/ss-18.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbQUuh_P0Qm/embed",
+    tautanBerita: "https://www.instagram.com/p/DbQUuh_P0Qm/",
+    penanggungJawab: ""
+  },
+  {
+    id: "17",
+    judul: "Lindungi masa depan, wujudkan generasi bebas narkoba! 🛡️",
+    tanggal: "24 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Jumat (24/07) lalu, ekstrakurikuler PIK-R SMAN 7 Balikpapan kedatangan tamu istimewa dari BNN Kota Balikpapan! 🌿
+
+Lewat pemaparan edukatif dari Bapak Alfin Agung Nugroho, S.I.Kom, para siswa diajak memahami bahaya serta dampak nyata penyalahgunaan narkotika bagi generasi muda. Suasana diskusi menjadi semakin hangat dan interaktif berkat pendampingan dari Pembina PIK-R, Ibu Juni Alvionita Nainggolan, S.Psi.
+
+Langkah nyata Sekolah Siaga Kependudukan (SSK) untuk melahirkan remaja yang berani menolak narkoba dan siap meraih cita-cita!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
+`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/bnn.jpg"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbQSk1Xvmzu/embed",
+    tautanBerita: "https://www.instagram.com/p/DbQSk1Xvmzu/",
+    penanggungJawab: ""
+  },
   {
     id: "16",
     judul: "Maraton edukasi kependudukan di bumi Balikpapan! ✨",
@@ -202,7 +604,7 @@ SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
     tipeMedia: "video",
     mediaUrls: ["/ssk/1784765441772.jpg"],
     videoEmbedUrl: "https://www.instagram.com/p/DbP3s3RP9NY/embed",
-    tautanBerita: "",
+    tautanBerita: "https://www.instagram.com/p/DbP3s3RP9NY/",
     penanggungJawab: ""
   },
   {
@@ -223,7 +625,7 @@ SMANJU : Semakin Maju!
 SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah!
 `,
     tipeMedia: "video",
-    mediaUrls: ["/ssk/DSCF0089_1.jpg"],
+    mediaUrls: ["/ssk/msmk.jpg"],
     videoEmbedUrl: "https://www.instagram.com/p/DbP0chRPBsG/embed",
     tautanBerita: "https://www.instagram.com/p/DbP0chRPBsG/",
     penanggungJawab: ""
