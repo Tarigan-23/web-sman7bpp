@@ -1,5 +1,27 @@
 export const berita = [
   {
+    id: 196,
+    judul: "📚 Rapat Koordinasi Pelaksanaan Projek",
+    tanggal: "27 juli 2026",
+    gambar: ["/berita/213.jpeg","/berita/214.jpeg","/berita/215.jpeg","/berita/216.jpeg","/berita/217.jpeg"],
+    deskripsi: `Kegiatan Pelatihan Ekstrakurikuler PIK-R Rayuan Pulau Kelapa pada Program Sekolah Siaga Kependudukan “Generasi Berencana, Generasi Bercahaya” telah dilaksanakan pada Jumat, 24 Juli 2026 pukul 09.00 s.d. 11.00 WITA di SMA Negeri 7 Balikpapan bersama narasumber Kak Alfin Agung Nugroho, S.I.Kom dari BNN Kota Balikpapan.
+
+Kegiatan ini bertujuan untuk meningkatkan kesadaran dan penguatan anggota dalam memahami perencanaan kehidupan remaja serta pencegahan perilaku berisiko, sehingga diharapkan peserta dapat menjadi remaja yang lebih sadar, bertanggung jawab, dan berperan aktif dalam menyebarkan informasi positif di lingkungan sekitarnya.`,
+    sumberUrl: ""
+  },
+  {
+    id: 195,
+    judul: "🌈 Selamat Hari Anak Nasional 2026",
+    tanggal: "27 juli 2026",
+    gambar: ["/berita/212.jpeg"],
+    deskripsi: `Anak-anak adalah harapan hari ini dan pemimpin masa depan. Setiap anak berhak tumbuh dalam lingkungan yang aman, bahagia, sehat, dan penuh kasih sayang, serta memperoleh pendidikan yang berkualitas untuk mengembangkan potensi terbaiknya.
+Di Hari Anak Nasional ini, mari bersama-sama menciptakan sekolah yang ramah, inklusif, dan bebas dari perundungan, sehingga setiap anak merasa dihargai, didengar, dan didukung untuk meraih cita-citanya.
+Selamat Hari Anak Nasional! Teruslah belajar, berkarya, berani bermimpi, dan menjadi generasi yang berakhlak mulia, cerdas, serta berprestasi.
+
+"Anak Hebat, Indonesia Kuat menuju Indonesia Emas 2045." 💙💛`,
+    sumberUrl: ""
+  },
+  {
     id: 194,
     judul: "Kegiatan Pelatihan Ekstrakurikuler PIK-R Rayuan Pulau Kelapa",
     tanggal: "24 juli 2026",
