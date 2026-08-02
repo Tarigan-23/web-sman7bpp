@@ -13,6 +13,279 @@ export interface SSKProgram {
 
 export const DATA_PROGRAM_SSK: SSKProgram[] = [
   {
+    id: "45",
+    judul: "Membangun Generasi Berwawasan Kependudukan bersama SMAN 7 Balikpapan.",
+    tanggal: "30 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Menyambut program Sekolah Siaga Kependudukan (SSK) Tahun 2026, SMAN 7 Balikpapan berkomitmen untuk mengintegrasikan pendidikan kependudukan ke dalam ekosistem belajar yang menyenangkan, bersih, dan berprestasi.
+
+Mari bersama-sama dukung langkah nyata sekolah kami dalam menyiapkan generasi muda yang berencana, sehat, dan berdaya saing tinggi.
+
+Simak video profil lengkap SSK SMAN 7 Balikpapan di atas! 🎬✨
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/profil.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbdXIzhvpOD/embed",
+    tautanBerita: "https://www.instagram.com/p/DbdXIzhvpOD/",
+    penanggungJawab: ""
+  },
+  {
+    id: "44",
+    judul: "Menyambung sinergi, menguatkan kolaborasi! ✨",
+    tanggal: "29 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Selasa (21/07) lalu, kebersamaan hangat terjalin antara SMAN 7 Balikpapan dan Orang Tua/Wali Murid Kelas XI melalui agenda Sosialisasi Program Sekolah Siaga Kependudukan (SSK).
+
+Ajang penyatuan visi-misi ini dibuka oleh arahan dari Komite bagian Humas Bapak Bambang, Ibu Kepala Sekolah Puspani, M.Pd., serta pemaparan program Kurikulum (Ibu Lulik Ariyani, M.Pd ) dan Kesiswaan (Bapak Sultan, S.Sos., Gr.) 💡.
+
+Tak ketinggalan, Ibu Hj. Murdiana, S.Pd. menyampaikan tujuan penting dari program SSK dalam membentuk karakter siswa yang paham kependudukan dan berencana 🌿
+
+Pendidikan terbaik lahir dari kerja sama yang kuat antara rumah dan sekolah!
+
+SMANJU : Religius, Cerdas Berprestasi!
+SMANJU : Semakin Maju!
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah!
+`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/5.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbP0chRPBsG/embed",
+    tautanBerita: "https://www.instagram.com/p/DbP0chRPBsG/",
+    penanggungJawab: ""
+  },
+  {
+    id: "43",
+    judul: "Belajar jadi teman cerita yang empati dan solusi yang tepat! 💙",
+    tanggal: "29 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Rabu (29/07) pukul 09.00–11.00 WITA, Ruang BK SMAN 7 Balikpapan dipenuhi semangat teman-teman PIK-R dalam pelatihan Peer Educator & Peer Counselor Tangguh 🌿.
+
+Fasilitator hebat kita, Bu Juni Alvionita Nainggolan, S.Psi., membekali siswa teknik menjadi konselor sebaya yang peka, ramah, dan paham batas rujukan ke Guru BK ✨
+
+Nggak cuma teori, teman-teman PIK-R juga langsung praktik konseling sebaya secara interaktif!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/peranpe-er.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/Dbabw82Pxbm/embed",
+    tautanBerita: "https://www.instagram.com/p/Dbabw82Pxbm/",
+    penanggungJawab: ""
+  },
+  {
+    id: "42",
+    judul: "Sebagai Sekolah Siaga Kependudukan (SSK), SMAN 7 Balikpapan terus berkomitmen memperluas wawasan kependudukan dan penyiapan Generasi Berencana! 🏫",
+    tanggal: "29 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Melalui aksi seru safari sosialisasi, Duta SSK SMAN 7 Balikpapan Kak Dzaki Dzulfikar Ma'arif (XII-C1) dan Kak Trie Wahdana (XI-A1) bersama bapak/ibu guru pendamping telah mengunjungi berbagai sekolah hebat di Balikpapan:
+
+📍 MTs Al Falah
+
+📍 SMK Adzkiya
+
+📍 SMPN 23 Balikpapan
+
+📍 SMPN 28 Balikpapan
+
+📍 SMPN 19 Balikpapan
+
+📍 SMPN 8 Balikpapan
+
+📍 SMPN 13 Balikpapan
+
+Terima kasih atas sambutan hangat, antusiasme, dan semangat luar biasa dari kepala sekolah, guru, serta adik-adik di setiap sekolah yang kami kunjungi! 🙏😊
+
+Bersama-sama, mari kita wujudkan remaja Balikpapan yang cerdas, peduli, dan siap menyongsong masa depan!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
+`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/4.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbZoG67vDGY/embed",
+    tautanBerita: "https://www.instagram.com/p/DbZoG67vDGY/",
+    penanggungJawab: ""
+  },
+  {
+    id: "41",
+    judul: "Menjadi pendengar yang baik, menjadi teman yang menguatkan! 🤝",
+    tanggal: "29 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Rabu, 29 Juli 2026, Tim Bimbingan Konseling (BK) SMAN 7 Balikpapan menggelar kegiatan Peer Educator & Peer Counselor Tangguh bagi anggota ekstrakurikuler PIK-R di Ruang BK 🏫💙.
+
+Diampu langsung oleh Ibu Juni Alvionita Nainggolan, S.Psi., murid-murid diajak mengasah skill konseling sebaya : belajar menjadi pendengar yang empati sekaligus memahami mekanisme rujukan kapan saatnya mendampingi dan kapan harus merujuk ke Guru BK 💡.
+
+Sesi makin seru dengan adanya diskusi, tanya jawab, dan praktik langsung antar-teman sebaya 🫂.
+
+Geser slide untuk melihat antusiasme dan momen hangat murid-murid saat belajar menjadi ruang aman bagi sesamanya!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/penyuluhan/1.png","/ssk/penyuluhan/2.png","/ssk/penyuluhan/3.png","/ssk/penyuluhan/4.png","/ssk/penyuluhan/5.png","/ssk/penyuluhan/6.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "40",
+    judul: "Jalinan kasih dan edukasi untuk lahirkan generasi masa depan yang sehat dan bebas stunting! ✨",
+    tanggal: "29 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Rabu, 29 Juli 2026, SMAN 7 Balikpapan sebagai Sekolah Siaga Kependudukan (SSK) kembali hadir di tengah masyarakat lewat aksi nyata penyuluhan kependudukan dan kesehatan keluarga di Posyandu Mawar Putih, RT 27 Kelurahan Lamaru 🏡.
+
+Kegiatan ini diwakili oleh tim guru SSK SMAN 7 Balikpapan Ibu Hj. Murdiana, S.Pd., Ibu Sri Yunita, S.Pd., dan Ibu Anisa Ulfa, S.Pd. yang membagikan materi penting seputar pencegahan stunting serta bagaimana menjadi orang tua yang siap merencanakan masa depan dan tumbuh kembang anak secara optimal 💡.
+
+Aksi edukasi hangat ini dihadiri oleh para ibu, balita, serta kader posyandu setempat dan mendapat dukungan penuh dari Ketua RT 27 Kelurahan Lamaru, Ibu Darmawanti 🙏.
+
+Geser slide untuk melihat antusiasme dan kehangatan momen kebersamaan kami! Terus bergerak bersama demi mewujudkan generasi yang sehat, cerdas, dan berencana !
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/posyandu/1.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "39",
+    judul: "Sinergi kuat sekolah dan orang tua untuk masa depan lulusan kelas XII! ✨",
+    tanggal: "29 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Rabu (29/07), ruang pertemuan SMAN 7 Balikpapan dipenuhi kehangatan dalam agenda Sosialisasi Program Sekolah Siaga Kependudukan (SSK) bersama Orang Tua/Wali Murid Kelas XII 🌿.
+
+Acara dibuka oleh Ketua Komite Ibu Heny Yohana & Kepala Sekolah Ibu Puspani, M.Pd., disusul penjelasan Kurikulum oleh Bu Lulik Ariyani, M.Pd. dan Kesiswaan oleh Pak Sultan, S.Sos., Gr. 💡
+
+Diskusi makin bernilai dengan pemaparan info beasiswa & jalur prestasi PTN oleh Bu Heni Fatmawati, S.Pd., serta penguatan perencanaan masa depan lewat materi SSK oleh Bu Ratna Hastati, S.Pd., Gr. 🎯
+
+Terima kasih atas kehadiran dan partisipasi aktif Bapak/Ibu wali murid. Bersama-sama, kita siap mendampingi kelulusan dan suksesnya masa depan anak-anak kita!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !
+`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/3.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbXJz_3PCbd/embed",
+    tautanBerita: "https://www.instagram.com/p/DbXJz_3PCbd/",
+    penanggungJawab: ""
+  },
+  {
+    id: "38",
+    judul: "Sinergi SMAN 7 Balikpapan & Puskesmas Lamaru untuk Remaja Sehat! ✨",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Senin (27/07) lalu, ruang edukasi SMAN 7 Balikpapan makin bermakna lewat Penyuluhan Kesehatan Reproduksi Remaja bareng Puskesmas Lamaru 🌿.
+
+Momen seru ini dibuka oleh Pak Sultan, S.Sos., Gr. (Waka Kesiswaan) dan dipaparkan secara lugas oleh dr. Feriansyah Akhbar Syamsir bersama Ibu Mega Anjaswati, A.Md.Keb. 🩺
+
+Adik-adik dari ekskul PMR, PIK-R, dan Tangguh Bencana antusias banget menyimak materi, didampingi Bu Delis Miftahul Janah, S.Pd. & Bu Hj. Murdiana, S.Pd. ✨
+
+Terima kasih tim Puskesmas Lamaru! Informasi yang sangat bermanfaat untuk bekal remaja yang sehat dan berencana!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/2.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbXHMtZvHFt/embed",
+    tautanBerita: "https://www.instagram.com/p/DbXHMtZvHFt/",
+    penanggungJawab: ""
+  },
+  {
+    id: "37",
+    judul: "Edukasi sejak dini, wujud nyata kepedulian pada kesehatan generasi masa depan! 🩺",
+    tanggal: "27 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Senin, 27 Juli 2026, SMAN 7 Balikpapan sebagai Sekolah Siaga Kependudukan (SSK) mendapatkan kunjungan istimewa dari tim Puskesmas Lamaru untuk sosialisasi dan penyuluhan penting seputar Kesehatan Reproduksi Remaja 🏫.
+
+Acara dibuka dengan hangat melalui sambutan dari Waka Bidang Kesiswaan, Bapak Sultan, S.Sos., Gr. Sesi materi yang sangat informatif dan interaktif dibawakan langsung oleh Bapak dr. Feriansyah Akhbar Syamsir dan Ibu Mega Anjaswati, A.Md.Keb. 💡
+
+Penyuluhan ini diikuti oleh adik-adik dari ekstrakurikuler PMR, PIK-R, dan Tangguh Bencana, didampingi langsung oleh Pembina PMR (Ibu Delis Miftahul Janah, S.Pd.) serta Kepala UKS SMAN 7 Balikpapan (Ibu Hj. Murdiana, S.Pd.).
+
+Terima kasih Puskesmas Lamaru atas edukasi dan sinerginya! Mari bersama-sama wujudkan remaja SMAN 7 Balikpapan yang sehat, paham informasi, dan siap jadi Generasi Berencana!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/puskesmas/1.png","/ssk/puskesmas/2.png","/ssk/puskesmas/3.png","/ssk/puskesmas/4.png","/ssk/puskesmas/5.png","/ssk/puskesmas/6.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "36",
+    judul: "Safari SSK SMAN 7 Balikpapan berlanjut ke SMPN 13 Balikpapan! ✨",
+    tanggal: "28 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Hari ini, Selasa (28/07), tim Sekolah Siaga Kependudukan (SSK) SMAN 7 Balikpapan bertandang ke SMPN 13 Balikpapan untuk berbagi pemahaman kependudukan bersama teman-teman PMR dan PIK-R 🌿.
+
+Terima kasih atas sambutan yang amat hangat dari Bapak Nasrun, S.Pd. (Waka Kesiswaan SMPN 13 Balikpapan) beserta seluruh keluarga besar sekolah! 🙌
+
+Materi menarik dipaparkan oleh Duta SSK kita, Trie Wahdana & Dzaki Dzulfikar, dengan pendampingan penuh dari Pak Amirudin Siwasiwan, S.Pd., Bu Sri Yunita, S.Pd., Bu Anisa Ulfa, S.Pd., serta Bu Hj. Murdiana, S.Pd. ✨
+
+Adik-adik peserta super aktif dan kritis sepanjang diskusi! Mari terus bergandengan tangan mewujudkan Generasi Berencana yang hebat!`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/1.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbVkIh3PPw-/embed",
+    tautanBerita: "https://www.instagram.com/p/DbVkIh3PPw-/",
+    penanggungJawab: ""
+  },
+  {
+    id: "35",
+    judul: "Merajut sinergi, menebar inspirasi kependudukan untuk adik-adik SMPN 13 Balikpapan! ✨",
+    tanggal: "28 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Selasa, 28 Juli 2026, SMAN 7 Balikpapan kembali melanjutkan langkah nyata sebagai Sekolah Siaga Kependudukan (SSK) lewat agenda kunjungan sosialisasi ke SMPN 13 Balikpapan! 🏫
+
+Kedatangan tim SSK SMAN 7 disambut dengan sangat hangat oleh Wakil Kepala Sekolah Bidang Kesiswaan, Bapak Nasrun, S.Pd. Terima kasih banyak atas penyambutan yang begitu terbuka dan ramah untuk kami 😊.
+
+Sesi sosialisasi kependudukan diikuti oleh adik-adik dari ekstrakurikuler PMR dan PIK-R SMPN 13 Balikpapan. Materi dibawakan secara seru dan interaktif oleh Duta SSK SMAN 7 Balikpapan, Trie Wahdana dan Dzaki Dzulfikar 💡
+
+Aksi edukasi ini juga didampingi langsung oleh tim guru SMAN 7 Balikpapan, Bapak Amirudin Siwasiwan, S.Pd., Ibu Sri Yunita, S.Pd., Ibu Anisa Ulfa, S.Pd., dan Ibu Hj. Murdiana, S.Pd. yang turut memberikan arahan serta motivasi.
+
+Antusiasme dan keaktifan para peserta luar biasa! Semoga ilmu yang dibagikan bermanfaat dan sampai jumpa di kolaborasi seru berikutnya!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "foto",
+    mediaUrls: ["/ssk/sosialisasi-smp28jul/1.png","/ssk/sosialisasi-smp28jul/2.png","/ssk/sosialisasi-smp28jul/3.png","/ssk/sosialisasi-smp28jul/4.png","/ssk/sosialisasi-smp28jul/5.png","/ssk/sosialisasi-smp28jul/6.png"],
+    videoEmbedUrl: "embed",
+    tautanBerita: "",
+    penanggungJawab: ""
+  },
+  {
+    id: "34",
+    judul: "Menguatkan peran keluarga, menyelaraskan langkah untuk masa depan anak! ✨",
+    tanggal: "28 JULI 2026",
+    kategori: "Edukasi",
+    narasiLengkap: `Lanjutan antusiasme hari ini! Selasa (28/07), SMAN 7 Balikpapan kembali menggelar Sosialisasi Program Sekolah Siaga Kependudukan (SSK) bersama Orang Tua/Wali Murid Kelas XI.
+
+Sinergi dibuka oleh perwakilan Komite Bapak Bambang & Kepala Sekolah Ibu Puspani, M.Pd., disusul penjelasan Kurikulum oleh Ibu Lulik Ariyani, M.Pd. dan Kesiswaan oleh Bapak Sultan, S.Sos., Gr. 💡
+
+Sesi makin bermakna lewat pemaparan materi "Penguatan Keluarga" oleh Sekretaris SSK, Ibu Juni Alvionita Nainggolan, S.Psi., yang menekankan betapa pentingnya peran rumah dan sekolah yang saling menguatkan 🏡
+
+Terima kasih atas kehangatan dan dukungan penuh seluruh orang tua murid kelas XI. Bersama SMAN 7 Balikpapan, kita dampingi hebatnya langkah mereka!
+
+SMANJU : Religius, Cerdas, Berprestasi !
+SMANJU : Semakin Maju !
+SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
+    tipeMedia: "video",
+    mediaUrls: ["/ssk/28-7-2026.png"],
+    videoEmbedUrl: "https://www.instagram.com/p/DbU-BhMPr3y/embed",
+    tautanBerita: "https://www.instagram.com/p/DbU-BhMPr3y/",
+    penanggungJawab: ""
+  },
+  {
     id: "33",
     judul: "Senin, 27 Juli 2026, Tim Sekolah Siaga Kependudukan (SSK) SMAN 7 Balikpapan bergerak serentak memperkuat pemahaman kependudukan dengan merangkul seluruh ekstrakurikuler di sekolah! 🏫",
     tanggal: "27 JULI 2026",
@@ -106,7 +379,7 @@ SMANJU : Religius, Cerdas, Berprestasi !
 SMANJU : Semakin Maju !
 SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah !`,
     tipeMedia: "foto",
-    mediaUrls: ["/ssk/Buletin27juli.png"],
+    mediaUrls: ["/ssk/6.png"],
     videoEmbedUrl: "embed",
     tautanBerita: "",
     penanggungJawab: ""
@@ -625,7 +898,7 @@ SMANJU : Semakin Maju!
 SSK SMANJU : Remaja Sehat, Remaja Berkualitas, Masa Depan Terarah!
 `,
     tipeMedia: "video",
-    mediaUrls: ["/ssk/msmk.jpg"],
+    mediaUrls: ["/ssk/7.jpg"],
     videoEmbedUrl: "https://www.instagram.com/p/DbP0chRPBsG/embed",
     tautanBerita: "https://www.instagram.com/p/DbP0chRPBsG/",
     penanggungJawab: ""
