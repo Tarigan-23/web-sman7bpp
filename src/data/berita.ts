@@ -1,5 +1,38 @@
 export const berita = [
   {
+    id: 199,
+    judul: "Rapat Koordinasi Bersama Wali Kelas X 🤝",
+    tanggal: "29 juli 2026",
+    gambar: ["/berita/227.jpeg","/berita/228.jpeg","/berita/229.jpeg"],
+    deskripsi: `Dalam upaya meningkatkan kualitas layanan pendidikan, SMA Negeri 7 Balikpapan melaksanakan Rapat Koordinasi bersama Wali Kelas X sebagai forum evaluasi terhadap pelaksanaan berbagai program sekolah.
+Melalui rapat ini, dilakukan pembahasan dan evaluasi terhadap berbagai aspek penting, di antaranya pelaksanaan proses pembelajaran, kegiatan ekstrakurikuler, penerapan tata tertib, kondisi sarana dan prasarana, serta berbagai hal yang berkaitan dengan perkembangan peserta didik.
+Kegiatan ini menjadi wujud komitmen sekolah dalam membangun komunikasi yang baik antarwali kelas, menyamakan persepsi, serta mencari solusi bersama demi menciptakan lingkungan belajar yang aman, nyaman, disiplin, dan mendukung tumbuh kembang peserta didik secara optimal.
+Semoga hasil koordinasi ini menjadi langkah nyata untuk terus meningkatkan mutu pelayanan pendidikan di SMA Negeri 7 Balikpapan.
+Bersama Berkolaborasi, Bersama Meningkatkan Kualitas Pendidikan.`,
+    sumberUrl: ""
+  },
+  {
+    id: 198,
+    judul: "Keluarga besar SMA Negeri 7 Balikpapan mengucapkan selamat kepada Ridho Prasetyo",
+    tanggal: "28 juli 2026",
+    gambar: ["/berita/222.jpeg","/berita/223.jpeg","/berita/224.jpeg","/berita/225.jpeg","/berita/226.jpeg"],
+    deskripsi: `Keluarga besar SMA Negeri 7 Balikpapan mengucapkan selamat kepada Ridho Prasetyo yang terpilih sebagai salah satu penerima Bantuan Beasiswa Pendidikan Gerakan Orang Tua Asuh (GOTA) dari PT Pamapersada Nusantara (PAMA) Balikpapan Operation. Program ini merupakan bagian dari tanggung jawab sosial perusahaan (CSR) dalam mendukung pendidikan bagi para pelajar.
+Semoga bantuan yang diterima dapat menjadi penyemangat untuk terus belajar, meraih prestasi, serta mewujudkan cita-cita yang diimpikan.
+Teruslah melangkah dengan semangat, karena setiap usaha hari ini adalah investasi untuk masa depan yang lebih baik.`,
+    sumberUrl: ""
+  },
+  {
+    id: 197,
+    judul: "Rapat persiapan dalam rangka menyambut Hari Ulang Tahun ke-81 Kemerdekaan Republik Indonesia",
+    tanggal: "28 juli 2026",
+    gambar: ["/berita/218.jpeg","/berita/219.jpeg","/berita/220.jpeg","/berita/221.jpeg"],
+    deskripsi: `Pada tanggal 28 Juli 2026, SMA Negeri 7 Balikpapan turut menghadiri rapat persiapan dalam rangka menyambut Hari Ulang Tahun ke-81 Kemerdekaan Republik Indonesia.
+Kegiatan ini menjadi wujud sinergi dan komitmen bersama antara pemerintah, instansi, serta satuan pendidikan dalam menyukseskan rangkaian peringatan HUT RI. Melalui koordinasi yang baik, diharapkan seluruh kegiatan dapat berlangsung dengan lancar, khidmat, dan penuh semangat kebangsaan.
+Mari bersama-sama menyambut Hari Kemerdekaan dengan menumbuhkan rasa cinta tanah air, mempererat persatuan, dan mengisi kemerdekaan melalui karya, prestasi, serta pengabdian terbaik untuk Indonesia.
+Dirgahayu Republik Indonesia ke-81!`,
+    sumberUrl: ""
+  },
+  {
     id: 196,
     judul: "📚 Rapat Koordinasi Pelaksanaan Projek",
     tanggal: "27 juli 2026",
