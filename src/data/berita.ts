@@ -1,5 +1,209 @@
 export const berita = [
   {
+    id: 213,
+    judul: "Peserta Didik SMA Negeri 7 Balikpapan Ikuti AI Class ASEAN",
+    tanggal: "12 Agustus 2026",
+    gambar: ["/berita/281.jpeg","/berita/282.jpeg","/berita/283.jpeg","/berita/284.jpeg","/berita/285.jpeg","/berita/286.jpeg","/berita/287.jpeg","/berita/288.jpeg","/berita/289.jpeg","/berita/290.jpeg","/berita/291.jpeg","/berita/292.jpeg","/berita/293.jpeg"],
+    deskripsi: `Pada Rabu, 12 Agustus 2026, seluruh peserta didik SMA Negeri 7 Balikpapan bersama para guru mengikuti kegiatan In Depth Learning AI Class ASEAN.
+
+Kegiatan ini merupakan bagian dari program AI Ready ASEAN yang bertujuan mendorong penguatan literasi dan kompetensi kecerdasan artifisial (AI) di lingkungan pendidikan. Kegiatan dilaksanakan melalui pembelajaran mendalam secara mandiri dan komprehensif menggunakan platform resmi AI Class ASEAN.
+
+💡 Dengan keterlibatan seluruh peserta didik dan guru, kegiatan ini menjadi kesempatan untuk mengenal, memahami, dan mengembangkan kemampuan dalam pemanfaatan teknologi AI secara lebih bijak dan bertanggung jawab.
+
+Semoga pengalaman belajar ini dapat menjadi bekal bagi generasi muda SMA Negeri 7 Balikpapan untuk terus adaptif terhadap perkembangan teknologi, kreatif dalam berkarya, dan siap menghadapi tantangan masa depan.
+
+🚀 Belajar AI hari ini, siapkan diri untuk masa depan!
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 212,
+    judul: "Rapat Pemantapan Persiapan HUT ke-81 Kemerdekaan Republik Indonesia",
+    tanggal: "12 Agustus 2026",
+    gambar: ["/berita/276.jpeg","/berita/277.jpeg","/berita/278.jpeg","/berita/279.jpeg"],
+    deskripsi: `Rapat Pemantapan Persiapan HUT ke-81 Kemerdekaan Republik Indonesia Kecamatan Balikpapan Timur
+Dalam rangka menyukseskan rangkaian peringatan HUT ke-81 Kemerdekaan Republik Indonesia, dilaksanakan Rapat Pemantapan Persiapan HUT RI ke-81 Kecamatan Balikpapan Timur.
+Kegiatan ini menjadi momentum untuk mematangkan berbagai persiapan, memperkuat koordinasi, serta menyatukan langkah dalam menyukseskan seluruh rangkaian agenda peringatan kemerdekaan.
+Persiapan ini melibatkan seluruh elemen yang ada di Kecamatan Balikpapan Timur, sebagai wujud nyata semangat gotong royong, kebersamaan, dan kolaborasi dalam memeriahkan Hari Kemerdekaan Republik Indonesia.
+
+🤝 Dari berbagai unsur, kita bersatu dalam satu semangat: memeriahkan kemerdekaan dan mempererat persaudaraan.
+Bersama Balikpapan Timur, Semarakkan Kemerdekaan!
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 211,
+    judul: "SMA Negeri 7 Balikpapan melaksanakan kegiatan Sosialisasi Persiapan Seleksi Nasional Berdasarkan Prestasi (SNBP).",
+    tanggal: "11 Agustus 2026",
+    gambar: ["/berita/275.png"],
+    deskripsi: `Dalam rangka membantu peserta didik mempersiapkan diri menuju jenjang pendidikan tinggi, SMA Negeri 7 Balikpapan melaksanakan kegiatan Sosialisasi Persiapan Seleksi Nasional Berdasarkan Prestasi (SNBP).
+Kegiatan ini menjadi momentum bagi peserta didik untuk memperoleh pemahaman mengenai persiapan yang perlu dilakukan dalam menghadapi proses seleksi, sekaligus mendorong peserta didik untuk mulai merencanakan pilihan pendidikan lanjutan dengan matang sesuai potensi, prestasi, dan cita-cita.
+🎯 Kenali potensimu, siapkan prestasimu, tentukan pilihanmu, dan raih perguruan tinggi impianmu!
+Semoga melalui kegiatan ini, peserta didik SMA Negeri 7 Balikpapan semakin siap, percaya diri, dan mampu mengambil langkah terbaik untuk masa depan.
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: "https://www.instagram.com/p/Db6yjPKhy-C/"
+  },
+  {
+    id: 210,
+    judul: "Rapat Koordinasi Panitia HUT ke-81 Kemerdekaan Republik Indonesia",
+    tanggal: "11 Agustus 2026",
+    gambar: ["/berita/269.jpeg","/berita/270.jpeg","/berita/271.jpeg","/berita/272.jpeg","/berita/273.jpeg","/berita/274.jpeg"],
+    deskripsi: `Pada Selasa, 11 Agustus 2026, Panitia Peringatan HUT ke-81 Kemerdekaan Republik Indonesia SMA Negeri 7 Balikpapan melaksanakan rapat koordinasi sebagai bagian dari persiapan menyambut rangkaian agenda peringatan Hari Kemerdekaan.
+Rapat ini menjadi momentum untuk mematangkan berbagai persiapan, melakukan koordinasi antarbidang, membagi tugas dan tanggung jawab, serta memastikan seluruh rangkaian kegiatan dapat terlaksana dengan baik, tertib, dan penuh semangat kebersamaan.
+🤝 Dengan semangat gotong royong dan kolaborasi seluruh warga sekolah, mari bersama-sama menyukseskan peringatan HUT ke-81 Republik Indonesia.
+Semarak Kemerdekaan, Kobarkan Semangat Persatuan!
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 209,
+    judul: "🩹 Pertolongan Pertama pada Luka Psikologis (P3LP)",
+    tanggal: "9 Agustus 2026",
+    gambar: ["/berita/268.png"],
+    deskripsi: `🌱 Sehat bukan hanya tentang fisik, tetapi juga tentang kesehatan psikologis.
+
+Pada Senin, 10 Agustus 2026, telah dilaksanakan kegiatan Pertolongan Pertama pada Luka Psikologis (P3LP) bagi siswa-siswi SMA Negeri 7 Balikpapan.
+
+Kegiatan ini merupakan bentuk kerja sama Puskesmas Lamaru bersama UKS SMAN 7 Balikpapan dalam memberikan edukasi dan meningkatkan kepedulian siswa terhadap kesehatan psikologis di lingkungan sekolah.`,
+    sumberUrl: "https://www.instagram.com/p/Db5iYpCIqdP/"
+  },
+  {
+    id: 208,
+    judul: "📚✨ Sosialisasi Bimbingan Belajar PRISMA Balikpapan",
+    tanggal: "10 Agustus 2026",
+    gambar: ["/berita/263.jpeg","/berita/264.jpeg","/berita/265.jpeg","/berita/266.jpeg","/berita/267.jpeg"],
+    deskripsi: `SMA Negeri 7 Balikpapan menerima kegiatan sosialisasi dari Bimbel PRISMA Balikpapan yang memberikan informasi mengenai program bimbingan belajar persiapan UTBK dan Tes Kemampuan Akademik (TKA) kepada peserta didik.
+Kegiatan ini menjadi salah satu kesempatan bagi peserta didik untuk memperoleh informasi dan gambaran mengenai persiapan menghadapi TKA maupun seleksi masuk perguruan tinggi, sehingga dapat mempersiapkan diri dengan lebih terarah dan optimal.
+🎯 Persiapan yang baik membutuhkan strategi, konsistensi, dan kemauan untuk terus belajar. Semoga informasi yang diberikan dapat menjadi tambahan wawasan dan motivasi bagi peserta didik dalam mempersiapkan langkah menuju perguruan tinggi impian.
+Siapkan diri hari ini, raih masa depan yang lebih baik! 🎓✨
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 207,
+    judul: "🥋🏆 DUA SRIKANDI KARATE SMAN 7 BALIKPAPAN UKIR PRESTASI! 🏆🥋",
+    tanggal: "9 Agustus 2026",
+    gambar: ["/berita/262.jpeg"],
+    deskripsi: `Kabar membanggakan kembali datang dari peserta didik SMA Negeri 7 Balikpapan! 🎉
+Dalam ajang Open Turnamen Karate Satria Wadokai 1 tingkat Provinsi Kalimantan Timur yang dilaksanakan di Samarinda, 7–9 Agustus 2026, dua siswi terbaik SMA Negeri 7 Balikpapan berhasil menorehkan prestasi gemilang.
+🥇 Ariembi – Kelas XII D2
+🏆 Juara 1 Kumite Junior Putri Kelas -53 kg
+🥇 Ainun Jariyah – Kelas X.B1
+🏆 Juara 1 Kumite Junior Putri Kelas -48 kg
+Prestasi ini menjadi bukti bahwa semangat, kerja keras, kedisiplinan, dan keberanian mampu mengantarkan generasi muda meraih prestasi terbaik. 💪🔥
+
+Keluarga besar SMA Negeri 7 Balikpapan mengucapkan selamat dan apresiasi setinggi-tingginya kepada Ariembi dan Ainun Jariyah atas pencapaian yang membanggakan ini.
+Terus berlatih, terus berprestasi, dan tetap rendah hati. Semoga prestasi ini menjadi motivasi bagi seluruh peserta didik SMA Negeri 7 Balikpapan untuk berani mengembangkan potensi dan mengukir prestasi di bidangnya masing-Masing.
+🌟 Bangga menjadi bagian dari SMAN 7 Balikpapan!
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 206,
+    judul: "🕌✨ Rapat Panitia Persiapan Peringatan Maulid Nabi Muhammad SAW",
+    tanggal: "9 Agustus 2026",
+    gambar: ["/berita/257.jpeg","/berita/258.jpeg","/berita/259.jpeg","/berita/260.jpeg","/berita/261.jpeg"],
+    deskripsi: `Dalam rangka mempersiapkan Peringatan Maulid Nabi Muhammad SAW, SMA Negeri 7 Balikpapan melaksanakan rapat koordinasi panitia sebagai langkah awal untuk memastikan seluruh rangkaian kegiatan dapat dipersiapkan dengan baik.
+Rapat ini menjadi ruang untuk berkoordinasi, menyatukan persepsi, membagi tugas, serta mempersiapkan berbagai kebutuhan kegiatan agar peringatan Maulid Nabi dapat terlaksana dengan lancar, tertib, dan penuh makna.
+Semoga kegiatan yang dipersiapkan nantinya dapat menjadi momentum bagi seluruh warga sekolah untuk meneladani akhlak Rasulullah SAW, memperkuat keimanan, serta menumbuhkan kecintaan kepada Nabi Muhammad SAW. 🤍
+🌿 Meneladani Rasulullah, Menguatkan Akhlak, Menebarkan Kebaikan.
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 205,
+    judul: "🎓📚 Sosialisasi Persiapan SNBP dan TKA",
+    tanggal: "9 Agustus 2026",
+    gambar: ["/berita/252.jpeg","/berita/253.jpeg","/berita/254.jpeg","/berita/255.jpeg","/berita/256.jpeg"],
+    deskripsi: `Hari ini, SMA Negeri 7 Balikpapan melaksanakan kegiatan Sosialisasi Persiapan Seleksi Nasional Berdasarkan Prestasi (SNBP) dan Tes Kemampuan Akademik (TKA) bagi peserta didik.
+
+Kegiatan ini menjadi bagian penting dalam membantu peserta didik memahami berbagai informasi dan persiapan yang perlu dilakukan untuk menghadapi tahapan seleksi pendidikan selanjutnya. Melalui sosialisasi ini, peserta didik diharapkan dapat mempersiapkan diri sejak dini, mengenali potensi dan kemampuan akademiknya, serta menentukan pilihan pendidikan lanjutan dengan lebih matang.
+
+✨ Kenali potensimu, siapkan langkahmu, dan raih masa depanmu!
+
+Semoga melalui persiapan yang baik dan usaha yang sungguh-sungguh, peserta didik SMA Negeri 7 Balikpapan dapat meraih hasil terbaik dan melanjutkan pendidikan ke perguruan tinggi impian. 🤲🎓
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 204,
+    judul: "📚✨ Rapat Koordinasi Tim Pengembang Kurikulum Sekolah",
+    tanggal: "9 Agustus 2026",
+    gambar: ["/berita/247.jpeg","/berita/248.jpeg","/berita/249.jpeg","/berita/250.jpeg","/berita/251.jpeg"],
+    deskripsi: `Pada Senin, 10 Agustus 2026, SMA Negeri 7 Balikpapan melaksanakan Rapat Koordinasi Tim Pengembang Kurikulum Sekolah sebagai bagian dari upaya mempersiapkan dan mengembangkan kurikulum sekolah untuk Tahun Pelajaran 2026/2027.
+Kegiatan ini menjadi momentum untuk menyatukan persepsi, memperkuat koordinasi, serta memastikan pengembangan kurikulum dapat berjalan secara terarah sesuai dengan karakteristik dan kebutuhan sekolah.
+Dalam koordinasi ini, Tim Pengembang Kurikulum bersama-sama membahas berbagai aspek pengembangan kurikulum, mulai dari karakteristik serta visi dan misi sekolah, pengorganisasian pembelajaran, perencanaan pembelajaran, hingga pendampingan, evaluasi, dan pengembangan profesional.
+🤝 Melalui kolaborasi dan komitmen bersama, SMA Negeri 7 Balikpapan terus berupaya menghadirkan pembelajaran yang berkualitas, relevan, dan berpihak pada kebutuhan peserta didik.
+Bersama mengembangkan kurikulum, bersama meningkatkan mutu pendidikan.
+
+🌟 SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 203,
+    judul: "Guru hebat tak pernah berhenti belajar! ✨",
+    tanggal: "9 Agustus 2026",
+    gambar: ["/berita/246.png"],
+    deskripsi: `Sabtu (8/8) kemarin, perwakilan guru SMAN 7 Balikpapan Ibu Tri Wahyuni, S.Pd, Ibu Hj. Murdiana, S.Pd, dan Ibu Ikka Desy Fatmawaty, S.Pd menghadiri workshop “Glow Up Your Teach!” kolaborasi Bank Indonesia dan Canva Indonesia.
+Bersama pemateri luar biasa, Ibu Chairunnisa, S.Pd, M.Akun (Duta Canva Indonesia & Duta Guru CBP Rupiah 2026), para guru belajar menyusun media ajar Cinta, Bangga, Paham (CBP) Rupiah berbasis Canva.
+Siap-siap untuk pembelajaran yang jauh lebih seru, interaktif, dan menyenangkan di kelas, ya! 🎨📚
+CBP Rupiah : Cinta, Bangga, Paham Rupiah !!
+SMANJU : Religius, Cerdas, Berprestasi !!
+SMANJU : Semakin Maju !!`,
+    sumberUrl: "https://www.instagram.com/p/Db1zJUIBOsS/"
+  },
+  {
+    id: 202,
+    judul: "🌸✨ Kajian Jumat Putri SMA Negeri 7 Balikpapan",
+    tanggal: "9 Agustus 2026",
+    gambar: ["/berita/241.jpeg","/berita/242.jpeg","/berita/243.jpeg","/berita/244.jpeg","/berita/245.jpeg"],
+    deskripsi: `Pada Jumat, 7 Agustus 2026, di tengah rangkaian kegiatan sekolah, SMA Negeri 7 Balikpapan kembali melaksanakan Kajian Jumat Putri yang rutin diselenggarakan setiap hari Jumat dengan peserta didik kelas XI.
+Kegiatan ini menjadi salah satu bentuk pembinaan keagamaan bagi peserta didik putri untuk memperkuat nilai-nilai spiritual, menambah wawasan keislaman, serta membentuk pribadi yang berakhlak mulia dalam kehidupan sehari-hari.
+Melalui kegiatan yang dilaksanakan secara rutin ini, diharapkan peserta didik tidak hanya tumbuh menjadi generasi yang cerdas secara akademik, tetapi juga memiliki karakter yang baik, beriman, dan mampu menerapkan nilai-nilai kebaikan dalam kehidupan.
+
+🌷 Menuntut ilmu, memperkuat iman, membangun akhlak.
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 201,
+    judul: "Sosialisasi Tes Kemampuan Akademik (TKA) SMA Negeri 7 Balikpapan",
+    tanggal: "9 Agustus 2026",
+    gambar: ["/berita/235.jpeg","/berita/236.jpeg","/berita/237.jpeg","/berita/238.jpeg","/berita/239.jpeg","/berita/240.jpeg"],
+    deskripsi: `Pada Jumat, 7 Agustus 2026, SMA Negeri 7 Balikpapan melaksanakan kegiatan Sosialisasi Tes Kemampuan Akademik (TKA) bersama peserta didik kelas XII sebagai bagian dari upaya memberikan pemahaman dan persiapan yang lebih baik dalam menghadapi TKA.
+Kegiatan ini menjadi kesempatan bagi peserta didik untuk mendapatkan informasi mengenai pelaksanaan TKA, memahami hal-hal yang perlu dipersiapkan, serta membangun kesiapan akademik dan mental dalam menghadapi tahapan pendidikan selanjutnya.
+Melalui sosialisasi ini, diharapkan peserta didik dapat mempersiapkan diri dengan lebih terarah, percaya diri, dan bertanggung jawab. Karena keberhasilan bukan hanya tentang hasil, tetapi juga tentang kesiapan, usaha, dan proses yang dijalani dengan sungguh-sungguh. 💪📖
+🎯 Siapkan diri, kenali kemampuan, dan raih hasil terbaik!`,
+    sumberUrl: ""
+  },
+  {
+    id: 200,
+    judul: "🎓 Rapat Koordinasi Bersama Wali Kelas XII 🤝",
+    tanggal: "3 Agustus 2026",
+    gambar: ["/berita/231.jpeg","/berita/232.jpeg","/berita/233.jpeg","/berita/234.jpeg"],
+    deskripsi: `Dalam rangka mempersiapkan peserta didik kelas XII menghadapi tahun terakhir di jenjang SMA, SMA Negeri 7 Balikpapan melaksanakan Rapat Koordinasi bersama Wali Kelas XII sebagai forum evaluasi dan penyusunan langkah strategis untuk mendukung keberhasilan peserta didik.
+Rapat ini membahas berbagai aspek penting, mulai dari evaluasi pelaksanaan pembelajaran, kegiatan ekstrakurikuler, penerapan tata tertib, kondisi sarana dan prasarana, hingga perkembangan akademik dan karakter peserta didik.
+Selain itu, koordinasi juga difokuskan pada persiapan menghadapi Tes Kemampuan Akademik (TKA), penyusunan Yearbook sebagai dokumentasi perjalanan peserta didik selama bersekolah, serta perencanaan kegiatan perpisahan yang diharapkan dapat menjadi momen berkesan dengan tetap menjunjung nilai kebersamaan, kedisiplinan, dan kesederhanaan.
+Melalui sinergi antara sekolah dan wali kelas, diharapkan seluruh program dapat terlaksana dengan baik sehingga peserta didik kelas XII siap menyelesaikan pendidikannya dan melangkah menuju jenjang berikutnya dengan bekal ilmu, karakter, dan pengalaman terbaik.
+✨ Bersama Berkolaborasi, Mengantarkan Generasi Berprestasi Menuju Masa Depan Gemilang.`,
+    sumberUrl: ""
+  },
+  {
     id: 199,
     judul: "Rapat Koordinasi Bersama Wali Kelas X 🤝",
     tanggal: "29 juli 2026",

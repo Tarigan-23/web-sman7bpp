@@ -58,7 +58,7 @@ export default function GuruPage() {
     { nama: "Hj. Rita Ariyani, S.Pd", jabatan: "Guru PKN", foto: "/guru/gr9.webp" },
     { nama: "Petrus Pasiakan, S. Pd.", jabatan: "Guru matematika", foto: "/guru/gr12.webp" },
     { nama: "Lulik Ariyani, M.Pd", jabatan: "Guru Kimia", foto: "/guru/gr24.webp" },
-    { nama: "Murti, S.Pd", jabatan: "Guru Ekonomi", foto: "/guru/gr.webp" },
+    { nama: "Murti, S.Pd", jabatan: "Guru Ekonomi", foto: "/guru/MURTI.png" },
     { nama: "Suyanto, S.Pd", jabatan: "Guru Geografi", foto: "/guru/gr4.webp" },
     { nama: "Ayi Solihin, M.Pd.", jabatan: "Guru PAI", foto: "/guru/gr28.webp" },
     { nama: "Tri Wahyuni, S.Pd", jabatan: "Guru Ekonomi", foto: "/guru/gr25.webp" },

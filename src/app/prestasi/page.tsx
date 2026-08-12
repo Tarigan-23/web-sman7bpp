@@ -7,7 +7,7 @@ interface PrestasiItem {
   id: string
   judul: string
   peraih: string
-  kategori: "Akademik" | "Olahraga" | "Seni" | "Teknologi" | "Keagamaan" | "Kepeminpinan"
+  kategori: "Akademik" | "Olahraga" |"Beladiri" | "Seni" | "Teknologi" | "Keagamaan" | "Kepeminpinan"
   tingkat: "Nasional" | "Provinsi" | "Kota"
   tahun: string
   gambar: string
@@ -19,6 +19,28 @@ export default function PrestasiPage() {
   const [filterKategori, setFilterKategori] = useState<string>("Semua")
 
   const daftarPrestasi: PrestasiItem[] = [
+    {
+      id: "p24",
+      judul: "Open Turnamen Karate Satria Wadokai 1 tingkat Provinsi Kalimantan Timur",
+      peraih: "Ainun Jariyah – Kelas X.B1",
+      kategori: "Beladiri",
+      tingkat: "Provinsi",
+      tahun: "2026",
+      gambar: "/berita/262.jpeg",
+      deskripsi: "Berhasil meraih Juara 1 Kumite Junior Putri Kelas -48 kg",
+      isHighlight: true
+    },
+    {
+      id: "p23",
+      judul: "Open Turnamen Karate Satria Wadokai 1 tingkat Provinsi Kalimantan Timur",
+      peraih: " Ariembi – Kelas XII D2",
+      kategori: "Beladiri",
+      tingkat: "Provinsi",
+      tahun: "2026",
+      gambar: "/berita/262.jpeg",
+      deskripsi: "Berhasil meraih Juara 1 Kumite Junior Putri Kelas -53 kg",
+      isHighlight: true
+    },
     {
       id: "p22",
       judul: "Juara 2 Festival Karya CBP 2026",
@@ -277,7 +299,7 @@ export default function PrestasiPage() {
             animate={{ opacity: 1, y: 0 }}
           >
             <span className="bg-amber-500/10 text-[10px] md:text-xs font-semibold px-3 py-1 rounded-full text-amber-300 border border-amber-500/20 uppercase tracking-wider">
-              🏆 Hall of Fame SMAN 7
+              🏆 Hall of Fame SMA Negeri 7
             </span>
             <h1 className="text-3xl md:text-6xl font-black text-white tracking-wide mt-2.5 mb-1.5">
               Prestasi <span className="text-amber-400">Siswa</span>
@@ -370,7 +392,7 @@ export default function PrestasiPage() {
             {/* Filter Navigasi - Geser Horizontal di HP */}
             <div className="overflow-x-auto no-scrollbar py-1 -mx-4 px-4 md:mx-0 md:px-0">
               <div className="flex bg-slate-900/60 p-1 rounded-xl border border-white/5 gap-1 min-w-max">
-                {["Semua", "Akademik", "Olahraga", "Seni", "Teknologi"].map((kat) => (
+                {["Semua", "Akademik", "Olahraga", "Beladiri", "Seni", "Teknologi","Keagamaan", "Kepeminpinan"].map((kat) => (
                   <button
                     key={kat}
                     onClick={() => setFilterKategori(kat)}
