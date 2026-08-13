@@ -1,5 +1,37 @@
 export const berita = [
   {
+    id: 215,
+    judul: "Penyuluhan Bela Negara, Wawasan Kebangsaan & Cinta Tanah Air",
+    tanggal: "13 Agustus 2026",
+    gambar: ["/berita/299.jpeg","/berita/300.jpeg","/berita/301.jpeg","/berita/302.jpeg","/berita/303.jpeg","/berita/304.jpeg","/berita/305.jpeg"],
+    deskripsi: `Pada Kamis, 13 Agustus 2026, peserta didik SMA Negeri 7 Balikpapan mengikuti kegiatan Penyuluhan Bela Negara, Wawasan Kebangsaan, dan Cinta Tanah Air yang disampaikan oleh Satuan Yonif 600/Modang.
+Kegiatan ini menjadi momentum penting bagi peserta didik untuk menumbuhkan semangat kebangsaan, memperkuat rasa cinta terhadap tanah air, serta memahami pentingnya menjaga persatuan dan kesatuan sebagai generasi penerus bangsa.
+Bela negara bukan hanya tentang mengangkat senjata, tetapi juga tentang bagaimana generasi muda belajar dengan sungguh-sungguh, menjaga disiplin, menghargai perbedaan, menaati aturan, serta berkontribusi positif bagi bangsa dan negara.
+Semoga kegiatan ini dapat menumbuhkan semangat nasionalisme dan membentuk peserta didik yang memiliki karakter kuat, berintegritas, serta memiliki rasa tanggung jawab sebagai bagian dari Indonesia.
+🤝 Bersatu dalam keberagaman, tumbuh dengan semangat kebangsaan, dan berkontribusi untuk Indonesia.
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 214,
+    judul: "SMA Negeri 7 Balikpapan Menerima Mahasiswa PLP Universitas Balikpapan",
+    tanggal: "13 Agustus 2026",
+    gambar: ["/berita/294.jpeg","/berita/295.jpeg","/berita/296.jpeg","/berita/297.jpeg","/berita/298.jpeg"],
+    deskripsi: `Pada Rabu, 12 Agustus 2026, SMA Negeri 7 Balikpapan menerima mahasiswa Program Pengenalan Lapangan Persekolahan (PLP) Universitas Balikpapan.
+Kegiatan ini diikuti oleh mahasiswa dari 3 program studi, yang akan melaksanakan praktik dan pengalaman lapangan pada tiga mata pelajaran, yaitu Matematika, Bahasa Indonesia, dan Ekonomi.
+Kedatangan para mahasiswa PLP turut didampingi oleh Dosen Pendamping, Dr. Firman, sebagai bagian dari sinergi antara perguruan tinggi dan sekolah dalam memberikan pengalaman nyata kepada calon pendidik.
+
+🤝 Melalui kegiatan PLP ini, diharapkan terjalin kolaborasi yang positif antara Universitas Balikpapan dan SMA Negeri 7 Balikpapan, sekaligus menjadi ruang belajar bersama untuk mengembangkan kompetensi, pengalaman, dan profesionalisme calon guru.
+
+Selamat datang dan selamat belajar di SMA Negeri 7 Balikpapan. 🌟
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
     id: 213,
     judul: "Peserta Didik SMA Negeri 7 Balikpapan Ikuti AI Class ASEAN",
     tanggal: "12 Agustus 2026",
@@ -855,7 +887,7 @@ Bersama generasi muda, mari wujudkan masyarakat yang Cinta, Bangga, dan Paham Ru
     id: 145,
     judul: "INFORMASI SPMB 2026",
     tanggal: "8 Juni 2026",
-    gambar: "/SPANDUKSPMB2026.png",
+    gambar: "/spmb/SPANDUKSPMB2026.png",
     deskripsi: "Informasi detail mengenai SPMB 2026",
     sumberUrl: "/SPMB"
   },
