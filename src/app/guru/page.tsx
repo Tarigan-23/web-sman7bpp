@@ -23,22 +23,22 @@ export default function GuruPage() {
     {
       nama: "Lulik Ariyani, M.Pd.",
       jabatan: "Waka Kurikulum",
-      foto: "/gr24.webp",
+      foto: "/guru/gr24.webp",
     },
     {
       nama: "Sultan, S.Sos.",
       jabatan: "Waka Kesiswaan",
-      foto: "/gr33.webp",
+      foto: "/guru/gr33.webp",
     },
     {
       nama: "Petrus Pasiakan, S. Pd.",
       jabatan: "Waka Sarana & Prasarana",
-      foto: "/gr12.webp",
+      foto: "/guru/gr12.webp",
     },
     {
       nama: "Ayi Solihin, M.Pd.",
       jabatan: "Waka Humas",
-      foto: "/gr28.webp",
+      foto: "/guru/gr28.webp",
     },
   ]
 
