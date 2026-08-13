@@ -9,7 +9,7 @@ interface BeritaItem {
   id: number
   judul: string
   tanggal: string
-  gambar: string[] // Diubah agar bisa menerima banyak foto
+  gambar: string[]
   deskripsi: string
   sumberUrl: string
 }
