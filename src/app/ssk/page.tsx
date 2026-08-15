@@ -3,11 +3,69 @@
 import React, { useState, useEffect } from "react"
 import { motion, Variants, AnimatePresence } from "framer-motion"
 import Image from "next/image"
-import { DATA_PROGRAM_SSK, SSKProgram } from "../../data/sskData"
+import { supabase } from "../../lib/supabase"
+
+export interface SSKProgram {
+  id: string
+  judul: string
+  kategori?: string
+  tanggal: string
+  narasiLengkap: string
+  tipeMedia: "video" | "image"
+  mediaUrls: string[]
+  videoEmbedUrl?: string
+  tautanBerita?: string
+  penanggungJawab?: string
+}
 
 export default function SSKPage() {
+  const [dataSSK, setDataSSK] = useState<SSKProgram[]>([])
+  const [loading, setLoading] = useState<boolean>(true)
   const [selectedItem, setSelectedItem] = useState<SSKProgram | null>(null)
   const [currentImgIndex, setCurrentImgIndex] = useState<number>(0)
+
+  // Fetch data SSK Program dari Supabase
+  useEffect(() => {
+    async function fetchSSKData() {
+      try {
+        const { data, error } = await supabase
+          .from("ssk_program")
+          .select("*")
+          .order("created_at", { ascending: false })
+
+        if (error) {
+          console.error("Error fetching SSK program:", error)
+          return
+        }
+
+        if (data) {
+          const formattedData: SSKProgram[] = data.map((item: any) => ({
+            id: item.id,
+            judul: item.judul,
+            kategori: item.kategori,
+            tanggal: item.tanggal,
+            narasiLengkap: item.narasi_lengkap || item.narasiLengkap || "",
+            tipeMedia: item.tipe_media || item.tipeMedia || "image",
+            mediaUrls: Array.isArray(item.media_urls)
+              ? item.media_urls
+              : typeof item.media_urls === "string" && item.media_urls.startsWith("[")
+              ? JSON.parse(item.media_urls)
+              : [item.media_urls || "/bg1.jpeg"],
+            videoEmbedUrl: item.video_embed_url || item.videoEmbedUrl,
+            tautanBerita: item.tautan_berita || item.tautanBerita,
+            penanggungJawab: item.penanggung_jawab || item.penanggungJawab,
+          }))
+          setDataSSK(formattedData)
+        }
+      } catch (err) {
+        console.error("Failed to load SSK data from Supabase:", err)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchSSKData()
+  }, [])
 
   const openModal = (item: SSKProgram) => {
     setSelectedItem(item)
@@ -107,71 +165,78 @@ export default function SSKPage() {
             </p>
           </div>
 
-          {/* Grid Cards */}
-          <motion.div 
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-7xl mx-auto"
-          >
-            {DATA_PROGRAM_SSK.map((item) => (
-              <motion.div
-                key={item.id}
-                variants={itemVariants}
-                whileHover={{ y: -4 }}
-                onClick={() => openModal(item)}
-                className="bg-slate-900/80 border border-white/10 rounded-2xl overflow-hidden cursor-pointer group shadow-lg flex flex-col justify-between hover:border-emerald-500/50 transition duration-300"
-              >
-                {/* Visual Thumbnail */}
-                <div className="relative aspect-video w-full bg-slate-950 overflow-hidden">
-                  <img
-                    src={item.mediaUrls[0] || "/bg1.jpeg"}
-                    alt={item.judul}
-                    className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                  
-                  {/* Badge Tipe Media */}
-                  <div className="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md border border-white/10 px-2.5 py-1 rounded-md text-[10px] font-bold text-emerald-300 uppercase tracking-wider flex items-center gap-1.5">
-                    {item.tipeMedia === "video" ? "🎬 Video Instagram" : "🖼️ Galeri Foto"}
-                  </div>
-
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                    <span className="text-emerald-300 text-xs font-semibold bg-black/80 px-3.5 py-1.5 rounded-full border border-emerald-500/40">
-                      ▶️ Putar Video & Baca Detail
-                    </span>
-                  </div>
-                </div>
-
-                {/* Tampilan Narasi Ringkas */}
-                <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between text-[11px] text-slate-400">
-                      <span className="text-emerald-400 font-semibold uppercase">{item.kategori || "SSK"}</span>
-                      <span>📅 {item.tanggal}</span>
-                    </div>
-                    <h3 className="text-base font-bold text-white group-hover:text-emerald-300 transition line-clamp-2">
-                      {item.judul}
-                    </h3>
+          {loading ? (
+            <div className="flex justify-center items-center py-20 text-emerald-400">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-emerald-400"></div>
+            </div>
+          ) : (
+            /* Grid Cards */
+            <motion.div 
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-7xl mx-auto"
+            >
+              {dataSSK.map((item) => (
+                <motion.div
+                  key={item.id}
+                  variants={itemVariants}
+                  whileHover={{ y: -4 }}
+                  onClick={() => openModal(item)}
+                  className="bg-slate-900/80 border border-white/10 rounded-2xl overflow-hidden cursor-pointer group shadow-lg flex flex-col justify-between hover:border-emerald-500/50 transition duration-300"
+                >
+                  {/* Visual Thumbnail */}
+                  <div className="relative aspect-video w-full bg-slate-950 overflow-hidden">
+                    <img
+                      src={item.mediaUrls[0] || "/bg1.jpeg"}
+                      alt={item.judul}
+                      className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                      onError={(e) => {(e.target as HTMLImageElement).src = "/bg1.jpeg"}}
+                    />
                     
-                    {/* Teks Narasi Potongan Awal */}
-                    <p className="text-xs text-slate-400 line-clamp-3 font-light leading-relaxed whitespace-pre-line">
-                      {item.narasiLengkap}
-                    </p>
+                    {/* Badge Tipe Media */}
+                    <div className="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md border border-white/10 px-2.5 py-1 rounded-md text-[10px] font-bold text-emerald-300 uppercase tracking-wider flex items-center gap-1.5">
+                      {item.tipeMedia === "video" ? "🎬 Video Instagram" : "🖼️ Galeri Foto"}
+                    </div>
+
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                      <span className="text-emerald-300 text-xs font-semibold bg-black/80 px-3.5 py-1.5 rounded-full border border-emerald-500/40">
+                        ▶️ Putar Video & Baca Detail
+                      </span>
+                    </div>
                   </div>
 
-                  {/* Tombol Baca Selengkapnya */}
-                  <div className="pt-2 border-t border-white/5 flex items-center justify-between">
-                    <span className="text-xs font-bold text-emerald-400 group-hover:underline flex items-center gap-1">
-                      Baca Selengkapnya <span>→</span>
-                    </span>
-                    {item.penanggungJawab && (
-                      <span className="text-[10px] text-slate-400">{item.penanggungJawab}</span>
-                    )}
+                  {/* Tampilan Narasi Ringkas */}
+                  <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between text-[11px] text-slate-400">
+                        <span className="text-emerald-400 font-semibold uppercase">{item.kategori || "SSK"}</span>
+                        <span>📅 {item.tanggal}</span>
+                      </div>
+                      <h3 className="text-base font-bold text-white group-hover:text-emerald-300 transition line-clamp-2">
+                        {item.judul}
+                      </h3>
+                      
+                      {/* Teks Narasi Potongan Awal */}
+                      <p className="text-xs text-slate-400 line-clamp-3 font-light leading-relaxed whitespace-pre-line">
+                        {item.narasiLengkap}
+                      </p>
+                    </div>
+
+                    {/* Tombol Baca Selengkapnya */}
+                    <div className="pt-2 border-t border-white/5 flex items-center justify-between">
+                      <span className="text-xs font-bold text-emerald-400 group-hover:underline flex items-center gap-1">
+                        Baca Selengkapnya <span>→</span>
+                      </span>
+                      {item.penanggungJawab && (
+                        <span className="text-[10px] text-slate-400">{item.penanggungJawab}</span>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
+                </motion.div>
+              ))}
+            </motion.div>
+          )}
         </section>
       </div>
 
@@ -208,7 +273,6 @@ export default function SSKPage() {
                 title="Tekan ESC untuk menutup"
               >
                 <span>X</span>
-                <kbd className="bg-white/20 text-[10px] px-1.5 py-0.5 rounded font-mono"></kbd>
               </button>
 
               {/* KOLOM KIRI: Video Instagram / Carousel Foto */}
@@ -227,6 +291,7 @@ export default function SSKPage() {
                       src={selectedItem.mediaUrls[currentImgIndex]} 
                       alt={selectedItem.judul} 
                       className="max-w-full max-h-[500px] object-contain rounded-lg shadow-lg"
+                      onError={(e) => {(e.target as HTMLImageElement).src = "/bg1.jpeg"}}
                     />
 
                     {selectedItem.mediaUrls.length > 1 && (

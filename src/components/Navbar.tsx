@@ -10,6 +10,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname() 
 
+  // KONDISI KHUSUS: Sembunyikan Navbar utama jika sedang mengakses Dashboard Admin
+  if (pathname.startsWith("/admin")) {
+    return null
+  }
+
   const menuItems = [
     { name: "Beranda", href: "/" },
     { name: "Sambutan", href: "/sambutan" },
