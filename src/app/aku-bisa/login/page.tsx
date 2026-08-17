@@ -46,7 +46,7 @@ export default function LoginPage() {
             S7
           </div>
           <h1 className="text-2xl font-black text-white">Gerbang Admin</h1>
-          <p className="text-slate-400 text-xs">Masukkan akses terautentikasi SMAN 7 Balikpapan</p>
+          <p className="text-slate-400 text-xs">Masukkan akses terautentikasi SMA Negeri 7 Balikpapan</p>
         </div>
 
         {errorMsg && (
@@ -91,4 +91,4 @@ export default function LoginPage() {
       </div>
     </div>
   )
-}
+}   
