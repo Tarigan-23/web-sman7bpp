@@ -16,6 +16,13 @@ export default function GaleriPage() {
   // DATA GALERI KEGIATAN SMAN 7 BALIKPAPAN
   const galeri: GaleriItem[] = [
     {
+      judul: "HARI PERAMUKA",
+      gambar: ["/berita/315.jpeg", "/berita/316.jpeg", "/berita/317.jpeg","/berita/318.jpeg", "/berita/319.jpeg", "/berita/320.jpeg","/berita/321.jpeg", "/berita/322.jpeg", "/berita/323.jpeg","/berita/324.jpeg", "/berita/325.jpeg", "/berita/326.jpeg","/berita/327.jpeg" ],
+      deskripsi: "Liburan makin berarti bareng E-Camp SMAN 7 Balikpapan! 🇬🇧",
+      tanggal: "30 Juni 2026",
+      kategori: "Dokumentasi"
+    },
+    {
       judul: "ECamp 2026 ~ S P E A K . S H A R E . S H I N E ✨",
       gambar: ["/berita/168.png", "/berita/169.jpeg", "/berita/166.jpeg", ],
       deskripsi: "Liburan makin berarti bareng E-Camp SMAN 7 Balikpapan! 🇬🇧",

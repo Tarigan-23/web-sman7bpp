@@ -1,5 +1,146 @@
 export const berita = [
   {
+    id: 224,
+    judul: "Keluarga Besar SMA Negeri 7 Balikpapan Mengucapkan ✨ DIRGAHAYU REPUBLIK INDONESIA KE-81",
+    tanggal: "14 Agustus 2026",
+    gambar: ["/berita/334.jpeg"],
+    deskripsi: `Dalam semangat Hari Kemerdekaan Republik Indonesia, mari terus mengisi kemerdekaan dengan karya, prestasi, persatuan, dan kontribusi terbaik bagi bangsa.
+MERDEKA!
+Terus Melaju, Indonesia!
+SMA Negeri 7 Balikpapan`,
+    sumberUrl: ""
+  },
+  {
+    id: 223,
+    judul: "PENGUKUHAN PASKIBRA SMA NEGERI 7 BALIKPAPAN",
+    tanggal: "14 Agustus 2026",
+    gambar: ["/berita/328.jpeg","/berita/329.jpeg","/berita/330.jpeg","/berita/331.jpeg","/berita/332.jpeg","/berita/333.jpeg"],
+    deskripsi: `Dalam rangka menyambut Peringatan HUT ke-81 Kemerdekaan Republik Indonesia, SMA Negeri 7 Balikpapan melaksanakan Pengukuhan Pasukan Pengibar Bendera (Paskibra).
+Pengukuhan ini menjadi momentum penting bagi para anggota Paskibra untuk mengemban amanah dan tanggung jawab dalam menjalankan tugas sebagai pengibar bendera Merah Putih.
+Menjadi Paskibra bukan sekadar tentang baris-berbaris dan mengibarkan bendera, tetapi juga tentang membangun kedisiplinan, kekompakan, tanggung jawab, keberanian, dan jiwa nasionalisme. 🇮🇩
+Selamat kepada seluruh anggota Paskibra SMA Negeri 7 Balikpapan yang telah dikukuhkan. Laksanakan amanah dengan penuh tanggung jawab dan berikan yang terbaik untuk sekolah dan bangsa.
+Teguhkan langkah, kuatkan semangat, kibarkan Merah Putih dengan penuh kebanggaan! ❤️🤍
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 222,
+    judul: "Semarak Hari Pramuka ke-65 di SMA Negeri 7 Balikpapan!",
+    tanggal: "14 Agustus 2026",
+    gambar: ["/berita/322.jpeg","/berita/323.jpeg","/berita/324.jpeg","/berita/325.jpeg","/berita/326.jpeg","/berita/327.jpeg"],
+    deskripsi: `Setelah melaksanakan Upacara Peringatan Hari Pramuka ke-65, semangat kebersamaan terus berlanjut dalam berbagai kegiatan dan lomba yang meriah! 🎊
+
+Berbagai perlombaan diikuti dengan penuh antusias oleh Bapak dan Ibu Guru, Staf Tata Usaha, serta seluruh peserta didik SMA Negeri 7 Balikpapan.
+
+Bukan sekadar tentang menang dan kalah, kegiatan ini menjadi momentum untuk mempererat kebersamaan, membangun kekompakan, menumbuhkan sportivitas, dan menghadirkan keceriaan di tengah keluarga besar SMA Negeri 7 Balikpapan. 🤝❤️
+
+Dari guru hingga siswa, semuanya larut dalam semangat yang sama, bergembira, berkolaborasi, dan merayakan semangat Pramuka bersama!
+
+Salam Pramuka!
+Satu semangat, satu kebersamaan, untuk generasi yang tangguh dan berkarakter.
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 221,
+    judul: "UPACARA PERINGATAN HARI PRAMUKA KE-65⚜️",
+    tanggal: "14 Agustus 2026",
+    gambar: ["/berita/316.jpeg","/berita/317.jpeg","/berita/318.jpeg","/berita/319.jpeg","/berita/320.jpeg","/berita/321.jpeg"],
+    deskripsi: `Dalam rangka memperingati Hari Pramuka ke-65, SMA Negeri 7 Balikpapan melaksanakan Upacara Peringatan Hari Pramuka pada Jumat, 14 Agustus 2026.
+
+Upacara berlangsung dengan penuh khidmat dan semangat kepramukaan, diikuti oleh keluarga besar SMA Negeri 7 Balikpapan sebagai bentuk penghormatan terhadap gerakan Pramuka sekaligus momentum untuk menumbuhkan kembali nilai-nilai kedisiplinan, kemandirian, tanggung jawab, gotong royong, dan cinta tanah air.
+
+🌿 Melalui semangat Pramuka, mari terus membentuk generasi muda yang tangguh, berkarakter, peduli terhadap sesama, serta siap menghadapi tantangan masa depan.
+
+⚜️ Satu Pramuka, Satu Jiwa, untuk Indonesia!
+
+Salam Pramuka!
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 220,
+    judul: "⛺ SELAMAT MEMPERINGATI HARI PRAMUKA KE-65",
+    tanggal: "14 Agustus 2026",
+    gambar: ["/berita/315.jpeg"],
+    deskripsi: `Keluarga Besar SMA Negeri 7 Balikpapan mengucapkan:
+Selamat Memperingati Hari Pramuka
+14 Agustus 2026
+Pramuka mengajarkan kita untuk selalu siap menghadapi tantangan dengan keberanian, kerja sama, kedisiplinan, dan tanggung jawab.
+Semoga semangat kepramukaan terus tumbuh dalam diri generasi muda, menjadi pribadi yang tangguh, mandiri, peduli, dan siap memberikan kontribusi terbaik bagi bangsa dan negara.
+Salam Pramuka! ⚜️
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 219,
+    judul: "APRESIASI ATAS PENGABDIAN DAN DEDIKASI",
+    tanggal: "14 Agustus 2026",
+    gambar: ["/berita/314.jpeg"],
+    deskripsi: `Kabar membanggakan datang dari SMA Negeri 7 Balikpapan. Lima guru terbaik SMA Negeri 7 Balikpapan mendapatkan Penganugerahan Tanda Kehormatan Satyalancana Karya Satya sebagai bentuk penghargaan atas dedikasi, loyalitas, dan pengabdian dalam menjalankan tugas sebagai Aparatur Sipil Negara.
+
+Adapun guru yang menerima penghargaan tersebut adalah:
+
+🏅 Drs. Hasan, M.Pd.
+🏅 Dra. Sri Rahayu Rindanarti
+🏅 Dra. Wahidah, M.Pd
+🏅 Dra. Rohani
+🏅 Drs. Suleman Pasudi
+
+Penganugerahan ini menjadi sebuah kehormatan sekaligus wujud apresiasi atas perjalanan panjang dalam memberikan pengabdian terbaik bagi dunia pendidikan dan generasi penerus bangsa.
+
+Keluarga besar SMA Negeri 7 Balikpapan mengucapkan selamat dan apresiasi setinggi-tingginya atas penghargaan yang diterima.
+
+Semoga penghargaan ini menjadi motivasi untuk terus mengabdi, berkarya, dan memberikan inspirasi bagi generasi muda. Terima kasih atas setiap langkah, waktu, tenaga, dan dedikasi yang telah diberikan untuk pendidikan. 🙏✨
+
+Pengabdian yang tulus akan selalu menjadi bagian dari sejarah dalam mencerdaskan kehidupan bangsa.
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 218,
+    judul: "📚✨ Menambah Wawasan, Memperluas Literasi!",
+    tanggal: "14 Agustus 2026",
+    gambar: ["/berita/310.jpeg","/berita/311.jpeg","/berita/312.jpeg","/berita/313.jpeg"],
+    deskripsi: `Hari ini, Tim Perpustakaan “Swarga Pustaka” SMA Negeri 7 Balikpapan berkesempatan hadir dalam kegiatan “BEBUKUAN #3: Bedah Buku Perpustakaan BI Balikpapan”.
+Dalam kegiatan ini, tim kami berkesempatan berdiskusi dan bertukar wawasan secara langsung bersama para penulis hebat lokal melalui dua karya inspiratif, yaitu:
+📖 “Menuai Prestasi Untuk Indonesia Emas” karya Dra. Ririen Friedayati
+📖 “Deep Learning, A Call To Action in Nusantara” karya Dayang Suriani
+Kegiatan ini tidak hanya menjadi ruang untuk mengenal lebih dekat karya-karya literasi lokal, tetapi juga membuka wawasan dan menghadirkan inspirasi baru bagi pengembangan budaya literasi di lingkungan sekolah.
+
+Semoga berbagai ilmu dan inspirasi yang diperoleh dapat kami bawa pulang untuk terus meningkatkan kualitas layanan Swarga Pustaka, menumbuhkan minat baca, dan menciptakan perpustakaan yang semakin aktif sebagai ruang belajar dan berbagi.
+
+Terima kasih Bank Indonesia Balikpapan atas ruang diskusi dan pengalaman literasi yang luar biasa.
+Karena dari buku, wawasan tumbuh. Dari literasi, masa depan dibangun.
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
+    id: 216,
+    judul: "Koordinasi Persiapan Perpisahan Kelas XII Dalam rangka mempersiapkan kegiatan perpisahan peserta didik kelas XII",
+    tanggal: "14 Agustus 2026",
+    gambar: ["/berita/306.jpeg","/berita/307.jpeg","/berita/308.jpeg","/berita/309.jpeg"],
+    deskripsi: `dilaksanakan pertemuan antara Komite Sekolah bersama Wali Kelas XII yang bertempat di Perpustakaan SMA Negeri 7 Balikpapan.
+Pertemuan ini menjadi ruang untuk berdiskusi, menyamakan persepsi, serta membangun koordinasi yang baik terkait berbagai persiapan kegiatan perpisahan kelas XII agar dapat terlaksana dengan lancar, tertib, dan memberikan kesan yang baik bagi peserta didik.
+Kolaborasi antara sekolah, wali kelas, dan komite menjadi bagian penting dalam menciptakan kegiatan yang tidak hanya menjadi momen perpisahan, tetapi juga menjadi kenangan berharga bagi peserta didik setelah menyelesaikan perjalanan mereka di SMA Negeri 7 Balikpapan.
+🤝 Bersama berkoordinasi, bersama mengantarkan kelas XII menuju langkah berikutnya.
+
+SMA Negeri 7 Balikpapan
+Religius • Cerdas • Berprestasi`,
+    sumberUrl: ""
+  },
+  {
     id: 215,
     judul: "Penyuluhan Bela Negara, Wawasan Kebangsaan & Cinta Tanah Air",
     tanggal: "13 Agustus 2026",
