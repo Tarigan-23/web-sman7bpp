@@ -26,10 +26,11 @@ export default function BeritaPage() {
   useEffect(() => {
     async function fetchBerita() {
       try {
+       
         const { data, error } = await supabase
-  .from("berita")
-  .select("*")
-  .order("created_at", { ascending: false })
+          .from("berita")
+          .select("*")
+          .order("created_at", { ascending: false }) 
 
         if (error) {
           console.error("Error fetching berita:", error)
@@ -246,7 +247,7 @@ export default function BeritaPage() {
               className="bg-slate-900 border border-slate-800 w-full max-w-5xl h-[85vh] md:h-[80vh] flex flex-col md:flex-row rounded-xl overflow-hidden shadow-2xl select-text"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* KOLOM KIRI: Media Image Viewer (Dengan Mekanisme Slider Instagram) */}
+              {/* KOLOM KIRI: Media Image Viewer */}
               <div className="relative flex-1 bg-slate-950 flex items-center justify-center h-[45%] md:h-full group border-b md:border-b-0 border-slate-800 overflow-hidden">
                 
                 {/* Gambar Berdasarkan Index Aktif */}
@@ -261,10 +262,9 @@ export default function BeritaPage() {
                   className="w-full h-full object-contain max-h-full block p-1 select-none"
                 />
 
-                {/* Tombol Navigasi Slider (Hanya muncul jika foto > 1) */}
+                {/* Tombol Navigasi Slider */}
                 {selectedBerita.gambar.length > 1 && (
                   <>
-                    {/* Tombol Kiri */}
                     <button 
                       onClick={prevImage}
                       className="absolute left-3 bg-black/50 hover:bg-black/80 p-2 rounded-full text-white transition backdrop-blur-sm"
@@ -274,7 +274,6 @@ export default function BeritaPage() {
                       </svg>
                     </button>
 
-                    {/* Tombol Kanan */}
                     <button 
                       onClick={nextImage}
                       className="absolute right-3 bg-black/50 hover:bg-black/80 p-2 rounded-full text-white transition backdrop-blur-sm"
@@ -284,7 +283,7 @@ export default function BeritaPage() {
                       </svg>
                     </button>
 
-                    {/* Indikator Titik (Dots Slider) ala Instagram */}
+                    {/* Indikator Dots Slider */}
                     <div className="absolute bottom-4 flex justify-center space-x-1.5 z-10 w-full">
                       {selectedBerita.gambar.map((_, idx) => (
                         <div 
@@ -299,7 +298,6 @@ export default function BeritaPage() {
 
               {/* KOLOM KANAN: Detail Informasi Berita */}
               <div className="w-full md:w-[380px] bg-slate-900 flex flex-col h-[55%] md:h-full">
-                {/* Header Akun Sekolah */}
                 <div className="p-4 border-b border-slate-800 flex items-center space-x-3">
                   <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-600 to-cyan-500 flex items-center justify-center text-white text-xs font-black shadow-md">
                     S7
@@ -310,7 +308,6 @@ export default function BeritaPage() {
                   </div>
                 </div>
 
-                {/* Area Konten Deskripsi Berita */}
                 <div className="p-4 flex-1 overflow-y-auto space-y-4 text-slate-300 text-xs sm:text-sm scrollbar-thin scrollbar-thumb-slate-800">
                   <div>
                     <p className="text-blue-400 text-xs font-mono font-bold uppercase mb-1">[Warta SMANJU]</p>
@@ -325,7 +322,6 @@ export default function BeritaPage() {
                     </div>
                   </div>
 
-                  {/* Section Dokumen / Galeri Pendukung */}
                   {selectedBerita.sumberUrl && selectedBerita.sumberUrl !== "#" && (
                     <div className="pt-4 border-t border-slate-800/60">
                       <a
@@ -337,7 +333,6 @@ export default function BeritaPage() {
                     </div>
                   )}
 
-                  {/* Section Komentar Interaktif Tiruan */}
                   <div className="pt-3 border-t border-slate-800/60 space-y-2.5 text-xs">
                     <div>
                       <span className="text-white font-semibold mr-2">osissmaven</span>
@@ -350,7 +345,6 @@ export default function BeritaPage() {
                   </div>
                 </div>
 
-                {/* Bagian Bawah: Metadata & Tanggal */}
                 <div className="p-4 border-t border-slate-800 bg-slate-950/40 space-y-3">
                   <div className="flex space-x-4 text-slate-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-5 h-5 cursor-pointer hover:text-red-500 transition">

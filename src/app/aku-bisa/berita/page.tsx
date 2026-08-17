@@ -63,6 +63,7 @@ export default function AdminBeritaPage() {
           deskripsi,
           sumber_url: sumberUrl,
           gambar: uploadedImageUrls,
+          created_at: new Date().toISOString(), // 👈 Penambahan timestamp otomatis
         },
       ])
 
@@ -113,7 +114,7 @@ export default function AdminBeritaPage() {
               onChange={(e) => setTanggal(e.target.value)}
               required
               className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
-              placeholder="Contoh: 15 Agustus 2026"
+              placeholder="Contoh: 18 Agustus 2026"
             />
           </div>
 
