@@ -57,7 +57,7 @@ export default function AlumniPage() {
             Alumni 
           </h1>
           <p className="text-gray-200 text-xl mt-4 max-w-2xl mx-auto">
-            Jejak langkah para alumni SMAN 7 Balikpapan di berbagai penjuru Indonesia.
+            Jejak langkah para alumni SMA Negeri 7 Balikpapan di berbagai penjuru Indonesia.
           </p>
         </div>
 
