@@ -9,7 +9,6 @@ export default function adminLayout({
   return (
     <div className="min-h-screen bg-slate-950 text-white flex flex-col md:flex-row">
       
-      {/* SIDEBAR aku-bisa (Satu layout konsisten untuk PC & Mobile) */}
       <aside className="w-full md:w-64 bg-slate-900 border-b md:border-b-0 md:border-r border-slate-800 p-6 flex flex-col justify-between shrink-0 md:h-screen md:sticky md:top-0">
         <div className="space-y-6">
           
