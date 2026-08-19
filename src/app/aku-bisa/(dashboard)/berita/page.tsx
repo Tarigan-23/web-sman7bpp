@@ -63,7 +63,7 @@ export default function AdminBeritaPage() {
           deskripsi,
           sumber_url: sumberUrl,
           gambar: uploadedImageUrls,
-          created_at: new Date().toISOString(), // 👈 Penambahan timestamp otomatis
+          created_at: new Date().toISOString(), 
         },
       ])
 

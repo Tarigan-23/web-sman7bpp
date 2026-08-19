@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 import { supabase } from "../../../lib/supabase"
 
 export default function LoginPage() {
@@ -22,17 +23,13 @@ export default function LoginPage() {
         password,
       })
 
-      if (error) {
-        throw error
-      }
+      if (error) throw error
 
       if (data.user) {
-        // Redirect ke dashboard admin setelah login sukses
-        router.push("/aku-bisa")
-        router.refresh()
+        window.location.href = "/aku-bisa"
       }
     } catch (err: any) {
-      setErrorMsg(err.message || "Gagal login, cek email & password bray!")
+      setErrorMsg(err.message || "Gagal login, cek email & password!")
     } finally {
       setLoading(false)
     }
@@ -41,12 +38,20 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-slate-950 flex items-center justify-center p-4">
       <div className="w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl space-y-6">
-        <div className="text-center space-y-2">
-          <div className="w-12 h-12 bg-blue-600 rounded-2xl mx-auto flex items-center justify-center text-white font-black text-xl shadow-lg shadow-blue-500/30">
-            S7
+        <div className="text-center space-y-3">
+          <div className="w-16 h-16 bg-slate-800 rounded-2xl mx-auto flex items-center justify-center overflow-hidden border border-slate-700 shadow-lg">
+            <Image 
+              src="/LOGO_SMAN7.png" 
+              alt="Logo SMA Negeri 7 Balikpapan" 
+              width={48} 
+              height={48} 
+              className="object-contain"
+            />
           </div>
-          <h1 className="text-2xl font-black text-white">Gerbang Admin</h1>
-          <p className="text-slate-400 text-xs">Masukkan akses terautentikasi SMA Negeri 7 Balikpapan</p>
+          <div>
+            <h1 className="text-2xl font-black text-white">Gerbang Admin</h1>
+            <p className="text-slate-400 text-xs mt-1">Masukkan akses terautentikasi SMA Negeri 7 Balikpapan</p>
+          </div>
         </div>
 
         {errorMsg && (
@@ -91,4 +96,4 @@ export default function LoginPage() {
       </div>
     </div>
   )
-}   
+}
