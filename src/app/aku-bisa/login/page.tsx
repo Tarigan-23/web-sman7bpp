@@ -29,6 +29,7 @@ export default function LoginPage() {
 
       if (data.user) {
         console.log("Login sukses! Mengalihkan ke dashboard...")
+        router.refresh()
         window.location.href = "/aku-bisa"
       }
     } catch (err: any) {

@@ -3,7 +3,9 @@ import { createServerClient, type CookieOptions } from '@supabase/ssr';
 
 export async function middleware(request: NextRequest) {
   let response = NextResponse.next({
-    request: { headers: request.headers },
+    request: {
+      headers: request.headers,
+    },
   });
 
   const supabase = createServerClient(
@@ -15,26 +17,50 @@ export async function middleware(request: NextRequest) {
           return request.cookies.getAll();
         },
         setAll(cookiesToSet: { name: string; value: string; options: CookieOptions }[]) {
-          cookiesToSet.forEach(({ name, value, options }) =>
-            response.cookies.set(name, value, options)
-          );
+          cookiesToSet.forEach(({ name, value, options }) => {
+            request.cookies.set({ name, value, ...options });
+          });
+          response = NextResponse.next({
+            request,
+          });
+          cookiesToSet.forEach(({ name, value, options }) => {
+            response.cookies.set({ name, value, ...options });
+          });
         },
       },
     }
   );
 
+  // Verifikasi user auth melalui Supabase
   const {
     data: { user },
   } = await supabase.auth.getUser();
 
- 
+  const url = request.nextUrl.clone();
+
+  // Proteksi rute /aku-bisa
   if (request.nextUrl.pathname.startsWith('/aku-bisa')) {
     if (request.nextUrl.pathname === '/aku-bisa/login') {
+      // Jika sudah login tapi buka halaman login, arahkan ke dashboard
+      if (user) {
+        url.pathname = '/aku-bisa';
+        const redirectResponse = NextResponse.redirect(url);
+        response.cookies.getAll().forEach((cookie) => {
+          redirectResponse.cookies.set(cookie.name, cookie.value, cookie);
+        });
+        return redirectResponse;
+      }
       return response;
     }
-    // Redirect ke login jika belum ada session
+
+    // Redirect ke login jika belum terautentikasi
     if (!user) {
-      return NextResponse.redirect(new URL('/aku-bisa/login', request.url));
+      url.pathname = '/aku-bisa/login';
+      const redirectResponse = NextResponse.redirect(url);
+      response.cookies.getAll().forEach((cookie) => {
+        redirectResponse.cookies.set(cookie.name, cookie.value, cookie);
+      });
+      return redirectResponse;
     }
   }
 
@@ -42,5 +68,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/aku-bisa/:path*'],
+  matcher: ['/aku-bisa', '/aku-bisa/:path*'],
 };
