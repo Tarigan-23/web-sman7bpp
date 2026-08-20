@@ -17,6 +17,8 @@ export default function LoginPage() {
     setLoading(true)
     setErrorMsg("")
 
+    console.log("Tombol login ditekan, memproses ke Supabase...")
+
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
@@ -26,10 +28,12 @@ export default function LoginPage() {
       if (error) throw error
 
       if (data.user) {
+        console.log("Login sukses! Mengalihkan ke dashboard...")
         window.location.href = "/aku-bisa"
       }
     } catch (err: any) {
-      setErrorMsg(err.message || "Gagal login, cek email & password!")
+      console.error("Error login:", err)
+      setErrorMsg(err.message || "Gagal masuk, periksa email dan password!")
     } finally {
       setLoading(false)
     }
@@ -42,7 +46,7 @@ export default function LoginPage() {
           <div className="w-16 h-16 bg-slate-800 rounded-2xl mx-auto flex items-center justify-center overflow-hidden border border-slate-700 shadow-lg">
             <Image 
               src="/LOGO_SMAN7.png" 
-              alt="Logo SMA Negeri 7 Balikpapan" 
+              alt="Logo SMAN 7 Balikpapan" 
               width={48} 
               height={48} 
               className="object-contain"
@@ -65,6 +69,8 @@ export default function LoginPage() {
             <label className="block text-xs font-semibold text-slate-300 mb-1">Email Admin</label>
             <input
               type="email"
+              id="email"
+              name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -77,6 +83,8 @@ export default function LoginPage() {
             <label className="block text-xs font-semibold text-slate-300 mb-1">Password</label>
             <input
               type="password"
+              id="password"
+              name="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
