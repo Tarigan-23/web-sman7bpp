@@ -88,7 +88,7 @@ export default function AdminPrestasiPage() {
     <div className="max-w-4xl space-y-6">
       <div>
         <h1 className="text-3xl font-black text-white">Kelola Prestasi Siswa</h1>
-        <p className="text-slate-400 text-sm mt-1">Input pencapaian, piala, dan prestasi siswa SMAN 7 Balikpapan.</p>
+        <p className="text-slate-400 text-sm mt-1">Input pencapaian, piala, dan prestasi siswa SMA Negeri 7 Balikpapan.</p>
       </div>
 
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
