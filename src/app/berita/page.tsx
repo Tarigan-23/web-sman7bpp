@@ -1,30 +1,96 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { motion, Variants, AnimatePresence } from "framer-motion"
 import Image from "next/image"
+import { supabase } from "../../lib/supabase"
 import { berita as beritaData } from "../../data/berita"
 
 interface BeritaItem {
   id: number
   judul: string
   tanggal: string
-  gambar: string[] | string
+  gambar: string[]
   deskripsi: string
   sumberUrl: string
 }
 
 export default function BeritaPage() {
-  // Ubah otomatis data berita agar properti 'gambar' SELALU berupa array
-  const formattedBerita = beritaData.map((item: any) => ({
-    ...item,
-    gambar: Array.isArray(item.gambar) ? item.gambar : [item.gambar],
+  // Ubah data berita statis agar properti 'gambar' SELALU berupa array
+  const formattedStaticBerita: BeritaItem[] = beritaData.map((item: any) => ({
+    id: Number(item.id),
+    judul: item.judul || "",
+    tanggal: item.tanggal || "",
+    gambar: Array.isArray(item.gambar)
+      ? item.gambar
+      : typeof item.gambar === "string" && item.gambar.startsWith("[")
+      ? (() => { try { return JSON.parse(item.gambar) } catch { return [item.gambar] } })()
+      : item.gambar ? [item.gambar] : ["/bg3.jpg"],
+    deskripsi: item.deskripsi || "",
+    sumberUrl: item.sumberUrl || item.sumber_url || "#",
   }))
-  const [berita] = useState<BeritaItem[]>(formattedBerita)
-  const [selectedBerita, setSelectedBerita] = useState<BeritaItem | null>(null)
 
-  // State untuk melacak index foto yang sedang aktif di dalam modal detail
+  const [berita, setBerita] = useState<BeritaItem[]>(formattedStaticBerita)
+  const [loading, setLoading] = useState<boolean>(true)
+  const [selectedBerita, setSelectedBerita] = useState<BeritaItem | null>(null)
   const [currentImgIndex, setCurrentImgIndex] = useState<number>(0)
+
+  // Fetch data dari Supabase secara real-time
+  useEffect(() => {
+    async function fetchBerita() {
+      try {
+        const { data, error } = await supabase
+          .from("berita")
+          .select("*")
+          .order("id", { ascending: false })
+
+        if (error) {
+          console.error("Error fetching berita from Supabase:", error)
+          return
+        }
+
+        if (data && data.length > 0) {
+          const supabaseBerita: BeritaItem[] = data.map((item: any) => {
+            let gambarArray: string[] = []
+            if (Array.isArray(item.gambar)) {
+              gambarArray = item.gambar
+            } else if (typeof item.gambar === "string" && item.gambar.startsWith("[")) {
+              try {
+                gambarArray = JSON.parse(item.gambar)
+              } catch {
+                gambarArray = [item.gambar]
+              }
+            } else if (item.gambar) {
+              gambarArray = [item.gambar]
+            } else {
+              gambarArray = ["/bg3.jpg"]
+            }
+
+            return {
+              id: Number(item.id) || Date.now(),
+              judul: item.judul || "",
+              tanggal: item.tanggal || "",
+              gambar: gambarArray,
+              deskripsi: item.deskripsi || "",
+              sumberUrl: item.sumber_url || item.sumberUrl || "#",
+            }
+          })
+
+          // Gabungkan berita Supabase (terbaru) dengan data statis lokal (deduplikasi ID)
+          const supabaseIds = new Set(supabaseBerita.map((b) => b.id))
+          const filteredStatic = formattedStaticBerita.filter((b) => !supabaseIds.has(b.id))
+          
+          setBerita([...supabaseBerita, ...filteredStatic])
+        }
+      } catch (err) {
+        console.error("Failed to load news from Supabase:", err)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchBerita()
+  }, [])
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },

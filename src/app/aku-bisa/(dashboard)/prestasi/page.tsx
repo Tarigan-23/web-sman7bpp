@@ -51,6 +51,7 @@ export default function AdminPrestasiPage() {
 
       const { error: insertError } = await supabase.from("prestasi").insert([
         {
+          id: Date.now(),
           judul,
           peraih,
           kategori,

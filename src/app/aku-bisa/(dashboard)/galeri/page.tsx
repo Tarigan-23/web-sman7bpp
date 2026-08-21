@@ -48,9 +48,9 @@ export default function AdminGaleriPage() {
 
       const { error: insertError } = await supabase.from("galeri").insert([
         {
+          id: Date.now(),
           judul,
           kategori,
-          deskripsi,
           gambar: imageUrl,
         },
       ])
