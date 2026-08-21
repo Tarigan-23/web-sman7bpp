@@ -1,91 +1,55 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { motion, Variants, AnimatePresence } from "framer-motion"
 import Image from "next/image"
-import { supabase } from "../../lib/supabase"
+import { berita as beritaData } from "../../data/berita"
 
 interface BeritaItem {
   id: number
   judul: string
   tanggal: string
-  gambar: string[]
+  gambar: string[] | string
   deskripsi: string
   sumberUrl: string
 }
 
 export default function BeritaPage() {
-  const [berita, setBerita] = useState<BeritaItem[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
+  // Ubah otomatis data berita agar properti 'gambar' SELALU berupa array
+  const formattedBerita = beritaData.map((item: any) => ({
+    ...item,
+    gambar: Array.isArray(item.gambar) ? item.gambar : [item.gambar],
+  }))
+  const [berita] = useState<BeritaItem[]>(formattedBerita)
   const [selectedBerita, setSelectedBerita] = useState<BeritaItem | null>(null)
-  
+
   // State untuk melacak index foto yang sedang aktif di dalam modal detail
   const [currentImgIndex, setCurrentImgIndex] = useState<number>(0)
-
-  // Fetch data dari Supabase
-  useEffect(() => {
-    async function fetchBerita() {
-      try {
-       
-        const { data, error } = await supabase
-          .from("berita")
-          .select("*")
-          .order("created_at", { ascending: false }) 
-
-        if (error) {
-          console.error("Error fetching berita:", error)
-          return
-        }
-
-        if (data) {
-          const formattedData: BeritaItem[] = data.map((item: any) => ({
-            id: item.id,
-            judul: item.judul,
-            tanggal: item.tanggal,
-            gambar: Array.isArray(item.gambar)
-              ? item.gambar
-              : typeof item.gambar === "string" && item.gambar.startsWith("[")
-              ? JSON.parse(item.gambar)
-              : [item.gambar],
-            deskripsi: item.deskripsi,
-            sumberUrl: item.sumber_url || item.sumberUrl || "#",
-          }))
-          setBerita(formattedData)
-        }
-      } catch (err) {
-        console.error("Failed to load news from Supabase:", err)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchBerita()
-  }, [])
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1, 
+        staggerChildren: 0.1,
       },
     },
   }
 
   const cardVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { duration: 0.5, ease: "easeOut" } 
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" }
     },
   }
 
   const handleCardClick = (e: React.MouseEvent, item: BeritaItem) => {
     if (item.sumberUrl && item.sumberUrl.startsWith("http") && !item.sumberUrl.includes("sman7-bpp.sch.id/galeri")) {
-      return 
+      return
     }
-    
+
     e.preventDefault()
     setSelectedBerita(item)
     setCurrentImgIndex(0) // Reset index foto ke yang pertama saat membuka modal baru
@@ -108,11 +72,11 @@ export default function BeritaPage() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pb-24 relative overflow-hidden select-none">
-      
+
       {/* Background Ornamen */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/bg3.jpg" 
+          src="/bg3.jpg"
           alt="Latar Belakang SMANJU"
           fill
           priority
@@ -146,91 +110,84 @@ export default function BeritaPage() {
           </motion.div>
         </section>
 
-        {/* State Loading Sederhana */}
-        {loading ? (
-          <div className="flex justify-center items-center py-20 text-blue-400">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
-          </div>
-        ) : (
-          /* Grid Kartu Berita */
-          <motion.div 
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch" 
-          >
-            {berita.map((item) => (
-              <motion.a
-                key={item.id}
-                href={item.sumberUrl || "#"}
-                target={item.sumberUrl && item.sumberUrl.startsWith("http") && !item.sumberUrl.includes("galeri") ? "_blank" : "_self"}
-                rel="noopener noreferrer"
-                variants={cardVariants}
-                onClick={(e) => handleCardClick(e, item)}
-                className="block group h-full focus:outline-none"
-              >
-                <div className="bg-white/5 backdrop-blur-md rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 sm:group-hover:scale-[1.02] sm:group-hover:border-white/20 transition duration-300 cursor-pointer h-full shadow-xl flex flex-col justify-between">
-                  
-                  <div>
-                    {/* TAMPILAN GAMBAR UTAMA KARTU (Mengambil index pertama [0]) */}
-                    <div className="w-full h-48 md:h-56 overflow-hidden relative border-b border-white/5 flex-shrink-0 bg-black/20">
-                      <img
-                        src={item.gambar[0]} 
-                        alt={item.judul}
-                        className="w-full h-full object-cover transition duration-500 sm:group-hover:scale-105"
-                      />
-                      {/* Icon Indikator Multi-Post ala Instagram di pojok kanan atas kartu */}
-                      {item.gambar.length > 1 && (
-                        <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm p-1.5 rounded-lg text-white">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h10.5m-10.5 3h10.5m-10.5 3h10.5m-10.5 3h10.5M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15A2.25 2.25 0 0 0 2.25 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Z" />
-                          </svg>
-                        </div>
-                      )}
-                    </div>
+        {/* Grid Kartu Berita (Tanpa Loading karena data statis lokal) */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch"
+        >
+          {berita.map((item) => (
+            <motion.a
+              key={item.id}
+              href={item.sumberUrl || "#"}
+              target={item.sumberUrl && item.sumberUrl.startsWith("http") && !item.sumberUrl.includes("galeri") ? "_blank" : "_self"}
+              rel="noopener noreferrer"
+              variants={cardVariants}
+              onClick={(e) => handleCardClick(e, item)}
+              className="block group h-full focus:outline-none"
+            >
+              <div className="bg-white/5 backdrop-blur-md rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 sm:group-hover:scale-[1.02] sm:group-hover:border-white/20 transition duration-300 cursor-pointer h-full shadow-xl flex flex-col justify-between">
 
-                    {/* Area Konten Text */}
-                    <div className="p-5 md:p-6 flex flex-col justify-between">
-                      <div>
-                        <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider">
-                          📅 {item.tanggal}
-                        </p>
-                        <h2 className="text-base md:text-lg font-bold text-slate-100 mt-2 line-clamp-2 group-hover:text-blue-400 transition duration-200 leading-snug min-h-[2.8rem]">
-                          {item.judul}
-                        </h2>
-                        <p className="text-slate-400 leading-relaxed font-light text-xs md:text-sm text-justify line-clamp-3 mt-3 break-words">
-                          {item.deskripsi}
-                        </p>
+                <div>
+                  {/* TAMPILAN GAMBAR UTAMA KARTU (Mengambil index pertama [0]) */}
+                  <div className="w-full h-48 md:h-56 overflow-hidden relative border-b border-white/5 flex-shrink-0 bg-black/20">
+                    <img
+                      src={item.gambar[0]}
+                      alt={item.judul}
+                      className="w-full h-full object-cover transition duration-500 sm:group-hover:scale-105"
+                    />
+                    {/* Icon Indikator Multi-Post ala Instagram di pojok kanan atas kartu */}
+                    {item.gambar.length > 1 && (
+                      <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm p-1.5 rounded-lg text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h10.5m-10.5 3h10.5m-10.5 3h10.5m-10.5 3h10.5M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15A2.25 2.25 0 0 0 2.25 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
                       </div>
+                    )}
+                  </div>
+
+                  {/* Area Konten Text */}
+                  <div className="p-5 md:p-6 flex flex-col justify-between">
+                    <div>
+                      <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider">
+                        📅 {item.tanggal}
+                      </p>
+                      <h2 className="text-base md:text-lg font-bold text-slate-100 mt-2 line-clamp-2 group-hover:text-blue-400 transition duration-200 leading-snug min-h-[2.8rem]">
+                        {item.judul}
+                      </h2>
+                      <p className="text-slate-400 leading-relaxed font-light text-xs md:text-sm text-justify line-clamp-3 mt-3 break-words">
+                        {item.deskripsi}
+                      </p>
                     </div>
                   </div>
-
-                  {/* Penanda Aksi */}
-                  <div className="p-5 md:p-6 pt-0 flex items-center justify-between text-xs font-semibold text-blue-400">
-                    <span>
-                      {item.sumberUrl && item.sumberUrl.startsWith("http") && !item.sumberUrl.includes("galeri") 
-                        ? "Buka Instagram ↗" 
-                        : "Baca Detail Berita →"}
-                    </span>
-                  </div>
-
                 </div>
-              </motion.a>
-            ))}
-          </motion.div>
-        )}
+
+                {/* Penanda Aksi */}
+                <div className="p-5 md:p-6 pt-0 flex items-center justify-between text-xs font-semibold text-blue-400">
+                  <span>
+                    {item.sumberUrl && item.sumberUrl.startsWith("http") && !item.sumberUrl.includes("galeri")
+                      ? "Buka Instagram ↗"
+                      : "Baca Detail Berita →"}
+                  </span>
+                </div>
+
+              </div>
+            </motion.a>
+          ))}
+        </motion.div>
       </div>
 
       {/* Modal Detail Popup Premium */}
       <AnimatePresence>
         {selectedBerita && (
-          <div 
+          <div
             className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-10 bg-black/90 backdrop-blur-md"
             onClick={() => setSelectedBerita(null)}
           >
             {/* Tombol Close */}
-            <button 
-              className="absolute top-4 right-4 text-white hover:text-red-400 transition z-50 p-2" 
+            <button
+              className="absolute top-4 right-4 text-white hover:text-red-400 transition z-50 p-2"
               onClick={() => setSelectedBerita(null)}
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6 sm:w-8 sm:h-8">
@@ -239,7 +196,7 @@ export default function BeritaPage() {
             </button>
 
             {/* Kotak Utama Postingan Split View */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 10 }}
@@ -249,12 +206,12 @@ export default function BeritaPage() {
             >
               {/* KOLOM KIRI: Media Image Viewer */}
               <div className="relative flex-1 bg-slate-950 flex items-center justify-center h-[45%] md:h-full group border-b md:border-b-0 border-slate-800 overflow-hidden">
-                
+
                 {/* Gambar Berdasarkan Index Aktif */}
-                <motion.img 
+                <motion.img
                   key={currentImgIndex}
-                  src={selectedBerita.gambar[currentImgIndex]} 
-                  alt={selectedBerita.judul} 
+                  src={selectedBerita.gambar[currentImgIndex]}
+                  alt={selectedBerita.judul}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
@@ -265,7 +222,7 @@ export default function BeritaPage() {
                 {/* Tombol Navigasi Slider */}
                 {selectedBerita.gambar.length > 1 && (
                   <>
-                    <button 
+                    <button
                       onClick={prevImage}
                       className="absolute left-3 bg-black/50 hover:bg-black/80 p-2 rounded-full text-white transition backdrop-blur-sm"
                     >
@@ -274,7 +231,7 @@ export default function BeritaPage() {
                       </svg>
                     </button>
 
-                    <button 
+                    <button
                       onClick={nextImage}
                       className="absolute right-3 bg-black/50 hover:bg-black/80 p-2 rounded-full text-white transition backdrop-blur-sm"
                     >
@@ -284,9 +241,10 @@ export default function BeritaPage() {
                     </button>
 
                     {/* Indikator Dots Slider */}
+                    {/* Indikator Dots Slider */}
                     <div className="absolute bottom-4 flex justify-center space-x-1.5 z-10 w-full">
-                      {selectedBerita.gambar.map((_, idx) => (
-                        <div 
+                      {(Array.isArray(selectedBerita.gambar) ? selectedBerita.gambar : [selectedBerita.gambar]).map((_, idx) => (
+                        <div
                           key={idx}
                           className={`h-1.5 rounded-full transition-all duration-300 ${idx === currentImgIndex ? 'w-4 bg-blue-500' : 'w-1.5 bg-white/40'}`}
                         />
@@ -312,7 +270,7 @@ export default function BeritaPage() {
                   <div>
                     <p className="text-blue-400 text-xs font-mono font-bold uppercase mb-1">[Warta SMANJU]</p>
                     <h2 className="text-white font-bold text-base mb-2 leading-snug">{selectedBerita.judul}</h2>
-                    
+
                     <div className="text-slate-300 text-xs sm:text-sm leading-relaxed text-justify font-light space-y-3">
                       {selectedBerita.deskripsi.split("\n").map((line, index) => (
                         <p key={index} className="min-h-[1rem]">
