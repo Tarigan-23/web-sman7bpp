@@ -27,7 +27,7 @@ export default function BeritaPage() {
         const { data, error } = await supabase
           .from("berita")
           .select("*")
-          .order('id', { ascending: true });
+          .order('id', { ascending: false });
         if (error) {
           console.error("Error fetching berita from Supabase:", error)
           return
