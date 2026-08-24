@@ -31,18 +31,17 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: "linear" }} // Menggunakan linear agar cross-fade lebih mulus tanpa patah
+          transition={{ duration: 1.5, ease: "linear" }}
           className="absolute inset-0 w-full h-full z-0"
         >
           <Image
             src={images[currentIndex]}
             alt="Dokumentasi SMAN 7 Balikpapan"
             fill
-            priority={currentIndex === 0} // Sangat penting agar gambar pertama langsung muncul tanpa blank
-            unoptimized={false} // Pastikan Next.js melakukan optimasi ukuran gambar otomatis
+            priority={currentIndex === 0}
+            unoptimized={false}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
             className="object-cover object-center" 
-            // 💡 TIP: Jika di HP bagian bawah masjid terpotong, ganti 'object-center' menjadi 'object-bottom' atau 'object-top' khusus untuk gambar tersebut.
           />
           {/* Overlay Gradasi */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/75 z-10" />
@@ -66,13 +65,13 @@ export default function Hero() {
           />
         </motion.div>
 
-        {/* JUDUL UTAMA */}
+        {/* JUDUL UTAMA - Dibuat 1 Baris dengan whitespace-nowrap dan penyesuaian teks responsif */}
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 md:mb-8 tracking-tight uppercase"
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 md:mb-8 tracking-tight uppercase whitespace-nowrap"
         >
-          SMA NEGERI 7 <br className="block sm:hidden" />
+          SMA NEGERI 7{" "}
           <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">
             BALIKPAPAN
           </span>

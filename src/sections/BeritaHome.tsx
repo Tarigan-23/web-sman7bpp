@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { supabase } from "../lib/supabase" // Pastikan path ini benar
+import { supabase } from "../lib/supabase"
 
 export default function BeritaHome() {
   const [berita, setBerita] = useState<any[]>([])
@@ -12,7 +12,6 @@ export default function BeritaHome() {
   useEffect(() => {
     async function fetchBeritaTerbaru() {
       try {
-        // Mengambil 3 berita terbaru dari Supabase
         const { data, error } = await supabase
           .from("berita")
           .select("*")
@@ -63,13 +62,27 @@ export default function BeritaHome() {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {berita.map((item, index) => {
-              // Logika parsing gambar agar kompatibel dengan data Supabase
+              // --- PERBAIKAN EKSTRAKSI GAMBAR YANG LEBIH AMAN ---
               let gambar = "/bg3.jpg";
-              try {
-                const parsed = typeof item.gambar === 'string' ? JSON.parse(item.gambar) : item.gambar;
-                gambar = Array.isArray(parsed) ? parsed[0] : parsed;
-              } catch {
-                gambar = item.gambar || "/bg3.jpg";
+              
+              if (item.gambar) {
+                if (Array.isArray(item.gambar)) {
+                  gambar = item.gambar[0] || "/bg3.jpg";
+                } else if (typeof item.gambar === 'string') {
+                  const trimmed = item.gambar.trim();
+                  if (trimmed.startsWith("[")) {
+                    try {
+                      const parsed = JSON.parse(trimmed);
+                      if (Array.isArray(parsed) && parsed.length > 0) {
+                        gambar = parsed[0];
+                      }
+                    } catch {
+                      gambar = trimmed;
+                    }
+                  } else {
+                    gambar = trimmed;
+                  }
+                }
               }
 
               const linkProps = getLinkProps(item.sumber_url || item.sumberUrl || "#");
@@ -83,10 +96,10 @@ export default function BeritaHome() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-slate-700/50 hover:border-blue-500/50 transition duration-300 group flex flex-col h-full"
                 >
-                  <div className="h-48 overflow-hidden relative w-full">
+                  <div className="h-48 overflow-hidden relative w-full bg-slate-950">
                     <Image
                       src={gambar}
-                      alt={item.judul}
+                      alt={item.judul || "Berita SMANJU"}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition duration-500"
