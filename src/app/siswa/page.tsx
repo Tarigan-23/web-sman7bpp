@@ -14,205 +14,169 @@ export default function SiswaPage() {
     {
       namaKelas: "X-A",
       siswa: [
-        "Ahmad Rizky", "Budi Santoso", "Cahya Putra", "Dinda Ayu", "Eko Saputra",
-        "Farhan", "Galih", "Hendra", "Intan", "Joko", "Joko", "Joko", "Joko",
-        "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko",
-        "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko", "Joko"
+        
       ],
     },
     {
       namaKelas: "X-B",
       siswa: [
-        "Kevin", "Lutfi", "Maya", "Nadia", "Oscar", "Putri", "Qori", "Rama", "Salsa", "Taufik"
+        
       ],
     },
     {
       namaKelas: "X-C",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "X-D",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
-      ],
+        ],
     },
     {
       namaKelas: "X-E",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
-      ],
+        ],
     },
     {
       namaKelas: "X-F",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
-      ],
+        ],
     },
     {
       namaKelas: "X-G",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
-      ],
+        ],
     },
     {
       namaKelas: "X-H",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
-      ],
+        ],
     },
     {
       namaKelas: "X-I",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
-      ],
+        ],
     },
     {
       namaKelas: "X-J",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "X-K",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XI-A1",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XI-A2",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XI-B1",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XI-B2",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XI-C",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XI-D1",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XI-D2",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XI-D3",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XI-D4",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XII-A1",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XII-A2",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XII-B1",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XII-B2",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XII-C1",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XII-C2",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XII-D1",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XII-D2",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
     {
       namaKelas: "XII-D3",
       siswa: [
-        "Kevin A.", "Lutfi B.", "Maya C.", "Nadia D.", "Oscar E.", "Putri F.", "Qori G.", "Rama H.", "Salsa I.", "Taufik J.",
-        "Kevin K.", "Lutfi L.", "Maya M.", "Nadia N.", "Oscar O.", "Putri P.", "Qori Q.", "Rama R.", "Salsa S.", "Taufik T."
+        
       ],
     },
   ]
