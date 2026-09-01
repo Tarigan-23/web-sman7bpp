@@ -208,7 +208,7 @@ export default function SambutanPage() {
             <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl duration-500 pointer-events-none" />
             <div className="relative min-w-[400px] sm:min-w-[550px] md:min-w-0 max-w-full w-full aspect-[16/9] md:aspect-[21/9]">
               <Image
-                src="/struktur organisasi.jpeg"
+                src="/struktur organisasi.png"
                 alt="Struktur Organisasi SMA Negeri 7 Balikpapan"
                 fill
                 className="rounded-xl md:rounded-2xl shadow-2xl object-contain border border-white/5 transition-transform duration-500 group-hover:scale-[1.005]"
