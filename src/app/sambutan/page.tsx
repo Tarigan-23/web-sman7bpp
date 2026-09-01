@@ -5,7 +5,7 @@ import { motion, Variants, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
 export default function SambutanPage() {
-  // State untuk mengontrol pop-up zoom gambar struktur di mobile
+
   const [isZoomed, setIsZoomed] = useState(false)
 
   const containerVariants: Variants = {
@@ -233,7 +233,7 @@ export default function SambutanPage() {
             </button>
             <div className="relative w-full h-[85vh]">
               <Image
-                src="/struktur organisasi.jpeg"
+                src="/struktur organisasi.png"
                 alt="Struktur Organisasi Terbuka"
                 fill
                 className="object-contain rounded-xl shadow-2xl"
