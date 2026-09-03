@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react"
 import { supabase } from "@/lib/supabase"
 import Image from "next/image"
+import { compressImage } from "@/lib/imageCompressor"
 
 interface PrestasiItem {
   id: number
@@ -57,11 +58,22 @@ export default function AdminPrestasiPage() {
     fetchPrestasiList()
   }, [])
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  // Fungsi handleFileChange dengan kompresi otomatis < 200KB
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       const file = e.target.files[0]
-      setSelectedFile(file)
-      setPreview(URL.createObjectURL(file))
+      try {
+        setUploading(true)
+        const compressedFile = await compressImage(file)
+        setSelectedFile(compressedFile)
+        setPreview(URL.createObjectURL(compressedFile))
+      } catch (err) {
+        console.error("Gagal mengompres gambar prestasi:", err)
+        setSelectedFile(file)
+        setPreview(URL.createObjectURL(file))
+      } finally {
+        setUploading(false)
+      }
     }
   }
 
@@ -307,7 +319,9 @@ export default function AdminPrestasiPage() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1 text-slate-300">Foto Dokumentasi / Piala</label>
+            <label className="block text-sm font-medium mb-1 text-slate-300">
+              Foto Dokumentasi / Piala (Otomatis Kompres &lt; 200KB)
+            </label>
             <input
               type="file"
               accept="image/*"
@@ -327,7 +341,7 @@ export default function AdminPrestasiPage() {
             disabled={uploading}
             className="w-full py-3 px-6 bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black rounded-xl transition duration-200 shadow-lg disabled:opacity-50 cursor-pointer"
           >
-            {uploading ? "Menyimpan Prestasi..." : editingId ? "Simpan Perubahan Prestasi" : "Simpan Data Prestasi"}
+            {uploading ? "Memproses Data & Gambar..." : editingId ? "Simpan Perubahan Prestasi" : "Simpan Data Prestasi"}
           </button>
         </form>
       </div>
@@ -350,7 +364,7 @@ export default function AdminPrestasiPage() {
                 } else if (typeof item.gambar === "string") {
                   try {
                     const parsed = JSON.parse(item.gambar)
-                    thumb = Array.isArray(parsed) ? parsed[0] : item.gambar
+                    thumb = Array.isArray(parsed) && parsed.length > 0 ? parsed[0] : item.gambar
                   } catch {
                     thumb = item.gambar
                   }

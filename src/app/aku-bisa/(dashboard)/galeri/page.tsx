@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react"
 import { supabase } from "@/lib/supabase"
 import Image from "next/image"
+import { compressImage } from "@/lib/imageCompressor"
 
 interface GaleriItem {
   id: number
@@ -47,12 +48,31 @@ export default function AdminGaleriPage() {
     fetchGaleriList()
   }, [])
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  // Fungsi handleFileChange dengan kompresi otomatis < 200KB untuk galeri
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
       const filesArray = Array.from(e.target.files)
-      setSelectedFiles((prev) => [...prev, ...filesArray])
-      const newPreviews = filesArray.map((file) => URL.createObjectURL(file))
-      setPreviews((prev) => [...prev, ...newPreviews])
+
+      try {
+        setUploading(true)
+        const compressedFiles = await Promise.all(
+          filesArray.map(async (file) => {
+            try {
+              return await compressImage(file)
+            } catch {
+              return file // Fallback ke file asli jika gagal kompres
+            }
+          })
+        )
+
+        setSelectedFiles((prev) => [...prev, ...compressedFiles])
+        const newPreviews = compressedFiles.map((file) => URL.createObjectURL(file))
+        setPreviews((prev) => [...prev, ...newPreviews])
+      } catch (err) {
+        console.error("Gagal memproses kompresi gambar galeri:", err)
+      } finally {
+        setUploading(false)
+      }
     }
   }
 
@@ -67,7 +87,7 @@ export default function AdminGaleriPage() {
     setKategori(item.kategori || "Kegiatan Sekolah")
     setDeskripsi(item.deskripsi || "")
     setSelectedFiles([])
-    
+
     // Format preview lama jika array/string
     let existingThumbs: string[] = []
     if (item.gambar) {
@@ -254,7 +274,7 @@ export default function AdminGaleriPage() {
 
           <div>
             <label className="block text-sm font-medium mb-1 text-slate-300">
-              Upload Foto {editingId ? "(Opsional: Pilih file baru jika ingin menambah/mengganti foto)" : "(Bisa Pilih Lebih Dari 1 File)"}
+              Upload Foto {editingId ? "(Opsional: Pilih file baru jika ingin menambah/mengganti foto)" : "(Bisa Pilih Lebih Dari 1 File - Otomatis Kompres < 200KB)"}
             </label>
             <input
               type="file"
@@ -290,7 +310,7 @@ export default function AdminGaleriPage() {
             disabled={uploading}
             className="w-full py-3 px-6 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold rounded-xl transition duration-200 shadow-lg disabled:opacity-50 cursor-pointer"
           >
-            {uploading ? "Mengunggah Foto..." : editingId ? "Simpan Perubahan Galeri" : "Upload ke Galeri"}
+            {uploading ? "Memproses Data & Foto..." : editingId ? "Simpan Perubahan Galeri" : "Upload ke Galeri"}
           </button>
         </form>
       </div>

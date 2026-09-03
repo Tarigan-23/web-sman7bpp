@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react"
 import { supabase } from "@/lib/supabase"
 import Image from "next/image"
+import { compressImage } from "@/lib/imageCompressor"
 
 interface BeritaItem {
   id: number
@@ -51,12 +52,31 @@ export default function AdminBeritaPage() {
     fetchBeritaList()
   }, [])
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  // Fungsi handleFileChange dengan kompresi otomatis < 200KB untuk banyak file
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
       const filesArray = Array.from(e.target.files)
-      setSelectedFiles((prev) => [...prev, ...filesArray])
-      const newPreviews = filesArray.map((file) => URL.createObjectURL(file))
-      setPreviews((prev) => [...prev, ...newPreviews])
+
+      try {
+        setUploading(true)
+        const compressedFiles = await Promise.all(
+          filesArray.map(async (file) => {
+            try {
+              return await compressImage(file)
+            } catch {
+              return file // Fallback ke file asli jika kompresi gagal
+            }
+          })
+        )
+
+        setSelectedFiles((prev) => [...prev, ...compressedFiles])
+        const newPreviews = compressedFiles.map((file) => URL.createObjectURL(file))
+        setPreviews((prev) => [...prev, ...newPreviews])
+      } catch (err) {
+        console.error("Gagal memproses kompresi gambar:", err)
+      } finally {
+        setUploading(false)
+      }
     }
   }
 
@@ -259,7 +279,7 @@ export default function AdminBeritaPage() {
 
           <div>
             <label className="block text-sm font-medium mb-1 text-slate-300">
-              Upload Gambar {editingId ? "(Opsional: Biarkan kosong jika tidak ingin mengubah gambar)" : "(Bisa Pilih Lebih Dari 1 File)"}
+              Upload Gambar {editingId ? "(Opsional: Biarkan kosong jika tidak ingin mengubah gambar)" : "(Bisa Pilih Lebih Dari 1 File - Otomatis Kompres < 200KB)"}
             </label>
             <input
               type="file"
@@ -295,7 +315,7 @@ export default function AdminBeritaPage() {
             disabled={uploading}
             className="w-full py-3 px-6 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold rounded-xl transition duration-200 shadow-lg disabled:opacity-50 cursor-pointer"
           >
-            {uploading ? "Memproses Data..." : editingId ? "Simpan Perubahan Berita" : "Terbitkan Berita"}
+            {uploading ? "Memproses Data & Gambar..." : editingId ? "Simpan Perubahan Berita" : "Terbitkan Berita"}
           </button>
         </form>
       </div>
@@ -303,10 +323,10 @@ export default function AdminBeritaPage() {
       {/* DAFTAR BERITA YANG ADA (MANAJEMEN / TABEL) */}
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
         <h2 className="text-xl font-bold text-white">Daftar Berita Tersimpan</h2>
-        
+
         {loadingList ? (
           <div className="text-center py-8 text-slate-500">Memuat daftar berita...</div>
-        ) : !loadingList && daftarBerita.length === 0 ? (
+        ) : daftarBerita.length === 0 ? (
           <div className="text-center py-8 text-slate-500">Belum ada data berita di database.</div>
         ) : (
           <div className="space-y-3">
