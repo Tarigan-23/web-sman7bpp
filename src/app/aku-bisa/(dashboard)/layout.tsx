@@ -74,6 +74,13 @@ export default function adminLayout({
             </Link>
 
             <Link
+              href="/aku-bisa/siswa"
+              className="px-4 py-3 rounded-xl text-sm font-semibold text-slate-300 hover:bg-slate-800 hover:text-white transition flex items-center gap-3"
+            >
+              <span></span> siswa
+            </Link>
+
+            <Link
               href="/aku-bisa/ekskul"
               className="px-4 py-3 rounded-xl text-sm font-semibold text-slate-300 hover:bg-slate-800 hover:text-white transition flex items-center gap-3"
             >
