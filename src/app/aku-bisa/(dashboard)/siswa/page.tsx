@@ -2,13 +2,14 @@
 
 import React, { useState, useEffect } from "react"
 import { supabase } from "@/lib/supabase"
+import * as XLSX from "xlsx"
 
 interface SiswaItem {
     id: number
     nama: string
     nisn: string
     jenis_kelamin: string
-    kelas: string // Nama kelas (misal: X-A, XI-A1, dll)
+    kelas: string
 }
 
 const daftarKelasMaster = [
@@ -28,6 +29,8 @@ export default function AdminSiswaPage() {
     const [loading, setLoading] = useState(true)
     const [filterKelas, setFilterKelas] = useState("X-A")
     const [searchQuery, setSearchQuery] = useState("")
+    const [importKelasTarget, setImportKelasTarget] = useState("X-A")
+    const [importing, setImporting] = useState(false)
 
     const fetchSiswa = async () => {
         try {
@@ -87,7 +90,6 @@ export default function AdminSiswaPage() {
 
         try {
             if (editingId) {
-                // Mode Update
                 const { error } = await supabase
                     .from("siswa")
                     .update({ nama, nisn, jenis_kelamin: jenisKelamin, kelas })
@@ -96,7 +98,6 @@ export default function AdminSiswaPage() {
                 if (error) throw error
                 alert("Data siswa berhasil diperbarui! ✏️")
             } else {
-                // Mode Insert Baru
                 const { error } = await supabase.from("siswa").insert([
                     {
                         id: Date.now(),
@@ -121,25 +122,116 @@ export default function AdminSiswaPage() {
         }
     }
 
-    // Filter siswa berdasarkan kelas yang dipilih dan pencarian nama/NISN
+    // FITUR IMPORT EXCEL
+    const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0]
+        if (!file) return
+
+        setImporting(true)
+        const reader = new FileReader()
+
+        reader.onload = async (evt) => {
+            try {
+                const bstr = evt.target?.result
+                const workbook = XLSX.read(bstr, { type: "binary" })
+                const sheetName = workbook.SheetNames[0]
+                const sheet = workbook.Sheets[sheetName]
+                const data: any[] = XLSX.utils.sheet_to_json(sheet)
+
+                if (data.length === 0) {
+                    alert("File Excel kosong atau format tidak sesuai!")
+                    setImporting(false)
+                    return
+                }
+
+                // Petakan baris excel ke format database
+                // Pastikan kolom Excel bernama: Nama, Nisn (atau NISN), Jenis Kelamin (atau JK)
+                const formattedData = data.map((row, index) => ({
+                    id: Date.now() + index,
+                    nama: row.Nama || row.nama || row.NAMA || "Tanpa Nama",
+                    nisn: String(row.Nisn || row.nisn || row.NISN || row.NIS || ""),
+                    jenis_kelamin: row["Jenis Kelamin"] || row["jenis_kelamin"] || row.JK || row.jk || "Laki-laki",
+                    kelas: importKelasTarget,
+                }))
+
+                const { error } = await supabase.from("siswa").insert(formattedData)
+                if (error) throw error
+
+                alert(`Berhasil mengimpor ${formattedData.length} siswa ke kelas ${importKelasTarget}! 📊`)
+                fetchSiswa()
+            } catch (err: any) {
+                console.error("Gagal import excel:", err)
+                alert("Terjadi kesalahan saat import: " + err.message)
+            } finally {
+                setImporting(false)
+                e.target.value = "" // Reset input file
+            }
+        }
+
+        reader.readAsBinaryString(file)
+    }
+
+    // Filter siswa
     const siswaFiltered = daftarSiswa.filter((s) => {
         const matchKelas = s.kelas === filterKelas
         const matchSearch = s.nama.toLowerCase().includes(searchQuery.toLowerCase()) || (s.nisn && s.nisn.includes(searchQuery))
         return matchKelas && matchSearch
     })
 
+    // Statistik Gender per Kelas Filter Aktif
+    const siswaKelasAktif = daftarSiswa.filter(s => s.kelas === filterKelas)
+    const totalLaki = siswaKelasAktif.filter(s => s.jenis_kelamin?.toLowerCase().includes("laki") || s.jenis_kelamin === "L").length
+    const totalPerempuan = siswaKelasAktif.filter(s => s.jenis_kelamin?.toLowerCase().includes("perempuan") || s.jenis_kelamin === "P").length
+
     return (
         <div className="max-w-5xl space-y-10">
             <div>
                 <h1 className="text-3xl font-black text-white">Kelola Data Siswa</h1>
-                <p className="text-slate-400 text-sm mt-1">Tambah, edit, dan hapus data siswa per kelas di SMA Negeri 7 Balikpapan.</p>
+                <p className="text-slate-400 text-sm mt-1">Tambah satuan, import dari Excel, dan kelola data siswa SMAN 7 Balikpapan.</p>
             </div>
 
-            {/* FORM TAMBAH / EDIT SISWA */}
+            {/* BOX IMPORT EXCEL */}
+            <div className="bg-slate-900 border border-emerald-500/30 rounded-2xl p-6 shadow-xl space-y-4">
+                <h2 className="text-lg font-bold text-emerald-400 flex items-center gap-2">
+                    <span>📥</span> Import Data Siswa dari Excel (.xlsx / .xls)
+                </h2>
+                <p className="text-slate-400 text-xs">
+                    Pastikan file Excel memiliki header kolom: <strong className="text-white">Nama</strong>, <strong className="text-white">NISN</strong>, dan <strong className="text-white">Jenis Kelamin</strong> (Laki-laki / Perempuan).
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-4 items-center">
+                    <div className="w-full sm:w-1/2">
+                        <label className="block text-xs font-medium mb-1 text-slate-300">Pilih Kelas Tujuan Import</label>
+                        <select
+                            value={importKelasTarget}
+                            onChange={(e) => setImportKelasTarget(e.target.value)}
+                            className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2 text-white text-sm focus:outline-none focus:border-emerald-500"
+                        >
+                            {daftarKelasMaster.map((k) => (
+                                <option key={k} value={k}>Kelas {k}</option>
+                            ))}
+                        </select>
+                    </div>
+
+                    <div className="w-full sm:w-1/2">
+                        <label className="block text-xs font-medium mb-1 text-slate-300">Upload File Excel</label>
+                        <input
+                            type="file"
+                            accept=".xlsx, .xls, .csv"
+                            onChange={handleFileUpload}
+                            disabled={importing}
+                            className="w-full text-xs text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:font-semibold file:bg-emerald-600 file:text-white hover:file:bg-emerald-700 cursor-pointer disabled:opacity-50"
+                        />
+                    </div>
+                </div>
+                {importing && <p className="text-xs text-emerald-400 animate-pulse">Sedang memproses dan memasukkan data ke database...</p>}
+            </div>
+
+            {/* FORM TAMBAH / EDIT SISWA SATUAN */}
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
                 <div className="flex justify-between items-center mb-4">
                     <h2 className="text-lg font-bold text-blue-400">
-                        {editingId ? `Edit Siswa (ID: ${editingId})` : "Tambah Siswa Baru"}
+                        {editingId ? `Edit Siswa (ID: ${editingId})` : "Tambah Siswa Satuan"}
                     </h2>
                     {editingId && (
                         <button
@@ -214,12 +306,25 @@ export default function AdminSiswaPage() {
                 </form>
             </div>
 
-            {/* TABEL MANAJEMEN & FILTER SISWA */}
+            {/* TABEL MANAJEMEN & STATISTIK GENDER */}
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <h2 className="text-xl font-bold text-white">Daftar Siswa Tersimpan</h2>
+                    <div>
+                        <h2 className="text-xl font-bold text-white">Daftar Siswa Tersimpan</h2>
+                        {/* STATISTIK LAKI-LAKI & PEREMPUAN */}
+                        <div className="flex gap-3 mt-1 text-xs">
+                            <span className="text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded border border-blue-500/20">
+                                👦 Laki-laki: <strong>{totalLaki}</strong>
+                            </span>
+                            <span className="text-pink-400 bg-pink-500/10 px-2 py-0.5 rounded border border-pink-500/20">
+                                👧 Perempuan: <strong>{totalPerempuan}</strong>
+                            </span>
+                            <span className="text-slate-400 bg-slate-800 px-2 py-0.5 rounded">
+                                Total: <strong>{siswaKelasAktif.length}</strong>
+                            </span>
+                        </div>
+                    </div>
 
-                    {/* Filter Kelas & Search */}
                     <div className="flex flex-wrap gap-2 w-full md:w-auto">
                         <select
                             value={filterKelas}
@@ -258,7 +363,7 @@ export default function AdminSiswaPage() {
                                     <div>
                                         <h3 className="text-white font-bold text-sm">{item.nama}</h3>
                                         <p className="text-slate-400 text-xs">
-                                            NISN: {item.nisn || "-"} | {item.jenis_kelamin}
+                                            NISN: {item.nisn || "-"} | <span className={item.jenis_kelamin?.toLowerCase().includes("laki") ? "text-blue-400" : "text-pink-400"}>{item.jenis_kelamin}</span>
                                         </p>
                                     </div>
                                 </div>

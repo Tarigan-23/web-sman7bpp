@@ -27,6 +27,10 @@ export default function SiswaPublicContent({ initialSiswa }: { initialSiswa: Sis
         s.nama.toLowerCase().includes(searchQuery.toLowerCase())
     )
 
+    // Hitung statistik laki-laki dan perempuan berdasarkan siswa yang sedang aktif di kelas tersebut
+    const totalLaki = siswaTersaring.filter(s => s.jenis_kelamin?.toLowerCase().includes("laki") || s.jenis_kelamin === "L").length
+    const totalPerempuan = siswaTersaring.filter(s => s.jenis_kelamin?.toLowerCase().includes("perempuan") || s.jenis_kelamin === "P").length
+
     return (
         <div
             className="min-h-screen bg-cover bg-center bg-fixed relative w-full overflow-hidden"
@@ -54,7 +58,7 @@ export default function SiswaPublicContent({ initialSiswa }: { initialSiswa: Sis
                     </motion.div>
                 </section>
 
-                {/* Navigasi Kelas: Diubah menjadi Grid Responsif agar kelihatan semua & tersusun rapi */}
+                {/* Navigasi Kelas: Grid Responsif */}
                 <div className="w-full bg-slate-900/60 p-3 md:p-4 rounded-2xl border border-white/5">
                     <p className="text-xs text-slate-400 mb-2 font-medium text-center">Pilih Rombongan Belajar (Kelas):</p>
                     <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-10 gap-1.5 md:gap-2">
@@ -106,13 +110,26 @@ export default function SiswaPublicContent({ initialSiswa }: { initialSiswa: Sis
                     layout
                     className="bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-md rounded-2xl md:rounded-3xl shadow-2xl p-4 md:p-8 border border-white/10 w-full min-h-[250px]"
                 >
-                    <div className="flex justify-between items-center border-b border-white/10 pb-4 mb-4">
-                        <h2 className="text-xl md:text-2xl font-black text-blue-400 tracking-wide uppercase">
-                            📋 Rombel Kelas {kelasAktif}
-                        </h2>
-                        <span className="text-[10px] md:text-xs text-gray-400 font-mono">
-                            Menampilkan {siswaTersaring.length} Siswa
-                        </span>
+                    {/* Header Card dengan Informasi Rombel & Statistik Gender */}
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-white/10 pb-4 mb-4 gap-3">
+                        <div>
+                            <h2 className="text-xl md:text-2xl font-black text-blue-400 tracking-wide uppercase">
+                                📋 Rombel Kelas {kelasAktif}
+                            </h2>
+                            <p className="text-[10px] md:text-xs text-gray-400 mt-0.5">
+                                Menampilkan {siswaTersaring.length} dari total siswa di kelas
+                            </p>
+                        </div>
+
+                        {/* Statistik Badge Laki-laki & Perempuan */}
+                        <div className="flex items-center gap-2">
+                            <span className="text-xs text-blue-300 bg-blue-500/10 px-3 py-1 rounded-xl border border-blue-500/20 font-mono font-semibold">
+                                👦 L: {totalLaki}
+                            </span>
+                            <span className="text-xs text-pink-300 bg-pink-500/10 px-3 py-1 rounded-xl border border-pink-500/20 font-mono font-semibold">
+                                👧 P: {totalPerempuan}
+                            </span>
+                        </div>
                     </div>
 
                     <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 md:gap-3.5 w-full">
@@ -139,7 +156,10 @@ export default function SiswaPublicContent({ initialSiswa }: { initialSiswa: Sis
                                             </div>
                                         </div>
 
-                                        <span className="text-[9px] md:text-[10px] text-gray-400 uppercase font-mono bg-white/5 px-2 py-0.5 rounded">
+                                        <span className={`text-[9px] md:text-[10px] uppercase font-mono px-2 py-0.5 rounded ${item.jenis_kelamin?.toLowerCase().includes("laki")
+                                                ? "text-blue-300 bg-blue-500/10 border border-blue-500/20"
+                                                : "text-pink-300 bg-pink-500/10 border border-pink-500/20"
+                                            }`}>
                                             {item.jenis_kelamin}
                                         </span>
                                     </motion.div>
