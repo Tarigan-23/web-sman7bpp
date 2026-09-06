@@ -122,7 +122,7 @@ export default function AdminSiswaPage() {
         }
     }
 
-    // FITUR IMPORT EXCEL
+    // FITUR IMPORT EXCEL YANG SUDAH DISESUAIKAN DENGAN FORMAT EXCEL SEKOLAH
     const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0]
         if (!file) return
@@ -144,15 +144,26 @@ export default function AdminSiswaPage() {
                     return
                 }
 
-                // Petakan baris excel ke format database
-                // Pastikan kolom Excel bernama: Nama, Nisn (atau NISN), Jenis Kelamin (atau JK)
-                const formattedData = data.map((row, index) => ({
-                    id: Date.now() + index,
-                    nama: row.Nama || row.nama || row.NAMA || "Tanpa Nama",
-                    nisn: String(row.Nisn || row.nisn || row.NISN || row.NIS || ""),
-                    jenis_kelamin: row["Jenis Kelamin"] || row["jenis_kelamin"] || row.JK || row.jk || "Laki-laki",
-                    kelas: importKelasTarget,
-                }))
+                const formattedData = data.map((row, index) => {
+                    // Menangkap berbagai kemungkinan nama kolom dari Excel
+                    const namaSiswa = row["NAMA PESERTA DIDIK"] || row.Nama || row.nama || row.NAMA || "Tanpa Nama"
+                    const nisnSiswa = String(row.NISN || row.nisn || row.Nis || row.nis || "")
+
+                    // Menyesuaikan jika di Excel tertulis 'L' atau 'P'
+                    let jkRaw = String(row["L/P"] || row["Jenis Kelamin"] || row.jk || "L").trim().toUpperCase()
+                    let jenisKelaminFinal = "Laki-laki"
+                    if (jkRaw === "P" || jkRaw.includes("PEREMPUAN")) {
+                        jenisKelaminFinal = "Perempuan"
+                    }
+
+                    return {
+                        id: Date.now() + index,
+                        nama: String(namaSiswa).trim(),
+                        nisn: nisnSiswa,
+                        jenis_kelamin: jenisKelaminFinal,
+                        kelas: importKelasTarget,
+                    }
+                })
 
                 const { error } = await supabase.from("siswa").insert(formattedData)
                 if (error) throw error
@@ -164,7 +175,7 @@ export default function AdminSiswaPage() {
                 alert("Terjadi kesalahan saat import: " + err.message)
             } finally {
                 setImporting(false)
-                e.target.value = "" // Reset input file
+                e.target.value = ""
             }
         }
 
