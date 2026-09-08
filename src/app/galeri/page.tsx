@@ -17,14 +17,14 @@ export default function GaleriPage() {
   const galeri: GaleriItem[] = [
     {
       judul: "HARI PERAMUKA",
-      gambar: ["/berita/315.jpeg", "/berita/316.jpeg", "/berita/317.jpeg","/berita/318.jpeg", "/berita/319.jpeg", "/berita/320.jpeg","/berita/321.jpeg", "/berita/322.jpeg", "/berita/323.jpeg","/berita/324.jpeg", "/berita/325.jpeg", "/berita/326.jpeg","/berita/327.jpeg" ],
+      gambar: ["/berita/315.jpeg", "/berita/316.jpeg", "/berita/317.jpeg", "/berita/318.jpeg", "/berita/319.jpeg", "/berita/320.jpeg", "/berita/321.jpeg", "/berita/322.jpeg", "/berita/323.jpeg", "/berita/324.jpeg", "/berita/325.jpeg", "/berita/326.jpeg", "/berita/327.jpeg"],
       deskripsi: "Liburan makin berarti bareng E-Camp SMAN 7 Balikpapan! 🇬🇧",
       tanggal: "30 Juni 2026",
       kategori: "Dokumentasi"
     },
     {
       judul: "ECamp 2026 ~ S P E A K . S H A R E . S H I N E ✨",
-      gambar: ["/berita/168.png", "/berita/169.jpeg", "/berita/166.jpeg", ],
+      gambar: ["/berita/168.png", "/berita/169.jpeg", "/berita/166.jpeg",],
       deskripsi: "Liburan makin berarti bareng E-Camp SMAN 7 Balikpapan! 🇬🇧",
       tanggal: "30 Juni 2026",
       kategori: "Dokumentasi"
@@ -34,20 +34,6 @@ export default function GaleriPage() {
       gambar: ["/SPMB-Tahap-II/1.jpg", "/SPMB-Tahap-II/2.jpg", "/SPMB-Tahap-II/3.jpg", "/SPMB-Tahap-II/4.jpg", "/SPMB-Tahap-II/5.jpg", "/SPMB-Tahap-II/6.jpg"],
       deskripsi: "Tenang, kamu tidak sendirian. Kami memahami bahwa proses pendaftaran sering kali menimbulkan berbagai pertanyaan dan kebingungan Melalui postingan ini, SMA Negeri 7 Balikpapan telah merangkum beberapa pertanyaan yang paling sering ditanyakan beserta jawabannya untuk membantu kamu memahami proses SPMB dengan lebih mudah. Yuk, geser slide berikutnya dan temukan jawaban atas pertanyaanmu! Jika masih ada hal yang ingin ditanyakan, jangan ragu untuk menghubungi kami melalui layanan informasi resmi SMA Negeri 7 Balikpapan. Kami siap membantu dan menantikan kehadiranmu sebagai bagian dari keluarga besar SMAN 7 Balikpapan.",
       tanggal: "28 Juni 2026",
-      kategori: "Informasi"
-    },
-    {
-      judul: "Pengumuman Hasil Sleksi SPMB Tahap 1",
-      gambar: ["/berita/164.jpeg", "/galeri/pngumspmb1.jpeg", "/galeri/pngumspmb2.jpeg", "/galeri/pngumspmb3.jpeg", "/galeri/pngumspmb4.jpeg", "/galeri/pngumspmb5.jpeg", "/galeri/pngumspmb6.jpeg"],
-      deskripsi: "Info selengkapnya bisa dilihat di halaman SPMB",
-      tanggal: "28 Juni 2026",
-      kategori: "Informasi"
-    },
-    {
-      judul: "Peserta OSN SMAN 7 Balikpapan",
-      gambar: ["/berita/timosn1.jpeg", "/berita/timosn2.jpeg", "/berita/timosn3.jpeg", "/berita/timosn4.jpeg", "/berita/timosn5.jpeg"],
-      deskripsi: "",
-      tanggal: "18 Juni 2026",
       kategori: "Informasi"
     },
     {
@@ -116,10 +102,10 @@ export default function GaleriPage() {
 
   const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { duration: 0.5, ease: "easeOut" } 
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" }
     },
   }
 
@@ -135,7 +121,7 @@ export default function GaleriPage() {
 
       {/* Konten Utama */}
       <div className="relative z-10 pt-24 md:pt-36 pb-20 px-4 md:px-6 max-w-7xl mx-auto space-y-8 md:space-y-12">
-        
+
         {/* HERO TITLE - Tampilan super tajam & responsif */}
         <section className="text-center w-full">
           <motion.div
@@ -157,7 +143,7 @@ export default function GaleriPage() {
         </section>
 
         {/* Grid Galeri Ala Instagram */}
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -204,7 +190,7 @@ export default function GaleriPage() {
       {/* --- MODAL POPUP DETAIL ALA INSTAGRAM --- */}
       <AnimatePresence>
         {selectedItem && (
-          <div 
+          <div
             className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-10 bg-black/90 backdrop-blur-md"
             onClick={closeModal}
           >
@@ -216,7 +202,7 @@ export default function GaleriPage() {
             </button>
 
             {/* Kotak Utama Postingan */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 10 }}
@@ -226,9 +212,9 @@ export default function GaleriPage() {
             >
               {/* KOLOM KIRI: Media Image Viewer & Slider */}
               <div className="relative flex-1 bg-slate-950 flex items-center justify-center h-[45%] md:h-full group border-b md:border-b-0 border-slate-800">
-                <Image 
-                  src={selectedItem.gambar[currentImgIndex]} 
-                  alt={selectedItem.judul} 
+                <Image
+                  src={selectedItem.gambar[currentImgIndex]}
+                  alt={selectedItem.judul}
                   fill
                   sizes="(max-w-5xl) 60vw"
                   className="object-contain"
@@ -238,7 +224,7 @@ export default function GaleriPage() {
                 {/* Navigasi Panah Kiri */}
                 {selectedItem.gambar.length > 1 && (
                   <>
-                    <button 
+                    <button
                       onClick={prevImage}
                       className="absolute left-3 bg-black/60 text-white p-2 rounded-full hover:bg-blue-600 transition backdrop-blur-sm border border-white/10"
                     >
@@ -248,7 +234,7 @@ export default function GaleriPage() {
                     </button>
 
                     {/* Navigasi Panah Kanan */}
-                    <button 
+                    <button
                       onClick={nextImage}
                       className="absolute right-3 bg-black/60 text-white p-2 rounded-full hover:bg-blue-600 transition backdrop-blur-sm border border-white/10"
                     >
@@ -260,8 +246,8 @@ export default function GaleriPage() {
                     {/* Dots Carousel */}
                     <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex space-x-1.5 bg-black/40 px-2 py-1 rounded-full backdrop-blur-sm">
                       {selectedItem.gambar.map((_, idx) => (
-                        <div 
-                          key={idx} 
+                        <div
+                          key={idx}
                           className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${idx === currentImgIndex ? "bg-blue-500 w-3" : "bg-slate-500"}`}
                         />
                       ))}
@@ -326,6 +312,6 @@ export default function GaleriPage() {
           </div>
         )}
       </AnimatePresence>
-    </div> 
+    </div>
   )
 }
