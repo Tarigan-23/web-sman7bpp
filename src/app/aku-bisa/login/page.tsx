@@ -41,33 +41,50 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 flex items-center justify-center p-4">
-      <div className="w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl space-y-6">
+    <div className="min-h-screen relative w-full flex items-center justify-center p-4 overflow-hidden">
+
+      {/* Background Utama Lebih Terang */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/prestasi/pres2.jpeg"
+          alt="Latar Belakang SMANJU"
+          fill
+          priority
+          className="object-cover object-center opacity-65 fixed"
+        />
+        {/* Overlay lebih tipis agar gambar latar belakang sangat jelas terlihat */}
+        <div className="absolute inset-0 bg-slate-950/50 backdrop-blur-[2px]" />
+        <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[45vw] h-[45vw] bg-indigo-500/15 rounded-full blur-[140px] pointer-events-none" />
+      </div>
+
+      {/* Card Form Login */}
+      <div className="relative z-10 w-full max-w-md bg-slate-900/85 backdrop-blur-xl border border-white/15 rounded-3xl p-8 shadow-2xl space-y-6">
         <div className="text-center space-y-3">
           <div className="w-16 h-16 bg-slate-800 rounded-2xl mx-auto flex items-center justify-center overflow-hidden border border-slate-700 shadow-lg">
-            <Image 
-              src="/LOGO_SMAN7.png" 
-              alt="Logo SMAN 7 Balikpapan" 
-              width={48} 
-              height={48} 
+            <Image
+              src="/LOGO_SMAN7.png"
+              alt="Logo SMAN 7 Balikpapan"
+              width={48}
+              height={48}
               className="object-contain"
             />
           </div>
           <div>
             <h1 className="text-2xl font-black text-white">Gerbang Admin</h1>
-            <p className="text-slate-400 text-xs mt-1">Masukkan akses terautentikasi SMA Negeri 7 Balikpapan</p>
+            <p className="text-slate-300 text-xs mt-1">Masukkan akses terautentikasi SMA Negeri 7 Balikpapan</p>
           </div>
         </div>
 
         {errorMsg && (
-          <div className="bg-red-500/10 border border-red-500/20 text-red-400 text-xs p-3 rounded-xl text-center font-medium">
+          <div className="bg-red-500/15 border border-red-500/30 text-red-300 text-xs p-3 rounded-xl text-center font-medium">
             ⚠️ {errorMsg}
           </div>
         )}
 
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
-            <label className="block text-xs font-semibold text-slate-300 mb-1">Email Admin</label>
+            <label className="block text-xs font-semibold text-slate-200 mb-1">Email Admin</label>
             <input
               type="email"
               id="email"
@@ -75,13 +92,13 @@ export default function LoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500"
+              className="w-full bg-slate-950/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500"
               placeholder="admin@sman7-bpp.sch.id"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-slate-300 mb-1">Password</label>
+            <label className="block text-xs font-semibold text-slate-200 mb-1">Password</label>
             <input
               type="password"
               id="password"
@@ -89,7 +106,7 @@ export default function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500"
+              className="w-full bg-slate-950/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500"
               placeholder="••••••••••••"
             />
           </div>

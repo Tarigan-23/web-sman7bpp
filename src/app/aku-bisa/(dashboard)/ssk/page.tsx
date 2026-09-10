@@ -266,14 +266,27 @@ export default function AdminSSKPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1 text-slate-300">Tanggal Kegiatan</label>
+              <div className="flex justify-between items-center mb-1">
+                <label className="block text-sm font-medium text-slate-300">Tanggal Kegiatan</label>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const options: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'long', year: 'numeric' };
+                    const tanggalHariIni = new Date().toLocaleDateString('id-ID', options);
+                    setTanggal(tanggalHariIni);
+                  }}
+                  className="text-[11px] bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 px-2.5 py-0.5 rounded-md transition font-medium border border-blue-500/30"
+                >
+                  📅 Gunakan Hari Ini
+                </button>
+              </div>
               <input
                 type="text"
                 value={tanggal}
                 onChange={(e) => setTanggal(e.target.value)}
                 required
-                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500"
-                placeholder="Contoh: 10 Agustus 2026"
+                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                placeholder="Masukkan tanggal hari ini"
               />
             </div>
           </div>
