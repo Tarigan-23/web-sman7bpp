@@ -28,7 +28,7 @@ export default function BeritaPage() {
           .from("berita")
           .select("*")
           .order('id', { ascending: false });
-          
+
         if (error) {
           console.error("Error fetching berita from Supabase:", error)
           return
@@ -128,21 +128,21 @@ export default function BeritaPage() {
             {berita.map((item) => {
               const previewImg = Array.isArray(item.gambar) && item.gambar.length > 0 ? item.gambar[0] : "/bg3.jpg";
               return (
-                <motion.a 
-                  key={item.id} 
-                  href={item.sumberUrl} 
-                  variants={cardVariants} 
-                  onClick={(e) => handleCardClick(e, item)} 
+                <motion.a
+                  key={item.id}
+                  href={item.sumberUrl}
+                  variants={cardVariants}
+                  onClick={(e) => handleCardClick(e, item)}
                   className="block group h-full cursor-pointer"
                 >
                   <div className="bg-slate-900/80 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 h-full shadow-xl hover:border-blue-500/50 transition duration-300 flex flex-col">
                     <div className="relative h-48 w-full overflow-hidden bg-slate-950">
-                      <Image 
-                        src={previewImg} 
-                        alt={item.judul} 
-                        fill 
+                      <Image
+                        src={previewImg}
+                        alt={item.judul}
+                        fill
                         sizes="(max-width: 768px) 100vw, 33vw"
-                        className="object-cover group-hover:scale-105 transition duration-500" 
+                        className="object-cover group-hover:scale-105 transition duration-500"
                       />
                     </div>
                     <div className="p-5 flex flex-col flex-grow">
@@ -217,9 +217,8 @@ export default function BeritaPage() {
                     {selectedBerita.gambar.map((_, idx) => (
                       <div
                         key={idx}
-                        className={`h-1.5 rounded-full transition-all duration-300 ${
-                          idx === currentImgIndex ? "w-6 bg-blue-500" : "w-1.5 bg-white/40"
-                        }`}
+                        className={`h-1.5 rounded-full transition-all duration-300 ${idx === currentImgIndex ? "w-6 bg-blue-500" : "w-1.5 bg-white/40"
+                          }`}
                       />
                     ))}
                   </div>
