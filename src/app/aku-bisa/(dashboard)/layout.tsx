@@ -33,6 +33,7 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
     { name: "Prestasi", href: "/aku-bisa/prestasi" },
     { name: "Galeri", href: "/aku-bisa/galeri" },
     { name: "SSK", href: "/aku-bisa/ssk" },
+    { name: "Video", href: "/aku-bisa/video" },
     { name: "Siswa", href: "/aku-bisa/siswa" },
     { name: "Ekskul", href: "/aku-bisa/ekskul" },
   ]
